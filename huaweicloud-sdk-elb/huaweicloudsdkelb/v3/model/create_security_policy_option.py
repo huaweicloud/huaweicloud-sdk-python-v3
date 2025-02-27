@@ -41,7 +41,7 @@ class CreateSecurityPolicyOption:
         :type name: str
         :param description: 自定义安全策略的描述信息。默认空字符串\&quot;\&quot;。
         :type description: str
-        :param enterprise_project_id: 所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param protocols: 自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3
         :type protocols: list[str]
@@ -115,7 +115,7 @@ class CreateSecurityPolicyOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateSecurityPolicyOption.
 
-        所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this CreateSecurityPolicyOption.
         :rtype: str
@@ -126,7 +126,7 @@ class CreateSecurityPolicyOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateSecurityPolicyOption.
 
-        所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateSecurityPolicyOption.
         :type enterprise_project_id: str

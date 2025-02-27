@@ -109,7 +109,7 @@ class BatchCreateLoadBalancerOption:
         :type vip_address: str
         :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
         :type vip_subnet_cidr_id: str
-        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_virsubnet_id: str
         :param provider: 负载均衡器的生产者名称。固定为vlb。批量创建共享型实例时，该字段不允许指定。
         :type provider: str
@@ -123,13 +123,13 @@ class BatchCreateLoadBalancerOption:
         :type vpc_id: str
         :param availability_zone_list: 可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  使用说明： - 批量创建共享型实例时，该字段不允许指定。
         :type availability_zone_list: list[str]
-        :param enterprise_project_id: 负载均衡器所属的企业项目ID。创建时传入\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\&quot;0\&quot;。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 负载均衡器所属的企业项目ID。创建时传入\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\&quot;0\&quot;。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param tags: 负载均衡的标签列表。示例：\&quot;tags\&quot;:[{\&quot;key\&quot;:\&quot;my_tag\&quot;,\&quot;value\&quot;:\&quot;my_tag_value\&quot;}]
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
-        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
         :type admin_state_up: bool
-        :param billing_info: 资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        :param billing_info: 资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
         :type billing_info: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -143,13 +143,13 @@ class BatchCreateLoadBalancerOption:
         :type elb_virsubnet_ids: list[str]
         :param ip_target_enable: 参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param deletion_protection_enable: 是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param deletion_protection_enable: 是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
-        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type waf_failure_action: str
         :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
         :type protection_status: str
@@ -157,7 +157,7 @@ class BatchCreateLoadBalancerOption:
         :type protection_reason: str
         :param charge_mode: &#39;创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。&#39; 批量创建共享型实例时，该字段不允许指定。
         :type charge_mode: str
-        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_address: str
         """
         
@@ -444,7 +444,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -455,7 +455,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
         :type ipv6_vip_virsubnet_id: str
@@ -598,7 +598,7 @@ class BatchCreateLoadBalancerOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -609,7 +609,7 @@ class BatchCreateLoadBalancerOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this BatchCreateLoadBalancerOption.
         :type enterprise_project_id: str
@@ -642,7 +642,7 @@ class BatchCreateLoadBalancerOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this BatchCreateLoadBalancerOption.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
 
         :return: The admin_state_up of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -653,7 +653,7 @@ class BatchCreateLoadBalancerOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this BatchCreateLoadBalancerOption.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
 
         :param admin_state_up: The admin_state_up of this BatchCreateLoadBalancerOption.
         :type admin_state_up: bool
@@ -664,7 +664,7 @@ class BatchCreateLoadBalancerOption:
     def billing_info(self):
         """Gets the billing_info of this BatchCreateLoadBalancerOption.
 
-        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
 
         :return: The billing_info of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -675,7 +675,7 @@ class BatchCreateLoadBalancerOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this BatchCreateLoadBalancerOption.
 
-        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
 
         :param billing_info: The billing_info of this BatchCreateLoadBalancerOption.
         :type billing_info: str
@@ -806,7 +806,7 @@ class BatchCreateLoadBalancerOption:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this BatchCreateLoadBalancerOption.
 
-        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The deletion_protection_enable of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -817,7 +817,7 @@ class BatchCreateLoadBalancerOption:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this BatchCreateLoadBalancerOption.
 
-        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param deletion_protection_enable: The deletion_protection_enable of this BatchCreateLoadBalancerOption.
         :type deletion_protection_enable: bool
@@ -864,7 +864,7 @@ class BatchCreateLoadBalancerOption:
     def waf_failure_action(self):
         """Gets the waf_failure_action of this BatchCreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :return: The waf_failure_action of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -875,7 +875,7 @@ class BatchCreateLoadBalancerOption:
     def waf_failure_action(self, waf_failure_action):
         """Sets the waf_failure_action of this BatchCreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :param waf_failure_action: The waf_failure_action of this BatchCreateLoadBalancerOption.
         :type waf_failure_action: str
@@ -952,7 +952,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_address(self):
         """Gets the ipv6_vip_address of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_address of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -963,7 +963,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_address(self, ipv6_vip_address):
         """Sets the ipv6_vip_address of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_address: The ipv6_vip_address of this BatchCreateLoadBalancerOption.
         :type ipv6_vip_address: str

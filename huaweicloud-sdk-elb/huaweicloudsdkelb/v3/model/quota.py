@@ -85,7 +85,7 @@ class Quota:
         :type member: int
         :param members_per_pool: 单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type members_per_pool: int
-        :param listeners_per_pool: 单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param listeners_per_pool: 单个pool器关联的监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type listeners_per_pool: int
         :param ipgroup: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup: int
@@ -372,7 +372,7 @@ class Quota:
     def listeners_per_pool(self):
         """Gets the listeners_per_pool of this Quota.
 
-        单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个pool器关联的监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The listeners_per_pool of this Quota.
         :rtype: int
@@ -383,7 +383,7 @@ class Quota:
     def listeners_per_pool(self, listeners_per_pool):
         """Sets the listeners_per_pool of this Quota.
 
-        单个监听器下的pool的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个pool器关联的监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param listeners_per_pool: The listeners_per_pool of this Quota.
         :type listeners_per_pool: int

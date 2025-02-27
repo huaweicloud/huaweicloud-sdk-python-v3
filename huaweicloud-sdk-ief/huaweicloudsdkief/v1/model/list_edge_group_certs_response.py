@@ -18,7 +18,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[EdgeGroupCertListResp]'
+        'body': 'object'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
+        :type body: object
         """
         
         super(ListEdgeGroupCertsResponse, self).__init__()
@@ -47,7 +47,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
         """Gets the body of this ListEdgeGroupCertsResponse.
 
         :return: The body of this ListEdgeGroupCertsResponse.
-        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
+        :rtype: object
         """
         return self._body
 
@@ -56,7 +56,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
         """Sets the body of this ListEdgeGroupCertsResponse.
 
         :param body: The body of this ListEdgeGroupCertsResponse.
-        :type body: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
+        :type body: object
         """
         self._body = body
 

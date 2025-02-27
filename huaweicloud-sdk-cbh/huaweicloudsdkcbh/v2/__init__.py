@@ -6,6 +6,7 @@ from huaweicloudsdkcbh.v2.cbh_client import CbhClient
 from huaweicloudsdkcbh.v2.cbh_async_client import CbhAsyncClient
 
 from huaweicloudsdkcbh.v2.model.agency_authorize_info import AgencyAuthorizeInfo
+from huaweicloudsdkcbh.v2.model.agency_authorize_info_rsp import AgencyAuthorizeInfoRsp
 from huaweicloudsdkcbh.v2.model.authorize_csms_and_kms_request_body import AuthorizeCsmsAndKmsRequestBody
 from huaweicloudsdkcbh.v2.model.availability_zones import AvailabilityZones
 from huaweicloudsdkcbh.v2.model.batch_create_instance_tag_request import BatchCreateInstanceTagRequest

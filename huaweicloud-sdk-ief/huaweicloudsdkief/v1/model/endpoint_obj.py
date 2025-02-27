@@ -39,9 +39,9 @@ class EndpointObj:
 
         :param description: 端点描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
         :type description: str
-        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :param ief_instance_id: [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
         :type ief_instance_id: str
-        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
         :type name: str
         :param properties: 端点的属性，端点需要对外展示的属性，示例： - dis: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;} - servicebus: {\&quot;service_port\&quot;:8080} - apigw: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;}
         :type properties: dict(str, str)
@@ -92,7 +92,7 @@ class EndpointObj:
     def ief_instance_id(self):
         """Gets the ief_instance_id of this EndpointObj.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :return: The ief_instance_id of this EndpointObj.
         :rtype: str
@@ -103,7 +103,7 @@ class EndpointObj:
     def ief_instance_id(self, ief_instance_id):
         """Sets the ief_instance_id of this EndpointObj.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :param ief_instance_id: The ief_instance_id of this EndpointObj.
         :type ief_instance_id: str
@@ -114,7 +114,7 @@ class EndpointObj:
     def name(self):
         """Gets the name of this EndpointObj.
 
-        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
         :return: The name of this EndpointObj.
         :rtype: str
@@ -125,7 +125,7 @@ class EndpointObj:
     def name(self, name):
         """Sets the name of this EndpointObj.
 
-        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
         :param name: The name of this EndpointObj.
         :type name: str

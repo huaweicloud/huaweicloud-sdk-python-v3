@@ -57,7 +57,7 @@ class IpGroup:
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         :param project_id: 参数解释：IP地址组的项目ID。
         :type project_id: str
-        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param created_at: 参数解释：IP地址组的创建时间。
         :type created_at: str
@@ -225,7 +225,7 @@ class IpGroup:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this IpGroup.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this IpGroup.
         :rtype: str
@@ -236,7 +236,7 @@ class IpGroup:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this IpGroup.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this IpGroup.
         :type enterprise_project_id: str

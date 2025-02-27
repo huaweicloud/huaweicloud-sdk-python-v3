@@ -67,7 +67,7 @@ class CreateCertificateOption:
         :type project_id: str
         :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
         :type type: str
-        :param enterprise_project_id: 证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param enc_certificate: HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效且必选。
         :type enc_certificate: str
@@ -298,7 +298,7 @@ class CreateCertificateOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateCertificateOption.
 
-        证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this CreateCertificateOption.
         :rtype: str
@@ -309,7 +309,7 @@ class CreateCertificateOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateCertificateOption.
 
-        证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCertificateOption.
         :type enterprise_project_id: str

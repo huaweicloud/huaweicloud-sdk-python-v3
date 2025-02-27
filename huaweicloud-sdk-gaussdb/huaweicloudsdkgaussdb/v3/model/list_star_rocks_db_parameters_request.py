@@ -19,16 +19,18 @@ class ListStarRocksDbParametersRequest:
     openapi_types = {
         'instance_id': 'str',
         'x_language': 'str',
-        'add_task_scenario': 'str'
+        'add_task_scenario': 'str',
+        'main_task_name': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'x_language': 'X-Language',
-        'add_task_scenario': 'add_task_scenario'
+        'add_task_scenario': 'add_task_scenario',
+        'main_task_name': 'main_task_name'
     }
 
-    def __init__(self, instance_id=None, x_language=None, add_task_scenario=None):
+    def __init__(self, instance_id=None, x_language=None, add_task_scenario=None, main_task_name=None):
         """ListStarRocksDbParametersRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListStarRocksDbParametersRequest:
         :type x_language: str
         :param add_task_scenario: **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
         :type add_task_scenario: str
+        :param main_task_name: **参数解释**：  新增子任务相应的主任务名。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+        :type main_task_name: str
         """
         
         
@@ -46,12 +50,15 @@ class ListStarRocksDbParametersRequest:
         self._instance_id = None
         self._x_language = None
         self._add_task_scenario = None
+        self._main_task_name = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.x_language = x_language
         if add_task_scenario is not None:
             self.add_task_scenario = add_task_scenario
+        if main_task_name is not None:
+            self.main_task_name = main_task_name
 
     @property
     def instance_id(self):
@@ -118,6 +125,28 @@ class ListStarRocksDbParametersRequest:
         :type add_task_scenario: str
         """
         self._add_task_scenario = add_task_scenario
+
+    @property
+    def main_task_name(self):
+        """Gets the main_task_name of this ListStarRocksDbParametersRequest.
+
+        **参数解释**：  新增子任务相应的主任务名。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+
+        :return: The main_task_name of this ListStarRocksDbParametersRequest.
+        :rtype: str
+        """
+        return self._main_task_name
+
+    @main_task_name.setter
+    def main_task_name(self, main_task_name):
+        """Sets the main_task_name of this ListStarRocksDbParametersRequest.
+
+        **参数解释**：  新增子任务相应的主任务名。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+
+        :param main_task_name: The main_task_name of this ListStarRocksDbParametersRequest.
+        :type main_task_name: str
+        """
+        self._main_task_name = main_task_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

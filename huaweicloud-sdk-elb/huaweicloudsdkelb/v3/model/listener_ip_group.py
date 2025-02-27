@@ -35,7 +35,7 @@ class ListenerIpGroup:
 
         :param ipgroup_id: 参数解释：监听器关联的访问控制组的id。 创建时必选，更新时非必选。  约束限制： 指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。 
         :type ipgroup_id: str
-        :param enable_ipgroup: 参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - flase：关闭访问控制。
+        :param enable_ipgroup: 参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - false：关闭访问控制。
         :type enable_ipgroup: bool
         :param type: 参数解释：访问控制组的类型。  取值范围： - white:白名单，只允许指定ip访问。 - black:黑名单，不允许指定ip访问。 
         :type type: str
@@ -78,7 +78,7 @@ class ListenerIpGroup:
     def enable_ipgroup(self):
         """Gets the enable_ipgroup of this ListenerIpGroup.
 
-        参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - flase：关闭访问控制。
+        参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - false：关闭访问控制。
 
         :return: The enable_ipgroup of this ListenerIpGroup.
         :rtype: bool
@@ -89,7 +89,7 @@ class ListenerIpGroup:
     def enable_ipgroup(self, enable_ipgroup):
         """Sets the enable_ipgroup of this ListenerIpGroup.
 
-        参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - flase：关闭访问控制。
+        参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - false：关闭访问控制。
 
         :param enable_ipgroup: The enable_ipgroup of this ListenerIpGroup.
         :type enable_ipgroup: bool

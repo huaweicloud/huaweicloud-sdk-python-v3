@@ -61,7 +61,7 @@ class VersionUpdate:
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
-        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -261,7 +261,7 @@ class VersionUpdate:
     def npu_type(self):
         """Gets the npu_type of this VersionUpdate.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :return: The npu_type of this VersionUpdate.
         :rtype: str
@@ -272,7 +272,7 @@ class VersionUpdate:
     def npu_type(self, npu_type):
         """Sets the npu_type of this VersionUpdate.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this VersionUpdate.
         :type npu_type: str

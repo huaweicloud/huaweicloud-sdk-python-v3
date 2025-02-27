@@ -12101,6 +12101,8 @@ class GaussDBClient(Client):
         query_params = []
         if 'add_task_scenario' in local_var_params:
             query_params.append(('add_task_scenario', local_var_params['add_task_scenario']))
+        if 'main_task_name' in local_var_params:
+            query_params.append(('main_task_name', local_var_params['main_task_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:

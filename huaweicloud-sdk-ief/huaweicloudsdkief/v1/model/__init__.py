@@ -124,8 +124,6 @@ from huaweicloudsdkief.v1.model.device_template_update_detail_tags import Device
 from huaweicloudsdkief.v1.model.devices import Devices
 from huaweicloudsdkief.v1.model.devices_devices import DevicesDevices
 from huaweicloudsdkief.v1.model.devices_devices_added import DevicesDevicesAdded
-from huaweicloudsdkief.v1.model.edge_group_cert import EdgeGroupCert
-from huaweicloudsdkief.v1.model.edge_group_cert_list_resp import EdgeGroupCertListResp
 from huaweicloudsdkief.v1.model.edge_group_cert_request import EdgeGroupCertRequest
 from huaweicloudsdkief.v1.model.edge_group_request import EdgeGroupRequest
 from huaweicloudsdkief.v1.model.edge_group_resp import EdgeGroupResp

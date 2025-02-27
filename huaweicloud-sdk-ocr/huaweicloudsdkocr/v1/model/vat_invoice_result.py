@@ -70,7 +70,8 @@ class VatInvoiceResult:
         'belong_subtotal_tax': 'str',
         'belong_discount_amount': 'str',
         'belong_discount_tax': 'str',
-        'belong_item_list': 'list[BelongItemList]'
+        'belong_item_list': 'list[BelongItemList]',
+        'passenger_travel_item_list': 'list[PassengerTravelItemList]'
     }
 
     attribute_map = {
@@ -127,37 +128,38 @@ class VatInvoiceResult:
         'belong_subtotal_tax': 'belong_subtotal_tax',
         'belong_discount_amount': 'belong_discount_amount',
         'belong_discount_tax': 'belong_discount_tax',
-        'belong_item_list': 'belong_item_list'
+        'belong_item_list': 'belong_item_list',
+        'passenger_travel_item_list': 'passenger_travel_item_list'
     }
 
-    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None):
+    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None, passenger_travel_item_list=None):
         """VatInvoiceResult
 
         The model defined in huaweicloud sdk
 
         :param title: 增值税发票标题 
         :type title: str
-        :param type: 增值税发票类型，可选值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
+        :param type: 增值税发票类型，取值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
         :type type: str
-        :param invoice_tag: 增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+        :param invoice_tag: 增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type invoice_tag: str
         :param sum_amount: 小计金额，当传入多页PDF时返回此字段。 
         :type sum_amount: str
         :param sum_tax: 小计税额，当传入多页PDF时返回此字段。 
         :type sum_tax: str
-        :param serial_number: 发票联次。 当“advanced_mode”设置为“true”时才返回。 
+        :param serial_number: 发票联次。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type serial_number: str
-        :param attribution: 发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+        :param attribution: 发票归属地。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type attribution: str
-        :param supervision_seal: 发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+        :param supervision_seal: 发票监制章。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type supervision_seal: list[str]
         :param code: 发票代码。 
         :type code: str
-        :param print_code: 机打代码。当“advanced_mode”设置为“true”时才返回。 
+        :param print_code: 机打代码。 当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type print_code: str
-        :param machine_number: 机器编号。 当“advanced_mode”设置为“true”时才返回。 
+        :param machine_number: 机器编号。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type machine_number: str
-        :param print_number: 机打号码。 当“advanced_mode”设置为“true”时才返回 
+        :param print_number: 机打号码。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type print_number: str
         :param check_code: 发票校验码，特定类型增值税发票内不存在该信息时返回空字符串。 
         :type check_code: str
@@ -189,17 +191,17 @@ class VatInvoiceResult:
         :type subtotal_tax: str
         :param total: 价税合计。 
         :type total: str
-        :param total_in_words: 价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+        :param total_in_words: 价税合计（大写）。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type total_in_words: str
-        :param remarks: 备注。 当“advanced_mode”设置为“true”时才返回。 
+        :param remarks: 备注。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type remarks: str
-        :param receiver: 收款人。 当“advanced_mode”设置为“true”时才返回。 
+        :param receiver: 收款人。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type receiver: str
-        :param reviewer: 复核。 当“advanced_mode”设置为“true”时才返回。 
+        :param reviewer: 复核。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type reviewer: str
-        :param issuer: 开票人。 当“advanced_mode”设置为“true”时才返回。 
+        :param issuer: 开票人。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type issuer: str
-        :param seller_seal: 销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+        :param seller_seal: 销售方发票专用章。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type seller_seal: list[str]
         :param item_list: 货物或应税劳务列表。 
         :type item_list: list[:class:`huaweicloudsdkocr.v1.ItemList`]
@@ -209,7 +211,7 @@ class VatInvoiceResult:
         :type city: str
         :param confidence: 各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
         :type confidence: object
-        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\&quot;return_text_location\&quot;设置为“true”时才返回。 
         :type text_location: object
         :param belong_buyer_name: 销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
         :type belong_buyer_name: str
@@ -243,6 +245,8 @@ class VatInvoiceResult:
         :type belong_discount_tax: str
         :param belong_item_list: 销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
         :type belong_item_list: list[:class:`huaweicloudsdkocr.v1.BelongItemList`]
+        :param passenger_travel_item_list: 旅客运输服务的出行信息列表。 当传入图片为旅客运输服务发票时返回此字段。 
+        :type passenger_travel_item_list: list[:class:`huaweicloudsdkocr.v1.PassengerTravelItemList`]
         """
         
         
@@ -301,6 +305,7 @@ class VatInvoiceResult:
         self._belong_discount_amount = None
         self._belong_discount_tax = None
         self._belong_item_list = None
+        self._passenger_travel_item_list = None
         self.discriminator = None
 
         if title is not None:
@@ -411,6 +416,8 @@ class VatInvoiceResult:
             self.belong_discount_tax = belong_discount_tax
         if belong_item_list is not None:
             self.belong_item_list = belong_item_list
+        if passenger_travel_item_list is not None:
+            self.passenger_travel_item_list = passenger_travel_item_list
 
     @property
     def title(self):
@@ -438,7 +445,7 @@ class VatInvoiceResult:
     def type(self):
         """Gets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
+        增值税发票类型，取值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
 
         :return: The type of this VatInvoiceResult.
         :rtype: str
@@ -449,7 +456,7 @@ class VatInvoiceResult:
     def type(self, type):
         """Sets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
+        增值税发票类型，取值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
 
         :param type: The type of this VatInvoiceResult.
         :type type: str
@@ -460,7 +467,7 @@ class VatInvoiceResult:
     def invoice_tag(self):
         """Gets the invoice_tag of this VatInvoiceResult.
 
-        增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+        增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The invoice_tag of this VatInvoiceResult.
         :rtype: str
@@ -471,7 +478,7 @@ class VatInvoiceResult:
     def invoice_tag(self, invoice_tag):
         """Sets the invoice_tag of this VatInvoiceResult.
 
-        增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+        增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param invoice_tag: The invoice_tag of this VatInvoiceResult.
         :type invoice_tag: str
@@ -526,7 +533,7 @@ class VatInvoiceResult:
     def serial_number(self):
         """Gets the serial_number of this VatInvoiceResult.
 
-        发票联次。 当“advanced_mode”设置为“true”时才返回。 
+        发票联次。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The serial_number of this VatInvoiceResult.
         :rtype: str
@@ -537,7 +544,7 @@ class VatInvoiceResult:
     def serial_number(self, serial_number):
         """Sets the serial_number of this VatInvoiceResult.
 
-        发票联次。 当“advanced_mode”设置为“true”时才返回。 
+        发票联次。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param serial_number: The serial_number of this VatInvoiceResult.
         :type serial_number: str
@@ -548,7 +555,7 @@ class VatInvoiceResult:
     def attribution(self):
         """Gets the attribution of this VatInvoiceResult.
 
-        发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+        发票归属地。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The attribution of this VatInvoiceResult.
         :rtype: str
@@ -559,7 +566,7 @@ class VatInvoiceResult:
     def attribution(self, attribution):
         """Sets the attribution of this VatInvoiceResult.
 
-        发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+        发票归属地。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param attribution: The attribution of this VatInvoiceResult.
         :type attribution: str
@@ -570,7 +577,7 @@ class VatInvoiceResult:
     def supervision_seal(self):
         """Gets the supervision_seal of this VatInvoiceResult.
 
-        发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+        发票监制章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The supervision_seal of this VatInvoiceResult.
         :rtype: list[str]
@@ -581,7 +588,7 @@ class VatInvoiceResult:
     def supervision_seal(self, supervision_seal):
         """Sets the supervision_seal of this VatInvoiceResult.
 
-        发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+        发票监制章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param supervision_seal: The supervision_seal of this VatInvoiceResult.
         :type supervision_seal: list[str]
@@ -614,7 +621,7 @@ class VatInvoiceResult:
     def print_code(self):
         """Gets the print_code of this VatInvoiceResult.
 
-        机打代码。当“advanced_mode”设置为“true”时才返回。 
+        机打代码。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The print_code of this VatInvoiceResult.
         :rtype: str
@@ -625,7 +632,7 @@ class VatInvoiceResult:
     def print_code(self, print_code):
         """Sets the print_code of this VatInvoiceResult.
 
-        机打代码。当“advanced_mode”设置为“true”时才返回。 
+        机打代码。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param print_code: The print_code of this VatInvoiceResult.
         :type print_code: str
@@ -636,7 +643,7 @@ class VatInvoiceResult:
     def machine_number(self):
         """Gets the machine_number of this VatInvoiceResult.
 
-        机器编号。 当“advanced_mode”设置为“true”时才返回。 
+        机器编号。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The machine_number of this VatInvoiceResult.
         :rtype: str
@@ -647,7 +654,7 @@ class VatInvoiceResult:
     def machine_number(self, machine_number):
         """Sets the machine_number of this VatInvoiceResult.
 
-        机器编号。 当“advanced_mode”设置为“true”时才返回。 
+        机器编号。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param machine_number: The machine_number of this VatInvoiceResult.
         :type machine_number: str
@@ -658,7 +665,7 @@ class VatInvoiceResult:
     def print_number(self):
         """Gets the print_number of this VatInvoiceResult.
 
-        机打号码。 当“advanced_mode”设置为“true”时才返回 
+        机打号码。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The print_number of this VatInvoiceResult.
         :rtype: str
@@ -669,7 +676,7 @@ class VatInvoiceResult:
     def print_number(self, print_number):
         """Sets the print_number of this VatInvoiceResult.
 
-        机打号码。 当“advanced_mode”设置为“true”时才返回 
+        机打号码。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param print_number: The print_number of this VatInvoiceResult.
         :type print_number: str
@@ -1010,7 +1017,7 @@ class VatInvoiceResult:
     def total_in_words(self):
         """Gets the total_in_words of this VatInvoiceResult.
 
-        价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+        价税合计（大写）。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The total_in_words of this VatInvoiceResult.
         :rtype: str
@@ -1021,7 +1028,7 @@ class VatInvoiceResult:
     def total_in_words(self, total_in_words):
         """Sets the total_in_words of this VatInvoiceResult.
 
-        价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+        价税合计（大写）。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param total_in_words: The total_in_words of this VatInvoiceResult.
         :type total_in_words: str
@@ -1032,7 +1039,7 @@ class VatInvoiceResult:
     def remarks(self):
         """Gets the remarks of this VatInvoiceResult.
 
-        备注。 当“advanced_mode”设置为“true”时才返回。 
+        备注。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The remarks of this VatInvoiceResult.
         :rtype: str
@@ -1043,7 +1050,7 @@ class VatInvoiceResult:
     def remarks(self, remarks):
         """Sets the remarks of this VatInvoiceResult.
 
-        备注。 当“advanced_mode”设置为“true”时才返回。 
+        备注。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param remarks: The remarks of this VatInvoiceResult.
         :type remarks: str
@@ -1054,7 +1061,7 @@ class VatInvoiceResult:
     def receiver(self):
         """Gets the receiver of this VatInvoiceResult.
 
-        收款人。 当“advanced_mode”设置为“true”时才返回。 
+        收款人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The receiver of this VatInvoiceResult.
         :rtype: str
@@ -1065,7 +1072,7 @@ class VatInvoiceResult:
     def receiver(self, receiver):
         """Sets the receiver of this VatInvoiceResult.
 
-        收款人。 当“advanced_mode”设置为“true”时才返回。 
+        收款人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param receiver: The receiver of this VatInvoiceResult.
         :type receiver: str
@@ -1076,7 +1083,7 @@ class VatInvoiceResult:
     def reviewer(self):
         """Gets the reviewer of this VatInvoiceResult.
 
-        复核。 当“advanced_mode”设置为“true”时才返回。 
+        复核。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The reviewer of this VatInvoiceResult.
         :rtype: str
@@ -1087,7 +1094,7 @@ class VatInvoiceResult:
     def reviewer(self, reviewer):
         """Sets the reviewer of this VatInvoiceResult.
 
-        复核。 当“advanced_mode”设置为“true”时才返回。 
+        复核。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param reviewer: The reviewer of this VatInvoiceResult.
         :type reviewer: str
@@ -1098,7 +1105,7 @@ class VatInvoiceResult:
     def issuer(self):
         """Gets the issuer of this VatInvoiceResult.
 
-        开票人。 当“advanced_mode”设置为“true”时才返回。 
+        开票人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The issuer of this VatInvoiceResult.
         :rtype: str
@@ -1109,7 +1116,7 @@ class VatInvoiceResult:
     def issuer(self, issuer):
         """Sets the issuer of this VatInvoiceResult.
 
-        开票人。 当“advanced_mode”设置为“true”时才返回。 
+        开票人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param issuer: The issuer of this VatInvoiceResult.
         :type issuer: str
@@ -1120,7 +1127,7 @@ class VatInvoiceResult:
     def seller_seal(self):
         """Gets the seller_seal of this VatInvoiceResult.
 
-        销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+        销售方发票专用章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :return: The seller_seal of this VatInvoiceResult.
         :rtype: list[str]
@@ -1131,7 +1138,7 @@ class VatInvoiceResult:
     def seller_seal(self, seller_seal):
         """Sets the seller_seal of this VatInvoiceResult.
 
-        销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+        销售方发票专用章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
         :param seller_seal: The seller_seal of this VatInvoiceResult.
         :type seller_seal: list[str]
@@ -1230,7 +1237,7 @@ class VatInvoiceResult:
     def text_location(self):
         """Gets the text_location of this VatInvoiceResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\"return_text_location\"设置为“true”时才返回。 
 
         :return: The text_location of this VatInvoiceResult.
         :rtype: object
@@ -1241,7 +1248,7 @@ class VatInvoiceResult:
     def text_location(self, text_location):
         """Sets the text_location of this VatInvoiceResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\"return_text_location\"设置为“true”时才返回。 
 
         :param text_location: The text_location of this VatInvoiceResult.
         :type text_location: object
@@ -1599,6 +1606,28 @@ class VatInvoiceResult:
         :type belong_item_list: list[:class:`huaweicloudsdkocr.v1.BelongItemList`]
         """
         self._belong_item_list = belong_item_list
+
+    @property
+    def passenger_travel_item_list(self):
+        """Gets the passenger_travel_item_list of this VatInvoiceResult.
+
+        旅客运输服务的出行信息列表。 当传入图片为旅客运输服务发票时返回此字段。 
+
+        :return: The passenger_travel_item_list of this VatInvoiceResult.
+        :rtype: list[:class:`huaweicloudsdkocr.v1.PassengerTravelItemList`]
+        """
+        return self._passenger_travel_item_list
+
+    @passenger_travel_item_list.setter
+    def passenger_travel_item_list(self, passenger_travel_item_list):
+        """Sets the passenger_travel_item_list of this VatInvoiceResult.
+
+        旅客运输服务的出行信息列表。 当传入图片为旅客运输服务发票时返回此字段。 
+
+        :param passenger_travel_item_list: The passenger_travel_item_list of this VatInvoiceResult.
+        :type passenger_travel_item_list: list[:class:`huaweicloudsdkocr.v1.PassengerTravelItemList`]
+        """
+        self._passenger_travel_item_list = passenger_travel_item_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

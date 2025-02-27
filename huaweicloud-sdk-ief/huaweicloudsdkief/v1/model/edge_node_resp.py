@@ -139,7 +139,7 @@ class EdgeNodeResp:
 
         :param id: 边缘节点ID
         :type id: str
-        :param name: 边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
+        :param name: 边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
         :type name: str
         :param description: 边缘节点描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
         :type description: str
@@ -179,7 +179,7 @@ class EdgeNodeResp:
         :type deployment_num: int
         :param enable_gpu: 边缘节点是否开启GPU，默认为false
         :type enable_gpu: bool
-        :param log_configs: 边缘节点日志配置
+        :param log_configs: 边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
         :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         :param device_infos: 关联设备信息
         :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
@@ -199,7 +199,7 @@ class EdgeNodeResp:
         :type device_num: int
         :param enable_npu: 边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
         :type enable_npu: bool
-        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
         :type npu_type: str
         :param nics: 节点网卡和对应IP地址信息
         :type nics: list[:class:`huaweicloudsdkief.v1.Nics`]
@@ -394,7 +394,7 @@ class EdgeNodeResp:
     def name(self):
         """Gets the name of this EdgeNodeResp.
 
-        边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
+        边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
         :return: The name of this EdgeNodeResp.
         :rtype: str
@@ -405,7 +405,7 @@ class EdgeNodeResp:
     def name(self, name):
         """Sets the name of this EdgeNodeResp.
 
-        边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
+        边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
         :param name: The name of this EdgeNodeResp.
         :type name: str
@@ -834,7 +834,7 @@ class EdgeNodeResp:
     def log_configs(self):
         """Gets the log_configs of this EdgeNodeResp.
 
-        边缘节点日志配置
+        边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
         :return: The log_configs of this EdgeNodeResp.
         :rtype: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
@@ -845,7 +845,7 @@ class EdgeNodeResp:
     def log_configs(self, log_configs):
         """Sets the log_configs of this EdgeNodeResp.
 
-        边缘节点日志配置
+        边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
         :param log_configs: The log_configs of this EdgeNodeResp.
         :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
@@ -1054,7 +1054,7 @@ class EdgeNodeResp:
     def npu_type(self):
         """Gets the npu_type of this EdgeNodeResp.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 
         :return: The npu_type of this EdgeNodeResp.
         :rtype: str
@@ -1065,7 +1065,7 @@ class EdgeNodeResp:
     def npu_type(self, npu_type):
         """Sets the npu_type of this EdgeNodeResp.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 
         :param npu_type: The npu_type of this EdgeNodeResp.
         :type npu_type: str

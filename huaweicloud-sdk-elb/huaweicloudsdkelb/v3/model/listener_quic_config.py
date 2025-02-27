@@ -31,9 +31,9 @@ class ListenerQuicConfig:
 
         The model defined in huaweicloud sdk
 
-        :param quic_listener_id: 参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param quic_listener_id: 参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type quic_listener_id: str
-        :param enable_quic_upgrade: 参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - flase：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param enable_quic_upgrade: 参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - false：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type enable_quic_upgrade: bool
         """
         
@@ -52,7 +52,7 @@ class ListenerQuicConfig:
     def quic_listener_id(self):
         """Gets the quic_listener_id of this ListenerQuicConfig.
 
-        参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :return: The quic_listener_id of this ListenerQuicConfig.
         :rtype: str
@@ -63,7 +63,7 @@ class ListenerQuicConfig:
     def quic_listener_id(self, quic_listener_id):
         """Sets the quic_listener_id of this ListenerQuicConfig.
 
-        参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :param quic_listener_id: The quic_listener_id of this ListenerQuicConfig.
         :type quic_listener_id: str
@@ -74,7 +74,7 @@ class ListenerQuicConfig:
     def enable_quic_upgrade(self):
         """Gets the enable_quic_upgrade of this ListenerQuicConfig.
 
-        参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - flase：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - false：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :return: The enable_quic_upgrade of this ListenerQuicConfig.
         :rtype: bool
@@ -85,7 +85,7 @@ class ListenerQuicConfig:
     def enable_quic_upgrade(self, enable_quic_upgrade):
         """Sets the enable_quic_upgrade of this ListenerQuicConfig.
 
-        参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - flase：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        参数解释：QUIC升级的开启状态。开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - false：关闭QUIC升级。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :param enable_quic_upgrade: The enable_quic_upgrade of this ListenerQuicConfig.
         :type enable_quic_upgrade: bool

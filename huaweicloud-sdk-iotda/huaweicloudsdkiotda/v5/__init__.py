@@ -57,6 +57,9 @@ from huaweicloudsdkiotda.v5.model.bridge_response import BridgeResponse
 from huaweicloudsdkiotda.v5.model.broadcast_message_request import BroadcastMessageRequest
 from huaweicloudsdkiotda.v5.model.broadcast_message_response import BroadcastMessageResponse
 from huaweicloudsdkiotda.v5.model.certificates_rsp_dto import CertificatesRspDTO
+from huaweicloudsdkiotda.v5.model.change_gateway import ChangeGateway
+from huaweicloudsdkiotda.v5.model.change_gateway_request import ChangeGatewayRequest
+from huaweicloudsdkiotda.v5.model.change_gateway_response import ChangeGatewayResponse
 from huaweicloudsdkiotda.v5.model.change_rule_status_request import ChangeRuleStatusRequest
 from huaweicloudsdkiotda.v5.model.change_rule_status_response import ChangeRuleStatusResponse
 from huaweicloudsdkiotda.v5.model.channel_detail import ChannelDetail

@@ -45,7 +45,7 @@ class CreateIpGroupOption:
         :type name: str
         :param ip_list: 参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
-        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         """
         
@@ -160,7 +160,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this CreateIpGroupOption.
         :rtype: str
@@ -171,7 +171,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateIpGroupOption.
         :type enterprise_project_id: str

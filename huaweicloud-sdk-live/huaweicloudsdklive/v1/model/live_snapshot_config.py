@@ -24,7 +24,9 @@ class LiveSnapshotConfig:
         'object_write_mode': 'int',
         'obs_location': 'ObsFileAddr',
         'call_back_enable': 'str',
-        'call_back_url': 'str'
+        'call_back_url': 'str',
+        'image_access_protocol': 'str',
+        'image_access_domain': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class LiveSnapshotConfig:
         'object_write_mode': 'object_write_mode',
         'obs_location': 'obs_location',
         'call_back_enable': 'call_back_enable',
-        'call_back_url': 'call_back_url'
+        'call_back_url': 'call_back_url',
+        'image_access_protocol': 'image_access_protocol',
+        'image_access_domain': 'image_access_domain'
     }
 
-    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None):
+    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_access_protocol=None, image_access_domain=None):
         """LiveSnapshotConfig
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class LiveSnapshotConfig:
         :type call_back_enable: str
         :param call_back_url: 通知服务器地址，必须是合法的URL且携带协议，协议支持http和https。截图完成后直播服务会向此地址推送截图状态信息。
         :type call_back_url: str
+        :param image_access_protocol: 截图存储文件访问协议， 仅支持http、https格式
+        :type image_access_protocol: str
+        :param image_access_domain: 截图存储文件访问域名
+        :type image_access_domain: str
         """
         
         
@@ -71,6 +79,8 @@ class LiveSnapshotConfig:
         self._obs_location = None
         self._call_back_enable = None
         self._call_back_url = None
+        self._image_access_protocol = None
+        self._image_access_domain = None
         self.discriminator = None
 
         self.domain = domain
@@ -84,6 +94,10 @@ class LiveSnapshotConfig:
             self.call_back_enable = call_back_enable
         if call_back_url is not None:
             self.call_back_url = call_back_url
+        if image_access_protocol is not None:
+            self.image_access_protocol = image_access_protocol
+        if image_access_domain is not None:
+            self.image_access_domain = image_access_domain
 
     @property
     def domain(self):
@@ -256,6 +270,50 @@ class LiveSnapshotConfig:
         :type call_back_url: str
         """
         self._call_back_url = call_back_url
+
+    @property
+    def image_access_protocol(self):
+        """Gets the image_access_protocol of this LiveSnapshotConfig.
+
+        截图存储文件访问协议， 仅支持http、https格式
+
+        :return: The image_access_protocol of this LiveSnapshotConfig.
+        :rtype: str
+        """
+        return self._image_access_protocol
+
+    @image_access_protocol.setter
+    def image_access_protocol(self, image_access_protocol):
+        """Sets the image_access_protocol of this LiveSnapshotConfig.
+
+        截图存储文件访问协议， 仅支持http、https格式
+
+        :param image_access_protocol: The image_access_protocol of this LiveSnapshotConfig.
+        :type image_access_protocol: str
+        """
+        self._image_access_protocol = image_access_protocol
+
+    @property
+    def image_access_domain(self):
+        """Gets the image_access_domain of this LiveSnapshotConfig.
+
+        截图存储文件访问域名
+
+        :return: The image_access_domain of this LiveSnapshotConfig.
+        :rtype: str
+        """
+        return self._image_access_domain
+
+    @image_access_domain.setter
+    def image_access_domain(self, image_access_domain):
+        """Sets the image_access_domain of this LiveSnapshotConfig.
+
+        截图存储文件访问域名
+
+        :param image_access_domain: The image_access_domain of this LiveSnapshotConfig.
+        :type image_access_domain: str
+        """
+        self._image_access_domain = image_access_domain
 
     def to_dict(self):
         """Returns the model properties as a dict"""

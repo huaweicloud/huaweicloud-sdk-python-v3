@@ -101,7 +101,7 @@ class ContainerResp:
         :type container_id: str
         :param state: 容器状态
         :type state: str
-        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -553,7 +553,7 @@ class ContainerResp:
     def npu_type(self):
         """Gets the npu_type of this ContainerResp.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :return: The npu_type of this ContainerResp.
         :rtype: str
@@ -564,7 +564,7 @@ class ContainerResp:
     def npu_type(self, npu_type):
         """Sets the npu_type of this ContainerResp.
 
-        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this ContainerResp.
         :type npu_type: str

@@ -262,11 +262,13 @@ from huaweicloudsdkbss.v2.model.reclaim_sub_enterprise_amount_response import Re
 from huaweicloudsdkbss.v2.model.reclaim_to_partner_account_balances_req import ReclaimToPartnerAccountBalancesReq
 from huaweicloudsdkbss.v2.model.reclaim_to_partner_account_request import ReclaimToPartnerAccountRequest
 from huaweicloudsdkbss.v2.model.reclaim_to_partner_account_response import ReclaimToPartnerAccountResponse
+from huaweicloudsdkbss.v2.model.relation_info import RelationInfo
 from huaweicloudsdkbss.v2.model.renew_inquiry_result_info import RenewInquiryResultInfo
 from huaweicloudsdkbss.v2.model.renewal_resources_req import RenewalResourcesReq
 from huaweicloudsdkbss.v2.model.renewal_resources_request import RenewalResourcesRequest
 from huaweicloudsdkbss.v2.model.renewal_resources_response import RenewalResourcesResponse
 from huaweicloudsdkbss.v2.model.res_fee_record_v2 import ResFeeRecordV2
+from huaweicloudsdkbss.v2.model.res_relation import ResRelation
 from huaweicloudsdkbss.v2.model.resource_basic_info import ResourceBasicInfo
 from huaweicloudsdkbss.v2.model.resource_types import ResourceTypes
 from huaweicloudsdkbss.v2.model.retrieve_amount_info_v2 import RetrieveAmountInfoV2

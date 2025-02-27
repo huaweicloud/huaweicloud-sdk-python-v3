@@ -95,7 +95,7 @@ class CertificateInfo:
         :type scm_certificate_id: str
         :param common_name: 证书绑定的主域名。
         :type common_name: str
-        :param fingerprint: 证书指纹
+        :param fingerprint: 证书指纹。
         :type fingerprint: str
         :param subject_alternative_names: 证书绑定的所有域名。
         :type subject_alternative_names: list[str]
@@ -504,7 +504,7 @@ class CertificateInfo:
     def fingerprint(self):
         """Gets the fingerprint of this CertificateInfo.
 
-        证书指纹
+        证书指纹。
 
         :return: The fingerprint of this CertificateInfo.
         :rtype: str
@@ -515,7 +515,7 @@ class CertificateInfo:
     def fingerprint(self, fingerprint):
         """Sets the fingerprint of this CertificateInfo.
 
-        证书指纹
+        证书指纹。
 
         :param fingerprint: The fingerprint of this CertificateInfo.
         :type fingerprint: str

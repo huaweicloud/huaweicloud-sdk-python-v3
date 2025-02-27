@@ -31,7 +31,7 @@ class IpInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ip: 参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param ip: 参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
         :type ip: str
         :param description: 参数解释：IP地址组中ip的备注信息。
         :type description: str
@@ -50,7 +50,7 @@ class IpInfo:
     def ip(self):
         """Gets the ip of this IpInfo.
 
-        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :return: The ip of this IpInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class IpInfo:
     def ip(self, ip):
         """Sets the ip of this IpInfo.
 
-        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :param ip: The ip of this IpInfo.
         :type ip: str

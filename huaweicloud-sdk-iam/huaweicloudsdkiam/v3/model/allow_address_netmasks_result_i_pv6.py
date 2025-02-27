@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class EdgeGroupCertListResp:
+class AllowAddressNetmasksResultIPv6:
 
     """
     Attributes:
@@ -17,80 +17,79 @@ class EdgeGroupCertListResp:
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'groupcerts': 'list[EdgeGroupCert]'
+        'address_netmask': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
-        'count': 'count',
-        'groupcerts': 'groupcerts'
+        'address_netmask': 'address_netmask',
+        'description': 'description'
     }
 
-    def __init__(self, count=None, groupcerts=None):
-        """EdgeGroupCertListResp
+    def __init__(self, address_netmask=None, description=None):
+        """AllowAddressNetmasksResultIPv6
 
         The model defined in huaweicloud sdk
 
-        :param count: 边缘节点组证书数目
-        :type count: int
-        :param groupcerts: 边缘节点证书详情
-        :type groupcerts: list[:class:`huaweicloudsdkief.v1.EdgeGroupCert`]
+        :param address_netmask: IPv6地址或网段，例如： 0000:0000:0000:0000:0000:0000:0000:0000/126。
+        :type address_netmask: str
+        :param description: 描述信息。
+        :type description: str
         """
         
         
 
-        self._count = None
-        self._groupcerts = None
+        self._address_netmask = None
+        self._description = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
-        if groupcerts is not None:
-            self.groupcerts = groupcerts
+        self.address_netmask = address_netmask
+        if description is not None:
+            self.description = description
 
     @property
-    def count(self):
-        """Gets the count of this EdgeGroupCertListResp.
+    def address_netmask(self):
+        """Gets the address_netmask of this AllowAddressNetmasksResultIPv6.
 
-        边缘节点组证书数目
+        IPv6地址或网段，例如： 0000:0000:0000:0000:0000:0000:0000:0000/126。
 
-        :return: The count of this EdgeGroupCertListResp.
-        :rtype: int
+        :return: The address_netmask of this AllowAddressNetmasksResultIPv6.
+        :rtype: str
         """
-        return self._count
+        return self._address_netmask
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this EdgeGroupCertListResp.
+    @address_netmask.setter
+    def address_netmask(self, address_netmask):
+        """Sets the address_netmask of this AllowAddressNetmasksResultIPv6.
 
-        边缘节点组证书数目
+        IPv6地址或网段，例如： 0000:0000:0000:0000:0000:0000:0000:0000/126。
 
-        :param count: The count of this EdgeGroupCertListResp.
-        :type count: int
+        :param address_netmask: The address_netmask of this AllowAddressNetmasksResultIPv6.
+        :type address_netmask: str
         """
-        self._count = count
+        self._address_netmask = address_netmask
 
     @property
-    def groupcerts(self):
-        """Gets the groupcerts of this EdgeGroupCertListResp.
+    def description(self):
+        """Gets the description of this AllowAddressNetmasksResultIPv6.
 
-        边缘节点证书详情
+        描述信息。
 
-        :return: The groupcerts of this EdgeGroupCertListResp.
-        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeGroupCert`]
+        :return: The description of this AllowAddressNetmasksResultIPv6.
+        :rtype: str
         """
-        return self._groupcerts
+        return self._description
 
-    @groupcerts.setter
-    def groupcerts(self, groupcerts):
-        """Sets the groupcerts of this EdgeGroupCertListResp.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this AllowAddressNetmasksResultIPv6.
 
-        边缘节点证书详情
+        描述信息。
 
-        :param groupcerts: The groupcerts of this EdgeGroupCertListResp.
-        :type groupcerts: list[:class:`huaweicloudsdkief.v1.EdgeGroupCert`]
+        :param description: The description of this AllowAddressNetmasksResultIPv6.
+        :type description: str
         """
-        self._groupcerts = groupcerts
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +133,7 @@ class EdgeGroupCertListResp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EdgeGroupCertListResp):
+        if not isinstance(other, AllowAddressNetmasksResultIPv6):
             return False
 
         return self.__dict__ == other.__dict__

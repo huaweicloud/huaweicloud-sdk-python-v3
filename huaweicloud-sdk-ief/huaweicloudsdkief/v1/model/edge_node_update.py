@@ -37,9 +37,9 @@ class EdgeNodeUpdate:
 
         :param description: 边缘节点描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
         :type description: str
-        :param log_configs: 边缘节点日志配置
+        :param log_configs: 边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
         :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
-        :param ntp_servers: NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
+        :param ntp_servers: NTP服务器地址，每个节点最多仅能配置两个。
         :type ntp_servers: list[str]
         :param attributes: 边缘节点属性，关联属性个数最多为32个
         :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
@@ -88,7 +88,7 @@ class EdgeNodeUpdate:
     def log_configs(self):
         """Gets the log_configs of this EdgeNodeUpdate.
 
-        边缘节点日志配置
+        边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
         :return: The log_configs of this EdgeNodeUpdate.
         :rtype: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
@@ -99,7 +99,7 @@ class EdgeNodeUpdate:
     def log_configs(self, log_configs):
         """Sets the log_configs of this EdgeNodeUpdate.
 
-        边缘节点日志配置
+        边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
         :param log_configs: The log_configs of this EdgeNodeUpdate.
         :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
@@ -110,7 +110,7 @@ class EdgeNodeUpdate:
     def ntp_servers(self):
         """Gets the ntp_servers of this EdgeNodeUpdate.
 
-        NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
+        NTP服务器地址，每个节点最多仅能配置两个。
 
         :return: The ntp_servers of this EdgeNodeUpdate.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class EdgeNodeUpdate:
     def ntp_servers(self, ntp_servers):
         """Sets the ntp_servers of this EdgeNodeUpdate.
 
-        NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
+        NTP服务器地址，每个节点最多仅能配置两个。
 
         :param ntp_servers: The ntp_servers of this EdgeNodeUpdate.
         :type ntp_servers: list[str]

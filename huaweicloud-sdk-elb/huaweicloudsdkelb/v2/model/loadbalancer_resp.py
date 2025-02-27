@@ -113,7 +113,7 @@ class LoadbalancerResp:
         :type tags: list[str]
         :param publicips: 负载均衡器绑定的公网IP。只支持绑定一个公网IP。
         :type publicips: list[:class:`huaweicloudsdkelb.v2.PublicIpInfo`]
-        :param charge_mode: 收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
+        :param charge_mode: 收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，按预付费收费。
         :type charge_mode: str
         :param billing_info: 资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
         :type billing_info: str
@@ -603,7 +603,7 @@ class LoadbalancerResp:
     def charge_mode(self):
         """Gets the charge_mode of this LoadbalancerResp.
 
-        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，按预付费收费。
 
         :return: The charge_mode of this LoadbalancerResp.
         :rtype: str
@@ -614,7 +614,7 @@ class LoadbalancerResp:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this LoadbalancerResp.
 
-        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，按预付费收费。
 
         :param charge_mode: The charge_mode of this LoadbalancerResp.
         :type charge_mode: str

@@ -18,20 +18,80 @@ class DeleteDeploymentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'error_code': 'str',
+        'error_msg': 'str'
     }
 
     attribute_map = {
+        'error_code': 'error_code',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self):
+    def __init__(self, error_code=None, error_msg=None):
         """DeleteDeploymentResponse
 
         The model defined in huaweicloud sdk
 
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误描述信息
+        :type error_msg: str
         """
         
         super(DeleteDeploymentResponse, self).__init__()
+
+        self._error_code = None
+        self._error_msg = None
         self.discriminator = None
+
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this DeleteDeploymentResponse.
+
+        错误码
+
+        :return: The error_code of this DeleteDeploymentResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this DeleteDeploymentResponse.
+
+        错误码
+
+        :param error_code: The error_code of this DeleteDeploymentResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this DeleteDeploymentResponse.
+
+        错误描述信息
+
+        :return: The error_msg of this DeleteDeploymentResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this DeleteDeploymentResponse.
+
+        错误描述信息
+
+        :param error_msg: The error_msg of this DeleteDeploymentResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

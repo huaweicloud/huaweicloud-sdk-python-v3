@@ -4039,6 +4039,12 @@ class ElbAsyncClient(Client):
             query_params.append(('private_key', local_var_params['private_key']))
         if 'certificate' in local_var_params:
             query_params.append(('certificate', local_var_params['certificate']))
+        if 'source' in local_var_params:
+            query_params.append(('source', local_var_params['source']))
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+        if 'protection_reason' in local_var_params:
+            query_params.append(('protection_reason', local_var_params['protection_reason']))
 
         header_params = {}
 

@@ -39,7 +39,7 @@ class Error:
 
         :param detail: 错误详情
         :type detail: str
-        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :param ief_instance_id: [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
         :type ief_instance_id: str
         :param project_id: 项目ID
         :type project_id: str
@@ -90,7 +90,7 @@ class Error:
     def ief_instance_id(self):
         """Gets the ief_instance_id of this Error.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :return: The ief_instance_id of this Error.
         :rtype: str
@@ -101,7 +101,7 @@ class Error:
     def ief_instance_id(self, ief_instance_id):
         """Sets the ief_instance_id of this Error.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :param ief_instance_id: The ief_instance_id of this Error.
         :type ief_instance_id: str

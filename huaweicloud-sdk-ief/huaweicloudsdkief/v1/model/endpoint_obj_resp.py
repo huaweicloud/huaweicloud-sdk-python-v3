@@ -53,11 +53,11 @@ class EndpointObjResp:
         :type description: str
         :param id: 端点ID
         :type id: str
-        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :param ief_instance_id: [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
         :type ief_instance_id: str
         :param is_shared: 是否共享
         :type is_shared: bool
-        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
         :type name: str
         :param project_id: 项目ID
         :type project_id: str
@@ -164,7 +164,7 @@ class EndpointObjResp:
     def ief_instance_id(self):
         """Gets the ief_instance_id of this EndpointObjResp.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :return: The ief_instance_id of this EndpointObjResp.
         :rtype: str
@@ -175,7 +175,7 @@ class EndpointObjResp:
     def ief_instance_id(self, ief_instance_id):
         """Sets the ief_instance_id of this EndpointObjResp.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :param ief_instance_id: The ief_instance_id of this EndpointObjResp.
         :type ief_instance_id: str
@@ -208,7 +208,7 @@ class EndpointObjResp:
     def name(self):
         """Gets the name of this EndpointObjResp.
 
-        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
         :return: The name of this EndpointObjResp.
         :rtype: str
@@ -219,7 +219,7 @@ class EndpointObjResp:
     def name(self, name):
         """Sets the name of this EndpointObjResp.
 
-        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
         :param name: The name of this EndpointObjResp.
         :type name: str

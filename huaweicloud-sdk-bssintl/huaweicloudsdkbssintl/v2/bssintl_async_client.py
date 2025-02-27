@@ -1197,6 +1197,81 @@ class BssintlAsyncClient(Client):
 
         return http_info
 
+    def list_enterprise_sub_customers_async(self, request):
+        """查询企业子账号列表
+
+        企业主账号在自建平台查询企业子账号信息列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEnterpriseSubCustomers
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListEnterpriseSubCustomersRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListEnterpriseSubCustomersResponse`
+        """
+        http_info = self._list_enterprise_sub_customers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_enterprise_sub_customers_async_invoker(self, request):
+        http_info = self._list_enterprise_sub_customers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_sub_customers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/sub-customers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseSubCustomersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sub_customer_account_name' in local_var_params:
+            query_params.append(('sub_customer_account_name', local_var_params['sub_customer_account_name']))
+        if 'sub_customer_display_name' in local_var_params:
+            query_params.append(('sub_customer_display_name', local_var_params['sub_customer_display_name']))
+        if 'fuzzy_query' in local_var_params:
+            query_params.append(('fuzzy_query', local_var_params['fuzzy_query']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'org_id' in local_var_params:
+            query_params.append(('org_id', local_var_params['org_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_free_resource_infos_async(self, request):
         """查询资源包列表
 

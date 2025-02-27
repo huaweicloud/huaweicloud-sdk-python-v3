@@ -37,7 +37,7 @@ class EventCreateDetail:
 
         The model defined in huaweicloud sdk
 
-        :param name: 系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        :param name: 系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
         :type name: str
         :param description: 描述。最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
         :type description: str
@@ -73,7 +73,7 @@ class EventCreateDetail:
     def name(self):
         """Gets the name of this EventCreateDetail.
 
-        系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
         :return: The name of this EventCreateDetail.
         :rtype: str
@@ -84,7 +84,7 @@ class EventCreateDetail:
     def name(self, name):
         """Sets the name of this EventCreateDetail.
 
-        系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
         :param name: The name of this EventCreateDetail.
         :type name: str

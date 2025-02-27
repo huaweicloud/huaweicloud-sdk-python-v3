@@ -22,7 +22,10 @@ class UpdateCertificateRequestBody:
         'description': 'str',
         'domain': 'str',
         'name': 'str',
-        'admin_state_up': 'bool'
+        'admin_state_up': 'bool',
+        'source': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class UpdateCertificateRequestBody:
         'description': 'description',
         'domain': 'domain',
         'name': 'name',
-        'admin_state_up': 'admin_state_up'
+        'admin_state_up': 'admin_state_up',
+        'source': 'source',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None):
+    def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None, source=None, protection_status=None, protection_reason=None):
         """UpdateCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class UpdateCertificateRequestBody:
         :type name: str
         :param admin_state_up: SSL证书的管理状态；  取值范围： true/false。  该字段为预留字段，暂未启用。只支持设定为true。
         :type admin_state_up: bool
+        :param source: 参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+        :type source: str
+        :param protection_status: 参数解释： 修改保护状态  约束限制： 无  取值范围： - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
+        :type protection_status: str
+        :param protection_reason: 参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
+        :type protection_reason: str
         """
         
         
@@ -61,6 +73,9 @@ class UpdateCertificateRequestBody:
         self._domain = None
         self._name = None
         self._admin_state_up = None
+        self._source = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if certificate is not None:
@@ -75,6 +90,12 @@ class UpdateCertificateRequestBody:
             self.name = name
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if source is not None:
+            self.source = source
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def certificate(self):
@@ -207,6 +228,72 @@ class UpdateCertificateRequestBody:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def source(self):
+        """Gets the source of this UpdateCertificateRequestBody.
+
+        参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :return: The source of this UpdateCertificateRequestBody.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this UpdateCertificateRequestBody.
+
+        参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :param source: The source of this UpdateCertificateRequestBody.
+        :type source: str
+        """
+        self._source = source
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this UpdateCertificateRequestBody.
+
+        参数解释： 修改保护状态  约束限制： 无  取值范围： - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
+
+        :return: The protection_status of this UpdateCertificateRequestBody.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this UpdateCertificateRequestBody.
+
+        参数解释： 修改保护状态  约束限制： 无  取值范围： - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
+
+        :param protection_status: The protection_status of this UpdateCertificateRequestBody.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this UpdateCertificateRequestBody.
+
+        参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
+
+        :return: The protection_reason of this UpdateCertificateRequestBody.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this UpdateCertificateRequestBody.
+
+        参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
+
+        :param protection_reason: The protection_reason of this UpdateCertificateRequestBody.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

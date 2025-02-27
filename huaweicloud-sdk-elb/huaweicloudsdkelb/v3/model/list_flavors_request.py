@@ -67,9 +67,9 @@ class ListFlavorsRequest:
         :type public_border_group: list[str]
         :param category: 站点category。  支持多值查询，查询条件格式：*category&#x3D;xxx&amp;category&#x3D;xxx*。
         :type category: list[int]
-        :param list_all: 设置list_all&#x3D;true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7__elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        :param list_all: 设置list_all&#x3D;true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
         :type list_all: bool
-        :param flavor_sold_out: 参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,dt_test,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        :param flavor_sold_out: 参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
         :type flavor_sold_out: bool
         """
         
@@ -313,7 +313,7 @@ class ListFlavorsRequest:
     def list_all(self):
         """Gets the list_all of this ListFlavorsRequest.
 
-        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7__elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
 
         :return: The list_all of this ListFlavorsRequest.
         :rtype: bool
@@ -324,7 +324,7 @@ class ListFlavorsRequest:
     def list_all(self, list_all):
         """Sets the list_all of this ListFlavorsRequest.
 
-        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7__elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
 
         :param list_all: The list_all of this ListFlavorsRequest.
         :type list_all: bool
@@ -335,7 +335,7 @@ class ListFlavorsRequest:
     def flavor_sold_out(self):
         """Gets the flavor_sold_out of this ListFlavorsRequest.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,dt_test,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
         :return: The flavor_sold_out of this ListFlavorsRequest.
         :rtype: bool
@@ -346,7 +346,7 @@ class ListFlavorsRequest:
     def flavor_sold_out(self, flavor_sold_out):
         """Sets the flavor_sold_out of this ListFlavorsRequest.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,dt_test,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
         :param flavor_sold_out: The flavor_sold_out of this ListFlavorsRequest.
         :type flavor_sold_out: bool

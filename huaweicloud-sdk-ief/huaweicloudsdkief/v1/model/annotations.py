@@ -31,7 +31,7 @@ class Annotations:
 
         The model defined in huaweicloud sdk
 
-        :param ring_controller: 生成ranktablefile。该参数目前只支持赋值\&quot;ascend-1980\&quot;，指昇腾D910。
+        :param ring_controller: 生成ranktablefile。该参数目前只支持赋值\&quot;ascend-1980\&quot;。
         :type ring_controller: str
         :param autonomy_edge_selector: 离线自愈功能配置字段，须填写调度的节点组id
         :type autonomy_edge_selector: str
@@ -52,7 +52,7 @@ class Annotations:
     def ring_controller(self):
         """Gets the ring_controller of this Annotations.
 
-        生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"，指昇腾D910。
+        生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"。
 
         :return: The ring_controller of this Annotations.
         :rtype: str
@@ -63,7 +63,7 @@ class Annotations:
     def ring_controller(self, ring_controller):
         """Sets the ring_controller of this Annotations.
 
-        生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"，指昇腾D910。
+        生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"。
 
         :param ring_controller: The ring_controller of this Annotations.
         :type ring_controller: str

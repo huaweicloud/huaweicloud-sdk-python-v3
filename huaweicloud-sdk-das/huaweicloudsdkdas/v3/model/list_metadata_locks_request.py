@@ -41,7 +41,7 @@ class ListMetadataLocksRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param db_user_id: 数据库用户ID
+        :param db_user_id: 数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
         :type db_user_id: str
         :param thread_id: 会话ID
         :type thread_id: str
@@ -100,7 +100,7 @@ class ListMetadataLocksRequest:
     def db_user_id(self):
         """Gets the db_user_id of this ListMetadataLocksRequest.
 
-        数据库用户ID
+        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
 
         :return: The db_user_id of this ListMetadataLocksRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListMetadataLocksRequest:
     def db_user_id(self, db_user_id):
         """Sets the db_user_id of this ListMetadataLocksRequest.
 
-        数据库用户ID
+        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
 
         :param db_user_id: The db_user_id of this ListMetadataLocksRequest.
         :type db_user_id: str

@@ -31,7 +31,7 @@ class UpadateIpGroupIpOption:
 
         The model defined in huaweicloud sdk
 
-        :param ip: 参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param ip: 参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
         :type ip: str
         :param description: 参数解释：备注信息。
         :type description: str
@@ -51,7 +51,7 @@ class UpadateIpGroupIpOption:
     def ip(self):
         """Gets the ip of this UpadateIpGroupIpOption.
 
-        参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :return: The ip of this UpadateIpGroupIpOption.
         :rtype: str
@@ -62,7 +62,7 @@ class UpadateIpGroupIpOption:
     def ip(self, ip):
         """Sets the ip of this UpadateIpGroupIpOption.
 
-        参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        参数解释：IP地址或者IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。 若传入IP地址不存在，则新增；否则更新已有IP地址的描述信息。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :param ip: The ip of this UpadateIpGroupIpOption.
         :type ip: str

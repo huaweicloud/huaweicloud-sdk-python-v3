@@ -55,7 +55,7 @@ class Event:
 
         :param id: 系统订阅事件ID
         :type id: str
-        :param name: 系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        :param name: 系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
         :type name: str
         :param project_id: 系统订阅事件所属项目ID
         :type project_id: str
@@ -151,7 +151,7 @@ class Event:
     def name(self):
         """Gets the name of this Event.
 
-        系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
         :return: The name of this Event.
         :rtype: str
@@ -162,7 +162,7 @@ class Event:
     def name(self, name):
         """Sets the name of this Event.
 
-        系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个帐号中创建的系统订阅和消息规则名唯一
+        系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
         :param name: The name of this Event.
         :type name: str

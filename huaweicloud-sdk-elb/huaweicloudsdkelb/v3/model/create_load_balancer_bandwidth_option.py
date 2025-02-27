@@ -43,7 +43,7 @@ class CreateLoadBalancerBandwidthOption:
         :type name: str
         :param size: 参数解释：带宽大小。  约束限制：当id字段为null时，size是必须的。 注意，调整带宽时的最小单位会根据带宽范围不同存在差异。 - 小于等于300Mbit/s: 默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s: 默认最小单位为50Mbit/s。 - 大于1000Mbit/s: 默认最小单位为500Mbit/s。  取值范围：默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。
         :type size: int
-        :param charge_mode: 参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
+        :param charge_mode: 参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
         :type charge_mode: str
         :param share_type: 参数解释：带宽类型。  约束限制： - 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 - 该字段为WHOLE时,必须指定带宽ID。 - IPv6的EIP不支持WHOLE类型带宽。  取值范围： - PER：独享带宽。 - WHOLE：共享带宽。
         :type share_type: str
@@ -124,7 +124,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self):
         """Gets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
+        参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
 
         :return: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
+        参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
 
         :param charge_mode: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :type charge_mode: str

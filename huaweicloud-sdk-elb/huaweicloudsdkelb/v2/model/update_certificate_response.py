@@ -29,7 +29,10 @@ class UpdateCertificateResponse(SdkResponse):
         'certificate': 'str',
         'expire_time': 'str',
         'create_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'source': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -44,10 +47,13 @@ class UpdateCertificateResponse(SdkResponse):
         'certificate': 'certificate',
         'expire_time': 'expire_time',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'source': 'source',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, id=None, tenant_id=None, admin_state_up=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None, expire_time=None, create_time=None, update_time=None):
+    def __init__(self, id=None, tenant_id=None, admin_state_up=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None, expire_time=None, create_time=None, update_time=None, source=None, protection_status=None, protection_reason=None):
         """UpdateCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -76,6 +82,12 @@ class UpdateCertificateResponse(SdkResponse):
         :type create_time: str
         :param update_time: SSL证书的更新时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
         :type update_time: str
+        :param source: 参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+        :type source: str
+        :param protection_status: 参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值： nonProtection
+        :type protection_status: str
+        :param protection_reason: 参数解释： 设置修改保护的原因 约束限制： 仅当protection_status为consoleProtection时有效 取值范围： 无 默认取值： 空
+        :type protection_reason: str
         """
         
         super(UpdateCertificateResponse, self).__init__()
@@ -92,6 +104,9 @@ class UpdateCertificateResponse(SdkResponse):
         self._expire_time = None
         self._create_time = None
         self._update_time = None
+        self._source = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if id is not None:
@@ -118,6 +133,12 @@ class UpdateCertificateResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if source is not None:
+            self.source = source
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def id(self):
@@ -382,6 +403,72 @@ class UpdateCertificateResponse(SdkResponse):
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def source(self):
+        """Gets the source of this UpdateCertificateResponse.
+
+        参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :return: The source of this UpdateCertificateResponse.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this UpdateCertificateResponse.
+
+        参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :param source: The source of this UpdateCertificateResponse.
+        :type source: str
+        """
+        self._source = source
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this UpdateCertificateResponse.
+
+        参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值： nonProtection
+
+        :return: The protection_status of this UpdateCertificateResponse.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this UpdateCertificateResponse.
+
+        参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值： nonProtection
+
+        :param protection_status: The protection_status of this UpdateCertificateResponse.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this UpdateCertificateResponse.
+
+        参数解释： 设置修改保护的原因 约束限制： 仅当protection_status为consoleProtection时有效 取值范围： 无 默认取值： 空
+
+        :return: The protection_reason of this UpdateCertificateResponse.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this UpdateCertificateResponse.
+
+        参数解释： 设置修改保护的原因 约束限制： 仅当protection_status为consoleProtection时有效 取值范围： 无 默认取值： 空
+
+        :param protection_reason: The protection_reason of this UpdateCertificateResponse.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

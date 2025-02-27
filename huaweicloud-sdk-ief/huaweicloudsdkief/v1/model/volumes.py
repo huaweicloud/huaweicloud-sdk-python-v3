@@ -21,7 +21,8 @@ class Volumes:
         'type': 'str',
         'source': 'str',
         'destination': 'str',
-        'read_only': 'bool'
+        'read_only': 'bool',
+        'default_mode': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class Volumes:
         'type': 'type',
         'source': 'source',
         'destination': 'destination',
-        'read_only': 'read_only'
+        'read_only': 'read_only',
+        'default_mode': 'default_mode'
     }
 
-    def __init__(self, name=None, type=None, source=None, destination=None, read_only=None):
+    def __init__(self, name=None, type=None, source=None, destination=None, read_only=None, default_mode=None):
         """Volumes
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class Volumes:
         :type destination: str
         :param read_only: 读写权限，configMap和secret类型只支持读权限
         :type read_only: bool
+        :param default_mode: 挂载的文件权限，仅configMap和secret类型生效，填写值为十进制表示的linux文件权限，默认为420（对应权限644）
+        :type default_mode: int
         """
         
         
@@ -56,6 +60,7 @@ class Volumes:
         self._source = None
         self._destination = None
         self._read_only = None
+        self._default_mode = None
         self.discriminator = None
 
         self.name = name
@@ -64,6 +69,8 @@ class Volumes:
         self.destination = destination
         if read_only is not None:
             self.read_only = read_only
+        if default_mode is not None:
+            self.default_mode = default_mode
 
     @property
     def name(self):
@@ -174,6 +181,28 @@ class Volumes:
         :type read_only: bool
         """
         self._read_only = read_only
+
+    @property
+    def default_mode(self):
+        """Gets the default_mode of this Volumes.
+
+        挂载的文件权限，仅configMap和secret类型生效，填写值为十进制表示的linux文件权限，默认为420（对应权限644）
+
+        :return: The default_mode of this Volumes.
+        :rtype: int
+        """
+        return self._default_mode
+
+    @default_mode.setter
+    def default_mode(self, default_mode):
+        """Sets the default_mode of this Volumes.
+
+        挂载的文件权限，仅configMap和secret类型生效，填写值为十进制表示的linux文件权限，默认为420（对应权限644）
+
+        :param default_mode: The default_mode of this Volumes.
+        :type default_mode: int
+        """
+        self._default_mode = default_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

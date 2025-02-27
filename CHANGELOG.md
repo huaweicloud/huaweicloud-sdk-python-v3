@@ -1,3 +1,266 @@
+# 3.1.137 2025-02-27
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.extend_params`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListEnterpriseSubCustomers`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.extend_params`
+
+### HuaweiCloud SDK CSMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateUserPassword`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchImportSecrets**
+    - changes of request param
+      - `- total`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `CreateInstanceConnection`, `ListConnections`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListClusters**
+    - changes of request param
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCertificate**
+    - changes of response param
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **UpdateCertificate**
+    - changes of request param
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - changes of response param
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - changes of response param
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **ListCertificates**
+    - changes of request param
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - changes of response param
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+      - `+ certificates.source`
+      - `+ certificates.protection_status`
+      - `+ certificates.protection_reason`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListStarRocksDbParameters**
+    - changes of request param
+      - `+ main_task_name`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainConsoleAclPolicy**
+    - changes of response param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - changes of request param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyOption> -> object<ConsoleAclPolicyOption>`
+    - changes of response param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+
+### HuaweiCloud SDK IEF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAppVersions**
+    - changes of response param
+      - `+ versions.volumes.default_mode`
+  - **CreateAppVersions**
+    - changes of request param
+      - `+ version.volumes.default_mode`
+    - changes of response param
+      - `+ version.volumes.default_mode`
+  - **ShowAppVersionDetail**
+    - changes of response param
+      - `+ version.volumes.default_mode`
+  - **UpdateAppVersion**
+    - changes of request param
+      - `+ version.volumes.default_mode`
+    - changes of response param
+      - `+ version.volumes.default_mode`
+  - **ListPods**
+    - changes of response param
+      - `+ pods.init_containers.volumes.default_mode`
+  - **ListApps**
+    - changes of response param
+      - `+ apps.app_versions.volumes.default_mode`
+  - **CreateApp**
+    - changes of response param
+      - `+ app.app_versions.volumes.default_mode`
+  - **ShowAppDetail**
+    - changes of response param
+      - `+ app.app_versions.volumes.default_mode`
+  - **UpdateApp**
+    - changes of response param
+      - `+ app.app_versions.volumes.default_mode`
+  - **ListDeployments**
+    - changes of response param
+      - `+ deployments.template.init_containers.volumes.default_mode`
+  - **CreateDeployments**
+    - changes of request param
+      - `+ deployment.template.init_containers.volumes.default_mode`
+    - changes of response param
+      - `+ template.init_containers.volumes.default_mode`
+  - **ShowDeployment**
+    - changes of response param
+      - `+ template.init_containers.volumes.default_mode`
+  - **UpdateDeployment**
+    - changes of request param
+      - `+ deployment.template.init_containers.volumes.default_mode`
+    - changes of response param
+      - `+ template.init_containers.volumes.default_mode`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ChangeGateway`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListScheduleRecordTasks`, `CreateScheduleRecordTasks`, `DeleteScheduleRecordTasks`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSnapshotConfig**
+    - changes of request param
+      - `+ image_access_protocol`
+      - `+ image_access_domain`
+  - **CreateSnapshotConfig**
+    - changes of request param
+      - `+ image_access_protocol`
+      - `+ image_access_domain`
+  - **ListSnapshotConfigs**
+    - changes of response param
+      - `+ snapshot_config_list.image_access_protocol`
+      - `+ snapshot_config_list.image_access_domain`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeVatInvoice**
+    - changes of response param
+      - `+ result.passenger_travel_item_list`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of request param
+      - `* id: string -> list<string>`
+
 # 3.1.136 2025-02-20
 
 ### HuaweiCloud SDK CCE

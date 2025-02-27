@@ -17,20 +17,51 @@ class ListClustersRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self):
+    def __init__(self, enterprise_project_id=None):
         """ListClustersRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: 企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+        :type enterprise_project_id: str
         """
         
         
+
+        self._enterprise_project_id = None
         self.discriminator = None
+
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListClustersRequest.
+
+        企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+
+        :return: The enterprise_project_id of this ListClustersRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListClustersRequest.
+
+        企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+
+        :param enterprise_project_id: The enterprise_project_id of this ListClustersRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

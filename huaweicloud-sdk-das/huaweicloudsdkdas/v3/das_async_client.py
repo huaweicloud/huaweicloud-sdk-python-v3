@@ -32,6 +32,290 @@ class DasAsyncClient(Client):
 
         return client_builder
 
+    def cancel_share_connections_async(self, request):
+        """删除共享链接
+
+        删除共享链接，
+        用于用户删除共享链接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelShareConnections
+        :type request: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsResponse`
+        """
+        http_info = self._cancel_share_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_share_connections_async_invoker(self, request):
+        http_info = self._cancel_share_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_share_connections_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/connections/share",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelShareConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_instance_connection_async(self, request):
+        """创建实例连接
+
+        创建实例连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInstanceConnection
+        :type request: :class:`huaweicloudsdkdas.v3.CreateInstanceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateInstanceConnectionResponse`
+        """
+        http_info = self._create_instance_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instance_connection_async_invoker(self, request):
+        http_info = self._create_instance_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/create-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_share_connections_async(self, request):
+        """设置共享链接
+
+        设置共享链接，
+        用于用户添加共享链接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateShareConnections
+        :type request: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsResponse`
+        """
+        http_info = self._create_share_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_share_connections_async_invoker(self, request):
+        http_info = self._create_share_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_share_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/connections/share",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateShareConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_connections_async(self, request):
+        """查询实例连接列表
+
+        查询实例连接列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConnections
+        :type request: :class:`huaweicloudsdkdas.v3.ListConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListConnectionsResponse`
+        """
+        http_info = self._list_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_connections_async_invoker(self, request):
+        http_info = self._list_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/list-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'condition' in local_var_params:
+            query_params.append(('condition', local_var_params['condition']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'network_type' in local_var_params:
+            query_params.append(('network_type', local_var_params['network_type']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'connection_type' in local_var_params:
+            query_params.append(('connection_type', local_var_params['connection_type']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_api_versions_async(self, request):
         """查询API版本列表
 
@@ -139,74 +423,6 @@ class DasAsyncClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def cancel_share_connections_async(self, request):
-        """删除共享链接
-
-        删除共享链接，
-        用于用户删除共享链接
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CancelShareConnections
-        :type request: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsRequest`
-        :rtype: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsResponse`
-        """
-        http_info = self._cancel_share_connections_http_info(request)
-        return self._call_api(**http_info)
-
-    def cancel_share_connections_async_invoker(self, request):
-        http_info = self._cancel_share_connections_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _cancel_share_connections_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v3/{project_id}/connections/share",
-            "request_type": request.__class__.__name__,
-            "response_type": "CancelShareConnectionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -472,74 +688,6 @@ class DasAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_share_connections_async(self, request):
-        """设置共享链接
-
-        设置共享链接，
-        用于用户添加共享链接
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateShareConnections
-        :type request: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsRequest`
-        :rtype: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsResponse`
-        """
-        http_info = self._create_share_connections_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_share_connections_async_invoker(self, request):
-        http_info = self._create_share_connections_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_share_connections_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v3/{project_id}/connections/share",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateShareConnectionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
 
         query_params = []
 

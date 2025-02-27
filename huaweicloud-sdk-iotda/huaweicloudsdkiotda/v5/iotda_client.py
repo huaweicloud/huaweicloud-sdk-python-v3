@@ -3758,6 +3758,81 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def change_gateway(self, request):
+        """修改设备网关
+
+        应用服务器可调用此接口在物联网平台修改子设备网关。
+        - 只允许子设备修改网关。
+        - 目标网关必须和当前设备在同一个资源空间。
+        - 网关id不能和当前子设备网关id相同。
+        - 设备如果有下级子设备，则不允许切换网关。
+        - 支持多级子设备，当前最大支持二级子设备。
+        - 该接口仅支持创建单个设备切换网关，如需批量切换设备网关，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeGateway
+        :type request: :class:`huaweicloudsdkiotda.v5.ChangeGatewayRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ChangeGatewayResponse`
+        """
+        http_info = self._change_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_gateway_invoker(self, request):
+        http_info = self._change_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_gateway_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/change-gateway",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_device(self, request):
         """删除设备
 

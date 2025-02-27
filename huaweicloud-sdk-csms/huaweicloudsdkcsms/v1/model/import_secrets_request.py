@@ -17,34 +17,28 @@ class ImportSecretsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'secrets': 'list[CreateSecretRequestBody]',
-        'total': 'int'
+        'secrets': 'list[CreateSecretRequestBody]'
     }
 
     attribute_map = {
-        'secrets': 'secrets',
-        'total': 'total'
+        'secrets': 'secrets'
     }
 
-    def __init__(self, secrets=None, total=None):
+    def __init__(self, secrets=None):
         """ImportSecretsRequest
 
         The model defined in huaweicloud sdk
 
         :param secrets: 批量创建凭据参数
         :type secrets: list[:class:`huaweicloudsdkcsms.v1.CreateSecretRequestBody`]
-        :param total: 导入数据条数
-        :type total: int
         """
         
         
 
         self._secrets = None
-        self._total = None
         self.discriminator = None
 
         self.secrets = secrets
-        self.total = total
 
     @property
     def secrets(self):
@@ -67,28 +61,6 @@ class ImportSecretsRequest:
         :type secrets: list[:class:`huaweicloudsdkcsms.v1.CreateSecretRequestBody`]
         """
         self._secrets = secrets
-
-    @property
-    def total(self):
-        """Gets the total of this ImportSecretsRequest.
-
-        导入数据条数
-
-        :return: The total of this ImportSecretsRequest.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ImportSecretsRequest.
-
-        导入数据条数
-
-        :param total: The total of this ImportSecretsRequest.
-        :type total: int
-        """
-        self._total = total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

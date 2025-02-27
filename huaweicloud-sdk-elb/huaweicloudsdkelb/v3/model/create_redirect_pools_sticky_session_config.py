@@ -33,7 +33,7 @@ class CreateRedirectPoolsStickySessionConfig:
 
         :param enable: 参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
         :type enable: bool
-        :param timeout: 参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        :param timeout: 参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
         :type timeout: int
         """
         
@@ -74,7 +74,7 @@ class CreateRedirectPoolsStickySessionConfig:
     def timeout(self):
         """Gets the timeout of this CreateRedirectPoolsStickySessionConfig.
 
-        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The timeout of this CreateRedirectPoolsStickySessionConfig.
         :rtype: int
@@ -85,7 +85,7 @@ class CreateRedirectPoolsStickySessionConfig:
     def timeout(self, timeout):
         """Sets the timeout of this CreateRedirectPoolsStickySessionConfig.
 
-        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt,dt_test)
+        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
 
         :param timeout: The timeout of this CreateRedirectPoolsStickySessionConfig.
         :type timeout: int

@@ -31,9 +31,9 @@ class DeploymentResources:
 
         The model defined in huaweicloud sdk
 
-        :param limits: 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        :param limits: - 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu。 - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
         :type limits: dict(str, str)
-        :param requests: 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        :param requests: - 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
         :type requests: dict(str, str)
         """
         
@@ -52,7 +52,7 @@ class DeploymentResources:
     def limits(self):
         """Gets the limits of this DeploymentResources.
 
-        允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        - 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu。 - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
         :return: The limits of this DeploymentResources.
         :rtype: dict(str, str)
@@ -63,7 +63,7 @@ class DeploymentResources:
     def limits(self, limits):
         """Sets the limits of this DeploymentResources.
 
-        允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        - 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu。 - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
         :param limits: The limits of this DeploymentResources.
         :type limits: dict(str, str)
@@ -74,7 +74,7 @@ class DeploymentResources:
     def requests(self):
         """Gets the requests of this DeploymentResources.
 
-        容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        - 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
         :return: The requests of this DeploymentResources.
         :rtype: dict(str, str)
@@ -85,7 +85,7 @@ class DeploymentResources:
     def requests(self, requests):
         """Sets the requests of this DeploymentResources.
 
-        容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
+        - 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
         :param requests: The requests of this DeploymentResources.
         :type requests: dict(str, str)

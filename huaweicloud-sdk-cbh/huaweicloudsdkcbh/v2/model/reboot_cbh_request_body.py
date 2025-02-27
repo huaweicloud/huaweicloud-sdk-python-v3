@@ -17,7 +17,7 @@ class RebootCbhRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'server_id': 'object',
+        'server_id': 'str',
         'reboot_type': 'str'
     }
 
@@ -31,8 +31,8 @@ class RebootCbhRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 
-        :type server_id: object
+        :param server_id: 云堡垒机实例ID，使用UUID格式表示。
+        :type server_id: str
         :param reboot_type: 重启方式，不区分大小写。 - SOFT：普通重启，关闭虚拟机服务 - HARD：强制重启，重启虚拟机
         :type reboot_type: str
         """
@@ -50,8 +50,10 @@ class RebootCbhRequestBody:
     def server_id(self):
         """Gets the server_id of this RebootCbhRequestBody.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :return: The server_id of this RebootCbhRequestBody.
-        :rtype: object
+        :rtype: str
         """
         return self._server_id
 
@@ -59,8 +61,10 @@ class RebootCbhRequestBody:
     def server_id(self, server_id):
         """Sets the server_id of this RebootCbhRequestBody.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :param server_id: The server_id of this RebootCbhRequestBody.
-        :type server_id: object
+        :type server_id: str
         """
         self._server_id = server_id
 

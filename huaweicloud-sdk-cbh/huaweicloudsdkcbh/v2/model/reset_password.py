@@ -18,7 +18,7 @@ class ResetPassword:
 
     openapi_types = {
         'new_password': 'str',
-        'server_id': 'object'
+        'server_id': 'str'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class ResetPassword:
 
         :param new_password: admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
         :type new_password: str
-        :param server_id: 
-        :type server_id: object
+        :param server_id: 云堡垒机实例ID，使用UUID格式表示。
+        :type server_id: str
         """
         
         
@@ -72,8 +72,10 @@ class ResetPassword:
     def server_id(self):
         """Gets the server_id of this ResetPassword.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :return: The server_id of this ResetPassword.
-        :rtype: object
+        :rtype: str
         """
         return self._server_id
 
@@ -81,8 +83,10 @@ class ResetPassword:
     def server_id(self, server_id):
         """Sets the server_id of this ResetPassword.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :param server_id: The server_id of this ResetPassword.
-        :type server_id: object
+        :type server_id: str
         """
         self._server_id = server_id
 

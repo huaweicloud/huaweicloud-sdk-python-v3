@@ -89,7 +89,7 @@ class AppVersionDetail:
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
-        :param npu_type: NPU芯片类型，可填：D310，D910
+        :param npu_type: NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -462,7 +462,7 @@ class AppVersionDetail:
     def npu_type(self):
         """Gets the npu_type of this AppVersionDetail.
 
-        NPU芯片类型，可填：D310，D910
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :return: The npu_type of this AppVersionDetail.
         :rtype: str
@@ -473,7 +473,7 @@ class AppVersionDetail:
     def npu_type(self, npu_type):
         """Sets the npu_type of this AppVersionDetail.
 
-        NPU芯片类型，可填：D310，D910
+        NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this AppVersionDetail.
         :type npu_type: str

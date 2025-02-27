@@ -17,7 +17,7 @@ class ChangeInstanceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'server_id': 'object',
+        'server_id': 'str',
         'new_resource_spec_code': 'str',
         'attach_disk_size': 'int',
         'is_auto_pay': 'int'
@@ -35,8 +35,8 @@ class ChangeInstanceRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 
-        :type server_id: object
+        :param server_id: 云堡垒机实例ID，使用UUID格式表示。
+        :type server_id: str
         :param new_resource_spec_code: 待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\&quot;查询云堡垒机规格信息\&quot;获取
         :type new_resource_spec_code: str
         :param attach_disk_size: 附加磁盘大小。单位TB  &gt; 说明： 附加磁盘和规格自带磁盘大小不能超过300TB。
@@ -65,8 +65,10 @@ class ChangeInstanceRequestBody:
     def server_id(self):
         """Gets the server_id of this ChangeInstanceRequestBody.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :return: The server_id of this ChangeInstanceRequestBody.
-        :rtype: object
+        :rtype: str
         """
         return self._server_id
 
@@ -74,8 +76,10 @@ class ChangeInstanceRequestBody:
     def server_id(self, server_id):
         """Sets the server_id of this ChangeInstanceRequestBody.
 
+        云堡垒机实例ID，使用UUID格式表示。
+
         :param server_id: The server_id of this ChangeInstanceRequestBody.
-        :type server_id: object
+        :type server_id: str
         """
         self._server_id = server_id
 

@@ -1,3 +1,266 @@
+# 3.1.137 2025-02-27
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.extend_params`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListEnterpriseSubCustomers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.extend_params`
+
+### HuaweiCloud SDK CSMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateUserPassword`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchImportSecrets**
+    - 请求参数变更
+      - `- total`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`CreateInstanceConnection`、`ListConnections`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClusters**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **UpdateCertificate**
+    - 请求参数变更
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - 响应参数变更
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **CreateCertificate**
+    - 请求参数变更
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - 响应参数变更
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ source`
+      - `+ protection_status`
+      - `+ protection_reason`
+    - 响应参数变更
+      - `+ protection_status`
+      - `+ source`
+      - `+ protection_reason`
+      - `+ certificates.source`
+      - `+ certificates.protection_status`
+      - `+ certificates.protection_reason`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListStarRocksDbParameters**
+    - 请求参数变更
+      - `+ main_task_name`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainConsoleAclPolicy**
+    - 响应参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - 请求参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyOption> -> object<ConsoleAclPolicyOption>`
+    - 响应参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+
+### HuaweiCloud SDK IEF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAppVersions**
+    - 响应参数变更
+      - `+ versions.volumes.default_mode`
+  - **CreateAppVersions**
+    - 请求参数变更
+      - `+ version.volumes.default_mode`
+    - 响应参数变更
+      - `+ version.volumes.default_mode`
+  - **ShowAppVersionDetail**
+    - 响应参数变更
+      - `+ version.volumes.default_mode`
+  - **UpdateAppVersion**
+    - 请求参数变更
+      - `+ version.volumes.default_mode`
+    - 响应参数变更
+      - `+ version.volumes.default_mode`
+  - **ListPods**
+    - 响应参数变更
+      - `+ pods.init_containers.volumes.default_mode`
+  - **ListApps**
+    - 响应参数变更
+      - `+ apps.app_versions.volumes.default_mode`
+  - **CreateApp**
+    - 响应参数变更
+      - `+ app.app_versions.volumes.default_mode`
+  - **ShowAppDetail**
+    - 响应参数变更
+      - `+ app.app_versions.volumes.default_mode`
+  - **UpdateApp**
+    - 响应参数变更
+      - `+ app.app_versions.volumes.default_mode`
+  - **ListDeployments**
+    - 响应参数变更
+      - `+ deployments.template.init_containers.volumes.default_mode`
+  - **CreateDeployments**
+    - 请求参数变更
+      - `+ deployment.template.init_containers.volumes.default_mode`
+    - 响应参数变更
+      - `+ template.init_containers.volumes.default_mode`
+  - **ShowDeployment**
+    - 响应参数变更
+      - `+ template.init_containers.volumes.default_mode`
+  - **UpdateDeployment**
+    - 请求参数变更
+      - `+ deployment.template.init_containers.volumes.default_mode`
+    - 响应参数变更
+      - `+ template.init_containers.volumes.default_mode`
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ChangeGateway`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListScheduleRecordTasks`、`CreateScheduleRecordTasks`、`DeleteScheduleRecordTasks`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSnapshotConfig**
+    - 请求参数变更
+      - `+ image_access_protocol`
+      - `+ image_access_domain`
+  - **CreateSnapshotConfig**
+    - 请求参数变更
+      - `+ image_access_protocol`
+      - `+ image_access_domain`
+  - **ListSnapshotConfigs**
+    - 响应参数变更
+      - `+ snapshot_config_list.image_access_protocol`
+      - `+ snapshot_config_list.image_access_domain`
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeVatInvoice**
+    - 响应参数变更
+      - `+ result.passenger_travel_item_list`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 请求参数变更
+      - `* id: string -> list<string>`
+
 # 3.1.136 2025-02-20
 
 ### HuaweiCloud SDK CCE

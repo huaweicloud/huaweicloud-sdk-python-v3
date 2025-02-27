@@ -18,7 +18,7 @@ class ListPortsRequest:
 
     openapi_types = {
         'name': 'str',
-        'id': 'str',
+        'id': 'list[str]',
         'limit': 'int',
         'admin_state_up': 'bool',
         'network_id': 'str',
@@ -58,7 +58,7 @@ class ListPortsRequest:
         :param name: 功能说明：按照name过滤查询  取值范围：最大长度不超过255
         :type name: str
         :param id: 按照port_id过滤查询
-        :type id: str
+        :type id: list[str]
         :param limit: 每页返回的个数
         :type limit: int
         :param admin_state_up: 按照admin_state_up进行过滤
@@ -161,7 +161,7 @@ class ListPortsRequest:
         按照port_id过滤查询
 
         :return: The id of this ListPortsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._id
 
@@ -172,7 +172,7 @@ class ListPortsRequest:
         按照port_id过滤查询
 
         :param id: The id of this ListPortsRequest.
-        :type id: str
+        :type id: list[str]
         """
         self._id = id
 

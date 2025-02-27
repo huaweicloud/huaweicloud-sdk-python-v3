@@ -1819,6 +1819,7 @@ class VpcAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'admin_state_up' in local_var_params:

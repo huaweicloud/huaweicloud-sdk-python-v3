@@ -45,15 +45,15 @@ class RuleConfig:
 
         :param description: 规则描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
         :type description: str
-        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :param ief_instance_id: [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
         :type ief_instance_id: str
         :param in_using: 是否启用规则，默认为true（启用）
         :type in_using: bool
-        :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
+        :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
         :type name: str
         :param source: 源端点ID
         :type source: str
-        :param source_resource: 源端点资源。示例： - rest: {\&quot;path\&quot;:\&quot;&lt;standard uri format&gt;\&quot;} - eventbus: {\&quot;topic\&quot;:\&quot;&lt;project id&gt;/nodes/&lt;node id&gt;/user/&lt;租户自定义且满足eventbus topic要求的字符串&gt;\&quot;,\&quot;node_id\&quot;:\&quot;&lt;node id&gt;\&quot;}
+        :param source_resource: 源端点资源。示例： - rest: {\&quot;path\&quot;:\&quot;\\&lt;standard uri format\\&gt;\&quot;} - eventbus: {\&quot;topic\&quot;:\&quot;\\&lt;project id\\&gt;/nodes/\\&lt;node id\\&gt;/user/\\&lt;租户自定义且满足eventbus topic要求的字符串\\&gt;\&quot;,\&quot;node_id\&quot;:\&quot;\\&lt;node id\\&gt;\&quot;} 
         :type source_resource: dict(str, str)
         :param target: 目的端点ID
         :type target: str
@@ -111,7 +111,7 @@ class RuleConfig:
     def ief_instance_id(self):
         """Gets the ief_instance_id of this RuleConfig.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :return: The ief_instance_id of this RuleConfig.
         :rtype: str
@@ -122,7 +122,7 @@ class RuleConfig:
     def ief_instance_id(self, ief_instance_id):
         """Sets the ief_instance_id of this RuleConfig.
 
-        铂金版实例ID，如果为空则表示是专业版实例。
+        [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
         :param ief_instance_id: The ief_instance_id of this RuleConfig.
         :type ief_instance_id: str
@@ -155,7 +155,7 @@ class RuleConfig:
     def name(self):
         """Gets the name of this RuleConfig.
 
-        规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
+        规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
         :return: The name of this RuleConfig.
         :rtype: str
@@ -166,7 +166,7 @@ class RuleConfig:
     def name(self, name):
         """Sets the name of this RuleConfig.
 
-        规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
+        规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
         :param name: The name of this RuleConfig.
         :type name: str
@@ -199,7 +199,7 @@ class RuleConfig:
     def source_resource(self):
         """Gets the source_resource of this RuleConfig.
 
-        源端点资源。示例： - rest: {\"path\":\"<standard uri format>\"} - eventbus: {\"topic\":\"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
+        源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
         :return: The source_resource of this RuleConfig.
         :rtype: dict(str, str)
@@ -210,7 +210,7 @@ class RuleConfig:
     def source_resource(self, source_resource):
         """Sets the source_resource of this RuleConfig.
 
-        源端点资源。示例： - rest: {\"path\":\"<standard uri format>\"} - eventbus: {\"topic\":\"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
+        源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
         :param source_resource: The source_resource of this RuleConfig.
         :type source_resource: dict(str, str)

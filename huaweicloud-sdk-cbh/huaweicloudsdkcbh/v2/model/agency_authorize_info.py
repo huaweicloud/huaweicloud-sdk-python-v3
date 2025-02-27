@@ -43,8 +43,10 @@ class AgencyAuthorizeInfo:
         self._kms = None
         self.discriminator = None
 
-        self.csms = csms
-        self.kms = kms
+        if csms is not None:
+            self.csms = csms
+        if kms is not None:
+            self.kms = kms
 
     @property
     def csms(self):

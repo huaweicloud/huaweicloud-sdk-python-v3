@@ -423,6 +423,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def create_schedule_record_tasks_async(self, request):
+        """创建计划录制任务
+
+        通过使用指定录制模板ID对应的配置创建一个在指定时间启动、结束的录制任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateScheduleRecordTasks
+        :type request: :class:`huaweicloudsdklive.v1.CreateScheduleRecordTasksRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateScheduleRecordTasksResponse`
+        """
+        http_info = self._create_schedule_record_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_schedule_record_tasks_async_invoker(self, request):
+        http_info = self._create_schedule_record_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_schedule_record_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/schedule/record/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScheduleRecordTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_snapshot_config_async(self, request):
         """创建直播截图配置
 
@@ -1123,6 +1188,71 @@ class LiveAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_schedule_record_tasks_async(self, request):
+        """停止计划录制任务
+
+        停止计划录制任务，当前的录制任务会中止并生产录制文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScheduleRecordTasks
+        :type request: :class:`huaweicloudsdklive.v1.DeleteScheduleRecordTasksRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteScheduleRecordTasksResponse`
+        """
+        http_info = self._delete_schedule_record_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_schedule_record_tasks_async_invoker(self, request):
+        http_info = self._delete_schedule_record_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_schedule_record_tasks_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/schedule/record/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduleRecordTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2021,6 +2151,85 @@ class LiveAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_schedule_record_tasks_async(self, request):
+        """查询计划录制任务
+
+        查询指定时间范围内启动和结束的计划录制任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScheduleRecordTasks
+        :type request: :class:`huaweicloudsdklive.v1.ListScheduleRecordTasksRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListScheduleRecordTasksResponse`
+        """
+        http_info = self._list_schedule_record_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_schedule_record_tasks_async_invoker(self, request):
+        http_info = self._list_schedule_record_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_schedule_record_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/schedule/record/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduleRecordTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
