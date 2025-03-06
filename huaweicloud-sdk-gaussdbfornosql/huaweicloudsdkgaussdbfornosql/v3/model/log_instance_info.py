@@ -49,7 +49,7 @@ class LogInstanceInfo:
         :type name: str
         :param status: 实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点失败。
         :type status: str
-        :param mode: 实例类型。 - 取值为“Cluster”，表示GeminiDB Redis集群实例类型。
+        :param mode: 实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
         :type mode: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.InstancesDatastoreResult`
@@ -160,7 +160,7 @@ class LogInstanceInfo:
     def mode(self):
         """Gets the mode of this LogInstanceInfo.
 
-        实例类型。 - 取值为“Cluster”，表示GeminiDB Redis集群实例类型。
+        实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
 
         :return: The mode of this LogInstanceInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class LogInstanceInfo:
     def mode(self, mode):
         """Sets the mode of this LogInstanceInfo.
 
-        实例类型。 - 取值为“Cluster”，表示GeminiDB Redis集群实例类型。
+        实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
 
         :param mode: The mode of this LogInstanceInfo.
         :type mode: str

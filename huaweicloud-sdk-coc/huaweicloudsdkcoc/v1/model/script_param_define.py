@@ -37,9 +37,9 @@ class ScriptParamDefine:
 
         The model defined in huaweicloud sdk
 
-        :param param_name: 参数名称：只支持英文、数字、下划线
+        :param param_name: 参数名仅支持字母、数字以及下划线
         :type param_name: str
-        :param param_value: 参数默认值，默认必填，如果有参数引用，可为空
+        :param param_value: 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\&quot;,&#x3D;+@#\\[{]}) 3.禁止出现连续&#39;.&#39;
         :type param_value: str
         :param param_description: 参数描述
         :type param_description: str
@@ -59,18 +59,16 @@ class ScriptParamDefine:
         self.discriminator = None
 
         self.param_name = param_name
-        if param_value is not None:
-            self.param_value = param_value
+        self.param_value = param_value
         self.param_description = param_description
-        if param_order is not None:
-            self.param_order = param_order
+        self.param_order = param_order
         self.sensitive = sensitive
 
     @property
     def param_name(self):
         """Gets the param_name of this ScriptParamDefine.
 
-        参数名称：只支持英文、数字、下划线
+        参数名仅支持字母、数字以及下划线
 
         :return: The param_name of this ScriptParamDefine.
         :rtype: str
@@ -81,7 +79,7 @@ class ScriptParamDefine:
     def param_name(self, param_name):
         """Sets the param_name of this ScriptParamDefine.
 
-        参数名称：只支持英文、数字、下划线
+        参数名仅支持字母、数字以及下划线
 
         :param param_name: The param_name of this ScriptParamDefine.
         :type param_name: str
@@ -92,7 +90,7 @@ class ScriptParamDefine:
     def param_value(self):
         """Gets the param_value of this ScriptParamDefine.
 
-        参数默认值，默认必填，如果有参数引用，可为空
+        1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
         :return: The param_value of this ScriptParamDefine.
         :rtype: str
@@ -103,7 +101,7 @@ class ScriptParamDefine:
     def param_value(self, param_value):
         """Sets the param_value of this ScriptParamDefine.
 
-        参数默认值，默认必填，如果有参数引用，可为空
+        1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
         :param param_value: The param_value of this ScriptParamDefine.
         :type param_value: str

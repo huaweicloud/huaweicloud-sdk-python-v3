@@ -377,6 +377,73 @@ class GaussDBforopenGaussAsyncClient(Client):
 
         return http_info
 
+    def cancel_schedule_task_async(self, request):
+        """取消定时任务
+
+        取消定时任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelScheduleTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CancelScheduleTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CancelScheduleTaskResponse`
+        """
+        http_info = self._cancel_schedule_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_schedule_task_async_invoker(self, request):
+        http_info = self._cancel_schedule_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_schedule_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/schedule-task/{task_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelScheduleTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def confirm_restored_data_async(self, request):
         """备份恢复到目标实例数据后执行数据确认
 
@@ -1260,6 +1327,73 @@ class GaussDBforopenGaussAsyncClient(Client):
 
         return http_info
 
+    def create_schedule_task_async(self, request):
+        """批量实例内核版本定时升级
+
+        批量实例内核版本定时升级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateScheduleTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateScheduleTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateScheduleTaskResponse`
+        """
+        http_info = self._create_schedule_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_schedule_task_async_invoker(self, request):
+        http_info = self._create_schedule_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_schedule_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/db-upgrade/schedule-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScheduleTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_slow_log_download_async(self, request):
         """创建慢日志下载信息
 
@@ -1771,6 +1905,73 @@ class GaussDBforopenGaussAsyncClient(Client):
         path_params = {}
         if 'backup_id' in local_var_params:
             path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_schedule_task_async(self, request):
+        """删除定时任务信息
+
+        删除定时任务信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScheduleTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteScheduleTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteScheduleTaskResponse`
+        """
+        http_info = self._delete_schedule_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_schedule_task_async_invoker(self, request):
+        http_info = self._delete_schedule_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_schedule_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/schedule-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduleTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
 
@@ -3824,6 +4025,75 @@ class GaussDBforopenGaussAsyncClient(Client):
 
         return http_info
 
+    def list_instance_engine_detail_async(self, request):
+        """查看实例引擎版本分布
+
+        查看实例引擎版本分布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceEngineDetail
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstanceEngineDetailRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstanceEngineDetailResponse`
+        """
+        http_info = self._list_instance_engine_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_engine_detail_async_invoker(self, request):
+        http_info = self._list_instance_engine_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_engine_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datastore/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceEngineDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_error_logs_async(self, request):
         """查询错误日志下载链接
 
@@ -4875,6 +5145,85 @@ class GaussDBforopenGaussAsyncClient(Client):
         query_params = []
         if 'date' in local_var_params:
             query_params.append(('date', local_var_params['date']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_schedule_task_async(self, request):
+        """查看定时任务列表
+
+        查看定时任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScheduleTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListScheduleTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListScheduleTaskResponse`
+        """
+        http_info = self._list_schedule_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_schedule_task_async_invoker(self, request):
+        http_info = self._list_schedule_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_schedule_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/schedule-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduleTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:

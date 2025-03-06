@@ -27,6 +27,8 @@ class CreateXdmApplicationRequestBody:
         'app_user_list': 'list[AppUserList]',
         'certified_data_source_name': 'str',
         'certified_data_source_number': 'str',
+        'app_type': 'str',
+        'permission_control': 'str',
         'integration_mode': 'str',
         'metadata_synchronization': 'bool'
     }
@@ -42,11 +44,13 @@ class CreateXdmApplicationRequestBody:
         'app_user_list': 'app_user_list',
         'certified_data_source_name': 'certified_data_source_name',
         'certified_data_source_number': 'certified_data_source_number',
+        'app_type': 'app_type',
+        'permission_control': 'permission_control',
         'integration_mode': 'integration_mode',
         'metadata_synchronization': 'metadata_synchronization'
     }
 
-    def __init__(self, app_name_cn=None, app_name_en=None, app_desc=None, app_desc_en=None, operate_type=None, app_env=None, database_type=None, app_user_list=None, certified_data_source_name=None, certified_data_source_number=None, integration_mode=None, metadata_synchronization=None):
+    def __init__(self, app_name_cn=None, app_name_en=None, app_desc=None, app_desc_en=None, operate_type=None, app_env=None, database_type=None, app_user_list=None, certified_data_source_name=None, certified_data_source_number=None, app_type=None, permission_control=None, integration_mode=None, metadata_synchronization=None):
         """CreateXdmApplicationRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class CreateXdmApplicationRequestBody:
         :type certified_data_source_name: str
         :param certified_data_source_number: 认证数据源编码。
         :type certified_data_source_number: str
+        :param app_type: App类型。 - default：基础版（体验版） - lite：轻量版
+        :type app_type: str
+        :param permission_control: App权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+        :type permission_control: str
         :param integration_mode: 集成模式。 - API - SDK
         :type integration_mode: str
         :param metadata_synchronization: 元模型同步。
@@ -89,6 +97,8 @@ class CreateXdmApplicationRequestBody:
         self._app_user_list = None
         self._certified_data_source_name = None
         self._certified_data_source_number = None
+        self._app_type = None
+        self._permission_control = None
         self._integration_mode = None
         self._metadata_synchronization = None
         self.discriminator = None
@@ -108,6 +118,10 @@ class CreateXdmApplicationRequestBody:
             self.certified_data_source_name = certified_data_source_name
         if certified_data_source_number is not None:
             self.certified_data_source_number = certified_data_source_number
+        if app_type is not None:
+            self.app_type = app_type
+        if permission_control is not None:
+            self.permission_control = permission_control
         self.integration_mode = integration_mode
         if metadata_synchronization is not None:
             self.metadata_synchronization = metadata_synchronization
@@ -331,6 +345,50 @@ class CreateXdmApplicationRequestBody:
         :type certified_data_source_number: str
         """
         self._certified_data_source_number = certified_data_source_number
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this CreateXdmApplicationRequestBody.
+
+        App类型。 - default：基础版（体验版） - lite：轻量版
+
+        :return: The app_type of this CreateXdmApplicationRequestBody.
+        :rtype: str
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this CreateXdmApplicationRequestBody.
+
+        App类型。 - default：基础版（体验版） - lite：轻量版
+
+        :param app_type: The app_type of this CreateXdmApplicationRequestBody.
+        :type app_type: str
+        """
+        self._app_type = app_type
+
+    @property
+    def permission_control(self):
+        """Gets the permission_control of this CreateXdmApplicationRequestBody.
+
+        App权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+
+        :return: The permission_control of this CreateXdmApplicationRequestBody.
+        :rtype: str
+        """
+        return self._permission_control
+
+    @permission_control.setter
+    def permission_control(self, permission_control):
+        """Sets the permission_control of this CreateXdmApplicationRequestBody.
+
+        App权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+
+        :param permission_control: The permission_control of this CreateXdmApplicationRequestBody.
+        :type permission_control: str
+        """
+        self._permission_control = permission_control
 
     @property
     def integration_mode(self):

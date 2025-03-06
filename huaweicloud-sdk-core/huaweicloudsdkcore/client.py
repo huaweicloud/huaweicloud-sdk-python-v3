@@ -705,3 +705,7 @@ class Client(object):
                     kwargs[attr] = self._deserialize(data, attr_type)
 
         return kwargs
+
+    def close(self):
+        if self._http_client:
+            self._http_client.close()

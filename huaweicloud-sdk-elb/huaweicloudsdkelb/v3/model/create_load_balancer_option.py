@@ -115,7 +115,7 @@ class CreateLoadBalancerOption:
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
         :type admin_state_up: bool
-        :param billing_info: 参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param billing_info: 参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type billing_info: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -570,7 +570,7 @@ class CreateLoadBalancerOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerOption.
 
-        参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The billing_info of this CreateLoadBalancerOption.
         :rtype: str
@@ -581,7 +581,7 @@ class CreateLoadBalancerOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerOption.
 
-        参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        参数解释: 预付费实例的订单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param billing_info: The billing_info of this CreateLoadBalancerOption.
         :type billing_info: str

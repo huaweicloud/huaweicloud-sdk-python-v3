@@ -24,7 +24,8 @@ class ServerModelExtendSpec:
         'gpu': 'str',
         'bms_flavor': 'str',
         'gpu_count': 'int',
-        'numa_count': 'int'
+        'numa_count': 'int',
+        'os_volume': 'ServerModelExtendSpecOsVolume'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ServerModelExtendSpec:
         'gpu': 'gpu',
         'bms_flavor': 'bms_flavor',
         'gpu_count': 'gpu_count',
-        'numa_count': 'numa_count'
+        'numa_count': 'numa_count',
+        'os_volume': 'os_volume'
     }
 
-    def __init__(self, cpu=None, memory=None, disk=None, network_interface=None, gpu=None, bms_flavor=None, gpu_count=None, numa_count=None):
+    def __init__(self, cpu=None, memory=None, disk=None, network_interface=None, gpu=None, bms_flavor=None, gpu_count=None, numa_count=None, os_volume=None):
         """ServerModelExtendSpec
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ServerModelExtendSpec:
         :type gpu_count: int
         :param numa_count: 云手机服务器numa数量。
         :type numa_count: int
+        :param os_volume: 
+        :type os_volume: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpecOsVolume`
         """
         
         
@@ -71,6 +75,7 @@ class ServerModelExtendSpec:
         self._bms_flavor = None
         self._gpu_count = None
         self._numa_count = None
+        self._os_volume = None
         self.discriminator = None
 
         if cpu is not None:
@@ -89,6 +94,8 @@ class ServerModelExtendSpec:
             self.gpu_count = gpu_count
         if numa_count is not None:
             self.numa_count = numa_count
+        if os_volume is not None:
+            self.os_volume = os_volume
 
     @property
     def cpu(self):
@@ -265,6 +272,24 @@ class ServerModelExtendSpec:
         :type numa_count: int
         """
         self._numa_count = numa_count
+
+    @property
+    def os_volume(self):
+        """Gets the os_volume of this ServerModelExtendSpec.
+
+        :return: The os_volume of this ServerModelExtendSpec.
+        :rtype: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpecOsVolume`
+        """
+        return self._os_volume
+
+    @os_volume.setter
+    def os_volume(self, os_volume):
+        """Sets the os_volume of this ServerModelExtendSpec.
+
+        :param os_volume: The os_volume of this ServerModelExtendSpec.
+        :type os_volume: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpecOsVolume`
+        """
+        self._os_volume = os_volume
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -45,7 +45,7 @@ class ListDbUsersRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
-        :param db_user_id: 数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        :param db_user_id: 数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
         :type db_user_id: str
         :param db_username: 数据库用户名称
         :type db_username: str
@@ -145,7 +145,7 @@ class ListDbUsersRequest:
     def db_user_id(self):
         """Gets the db_user_id of this ListDbUsersRequest.
 
-        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
         :return: The db_user_id of this ListDbUsersRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListDbUsersRequest:
     def db_user_id(self, db_user_id):
         """Sets the db_user_id of this ListDbUsersRequest.
 
-        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
         :param db_user_id: The db_user_id of this ListDbUsersRequest.
         :type db_user_id: str

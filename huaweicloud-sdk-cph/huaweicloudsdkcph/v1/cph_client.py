@@ -37,6 +37,7 @@ class CphClient(Client):
 
         镜像共享,共享镜像给指定账号。
         - 镜像只能共享给同region下的其他华为云账号(project_id)。
+        - 同一镜像最多只能共享给10个其他账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -310,6 +311,8 @@ class CphClient(Client):
         
         高版本手机导出的数据无法在低版本手机内恢复。低版本手机导出的数据可以在高版本手机内恢复，但可能会在极少数场景下有不兼容的风险。因此推荐您在同版本手机间进行导出与恢复。
         
+        手机在运行状态会有数据缓存，直接运行恢复的文件可能带来访问失败、应用崩溃等现象，建议在还原成功后重启手机，以保证云手机稳定运行。
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchImportCloudPhoneData
@@ -505,7 +508,7 @@ class CphClient(Client):
     def change_cloud_phone_server_model(self, request):
         """变更云手机服务器规格
 
-        变更云手机服务器规格。变更的目标规格也必须为特殊的规格才可变更。接口调用成功后，大约2分钟左右规格会变更结束，在订单中心可以查看到变更的订单状态为成功，且查询服务器的详细信息，可以查看到服务器规格名称已经变成新的规格名称。
+        变更云手机服务器规格。接口调用成功后，大约2分钟左右规格会变更结束，在订单中心可以查看到变更的订单状态为成功，且查询服务器的详细信息，可以查看到服务器规格名称已经变成新的规格名称。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -567,14 +570,76 @@ class CphClient(Client):
 
         return http_info
 
+    def create_cloud_phone_single_server(self, request):
+        """创建云手机裸服务器
+
+        该接口创建的服务器仅包含服务器和服务器的镜像，不包含云手机实例和镜像等内容。若需要创建包含云手机实例的服务器，请使用创建云手机服务器接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCloudPhoneSingleServer
+        :type request: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerResponse`
+        """
+        http_info = self._create_cloud_phone_single_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cloud_phone_single_server_invoker(self, request):
+        http_info = self._create_cloud_phone_single_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cloud_phone_single_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/cloud-phone/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudPhoneSingleServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_net2_cloud_phone_server(self, request):
         """[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)云手机服务器
 
         [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)云手机服务器，支持您复用已有的VPC网络管理云手机服务器，支持云手机服务器复用您已[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的共享带宽等资源。
-        - 请确保您已具有虚拟私有云资源，创建服务器需要指定一个已有的虚拟私有云，否则无法创建服务器。同时请确保您的账号至少具有VPC ReadOnlyAccess权限，以便虚拟私有云资源可以被选取到。
-        - 请确保您的账号已成功创建密钥对，并具有查询密钥对列表的细粒度权限ecs:serverKeypairs:list。若需要创建密钥对，请确保账号具有创建密钥对的细粒度权限ecs:serverKeypairs:create。
-        - 请确保已正确创建委托（委托名称cph_admin_trust，委托服务CPH），委托未被删除， 确保委托包含VPC FullAccess权限，委托及权限校验失败将导致云服务器创建失败。创建委托时委托类型选择“云服务”，云服务选择“CPH”，即允许CPH调用云服务。
-        - 请确保您使用的账号具有Security Administrator权限。
+        - 请确保您使用的账号具有CPH AgencyDependencyAccess权限。
         - 请确保您有足够的服务器及网络配额，配额校验不通过将导致创建失败。
         [- 当前只支持按需创建。](tag:fcs)
         
@@ -706,7 +771,7 @@ class CphClient(Client):
     def delete_image(self, request):
         """删除镜像
 
-        删除镜像
+        删除自定义镜像
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -925,6 +990,72 @@ class CphClient(Client):
             "resource_path": "/v1/{project_id}/cloud-phone/phones/share-files",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteShareFilesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def expand_phone_data_volume_size(self, request):
+        """扩容云手机数据盘大小
+
+        扩容云手机数据盘大小
+        - 注意: 本接口会产生扩容新增容量的费用，新增容量不算入服务器免费存储额度内。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandPhoneDataVolumeSize
+        :type request: :class:`huaweicloudsdkcph.v1.ExpandPhoneDataVolumeSizeRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ExpandPhoneDataVolumeSizeResponse`
+        """
+        http_info = self._expand_phone_data_volume_size_http_info(request)
+        return self._call_api(**http_info)
+
+    def expand_phone_data_volume_size_invoker(self, request):
+        http_info = self._expand_phone_data_volume_size_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_phone_data_volume_size_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/expand-volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandPhoneDataVolumeSizeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1526,9 +1657,9 @@ class CphClient(Client):
         return http_info
 
     def list_images(self, request):
-        """查询镜像列表
+        """查询自定义镜像列表
 
-        查询镜像列表
+        查询自定义镜像列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1950,9 +2081,9 @@ class CphClient(Client):
     def push_share_apps(self, request):
         """推送共享应用
 
-        推送应用tar文件至共享应用存储目录中，该功能仅在支持共享应用的云手机规格上可实现。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
+        推送应用tar文件至共享应用存储目录中，该功能仅在支持共享应用的云手机服务器上可实现。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
-        注意：不能向低版本服务器推送高版本手机导出的应用包，否则可能会造成兼容性问题。如果您使用的是physical.kg1.4xlarge.a.cp服务器规格，请确保共享应用的可用空间大于两倍的tar包
+        注意：不能向存在低安卓版本云手机的服务器推送高安卓版本手机导出的应用包，否则可能会造成手机数据兼容性问题。如果您使用的是physical.kg1.4xlarge.a.cp服务器规格，请确保共享存储的可用空间大于两倍的tar包大小
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2798,6 +2929,73 @@ class CphClient(Client):
 
         return http_info
 
+    def update_image_member(self, request):
+        """更新共享镜像接受信息
+
+        用户收到共享镜像后，选择接受或拒绝共享镜像。未接受的共享镜像无法使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateImageMember
+        :type request: :class:`huaweicloudsdkcph.v1.UpdateImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.UpdateImageMemberResponse`
+        """
+        http_info = self._update_image_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_image_member_invoker(self, request):
+        http_info = self._update_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_image_member_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/images/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateImageMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_keypair(self, request):
         """更改密钥对
 
@@ -3003,7 +3201,7 @@ class CphClient(Client):
         在云手机中安装apk。系统会将指定的apk文件下载后直接安装到云手机中。
         支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk，如果一次传多个apk只有第一个安装成功；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
-        - 建议通过开发应用市场的方式安装apk。允许安装的apk大小限制为2G（即不可将obs桶内大于2G的apk安装到手机中），超过限制将返回错误。
+        - 允许安装的apk大小限制为2G（即不可将obs桶内大于2G的apk安装到手机中），超过限制将返回错误。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3134,7 +3332,7 @@ class CphClient(Client):
         return http_info
 
     def run_shell_command(self, request):
-        """执行异步adb命令
+        """异步执行adb命令
 
         在云手机中执行shell命令。该接口为异步接口。
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
@@ -3200,7 +3398,7 @@ class CphClient(Client):
         return http_info
 
     def run_sync_command(self, request):
-        """执行同步adb命令
+        """同步执行adb命令
 
         在云手机中同步执行命令并返回命令执行的输出信息，该接口仅支持adb shell命令的执行。1分钟内每个用户调用接口次数上限为6次，每个云手机允许执行命令超时时间为2秒，接口时间不超过30秒，执行云手机数越多，接口耗时相应越长。
         

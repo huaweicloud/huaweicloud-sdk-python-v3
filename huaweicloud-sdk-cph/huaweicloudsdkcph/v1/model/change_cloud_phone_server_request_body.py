@@ -26,9 +26,10 @@ class ChangeCloudPhoneServerRequestBody:
         'nics': 'list[Nic]',
         'public_ip': 'ChangeCloudPhoneServerRequestBodyPublicIp',
         'phone_count_per_ip': 'int',
-        'phone_data_volume': 'CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume',
+        'phone_data_volume': 'ChangeCloudPhoneServerRequestBodyPhoneDataVolume',
         'server_share_data_volume': 'ChangeCloudPhoneServerRequestBodyServerShareDataVolume',
-        'band_width': 'ChangeCloudPhoneServerRequestBodyBandWidth'
+        'band_width': 'ChangeCloudPhoneServerRequestBodyBandWidth',
+        '_property': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ChangeCloudPhoneServerRequestBody:
         'phone_count_per_ip': 'phone_count_per_ip',
         'phone_data_volume': 'phone_data_volume',
         'server_share_data_volume': 'server_share_data_volume',
-        'band_width': 'band_width'
+        'band_width': 'band_width',
+        '_property': 'property'
     }
 
-    def __init__(self, phone_model_name=None, image_id=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None):
+    def __init__(self, phone_model_name=None, image_id=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, _property=None):
         """ChangeCloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
@@ -70,11 +72,13 @@ class ChangeCloudPhoneServerRequestBody:
         :param phone_count_per_ip: 多少个手机共用一个vip。默认为手机开数，表示所有手机共享1个vip。取值范围：1到手机规格开数。
         :type phone_count_per_ip: int
         :param phone_data_volume: 
-        :type phone_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume`
+        :type phone_data_volume: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPhoneDataVolume`
         :param server_share_data_volume: 
         :type server_share_data_volume: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyServerShareDataVolume`
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyBandWidth`
+        :param _property: 云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+        :type _property: str
         """
         
         
@@ -91,6 +95,7 @@ class ChangeCloudPhoneServerRequestBody:
         self._phone_data_volume = None
         self._server_share_data_volume = None
         self._band_width = None
+        self.__property = None
         self.discriminator = None
 
         self.phone_model_name = phone_model_name
@@ -111,6 +116,8 @@ class ChangeCloudPhoneServerRequestBody:
         if server_share_data_volume is not None:
             self.server_share_data_volume = server_share_data_volume
         self.band_width = band_width
+        if _property is not None:
+            self._property = _property
 
     @property
     def phone_model_name(self):
@@ -307,7 +314,7 @@ class ChangeCloudPhoneServerRequestBody:
         """Gets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :return: The phone_data_volume of this ChangeCloudPhoneServerRequestBody.
-        :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume`
+        :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPhoneDataVolume`
         """
         return self._phone_data_volume
 
@@ -316,7 +323,7 @@ class ChangeCloudPhoneServerRequestBody:
         """Sets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :param phone_data_volume: The phone_data_volume of this ChangeCloudPhoneServerRequestBody.
-        :type phone_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume`
+        :type phone_data_volume: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPhoneDataVolume`
         """
         self._phone_data_volume = phone_data_volume
 
@@ -355,6 +362,28 @@ class ChangeCloudPhoneServerRequestBody:
         :type band_width: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyBandWidth`
         """
         self._band_width = band_width
+
+    @property
+    def _property(self):
+        """Gets the _property of this ChangeCloudPhoneServerRequestBody.
+
+        云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+
+        :return: The _property of this ChangeCloudPhoneServerRequestBody.
+        :rtype: str
+        """
+        return self.__property
+
+    @_property.setter
+    def _property(self, _property):
+        """Sets the _property of this ChangeCloudPhoneServerRequestBody.
+
+        云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+
+        :param _property: The _property of this ChangeCloudPhoneServerRequestBody.
+        :type _property: str
+        """
+        self.__property = _property
 
     def to_dict(self):
         """Returns the model properties as a dict"""

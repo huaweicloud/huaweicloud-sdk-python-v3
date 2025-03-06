@@ -32,9 +32,11 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'metadata': 'ShowCloudPhoneDetailResponseBodyMetadata',
         'phone_data_volume': 'PhoneDataVolume',
         'imei': 'str',
+        'type': 'int',
         'traffic_type': 'str',
         'volume_mode': 'int',
         'availability_zone': 'str',
+        'has_encrypt': 'bool',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -54,14 +56,16 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'metadata': 'metadata',
         'phone_data_volume': 'phone_data_volume',
         'imei': 'imei',
+        'type': 'type',
         'traffic_type': 'traffic_type',
         'volume_mode': 'volume_mode',
         'availability_zone': 'availability_zone',
+        'has_encrypt': 'has_encrypt',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, request_id=None, phone_name=None, server_id=None, phone_id=None, image_id=None, image_version=None, vnc_enable=None, phone_model_name=None, status=None, access_infos=None, _property=None, metadata=None, phone_data_volume=None, imei=None, traffic_type=None, volume_mode=None, availability_zone=None, create_time=None, update_time=None):
+    def __init__(self, request_id=None, phone_name=None, server_id=None, phone_id=None, image_id=None, image_version=None, vnc_enable=None, phone_model_name=None, status=None, access_infos=None, _property=None, metadata=None, phone_data_volume=None, imei=None, type=None, traffic_type=None, volume_mode=None, availability_zone=None, has_encrypt=None, create_time=None, update_time=None):
         """ShowCloudPhoneDetailResponse
 
         The model defined in huaweicloud sdk
@@ -94,12 +98,16 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         :type phone_data_volume: :class:`huaweicloudsdkcph.v1.PhoneDataVolume`
         :param imei: imei码。
         :type imei: str
+        :param type: 云手机类型。 - 0：普通云手机
+        :type type: int
         :param traffic_type: 手机路由类型。 - direct：默认路由 - routing：路由到编码容器
         :type traffic_type: str
         :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
         :type volume_mode: int
-        :param availability_zone: 云手机服务器所在的可用区。
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
         :type availability_zone: str
+        :param has_encrypt: 当前手机是否开启文件级加密。
+        :type has_encrypt: bool
         :param create_time: 创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type create_time: str
         :param update_time: 更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
@@ -122,9 +130,11 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         self._metadata = None
         self._phone_data_volume = None
         self._imei = None
+        self._type = None
         self._traffic_type = None
         self._volume_mode = None
         self._availability_zone = None
+        self._has_encrypt = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -157,12 +167,16 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
             self.phone_data_volume = phone_data_volume
         if imei is not None:
             self.imei = imei
+        if type is not None:
+            self.type = type
         if traffic_type is not None:
             self.traffic_type = traffic_type
         if volume_mode is not None:
             self.volume_mode = volume_mode
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if has_encrypt is not None:
+            self.has_encrypt = has_encrypt
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -469,6 +483,28 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         self._imei = imei
 
     @property
+    def type(self):
+        """Gets the type of this ShowCloudPhoneDetailResponse.
+
+        云手机类型。 - 0：普通云手机
+
+        :return: The type of this ShowCloudPhoneDetailResponse.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowCloudPhoneDetailResponse.
+
+        云手机类型。 - 0：普通云手机
+
+        :param type: The type of this ShowCloudPhoneDetailResponse.
+        :type type: int
+        """
+        self._type = type
+
+    @property
     def traffic_type(self):
         """Gets the traffic_type of this ShowCloudPhoneDetailResponse.
 
@@ -516,7 +552,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def availability_zone(self):
         """Gets the availability_zone of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :return: The availability_zone of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -527,12 +563,34 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :param availability_zone: The availability_zone of this ShowCloudPhoneDetailResponse.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def has_encrypt(self):
+        """Gets the has_encrypt of this ShowCloudPhoneDetailResponse.
+
+        当前手机是否开启文件级加密。
+
+        :return: The has_encrypt of this ShowCloudPhoneDetailResponse.
+        :rtype: bool
+        """
+        return self._has_encrypt
+
+    @has_encrypt.setter
+    def has_encrypt(self, has_encrypt):
+        """Sets the has_encrypt of this ShowCloudPhoneDetailResponse.
+
+        当前手机是否开启文件级加密。
+
+        :param has_encrypt: The has_encrypt of this ShowCloudPhoneDetailResponse.
+        :type has_encrypt: bool
+        """
+        self._has_encrypt = has_encrypt
 
     @property
     def create_time(self):

@@ -31,6 +31,7 @@ class Phone:
         'volume_mode': 'int',
         'availability_zone': 'str',
         'metadata': 'PhoneMetadata',
+        'has_encrypt': 'bool',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -50,11 +51,12 @@ class Phone:
         'volume_mode': 'volume_mode',
         'availability_zone': 'availability_zone',
         'metadata': 'metadata',
+        'has_encrypt': 'has_encrypt',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, phone_name=None, server_id=None, phone_id=None, phone_model_name=None, image_id=None, image_version=None, vnc_enable=None, status=None, type=None, imei=None, traffic_type=None, volume_mode=None, availability_zone=None, metadata=None, create_time=None, update_time=None):
+    def __init__(self, phone_name=None, server_id=None, phone_id=None, phone_model_name=None, image_id=None, image_version=None, vnc_enable=None, status=None, type=None, imei=None, traffic_type=None, volume_mode=None, availability_zone=None, metadata=None, has_encrypt=None, create_time=None, update_time=None):
         """Phone
 
         The model defined in huaweicloud sdk
@@ -73,7 +75,7 @@ class Phone:
         :type image_version: str
         :param vnc_enable: 云手机是否开启VNC服务。 - true：开启 - false：不开启
         :type vnc_enable: str
-        :param status: 云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        :param status: 云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
         :param type: 云手机类型。 - 0：普通云手机 - 1：试玩云手机
         :type type: int
@@ -83,10 +85,12 @@ class Phone:
         :type traffic_type: str
         :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
         :type volume_mode: int
-        :param availability_zone: 云手机服务器所在的可用区。
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
         :type availability_zone: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
+        :param has_encrypt: 当前手机是否开启文件级加密
+        :type has_encrypt: bool
         :param create_time: 创建时间， 时间格式为UTC。
         :type create_time: str
         :param update_time: 更新时间， 时间格式为UTC。
@@ -109,6 +113,7 @@ class Phone:
         self._volume_mode = None
         self._availability_zone = None
         self._metadata = None
+        self._has_encrypt = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -141,6 +146,8 @@ class Phone:
             self.availability_zone = availability_zone
         if metadata is not None:
             self.metadata = metadata
+        if has_encrypt is not None:
+            self.has_encrypt = has_encrypt
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -304,7 +311,7 @@ class Phone:
     def status(self):
         """Gets the status of this Phone.
 
-        云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :return: The status of this Phone.
         :rtype: int
@@ -315,7 +322,7 @@ class Phone:
     def status(self, status):
         """Sets the status of this Phone.
 
-        云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :param status: The status of this Phone.
         :type status: int
@@ -414,7 +421,7 @@ class Phone:
     def availability_zone(self):
         """Gets the availability_zone of this Phone.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :return: The availability_zone of this Phone.
         :rtype: str
@@ -425,7 +432,7 @@ class Phone:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this Phone.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :param availability_zone: The availability_zone of this Phone.
         :type availability_zone: str
@@ -449,6 +456,28 @@ class Phone:
         :type metadata: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
         """
         self._metadata = metadata
+
+    @property
+    def has_encrypt(self):
+        """Gets the has_encrypt of this Phone.
+
+        当前手机是否开启文件级加密
+
+        :return: The has_encrypt of this Phone.
+        :rtype: bool
+        """
+        return self._has_encrypt
+
+    @has_encrypt.setter
+    def has_encrypt(self, has_encrypt):
+        """Sets the has_encrypt of this Phone.
+
+        当前手机是否开启文件级加密
+
+        :param has_encrypt: The has_encrypt of this Phone.
+        :type has_encrypt: bool
+        """
+        self._has_encrypt = has_encrypt
 
     @property
     def create_time(self):

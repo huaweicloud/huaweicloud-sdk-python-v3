@@ -21,17 +21,21 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         'request_id': 'str',
         'order_id': 'str',
         'product_id': 'str',
-        'server_ids': 'list[str]'
+        'server_ids': 'list[str]',
+        'error_msg': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'order_id': 'order_id',
         'product_id': 'product_id',
-        'server_ids': 'server_ids'
+        'server_ids': 'server_ids',
+        'error_msg': 'error_msg',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, request_id=None, order_id=None, product_id=None, server_ids=None):
+    def __init__(self, request_id=None, order_id=None, product_id=None, server_ids=None, error_msg=None, error_code=None):
         """CreateNet2CloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         :type product_id: str
         :param server_ids: 服务器ID列表。
         :type server_ids: list[str]
+        :param error_msg: 任务错误码说明。
+        :type error_msg: str
+        :param error_code: 任务错误码。
+        :type error_code: str
         """
         
         super(CreateNet2CloudPhoneServerResponse, self).__init__()
@@ -52,6 +60,8 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         self._order_id = None
         self._product_id = None
         self._server_ids = None
+        self._error_msg = None
+        self._error_code = None
         self.discriminator = None
 
         if request_id is not None:
@@ -62,6 +72,10 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
             self.product_id = product_id
         if server_ids is not None:
             self.server_ids = server_ids
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def request_id(self):
@@ -150,6 +164,50 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         :type server_ids: list[str]
         """
         self._server_ids = server_ids
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this CreateNet2CloudPhoneServerResponse.
+
+        任务错误码说明。
+
+        :return: The error_msg of this CreateNet2CloudPhoneServerResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this CreateNet2CloudPhoneServerResponse.
+
+        任务错误码说明。
+
+        :param error_msg: The error_msg of this CreateNet2CloudPhoneServerResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this CreateNet2CloudPhoneServerResponse.
+
+        任务错误码。
+
+        :return: The error_code of this CreateNet2CloudPhoneServerResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this CreateNet2CloudPhoneServerResponse.
+
+        任务错误码。
+
+        :param error_code: The error_code of this CreateNet2CloudPhoneServerResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

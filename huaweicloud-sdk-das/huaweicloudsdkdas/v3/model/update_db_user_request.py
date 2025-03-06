@@ -37,7 +37,7 @@ class UpdateDbUserRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param db_user_id: 数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        :param db_user_id: 数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
         :type db_user_id: str
         :param x_language: 语言
         :type x_language: str
@@ -86,7 +86,7 @@ class UpdateDbUserRequest:
     def db_user_id(self):
         """Gets the db_user_id of this UpdateDbUserRequest.
 
-        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
         :return: The db_user_id of this UpdateDbUserRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class UpdateDbUserRequest:
     def db_user_id(self, db_user_id):
         """Sets the db_user_id of this UpdateDbUserRequest.
 
-        数据库用户ID。每个用户需绑定一个数据库账号（数据库用户由“注册数据库用户”接口创建）。
+        数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
         :param db_user_id: The db_user_id of this UpdateDbUserRequest.
         :type db_user_id: str

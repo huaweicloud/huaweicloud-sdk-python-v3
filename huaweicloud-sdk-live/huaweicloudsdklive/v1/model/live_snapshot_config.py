@@ -25,6 +25,7 @@ class LiveSnapshotConfig:
         'obs_location': 'ObsFileAddr',
         'call_back_enable': 'str',
         'call_back_url': 'str',
+        'image_object_format': 'str',
         'image_access_protocol': 'str',
         'image_access_domain': 'str'
     }
@@ -38,11 +39,12 @@ class LiveSnapshotConfig:
         'obs_location': 'obs_location',
         'call_back_enable': 'call_back_enable',
         'call_back_url': 'call_back_url',
+        'image_object_format': 'image_object_format',
         'image_access_protocol': 'image_access_protocol',
         'image_access_domain': 'image_access_domain'
     }
 
-    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_access_protocol=None, image_access_domain=None):
+    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_object_format=None, image_access_protocol=None, image_access_domain=None):
         """LiveSnapshotConfig
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class LiveSnapshotConfig:
         :type call_back_enable: str
         :param call_back_url: 通知服务器地址，必须是合法的URL且携带协议，协议支持http和https。截图完成后直播服务会向此地址推送截图状态信息。
         :type call_back_url: str
+        :param image_object_format: 截图存储文件命名规则， 仅支持jpg格式 包含 - &#39;{obs_object}&#39; OBS存储路径，即obs_location.object的值  - &#39;{domain}&#39; 域名 - &#39;{app}&#39; 应用名 - &#39;{stream}&#39;  流名  其中实时截图模式下  - &#39;{unix_time}&#39;  时间戳，秒 - &#39;{unix_time_milli}&#39;  时间戳，毫秒 - &#39;{fmt_time_utc}&#39;   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - &#39;{fmt_time_local}&#39;  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
+        :type image_object_format: str
         :param image_access_protocol: 截图存储文件访问协议， 仅支持http、https格式
         :type image_access_protocol: str
         :param image_access_domain: 截图存储文件访问域名
@@ -79,6 +83,7 @@ class LiveSnapshotConfig:
         self._obs_location = None
         self._call_back_enable = None
         self._call_back_url = None
+        self._image_object_format = None
         self._image_access_protocol = None
         self._image_access_domain = None
         self.discriminator = None
@@ -94,6 +99,8 @@ class LiveSnapshotConfig:
             self.call_back_enable = call_back_enable
         if call_back_url is not None:
             self.call_back_url = call_back_url
+        if image_object_format is not None:
+            self.image_object_format = image_object_format
         if image_access_protocol is not None:
             self.image_access_protocol = image_access_protocol
         if image_access_domain is not None:
@@ -270,6 +277,28 @@ class LiveSnapshotConfig:
         :type call_back_url: str
         """
         self._call_back_url = call_back_url
+
+    @property
+    def image_object_format(self):
+        """Gets the image_object_format of this LiveSnapshotConfig.
+
+        截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
+
+        :return: The image_object_format of this LiveSnapshotConfig.
+        :rtype: str
+        """
+        return self._image_object_format
+
+    @image_object_format.setter
+    def image_object_format(self, image_object_format):
+        """Sets the image_object_format of this LiveSnapshotConfig.
+
+        截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
+
+        :param image_object_format: The image_object_format of this LiveSnapshotConfig.
+        :type image_object_format: str
+        """
+        self._image_object_format = image_object_format
 
     @property
     def image_access_protocol(self):

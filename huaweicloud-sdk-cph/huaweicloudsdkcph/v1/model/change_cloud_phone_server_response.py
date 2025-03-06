@@ -20,16 +20,20 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
     openapi_types = {
         'request_id': 'str',
         'server_id': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'error_msg': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'server_id': 'server_id',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'error_msg': 'error_msg',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, request_id=None, server_id=None, job_id=None):
+    def __init__(self, request_id=None, server_id=None, job_id=None, error_msg=None, error_code=None):
         """ChangeCloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +44,10 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
         :type server_id: str
         :param job_id: 任务id。
         :type job_id: str
+        :param error_msg: 任务错误码说明。
+        :type error_msg: str
+        :param error_code: 任务错误码。
+        :type error_code: str
         """
         
         super(ChangeCloudPhoneServerResponse, self).__init__()
@@ -47,6 +55,8 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
         self._request_id = None
         self._server_id = None
         self._job_id = None
+        self._error_msg = None
+        self._error_code = None
         self.discriminator = None
 
         if request_id is not None:
@@ -55,6 +65,10 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
             self.server_id = server_id
         if job_id is not None:
             self.job_id = job_id
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def request_id(self):
@@ -121,6 +135,50 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this ChangeCloudPhoneServerResponse.
+
+        任务错误码说明。
+
+        :return: The error_msg of this ChangeCloudPhoneServerResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this ChangeCloudPhoneServerResponse.
+
+        任务错误码说明。
+
+        :param error_msg: The error_msg of this ChangeCloudPhoneServerResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this ChangeCloudPhoneServerResponse.
+
+        任务错误码。
+
+        :return: The error_code of this ChangeCloudPhoneServerResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this ChangeCloudPhoneServerResponse.
+
+        任务错误码。
+
+        :param error_code: The error_code of this ChangeCloudPhoneServerResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

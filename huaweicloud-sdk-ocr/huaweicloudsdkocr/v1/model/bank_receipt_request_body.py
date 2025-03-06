@@ -19,16 +19,20 @@ class BankReceiptRequestBody:
     openapi_types = {
         'data': 'str',
         'url': 'str',
-        'page_num': 'int'
+        'page_num': 'int',
+        'single_orientation_mode': 'bool',
+        'erase_seal': 'bool'
     }
 
     attribute_map = {
         'data': 'data',
         'url': 'url',
-        'page_num': 'page_num'
+        'page_num': 'page_num',
+        'single_orientation_mode': 'single_orientation_mode',
+        'erase_seal': 'erase_seal'
     }
 
-    def __init__(self, data=None, url=None, page_num=None):
+    def __init__(self, data=None, url=None, page_num=None, single_orientation_mode=None, erase_seal=None):
         """BankReceiptRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class BankReceiptRequestBody:
         :type url: str
         :param page_num: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页，该参数仅在文件为PDF格式时有效。 
         :type page_num: int
+        :param single_orientation_mode: 单朝向模式开关。可选值包括： - true：打开单朝向模式。 - false：关闭单朝向模式。  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为\&quot;true\&quot;，既默认图片中的文字方向为单朝向。 
+        :type single_orientation_mode: bool
+        :param erase_seal: 是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
+        :type erase_seal: bool
         """
         
         
@@ -46,6 +54,8 @@ class BankReceiptRequestBody:
         self._data = None
         self._url = None
         self._page_num = None
+        self._single_orientation_mode = None
+        self._erase_seal = None
         self.discriminator = None
 
         if data is not None:
@@ -54,6 +64,10 @@ class BankReceiptRequestBody:
             self.url = url
         if page_num is not None:
             self.page_num = page_num
+        if single_orientation_mode is not None:
+            self.single_orientation_mode = single_orientation_mode
+        if erase_seal is not None:
+            self.erase_seal = erase_seal
 
     @property
     def data(self):
@@ -120,6 +134,50 @@ class BankReceiptRequestBody:
         :type page_num: int
         """
         self._page_num = page_num
+
+    @property
+    def single_orientation_mode(self):
+        """Gets the single_orientation_mode of this BankReceiptRequestBody.
+
+        单朝向模式开关。可选值包括： - true：打开单朝向模式。 - false：关闭单朝向模式。  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为\"true\"，既默认图片中的文字方向为单朝向。 
+
+        :return: The single_orientation_mode of this BankReceiptRequestBody.
+        :rtype: bool
+        """
+        return self._single_orientation_mode
+
+    @single_orientation_mode.setter
+    def single_orientation_mode(self, single_orientation_mode):
+        """Sets the single_orientation_mode of this BankReceiptRequestBody.
+
+        单朝向模式开关。可选值包括： - true：打开单朝向模式。 - false：关闭单朝向模式。  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为\"true\"，既默认图片中的文字方向为单朝向。 
+
+        :param single_orientation_mode: The single_orientation_mode of this BankReceiptRequestBody.
+        :type single_orientation_mode: bool
+        """
+        self._single_orientation_mode = single_orientation_mode
+
+    @property
+    def erase_seal(self):
+        """Gets the erase_seal of this BankReceiptRequestBody.
+
+        是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
+
+        :return: The erase_seal of this BankReceiptRequestBody.
+        :rtype: bool
+        """
+        return self._erase_seal
+
+    @erase_seal.setter
+    def erase_seal(self, erase_seal):
+        """Sets the erase_seal of this BankReceiptRequestBody.
+
+        是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
+
+        :param erase_seal: The erase_seal of this BankReceiptRequestBody.
+        :type erase_seal: bool
+        """
+        self._erase_seal = erase_seal
 
     def to_dict(self):
         """Returns the model properties as a dict"""

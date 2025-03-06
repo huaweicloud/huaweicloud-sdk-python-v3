@@ -30,7 +30,9 @@ class ListAppsResponseBodyResult:
         'desc_en': 'str',
         'database_type': 'str',
         'environment': 'str',
-        'owners': 'list[str]'
+        'owners': 'list[str]',
+        'app_type': 'str',
+        'permission_control': 'str'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class ListAppsResponseBodyResult:
         'desc_en': 'desc_en',
         'database_type': 'database_type',
         'environment': 'environment',
-        'owners': 'owners'
+        'owners': 'owners',
+        'app_type': 'app_type',
+        'permission_control': 'permission_control'
     }
 
-    def __init__(self, id=None, project_id=None, mark_for_delete=None, create_by=None, create_time=None, update_by=None, update_time=None, name_cn=None, name_en=None, desc_cn=None, desc_en=None, database_type=None, environment=None, owners=None):
+    def __init__(self, id=None, project_id=None, mark_for_delete=None, create_by=None, create_time=None, update_by=None, update_time=None, name_cn=None, name_en=None, desc_cn=None, desc_en=None, database_type=None, environment=None, owners=None, app_type=None, permission_control=None):
         """ListAppsResponseBodyResult
 
         The model defined in huaweicloud sdk
@@ -83,6 +87,10 @@ class ListAppsResponseBodyResult:
         :type environment: str
         :param owners: 应用责任人。
         :type owners: list[str]
+        :param app_type: App类型。
+        :type app_type: str
+        :param permission_control: App权限控制。
+        :type permission_control: str
         """
         
         
@@ -101,6 +109,8 @@ class ListAppsResponseBodyResult:
         self._database_type = None
         self._environment = None
         self._owners = None
+        self._app_type = None
+        self._permission_control = None
         self.discriminator = None
 
         if id is not None:
@@ -131,6 +141,10 @@ class ListAppsResponseBodyResult:
             self.environment = environment
         if owners is not None:
             self.owners = owners
+        if app_type is not None:
+            self.app_type = app_type
+        if permission_control is not None:
+            self.permission_control = permission_control
 
     @property
     def id(self):
@@ -439,6 +453,50 @@ class ListAppsResponseBodyResult:
         :type owners: list[str]
         """
         self._owners = owners
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this ListAppsResponseBodyResult.
+
+        App类型。
+
+        :return: The app_type of this ListAppsResponseBodyResult.
+        :rtype: str
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this ListAppsResponseBodyResult.
+
+        App类型。
+
+        :param app_type: The app_type of this ListAppsResponseBodyResult.
+        :type app_type: str
+        """
+        self._app_type = app_type
+
+    @property
+    def permission_control(self):
+        """Gets the permission_control of this ListAppsResponseBodyResult.
+
+        App权限控制。
+
+        :return: The permission_control of this ListAppsResponseBodyResult.
+        :rtype: str
+        """
+        return self._permission_control
+
+    @permission_control.setter
+    def permission_control(self, permission_control):
+        """Sets the permission_control of this ListAppsResponseBodyResult.
+
+        App权限控制。
+
+        :param permission_control: The permission_control of this ListAppsResponseBodyResult.
+        :type permission_control: str
+        """
+        self._permission_control = permission_control
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,9 @@ class PhoneModel:
         'phone_model_version': 'int',
         'dpi': 'int',
         'fps': 'str',
-        'volume_mode': 'int'
+        'volume_mode': 'int',
+        'render_fps': 'int',
+        'stream_fps': 'int'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class PhoneModel:
         'phone_model_version': 'phone_model_version',
         'dpi': 'dpi',
         'fps': 'fps',
-        'volume_mode': 'volume_mode'
+        'volume_mode': 'volume_mode',
+        'render_fps': 'render_fps',
+        'stream_fps': 'stream_fps'
     }
 
-    def __init__(self, server_model_name=None, phone_model_name=None, status=None, cpu=None, memory=None, disk=None, resolution=None, extend_spec=None, spec_code=None, phone_capacity=None, image_label=None, product_type=None, phone_model_version=None, dpi=None, fps=None, volume_mode=None):
+    def __init__(self, server_model_name=None, phone_model_name=None, status=None, cpu=None, memory=None, disk=None, resolution=None, extend_spec=None, spec_code=None, phone_capacity=None, image_label=None, product_type=None, phone_model_version=None, dpi=None, fps=None, volume_mode=None, render_fps=None, stream_fps=None):
         """PhoneModel
 
         The model defined in huaweicloud sdk
@@ -69,7 +73,7 @@ class PhoneModel:
         :type cpu: int
         :param memory: 内存大小，单位：MB。
         :type memory: int
-        :param disk: 系统存储大小，单位：GB。
+        :param disk: 系统存储大小，单位：GiB。
         :type disk: int
         :param resolution: 分辨率，不超过16个字节。
         :type resolution: str
@@ -91,6 +95,10 @@ class PhoneModel:
         :type fps: str
         :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
         :type volume_mode: int
+        :param render_fps: 渲染帧率。
+        :type render_fps: int
+        :param stream_fps: 出流帧率。
+        :type stream_fps: int
         """
         
         
@@ -111,6 +119,8 @@ class PhoneModel:
         self._dpi = None
         self._fps = None
         self._volume_mode = None
+        self._render_fps = None
+        self._stream_fps = None
         self.discriminator = None
 
         if server_model_name is not None:
@@ -145,6 +155,10 @@ class PhoneModel:
             self.fps = fps
         if volume_mode is not None:
             self.volume_mode = volume_mode
+        if render_fps is not None:
+            self.render_fps = render_fps
+        if stream_fps is not None:
+            self.stream_fps = stream_fps
 
     @property
     def server_model_name(self):
@@ -260,7 +274,7 @@ class PhoneModel:
     def disk(self):
         """Gets the disk of this PhoneModel.
 
-        系统存储大小，单位：GB。
+        系统存储大小，单位：GiB。
 
         :return: The disk of this PhoneModel.
         :rtype: int
@@ -271,7 +285,7 @@ class PhoneModel:
     def disk(self, disk):
         """Sets the disk of this PhoneModel.
 
-        系统存储大小，单位：GB。
+        系统存储大小，单位：GiB。
 
         :param disk: The disk of this PhoneModel.
         :type disk: int
@@ -497,6 +511,50 @@ class PhoneModel:
         :type volume_mode: int
         """
         self._volume_mode = volume_mode
+
+    @property
+    def render_fps(self):
+        """Gets the render_fps of this PhoneModel.
+
+        渲染帧率。
+
+        :return: The render_fps of this PhoneModel.
+        :rtype: int
+        """
+        return self._render_fps
+
+    @render_fps.setter
+    def render_fps(self, render_fps):
+        """Sets the render_fps of this PhoneModel.
+
+        渲染帧率。
+
+        :param render_fps: The render_fps of this PhoneModel.
+        :type render_fps: int
+        """
+        self._render_fps = render_fps
+
+    @property
+    def stream_fps(self):
+        """Gets the stream_fps of this PhoneModel.
+
+        出流帧率。
+
+        :return: The stream_fps of this PhoneModel.
+        :rtype: int
+        """
+        return self._stream_fps
+
+    @stream_fps.setter
+    def stream_fps(self, stream_fps):
+        """Sets the stream_fps of this PhoneModel.
+
+        出流帧率。
+
+        :param stream_fps: The stream_fps of this PhoneModel.
+        :type stream_fps: int
+        """
+        self._stream_fps = stream_fps
 
     def to_dict(self):
         """Returns the model properties as a dict"""

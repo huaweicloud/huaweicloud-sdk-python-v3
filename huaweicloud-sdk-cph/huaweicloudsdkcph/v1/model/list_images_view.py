@@ -65,7 +65,7 @@ class ListImagesView:
         :type image_id: str
         :param image_version: 镜像AOSP版本
         :type image_version: str
-        :param image_type: 镜像类型 公共镜像：public 私有镜像：private 共享镜像：share
+        :param image_type: 镜像类型 私有镜像：private 共享镜像：share
         :type image_type: str
         :param status: 镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
         :type status: int
@@ -291,7 +291,7 @@ class ListImagesView:
     def image_type(self):
         """Gets the image_type of this ListImagesView.
 
-        镜像类型 公共镜像：public 私有镜像：private 共享镜像：share
+        镜像类型 私有镜像：private 共享镜像：share
 
         :return: The image_type of this ListImagesView.
         :rtype: str
@@ -302,7 +302,7 @@ class ListImagesView:
     def image_type(self, image_type):
         """Sets the image_type of this ListImagesView.
 
-        镜像类型 公共镜像：public 私有镜像：private 共享镜像：share
+        镜像类型 私有镜像：private 共享镜像：share
 
         :param image_type: The image_type of this ListImagesView.
         :type image_type: str

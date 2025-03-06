@@ -85,8 +85,7 @@ class WorkspaceTransformVO:
 
         if target_model_id is not None:
             self.target_model_id = target_model_id
-        if target_model_name is not None:
-            self.target_model_name = target_model_name
+        self.target_model_name = target_model_name
         if description is not None:
             self.description = description
         if update_exist_tables is not None:

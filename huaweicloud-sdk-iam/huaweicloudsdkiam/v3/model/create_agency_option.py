@@ -22,7 +22,7 @@ class CreateAgencyOption:
         'trust_domain_id': 'str',
         'trust_domain_name': 'str',
         'description': 'str',
-        'duration': 'str'
+        'duration': 'object'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class CreateAgencyOption:
         :param description: 委托描述信息，长度不大于255位。
         :type description: str
         :param duration: description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\&quot;表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
-        :type duration: str
+        :type duration: object
         """
         
         
@@ -191,7 +191,7 @@ class CreateAgencyOption:
         description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
         :return: The duration of this CreateAgencyOption.
-        :rtype: str
+        :rtype: object
         """
         return self._duration
 
@@ -202,7 +202,7 @@ class CreateAgencyOption:
         description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
         :param duration: The duration of this CreateAgencyOption.
-        :type duration: str
+        :type duration: object
         """
         self._duration = duration
 

@@ -2501,8 +2501,6 @@ class CaeClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -2572,8 +2570,6 @@ class CaeClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -2639,8 +2635,6 @@ class CaeClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -2708,8 +2702,6 @@ class CaeClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -2777,8 +2769,6 @@ class CaeClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 

@@ -18,6 +18,7 @@ class RuleAclListResponseDTODataRecords:
 
     openapi_types = {
         'rule_id': 'str',
+        'applications': 'list[str]',
         'address_type': 'int',
         'name': 'str',
         'direction': 'int',
@@ -40,6 +41,7 @@ class RuleAclListResponseDTODataRecords:
 
     attribute_map = {
         'rule_id': 'rule_id',
+        'applications': 'applications',
         'address_type': 'address_type',
         'name': 'name',
         'direction': 'direction',
@@ -60,13 +62,15 @@ class RuleAclListResponseDTODataRecords:
         'tag': 'tag'
     }
 
-    def __init__(self, rule_id=None, address_type=None, name=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
+    def __init__(self, rule_id=None, applications=None, address_type=None, name=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
         """RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
         :param rule_id: 规则id
         :type rule_id: str
+        :param applications: 应用列表
+        :type applications: list[str]
         :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
         :param name: 规则名称
@@ -108,6 +112,7 @@ class RuleAclListResponseDTODataRecords:
         
 
         self._rule_id = None
+        self._applications = None
         self._address_type = None
         self._name = None
         self._direction = None
@@ -130,6 +135,8 @@ class RuleAclListResponseDTODataRecords:
 
         if rule_id is not None:
             self.rule_id = rule_id
+        if applications is not None:
+            self.applications = applications
         if address_type is not None:
             self.address_type = address_type
         if name is not None:
@@ -188,6 +195,28 @@ class RuleAclListResponseDTODataRecords:
         :type rule_id: str
         """
         self._rule_id = rule_id
+
+    @property
+    def applications(self):
+        """Gets the applications of this RuleAclListResponseDTODataRecords.
+
+        应用列表
+
+        :return: The applications of this RuleAclListResponseDTODataRecords.
+        :rtype: list[str]
+        """
+        return self._applications
+
+    @applications.setter
+    def applications(self, applications):
+        """Sets the applications of this RuleAclListResponseDTODataRecords.
+
+        应用列表
+
+        :param applications: The applications of this RuleAclListResponseDTODataRecords.
+        :type applications: list[str]
+        """
+        self._applications = applications
 
     @property
     def address_type(self):

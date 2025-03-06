@@ -45,7 +45,7 @@ class ListImagesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param image_type: 镜像类型。 - public：公共镜像 - private：私有镜像 - share：共享镜像
+        :param image_type: 镜像类型。 - private：私有镜像 - share：共享镜像
         :type image_type: str
         :param status: 镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
         :type status: int
@@ -101,7 +101,7 @@ class ListImagesRequest:
     def image_type(self):
         """Gets the image_type of this ListImagesRequest.
 
-        镜像类型。 - public：公共镜像 - private：私有镜像 - share：共享镜像
+        镜像类型。 - private：私有镜像 - share：共享镜像
 
         :return: The image_type of this ListImagesRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListImagesRequest:
     def image_type(self, image_type):
         """Sets the image_type of this ListImagesRequest.
 
-        镜像类型。 - public：公共镜像 - private：私有镜像 - share：共享镜像
+        镜像类型。 - private：私有镜像 - share：共享镜像
 
         :param image_type: The image_type of this ListImagesRequest.
         :type image_type: str

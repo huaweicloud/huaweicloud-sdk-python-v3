@@ -22,6 +22,7 @@ class ListInstancesResult:
         'status': 'str',
         'port': 'str',
         'mode': 'str',
+        'product_type': 'str',
         'region': 'str',
         'datastore': 'ListInstancesDatastoreResult',
         'engine': 'str',
@@ -50,6 +51,7 @@ class ListInstancesResult:
         'status': 'status',
         'port': 'port',
         'mode': 'mode',
+        'product_type': 'product_type',
         'region': 'region',
         'datastore': 'datastore',
         'engine': 'engine',
@@ -72,7 +74,7 @@ class ListInstancesResult:
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, product_type=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
         """ListInstancesResult
 
         The model defined in huaweicloud sdk
@@ -85,8 +87,10 @@ class ListInstancesResult:
         :type status: str
         :param port: 数据库端口。
         :type port: str
-        :param mode: 实例类型。与请求参数相同。
+        :param mode: 实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
         :type mode: str
+        :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        :type product_type: str
         :param region: 实例所在区域。
         :type region: str
         :param datastore: 
@@ -136,6 +140,7 @@ class ListInstancesResult:
         self._status = None
         self._port = None
         self._mode = None
+        self._product_type = None
         self._region = None
         self._datastore = None
         self._engine = None
@@ -163,6 +168,8 @@ class ListInstancesResult:
         self.status = status
         self.port = port
         self.mode = mode
+        if product_type is not None:
+            self.product_type = product_type
         self.region = region
         self.datastore = datastore
         self.engine = engine
@@ -280,7 +287,7 @@ class ListInstancesResult:
     def mode(self):
         """Gets the mode of this ListInstancesResult.
 
-        实例类型。与请求参数相同。
+        实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
 
         :return: The mode of this ListInstancesResult.
         :rtype: str
@@ -291,12 +298,34 @@ class ListInstancesResult:
     def mode(self, mode):
         """Sets the mode of this ListInstancesResult.
 
-        实例类型。与请求参数相同。
+        实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
 
         :param mode: The mode of this ListInstancesResult.
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def product_type(self):
+        """Gets the product_type of this ListInstancesResult.
+
+        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+
+        :return: The product_type of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._product_type
+
+    @product_type.setter
+    def product_type(self, product_type):
+        """Sets the product_type of this ListInstancesResult.
+
+        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+
+        :param product_type: The product_type of this ListInstancesResult.
+        :type product_type: str
+        """
+        self._product_type = product_type
 
     @property
     def region(self):

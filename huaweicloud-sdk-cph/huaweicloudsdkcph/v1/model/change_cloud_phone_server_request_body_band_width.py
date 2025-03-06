@@ -35,9 +35,9 @@ class ChangeCloudPhoneServerRequestBodyBandWidth:
 
         The model defined in huaweicloud sdk
 
-        :param band_width_id: 云手机服务器的带宽唯一标识。
+        :param band_width_id: 云手机服务器的带宽唯一标识，选共享带宽时必选。
         :type band_width_id: str
-        :param band_width_size: 云手机服务器的带宽大小。
+        :param band_width_size: 云手机服务器的带宽大小，选独享带宽时必选。
         :type band_width_size: int
         :param band_width_charge_mode: 云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
         :type band_width_charge_mode: int
@@ -64,7 +64,7 @@ class ChangeCloudPhoneServerRequestBodyBandWidth:
     def band_width_id(self):
         """Gets the band_width_id of this ChangeCloudPhoneServerRequestBodyBandWidth.
 
-        云手机服务器的带宽唯一标识。
+        云手机服务器的带宽唯一标识，选共享带宽时必选。
 
         :return: The band_width_id of this ChangeCloudPhoneServerRequestBodyBandWidth.
         :rtype: str
@@ -75,7 +75,7 @@ class ChangeCloudPhoneServerRequestBodyBandWidth:
     def band_width_id(self, band_width_id):
         """Sets the band_width_id of this ChangeCloudPhoneServerRequestBodyBandWidth.
 
-        云手机服务器的带宽唯一标识。
+        云手机服务器的带宽唯一标识，选共享带宽时必选。
 
         :param band_width_id: The band_width_id of this ChangeCloudPhoneServerRequestBodyBandWidth.
         :type band_width_id: str
@@ -86,7 +86,7 @@ class ChangeCloudPhoneServerRequestBodyBandWidth:
     def band_width_size(self):
         """Gets the band_width_size of this ChangeCloudPhoneServerRequestBodyBandWidth.
 
-        云手机服务器的带宽大小。
+        云手机服务器的带宽大小，选独享带宽时必选。
 
         :return: The band_width_size of this ChangeCloudPhoneServerRequestBodyBandWidth.
         :rtype: int
@@ -97,7 +97,7 @@ class ChangeCloudPhoneServerRequestBodyBandWidth:
     def band_width_size(self, band_width_size):
         """Sets the band_width_size of this ChangeCloudPhoneServerRequestBodyBandWidth.
 
-        云手机服务器的带宽大小。
+        云手机服务器的带宽大小，选独享带宽时必选。
 
         :param band_width_size: The band_width_size of this ChangeCloudPhoneServerRequestBodyBandWidth.
         :type band_width_size: int

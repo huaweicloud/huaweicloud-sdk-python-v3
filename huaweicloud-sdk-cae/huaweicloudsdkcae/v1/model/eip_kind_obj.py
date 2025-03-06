@@ -9,7 +9,7 @@ class EipKindObj:
     """
     allowed enum values
     """
-    EIP = "eip"
+    EIP = "Eip"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

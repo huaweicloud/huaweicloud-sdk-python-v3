@@ -43,7 +43,7 @@ class ShowDesignOperationResultRequest:
         :type workspace: str
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
-        :param operation_type: 批量操作类型。 枚举值：   - PUBLISH: 发布   - ADD_TAGS: 打标签   - APPROVAL: 审批   - ER_REVERSE_DB: 关系建模逆向数据库   - CODETABLE_REVERSE_DB: 码表逆向数据库   - DIMENSION_REVERSE_DB: 维度逆向数据库   - FACT_LOGIC_TABLE_REVERSE_DB: 事实表逆向数据库   - SYNC_TABLES: 同步元模型   - IMPORT_STANDARD: 导入数据标准   - IMPORT_CODETABLE: 导入码表   - IMPORT_ER_TABLE: 导入关系建模（逻辑实体/物理表）   - IMPORT_BUSINESS: 导入业务分层（主题）   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型   - PUBLISH_CODETABLE: 发布码表   - PUBLISH_STANDARD: 发布数据标准   - TABLE_MODEL_RELOCATE: 关系建模业务表批量修改主题   - DIMENSION_RELOCATE: 维度批量修改主题   - FACT_LOGIC_TABLE_RELOCATE: 事实表批量修改主题   - AGGREGATION_LOGIC_TABLE_RELOCATE: 汇总表批量修改主题   - ATOMIC_INDEX_RELOCATE: 原子指标批量修改主题   - DERIVATIVE_INDEX_RELOCATE: 衍生指标批量修改主题   - COMPOUND_METRIC_RELOCATE: 复合指标批量修改主题   - BIZ_METRIC_RELOCATE: 业务指标批量修改流程   - CODE_TABLE_RELOCATE: 码表批量修改目录   - STANDARD_ELEMENT_RELOCATE: 数据标准批量修改目录   - INFO_ARCH_RELOCATE: 信息架构批量修改主题 
+        :param operation_type: 批量操作类型。 枚举值：   - ER_REVERSE_DB: 关系建模逆向数据库   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型 
         :type operation_type: str
         :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
@@ -66,8 +66,7 @@ class ShowDesignOperationResultRequest:
         self.workspace = workspace
         if x_project_id is not None:
             self.x_project_id = x_project_id
-        if operation_type is not None:
-            self.operation_type = operation_type
+        self.operation_type = operation_type
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -123,7 +122,7 @@ class ShowDesignOperationResultRequest:
     def operation_type(self):
         """Gets the operation_type of this ShowDesignOperationResultRequest.
 
-        批量操作类型。 枚举值：   - PUBLISH: 发布   - ADD_TAGS: 打标签   - APPROVAL: 审批   - ER_REVERSE_DB: 关系建模逆向数据库   - CODETABLE_REVERSE_DB: 码表逆向数据库   - DIMENSION_REVERSE_DB: 维度逆向数据库   - FACT_LOGIC_TABLE_REVERSE_DB: 事实表逆向数据库   - SYNC_TABLES: 同步元模型   - IMPORT_STANDARD: 导入数据标准   - IMPORT_CODETABLE: 导入码表   - IMPORT_ER_TABLE: 导入关系建模（逻辑实体/物理表）   - IMPORT_BUSINESS: 导入业务分层（主题）   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型   - PUBLISH_CODETABLE: 发布码表   - PUBLISH_STANDARD: 发布数据标准   - TABLE_MODEL_RELOCATE: 关系建模业务表批量修改主题   - DIMENSION_RELOCATE: 维度批量修改主题   - FACT_LOGIC_TABLE_RELOCATE: 事实表批量修改主题   - AGGREGATION_LOGIC_TABLE_RELOCATE: 汇总表批量修改主题   - ATOMIC_INDEX_RELOCATE: 原子指标批量修改主题   - DERIVATIVE_INDEX_RELOCATE: 衍生指标批量修改主题   - COMPOUND_METRIC_RELOCATE: 复合指标批量修改主题   - BIZ_METRIC_RELOCATE: 业务指标批量修改流程   - CODE_TABLE_RELOCATE: 码表批量修改目录   - STANDARD_ELEMENT_RELOCATE: 数据标准批量修改目录   - INFO_ARCH_RELOCATE: 信息架构批量修改主题 
+        批量操作类型。 枚举值：   - ER_REVERSE_DB: 关系建模逆向数据库   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型 
 
         :return: The operation_type of this ShowDesignOperationResultRequest.
         :rtype: str
@@ -134,7 +133,7 @@ class ShowDesignOperationResultRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ShowDesignOperationResultRequest.
 
-        批量操作类型。 枚举值：   - PUBLISH: 发布   - ADD_TAGS: 打标签   - APPROVAL: 审批   - ER_REVERSE_DB: 关系建模逆向数据库   - CODETABLE_REVERSE_DB: 码表逆向数据库   - DIMENSION_REVERSE_DB: 维度逆向数据库   - FACT_LOGIC_TABLE_REVERSE_DB: 事实表逆向数据库   - SYNC_TABLES: 同步元模型   - IMPORT_STANDARD: 导入数据标准   - IMPORT_CODETABLE: 导入码表   - IMPORT_ER_TABLE: 导入关系建模（逻辑实体/物理表）   - IMPORT_BUSINESS: 导入业务分层（主题）   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型   - PUBLISH_CODETABLE: 发布码表   - PUBLISH_STANDARD: 发布数据标准   - TABLE_MODEL_RELOCATE: 关系建模业务表批量修改主题   - DIMENSION_RELOCATE: 维度批量修改主题   - FACT_LOGIC_TABLE_RELOCATE: 事实表批量修改主题   - AGGREGATION_LOGIC_TABLE_RELOCATE: 汇总表批量修改主题   - ATOMIC_INDEX_RELOCATE: 原子指标批量修改主题   - DERIVATIVE_INDEX_RELOCATE: 衍生指标批量修改主题   - COMPOUND_METRIC_RELOCATE: 复合指标批量修改主题   - BIZ_METRIC_RELOCATE: 业务指标批量修改流程   - CODE_TABLE_RELOCATE: 码表批量修改目录   - STANDARD_ELEMENT_RELOCATE: 数据标准批量修改目录   - INFO_ARCH_RELOCATE: 信息架构批量修改主题 
+        批量操作类型。 枚举值：   - ER_REVERSE_DB: 关系建模逆向数据库   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型 
 
         :param operation_type: The operation_type of this ShowDesignOperationResultRequest.
         :type operation_type: str

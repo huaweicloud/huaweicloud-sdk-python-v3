@@ -18,29 +18,43 @@ class DeleteImageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str'
+        'request_id': 'str',
+        'error_msg': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'error_msg': 'error_msg',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, request_id=None):
+    def __init__(self, request_id=None, error_msg=None, error_code=None):
         """DeleteImageResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求id
         :type request_id: str
+        :param error_msg: 任务错误码说明。
+        :type error_msg: str
+        :param error_code: 任务错误码。
+        :type error_code: str
         """
         
         super(DeleteImageResponse, self).__init__()
 
         self._request_id = None
+        self._error_msg = None
+        self._error_code = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def request_id(self):
@@ -63,6 +77,50 @@ class DeleteImageResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this DeleteImageResponse.
+
+        任务错误码说明。
+
+        :return: The error_msg of this DeleteImageResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this DeleteImageResponse.
+
+        任务错误码说明。
+
+        :param error_msg: The error_msg of this DeleteImageResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this DeleteImageResponse.
+
+        任务错误码。
+
+        :return: The error_code of this DeleteImageResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this DeleteImageResponse.
+
+        任务错误码。
+
+        :param error_code: The error_code of this DeleteImageResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

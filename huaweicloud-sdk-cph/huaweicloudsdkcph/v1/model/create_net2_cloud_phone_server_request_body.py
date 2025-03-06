@@ -32,7 +32,8 @@ class CreateNet2CloudPhoneServerRequestBody:
         'phone_data_volume': 'CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume',
         'server_share_data_volume': 'CreateNet2CloudPhoneServerRequestBodyServerShareDataVolume',
         'band_width': 'CreateNet2CloudPhoneServerRequestBodyBandWidth',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        '_property': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateNet2CloudPhoneServerRequestBody:
         'phone_data_volume': 'phone_data_volume',
         'server_share_data_volume': 'server_share_data_volume',
         'band_width': 'band_width',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        '_property': 'property'
     }
 
-    def __init__(self, server_name=None, server_model_name=None, phone_model_name=None, image_id=None, count=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, availability_zone=None):
+    def __init__(self, server_name=None, server_model_name=None, phone_model_name=None, image_id=None, count=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, availability_zone=None, _property=None):
         """CreateNet2CloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
@@ -89,8 +91,10 @@ class CreateNet2CloudPhoneServerRequestBody:
         :type server_share_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyServerShareDataVolume`
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
-        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
         :type availability_zone: str
+        :param _property: 云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+        :type _property: str
         """
         
         
@@ -111,6 +115,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         self._server_share_data_volume = None
         self._band_width = None
         self._availability_zone = None
+        self.__property = None
         self.discriminator = None
 
         self.server_name = server_name
@@ -135,6 +140,8 @@ class CreateNet2CloudPhoneServerRequestBody:
         self.band_width = band_width
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if _property is not None:
+            self._property = _property
 
     @property
     def server_name(self):
@@ -450,7 +457,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self):
         """Gets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :return: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -461,12 +468,34 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :param availability_zone: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def _property(self):
+        """Gets the _property of this CreateNet2CloudPhoneServerRequestBody.
+
+        云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+
+        :return: The _property of this CreateNet2CloudPhoneServerRequestBody.
+        :rtype: str
+        """
+        return self.__property
+
+    @_property.setter
+    def _property(self, _property):
+        """Sets the _property of this CreateNet2CloudPhoneServerRequestBody.
+
+        云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
+
+        :param _property: The _property of this CreateNet2CloudPhoneServerRequestBody.
+        :type _property: str
+        """
+        self.__property = _property
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2379,6 +2379,75 @@ class DwsClient(Client):
 
         return http_info
 
+    def delete_dws_cluster(self, request):
+        """删除集群V2
+
+        此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDwsCluster
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteDwsClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteDwsClusterResponse`
+        """
+        http_info = self._delete_dws_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dws_cluster_invoker(self, request):
+        http_info = self._delete_dws_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dws_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDwsClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'keep_last_manual_backup' in local_var_params:
+            query_params.append(('keep_last_manual_backup', local_var_params['keep_last_manual_backup']))
+        if 'release_eip_type' in local_var_params:
+            query_params.append(('release_eip_type', local_var_params['release_eip_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_event_sub(self, request):
         """删除订阅事件
 
@@ -8488,6 +8557,69 @@ class DwsClient(Client):
             query_params.append(('table_name', local_var_params['table_name']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_clusters(self, request):
+        """查询集群列表V2
+
+        该接口用于查询并显示集群列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClusters
+        :type request: :class:`huaweicloudsdkdws.v2.ShowClustersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowClustersResponse`
+        """
+        http_info = self._show_clusters_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_clusters_invoker(self, request):
+        http_info = self._show_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClustersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 

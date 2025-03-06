@@ -18,25 +18,21 @@ class CreateNoticeRuleRequest:
 
     openapi_types = {
         'x_enterprise_project_id': 'str',
-        'x_environment_id': 'str',
         'body': 'CreateNoticeRuleReq'
     }
 
     attribute_map = {
         'x_enterprise_project_id': 'X-Enterprise-Project-ID',
-        'x_environment_id': 'X-Environment-ID',
         'body': 'body'
     }
 
-    def __init__(self, x_enterprise_project_id=None, x_environment_id=None, body=None):
+    def __init__(self, x_enterprise_project_id=None, body=None):
         """CreateNoticeRuleRequest
 
         The model defined in huaweicloud sdk
 
         :param x_enterprise_project_id: 企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
         :type x_enterprise_project_id: str
-        :param x_environment_id: 环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
-        :type x_environment_id: str
         :param body: Body of the CreateNoticeRuleRequest
         :type body: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleReq`
         """
@@ -44,13 +40,11 @@ class CreateNoticeRuleRequest:
         
 
         self._x_enterprise_project_id = None
-        self._x_environment_id = None
         self._body = None
         self.discriminator = None
 
         if x_enterprise_project_id is not None:
             self.x_enterprise_project_id = x_enterprise_project_id
-        self.x_environment_id = x_environment_id
         if body is not None:
             self.body = body
 
@@ -75,28 +69,6 @@ class CreateNoticeRuleRequest:
         :type x_enterprise_project_id: str
         """
         self._x_enterprise_project_id = x_enterprise_project_id
-
-    @property
-    def x_environment_id(self):
-        """Gets the x_environment_id of this CreateNoticeRuleRequest.
-
-        环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
-
-        :return: The x_environment_id of this CreateNoticeRuleRequest.
-        :rtype: str
-        """
-        return self._x_environment_id
-
-    @x_environment_id.setter
-    def x_environment_id(self, x_environment_id):
-        """Sets the x_environment_id of this CreateNoticeRuleRequest.
-
-        环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
-
-        :param x_environment_id: The x_environment_id of this CreateNoticeRuleRequest.
-        :type x_environment_id: str
-        """
-        self._x_environment_id = x_environment_id
 
     @property
     def body(self):

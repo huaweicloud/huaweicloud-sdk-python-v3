@@ -33,7 +33,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
 
         :param volume_type: 磁盘类型，只支持如下类型：   - SSD   - GPSSD
         :type volume_type: str
-        :param size: 磁盘大小，单位GB，取值范围[0，32768]。
+        :param size: 共享磁盘大小，单位GiB，取值范围[10，32768]。
         :type size: int
         """
         
@@ -72,7 +72,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
     def size(self):
         """Gets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
-        磁盘大小，单位GB，取值范围[0，32768]。
+        共享磁盘大小，单位GiB，取值范围[10，32768]。
 
         :return: The size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
         :rtype: int
@@ -83,7 +83,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
     def size(self, size):
         """Sets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
-        磁盘大小，单位GB，取值范围[0，32768]。
+        共享磁盘大小，单位GiB，取值范围[10，32768]。
 
         :param size: The size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
         :type size: int

@@ -36,7 +36,9 @@ class ShowInstanceBeanResponse:
         'enterprise_project_id': 'str',
         'project_id': 'str',
         'engine_version': 'str',
-        'order_id': 'str'
+        'order_id': 'str',
+        'enable_ssl': 'bool',
+        'flavor_ref': 'str'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class ShowInstanceBeanResponse:
         'enterprise_project_id': 'enterprise_project_id',
         'project_id': 'project_id',
         'engine_version': 'engine_version',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'enable_ssl': 'enable_ssl',
+        'flavor_ref': 'flavor_ref'
     }
 
-    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, core_count=None, ram_capacity=None, error_msg=None, node_status=None, enterprise_project_id=None, project_id=None, engine_version=None, order_id=None):
+    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, core_count=None, ram_capacity=None, error_msg=None, node_status=None, enterprise_project_id=None, project_id=None, engine_version=None, order_id=None, enable_ssl=None, flavor_ref=None):
         """ShowInstanceBeanResponse
 
         The model defined in huaweicloud sdk
@@ -107,6 +111,10 @@ class ShowInstanceBeanResponse:
         :type engine_version: str
         :param order_id: 包周期的实例，有订单id。
         :type order_id: str
+        :param enable_ssl: 是否开启SSL。
+        :type enable_ssl: bool
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
         """
         
         
@@ -131,6 +139,8 @@ class ShowInstanceBeanResponse:
         self._project_id = None
         self._engine_version = None
         self._order_id = None
+        self._enable_ssl = None
+        self._flavor_ref = None
         self.discriminator = None
 
         self.id = id
@@ -155,6 +165,10 @@ class ShowInstanceBeanResponse:
         self.engine_version = engine_version
         if order_id is not None:
             self.order_id = order_id
+        if enable_ssl is not None:
+            self.enable_ssl = enable_ssl
+        if flavor_ref is not None:
+            self.flavor_ref = flavor_ref
 
     @property
     def id(self):
@@ -595,6 +609,50 @@ class ShowInstanceBeanResponse:
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def enable_ssl(self):
+        """Gets the enable_ssl of this ShowInstanceBeanResponse.
+
+        是否开启SSL。
+
+        :return: The enable_ssl of this ShowInstanceBeanResponse.
+        :rtype: bool
+        """
+        return self._enable_ssl
+
+    @enable_ssl.setter
+    def enable_ssl(self, enable_ssl):
+        """Sets the enable_ssl of this ShowInstanceBeanResponse.
+
+        是否开启SSL。
+
+        :param enable_ssl: The enable_ssl of this ShowInstanceBeanResponse.
+        :type enable_ssl: bool
+        """
+        self._enable_ssl = enable_ssl
+
+    @property
+    def flavor_ref(self):
+        """Gets the flavor_ref of this ShowInstanceBeanResponse.
+
+        规格码。
+
+        :return: The flavor_ref of this ShowInstanceBeanResponse.
+        :rtype: str
+        """
+        return self._flavor_ref
+
+    @flavor_ref.setter
+    def flavor_ref(self, flavor_ref):
+        """Sets the flavor_ref of this ShowInstanceBeanResponse.
+
+        规格码。
+
+        :param flavor_ref: The flavor_ref of this ShowInstanceBeanResponse.
+        :type flavor_ref: str
+        """
+        self._flavor_ref = flavor_ref
 
     def to_dict(self):
         """Returns the model properties as a dict"""

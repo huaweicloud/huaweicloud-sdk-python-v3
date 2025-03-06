@@ -453,10 +453,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchTagActionResponse`
         """
+        warnings.warn("Method 'batch_tag_action' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_tag_action_http_info(request)
         return self._call_api(**http_info)
 
     def batch_tag_action_invoker(self, request):
+        warnings.warn("Method 'batch_tag_action_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_tag_action_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -803,10 +805,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncResponse`
         """
+        warnings.warn("Method 'collect_db_objects_async' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._collect_db_objects_async_http_info(request)
         return self._call_api(**http_info)
 
     def collect_db_objects_async_invoker(self, request):
+        warnings.warn("Method 'collect_db_objects_async_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._collect_db_objects_async_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2347,10 +2351,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListDbObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListDbObjectsResponse`
         """
+        warnings.warn("Method 'list_db_objects' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_db_objects_http_info(request)
         return self._call_api(**http_info)
 
     def list_db_objects_invoker(self, request):
+        warnings.warn("Method 'list_db_objects_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_db_objects_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3024,10 +3030,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListProjectTagsResponse`
         """
+        warnings.warn("Method 'list_project_tags' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_project_tags_http_info(request)
         return self._call_api(**http_info)
 
     def list_project_tags_invoker(self, request):
+        warnings.warn("Method 'list_project_tags_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_project_tags_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4651,10 +4659,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowInstanceTagsResponse`
         """
+        warnings.warn("Method 'show_instance_tags' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_instance_tags_http_info(request)
         return self._call_api(**http_info)
 
     def show_instance_tags_invoker(self, request):
+        warnings.warn("Method 'show_instance_tags_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_instance_tags_http_info(request)
         return SyncInvoker(self, http_info)
 

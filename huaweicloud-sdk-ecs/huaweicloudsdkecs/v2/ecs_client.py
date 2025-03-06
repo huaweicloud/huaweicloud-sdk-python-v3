@@ -2292,12 +2292,10 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServerAzInfoRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerAzInfoResponse`
         """
-        warnings.warn("Method 'list_server_az_info' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_server_az_info_http_info(request)
         return self._call_api(**http_info)
 
     def list_server_az_info_invoker(self, request):
-        warnings.warn("Method 'list_server_az_info_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_server_az_info_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3321,10 +3319,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesResponse`
         """
+        warnings.warn("Method 'nova_list_availability_zones' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_availability_zones_http_info(request)
         return self._call_api(**http_info)
 
     def nova_list_availability_zones_invoker(self, request):
+        warnings.warn("Method 'nova_list_availability_zones_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_availability_zones_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4984,6 +4984,75 @@ class EcsClient(Client):
             path_params['server_id'] = local_var_params['server_id']
         if 'volume_id' in local_var_params:
             path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_server_interface(self, request):
+        """更新云服务器网卡挂载信息
+
+        更新云服务器网卡挂载信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateServerInterface
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerInterfaceResponse`
+        """
+        http_info = self._update_server_interface_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_server_interface_invoker(self, request):
+        http_info = self._update_server_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_interface_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-interface/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
 
         query_params = []
 

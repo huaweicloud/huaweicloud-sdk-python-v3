@@ -22,7 +22,8 @@ class PhoneImage:
         'is_public': 'int',
         'os_name': 'str',
         'image_label': 'str',
-        'image_id': 'str'
+        'image_id': 'str',
+        'is_support_encrypt': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PhoneImage:
         'is_public': 'is_public',
         'os_name': 'os_name',
         'image_label': 'image_label',
-        'image_id': 'image_id'
+        'image_id': 'image_id',
+        'is_support_encrypt': 'is_support_encrypt'
     }
 
-    def __init__(self, image_name=None, os_type=None, is_public=None, os_name=None, image_label=None, image_id=None):
+    def __init__(self, image_name=None, os_type=None, is_public=None, os_name=None, image_label=None, image_id=None, is_support_encrypt=None):
         """PhoneImage
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class PhoneImage:
         :type image_label: str
         :param image_id: 手机镜像唯一标识ID，不超过32个字节。
         :type image_id: str
+        :param is_support_encrypt: 当前镜像是否支持文件级加密
+        :type is_support_encrypt: bool
         """
         
         
@@ -61,6 +65,7 @@ class PhoneImage:
         self._os_name = None
         self._image_label = None
         self._image_id = None
+        self._is_support_encrypt = None
         self.discriminator = None
 
         if image_name is not None:
@@ -75,6 +80,8 @@ class PhoneImage:
             self.image_label = image_label
         if image_id is not None:
             self.image_id = image_id
+        if is_support_encrypt is not None:
+            self.is_support_encrypt = is_support_encrypt
 
     @property
     def image_name(self):
@@ -207,6 +214,28 @@ class PhoneImage:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def is_support_encrypt(self):
+        """Gets the is_support_encrypt of this PhoneImage.
+
+        当前镜像是否支持文件级加密
+
+        :return: The is_support_encrypt of this PhoneImage.
+        :rtype: bool
+        """
+        return self._is_support_encrypt
+
+    @is_support_encrypt.setter
+    def is_support_encrypt(self, is_support_encrypt):
+        """Sets the is_support_encrypt of this PhoneImage.
+
+        当前镜像是否支持文件级加密
+
+        :param is_support_encrypt: The is_support_encrypt of this PhoneImage.
+        :type is_support_encrypt: bool
+        """
+        self._is_support_encrypt = is_support_encrypt
 
     def to_dict(self):
         """Returns the model properties as a dict"""

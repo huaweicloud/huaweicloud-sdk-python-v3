@@ -44,6 +44,7 @@ def test_endpoint_with_region_1():
 
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
+    client.close()
 
 
 def test_endpoint_with_region_2():
@@ -55,6 +56,7 @@ def test_endpoint_with_region_2():
 
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
+    client.close()
 
 
 def test_endpoint_with_region_3():
@@ -66,6 +68,7 @@ def test_endpoint_with_region_3():
 
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
+    client.close()
 
 
 def test_endpoint_with_region_override_1():
@@ -77,6 +80,7 @@ def test_endpoint_with_region_override_1():
 
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == OVERRIDE_ENDPOINT
+    client.close()
 
 
 def test_endpoint_with_region_override_2():
@@ -88,6 +92,7 @@ def test_endpoint_with_region_override_2():
 
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == OVERRIDE_ENDPOINT
+    client.close()
 
 
 def test_region_value_of_empty():

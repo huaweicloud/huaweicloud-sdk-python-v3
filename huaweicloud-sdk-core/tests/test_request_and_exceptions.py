@@ -49,6 +49,7 @@ def client():
         .build()
 
     yield client
+    client.close()
 
 
 @pytest.fixture()

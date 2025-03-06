@@ -20,6 +20,7 @@ class ModifyApplicationRequestBody:
         'id': 'str',
         'description': 'str',
         'description_en': 'str',
+        'permission_control': 'str',
         'app_user_list': 'list[AppUserList]'
     }
 
@@ -27,10 +28,11 @@ class ModifyApplicationRequestBody:
         'id': 'id',
         'description': 'description',
         'description_en': 'description_en',
+        'permission_control': 'permission_control',
         'app_user_list': 'app_user_list'
     }
 
-    def __init__(self, id=None, description=None, description_en=None, app_user_list=None):
+    def __init__(self, id=None, description=None, description_en=None, permission_control=None, app_user_list=None):
         """ModifyApplicationRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ModifyApplicationRequestBody:
         :type description: str
         :param description_en: 应用的英文描述。
         :type description_en: str
+        :param permission_control: app权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+        :type permission_control: str
         :param app_user_list: 应用责任人。
         :type app_user_list: list[:class:`huaweicloudsdkidme.v1.AppUserList`]
         """
@@ -50,12 +54,15 @@ class ModifyApplicationRequestBody:
         self._id = None
         self._description = None
         self._description_en = None
+        self._permission_control = None
         self._app_user_list = None
         self.discriminator = None
 
         self.id = id
         self.description = description
         self.description_en = description_en
+        if permission_control is not None:
+            self.permission_control = permission_control
         self.app_user_list = app_user_list
 
     @property
@@ -123,6 +130,28 @@ class ModifyApplicationRequestBody:
         :type description_en: str
         """
         self._description_en = description_en
+
+    @property
+    def permission_control(self):
+        """Gets the permission_control of this ModifyApplicationRequestBody.
+
+        app权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+
+        :return: The permission_control of this ModifyApplicationRequestBody.
+        :rtype: str
+        """
+        return self._permission_control
+
+    @permission_control.setter
+    def permission_control(self, permission_control):
+        """Sets the permission_control of this ModifyApplicationRequestBody.
+
+        app权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
+
+        :param permission_control: The permission_control of this ModifyApplicationRequestBody.
+        :type permission_control: str
+        """
+        self._permission_control = permission_control
 
     @property
     def app_user_list(self):

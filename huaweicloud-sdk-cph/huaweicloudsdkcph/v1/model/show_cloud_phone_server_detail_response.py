@@ -80,7 +80,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type request_id: str
         :param server_name: 云手机服务器名称， 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
         :type server_name: str
-        :param availability_zone: 云手机服务器所在的可用区。
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
         :type availability_zone: str
         :param server_id: 云手机服务器的唯一标识，不超过32个字节。
         :type server_id: str
@@ -102,7 +102,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type subnet_id: str
         :param subnet_cidr: 云手机服务器所属子网的网段。网络版本 network_version取值为“v2”时，表示租户创建服务器时指定子网的 CIDR；取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
         :type subnet_cidr: str
-        :param resource_project_id: 云手机服务器的项目ID。
+        :param resource_project_id: 云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
         :type resource_project_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
@@ -251,7 +251,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def availability_zone(self):
         """Gets the availability_zone of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :return: The availability_zone of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -262,7 +262,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :param availability_zone: The availability_zone of this ShowCloudPhoneServerDetailResponse.
         :type availability_zone: str
@@ -493,7 +493,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def resource_project_id(self):
         """Gets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器的项目ID。
+        云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
         :return: The resource_project_id of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -504,7 +504,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def resource_project_id(self, resource_project_id):
         """Sets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器的项目ID。
+        云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
         :param resource_project_id: The resource_project_id of this ShowCloudPhoneServerDetailResponse.
         :type resource_project_id: str

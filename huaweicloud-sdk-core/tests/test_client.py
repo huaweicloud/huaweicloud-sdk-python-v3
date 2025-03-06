@@ -53,6 +53,7 @@ def mocked_client():
               .with_endpoints(["https://example.com"]))
     client.init_http_client()
     yield client
+    client.close()
 
 
 def test_application_json(mocked_responses, mocked_client):

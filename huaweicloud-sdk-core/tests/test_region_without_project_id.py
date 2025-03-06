@@ -39,6 +39,7 @@ def test_project_id_with_region(mocker):
 
     result_credential = mock_credential.process_auth_params(http_client, ServiceRegion.CN_NORTH_7.id)
     assert result_credential.project_id == "123456789"
+    client.close()
 
 
 def test_project_id_with_value_of(mocker):
@@ -51,6 +52,7 @@ def test_project_id_with_value_of(mocker):
 
     result_credential = mock_credential.process_auth_params(http_client, ServiceRegion.value_of("cn-north-7").id)
     assert result_credential.project_id == "123456789"
+    client.close()
 
 
 if __name__ == "__main__":

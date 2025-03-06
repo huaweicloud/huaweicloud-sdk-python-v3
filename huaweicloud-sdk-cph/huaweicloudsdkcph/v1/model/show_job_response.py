@@ -23,6 +23,8 @@ class ShowJobResponse(SdkResponse):
         'begin_time': 'str',
         'end_time': 'str',
         'status': 'int',
+        'phone_id': 'str',
+        'server_id': 'str',
         'error_msg': 'str',
         'error_code': 'str',
         'execute_msg': 'str'
@@ -34,12 +36,14 @@ class ShowJobResponse(SdkResponse):
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'status': 'status',
+        'phone_id': 'phone_id',
+        'server_id': 'server_id',
         'error_msg': 'error_msg',
         'error_code': 'error_code',
         'execute_msg': 'execute_msg'
     }
 
-    def __init__(self, request_id=None, job_id=None, begin_time=None, end_time=None, status=None, error_msg=None, error_code=None, execute_msg=None):
+    def __init__(self, request_id=None, job_id=None, begin_time=None, end_time=None, status=None, phone_id=None, server_id=None, error_msg=None, error_code=None, execute_msg=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class ShowJobResponse(SdkResponse):
         :type end_time: str
         :param status: 任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
         :type status: int
+        :param phone_id: 云手机的唯一标识，云手机相关任务包含此字段。
+        :type phone_id: str
+        :param server_id: 云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
+        :type server_id: str
         :param error_msg: 任务错误码说明。
         :type error_msg: str
         :param error_code: 任务错误码。
@@ -69,6 +77,8 @@ class ShowJobResponse(SdkResponse):
         self._begin_time = None
         self._end_time = None
         self._status = None
+        self._phone_id = None
+        self._server_id = None
         self._error_msg = None
         self._error_code = None
         self._execute_msg = None
@@ -84,6 +94,10 @@ class ShowJobResponse(SdkResponse):
             self.end_time = end_time
         if status is not None:
             self.status = status
+        if phone_id is not None:
+            self.phone_id = phone_id
+        if server_id is not None:
+            self.server_id = server_id
         if error_msg is not None:
             self.error_msg = error_msg
         if error_code is not None:
@@ -200,6 +214,50 @@ class ShowJobResponse(SdkResponse):
         :type status: int
         """
         self._status = status
+
+    @property
+    def phone_id(self):
+        """Gets the phone_id of this ShowJobResponse.
+
+        云手机的唯一标识，云手机相关任务包含此字段。
+
+        :return: The phone_id of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._phone_id
+
+    @phone_id.setter
+    def phone_id(self, phone_id):
+        """Sets the phone_id of this ShowJobResponse.
+
+        云手机的唯一标识，云手机相关任务包含此字段。
+
+        :param phone_id: The phone_id of this ShowJobResponse.
+        :type phone_id: str
+        """
+        self._phone_id = phone_id
+
+    @property
+    def server_id(self):
+        """Gets the server_id of this ShowJobResponse.
+
+        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
+
+        :return: The server_id of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._server_id
+
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this ShowJobResponse.
+
+        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
+
+        :param server_id: The server_id of this ShowJobResponse.
+        :type server_id: str
+        """
+        self._server_id = server_id
 
     @property
     def error_msg(self):

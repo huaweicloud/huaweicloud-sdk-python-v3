@@ -223,8 +223,7 @@ class DimensionVO:
         self.name_en = name_en
         self.dimension_type = dimension_type
         self.name_ch = name_ch
-        if description is not None:
-            self.description = description
+        self.description = description
         if create_by is not None:
             self.create_by = create_by
         if update_by is not None:
@@ -259,10 +258,8 @@ class DimensionVO:
         self.attributes = attributes
         if mappings is not None:
             self.mappings = mappings
-        if datasource is not None:
-            self.datasource = datasource
-        if owner is not None:
-            self.owner = owner
+        self.datasource = datasource
+        self.owner = owner
         if obs_location is not None:
             self.obs_location = obs_location
         if table_type is not None:

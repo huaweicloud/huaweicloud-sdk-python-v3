@@ -41,6 +41,8 @@ def test_endpoint_without_scheme():
     assert hasattr(client, "_endpoints") is True
     assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
 
+    client.close()
+
 
 if __name__ == "__main__":
     pytest.main()

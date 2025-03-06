@@ -30,6 +30,7 @@ class CreateVirtualInterface:
         'local_gateway_v6_ip': 'str',
         'remote_gateway_v6_ip': 'str',
         'vgw_id': 'str',
+        'gateway_id': 'str',
         'route_mode': 'str',
         'bgp_asn': 'int',
         'bgp_md5': 'str',
@@ -57,6 +58,7 @@ class CreateVirtualInterface:
         'local_gateway_v6_ip': 'local_gateway_v6_ip',
         'remote_gateway_v6_ip': 'remote_gateway_v6_ip',
         'vgw_id': 'vgw_id',
+        'gateway_id': 'gateway_id',
         'route_mode': 'route_mode',
         'bgp_asn': 'bgp_asn',
         'bgp_md5': 'bgp_md5',
@@ -70,7 +72,7 @@ class CreateVirtualInterface:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, direct_connect_id=None, type=None, service_type=None, vlan=None, bandwidth=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, vgw_id=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, lag_id=None, resource_tenant_id=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, direct_connect_id=None, type=None, service_type=None, vlan=None, bandwidth=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, vgw_id=None, gateway_id=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, lag_id=None, resource_tenant_id=None, enterprise_project_id=None, tags=None):
         """CreateVirtualInterface
 
         The model defined in huaweicloud sdk
@@ -101,6 +103,8 @@ class CreateVirtualInterface:
         :type remote_gateway_v6_ip: str
         :param vgw_id: 虚拟接口连接的虚拟网关的ID
         :type vgw_id: str
+        :param gateway_id: 虚拟接口关联的网关的ID。 当虚拟接口接入网关类型为全域接入网关时该参数必填，gateway_id值为全域接入网关的id
+        :type gateway_id: str
         :param route_mode: 路由模式：static/bgp
         :type route_mode: str
         :param bgp_asn: 客户侧BGP邻居的AS号
@@ -140,6 +144,7 @@ class CreateVirtualInterface:
         self._local_gateway_v6_ip = None
         self._remote_gateway_v6_ip = None
         self._vgw_id = None
+        self._gateway_id = None
         self._route_mode = None
         self._bgp_asn = None
         self._bgp_md5 = None
@@ -175,6 +180,8 @@ class CreateVirtualInterface:
         if remote_gateway_v6_ip is not None:
             self.remote_gateway_v6_ip = remote_gateway_v6_ip
         self.vgw_id = vgw_id
+        if gateway_id is not None:
+            self.gateway_id = gateway_id
         self.route_mode = route_mode
         if bgp_asn is not None:
             self.bgp_asn = bgp_asn
@@ -481,6 +488,28 @@ class CreateVirtualInterface:
         :type vgw_id: str
         """
         self._vgw_id = vgw_id
+
+    @property
+    def gateway_id(self):
+        """Gets the gateway_id of this CreateVirtualInterface.
+
+        虚拟接口关联的网关的ID。 当虚拟接口接入网关类型为全域接入网关时该参数必填，gateway_id值为全域接入网关的id
+
+        :return: The gateway_id of this CreateVirtualInterface.
+        :rtype: str
+        """
+        return self._gateway_id
+
+    @gateway_id.setter
+    def gateway_id(self, gateway_id):
+        """Sets the gateway_id of this CreateVirtualInterface.
+
+        虚拟接口关联的网关的ID。 当虚拟接口接入网关类型为全域接入网关时该参数必填，gateway_id值为全域接入网关的id
+
+        :param gateway_id: The gateway_id of this CreateVirtualInterface.
+        :type gateway_id: str
+        """
+        self._gateway_id = gateway_id
 
     @property
     def route_mode(self):

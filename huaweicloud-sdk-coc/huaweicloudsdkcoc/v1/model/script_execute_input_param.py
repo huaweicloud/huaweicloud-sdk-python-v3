@@ -37,7 +37,7 @@ class ScriptExecuteInputParam:
 
         :param param_name: 脚本入参的名称,同一个脚本，参数名不能重复
         :type param_name: str
-        :param param_value: 脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空
+        :param param_value: 脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\&quot;,&#x3D;+@#\\[{]}) 3.禁止出现连续&#39;.&#39;
         :type param_value: str
         :param param_order: 该参数已废弃，传入该参数不会生效。
         :type param_order: int
@@ -86,7 +86,7 @@ class ScriptExecuteInputParam:
     def param_value(self):
         """Gets the param_value of this ScriptExecuteInputParam.
 
-        脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空
+        脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
         :return: The param_value of this ScriptExecuteInputParam.
         :rtype: str
@@ -97,7 +97,7 @@ class ScriptExecuteInputParam:
     def param_value(self, param_value):
         """Sets the param_value of this ScriptExecuteInputParam.
 
-        脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空
+        脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
         :param param_value: The param_value of this ScriptExecuteInputParam.
         :type param_value: str

@@ -67,7 +67,7 @@ class Server:
 
         :param server_name: 云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
         :type server_name: str
-        :param availability_zone: 云手机服务器所在的可用区。
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
         :type availability_zone: str
         :param server_id: 云手机服务器的唯一标识，不超过32个字节。
         :type server_id: str
@@ -91,7 +91,7 @@ class Server:
         :type subnet_cidr: str
         :param addresses: 云手机服务器的IP相关信息。
         :type addresses: list[:class:`huaweicloudsdkcph.v1.Address`]
-        :param resource_project_id: 云手机服务器的项目ID。
+        :param resource_project_id: 云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
         :type resource_project_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.ServerMetadata`
@@ -193,7 +193,7 @@ class Server:
     def availability_zone(self):
         """Gets the availability_zone of this Server.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :return: The availability_zone of this Server.
         :rtype: str
@@ -204,7 +204,7 @@ class Server:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this Server.
 
-        云手机服务器所在的可用区。
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
         :param availability_zone: The availability_zone of this Server.
         :type availability_zone: str
@@ -457,7 +457,7 @@ class Server:
     def resource_project_id(self):
         """Gets the resource_project_id of this Server.
 
-        云手机服务器的项目ID。
+        云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
         :return: The resource_project_id of this Server.
         :rtype: str
@@ -468,7 +468,7 @@ class Server:
     def resource_project_id(self, resource_project_id):
         """Sets the resource_project_id of this Server.
 
-        云手机服务器的项目ID。
+        云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
         :param resource_project_id: The resource_project_id of this Server.
         :type resource_project_id: str

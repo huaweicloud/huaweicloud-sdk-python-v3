@@ -113,6 +113,7 @@ class TestXmlTransfer:
 
         resp_model1 = client.deserialize(resp, "ListBucketsResponse", None)
         assert mock_list_buckets_response1() == resp_model1
+        client.close()
 
 
 if __name__ == '__main__':

@@ -22,6 +22,7 @@ class ServerModel:
         'cpu': 'int',
         'memory': 'int',
         'extend_spec': 'ServerModelExtendSpec',
+        'disk_max_num': 'int',
         'product_type': 'int',
         'free_size': 'int'
     }
@@ -32,11 +33,12 @@ class ServerModel:
         'cpu': 'cpu',
         'memory': 'memory',
         'extend_spec': 'extend_spec',
+        'disk_max_num': 'disk_max_num',
         'product_type': 'product_type',
         'free_size': 'free_size'
     }
 
-    def __init__(self, server_model_name=None, server_type=None, cpu=None, memory=None, extend_spec=None, product_type=None, free_size=None):
+    def __init__(self, server_model_name=None, server_type=None, cpu=None, memory=None, extend_spec=None, disk_max_num=None, product_type=None, free_size=None):
         """ServerModel
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ServerModel:
         :type memory: int
         :param extend_spec: 
         :type extend_spec: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
+        :param disk_max_num: 云手机服务器最大挂载磁盘数量。值为0时表示该机型磁盘为本地盘。
+        :type disk_max_num: int
         :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
         :param free_size: 服务器磁盘的免费配额，单位G。
@@ -64,6 +68,7 @@ class ServerModel:
         self._cpu = None
         self._memory = None
         self._extend_spec = None
+        self._disk_max_num = None
         self._product_type = None
         self._free_size = None
         self.discriminator = None
@@ -78,6 +83,8 @@ class ServerModel:
             self.memory = memory
         if extend_spec is not None:
             self.extend_spec = extend_spec
+        if disk_max_num is not None:
+            self.disk_max_num = disk_max_num
         if product_type is not None:
             self.product_type = product_type
         if free_size is not None:
@@ -188,6 +195,28 @@ class ServerModel:
         :type extend_spec: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
         """
         self._extend_spec = extend_spec
+
+    @property
+    def disk_max_num(self):
+        """Gets the disk_max_num of this ServerModel.
+
+        云手机服务器最大挂载磁盘数量。值为0时表示该机型磁盘为本地盘。
+
+        :return: The disk_max_num of this ServerModel.
+        :rtype: int
+        """
+        return self._disk_max_num
+
+    @disk_max_num.setter
+    def disk_max_num(self, disk_max_num):
+        """Sets the disk_max_num of this ServerModel.
+
+        云手机服务器最大挂载磁盘数量。值为0时表示该机型磁盘为本地盘。
+
+        :param disk_max_num: The disk_max_num of this ServerModel.
+        :type disk_max_num: int
+        """
+        self._disk_max_num = disk_max_num
 
     @property
     def product_type(self):

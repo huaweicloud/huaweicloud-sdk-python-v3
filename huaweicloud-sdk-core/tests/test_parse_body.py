@@ -17,14 +17,13 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-import pytest
-
 import bson
-from huaweicloudsdkcore.client import Client
-from tests.model.vpc import Vpc
-from tests.model.kvs import GetKvRequest
-from tests.model.kvs import BsonBody
+import pytest
 from bson import MaxKey, MinKey, Regex, ObjectId, Code
+from huaweicloudsdkcore.client import Client
+from tests.model.kvs import BsonBody
+from tests.model.kvs import GetKvRequest
+from tests.model.vpc import Vpc
 
 
 class CustomIter:
@@ -44,9 +43,15 @@ class CustomIter:
         raise StopIteration
 
 
-def test_parse_body():
+@pytest.fixture
+def mocked_client():
     client = Client()
-    parse_body = getattr(client, "_parse_body")
+    yield client
+    client.close()
+
+
+def test_parse_body(mocked_client):
+    parse_body = getattr(mocked_client, "_parse_body")
     assert parse_body(None) is None
     assert parse_body("") == ""
     assert parse_body("text") == "text"
@@ -65,9 +70,8 @@ def test_parse_body():
                                         '"description", "routes": "routes", "status": "status"}}')
 
 
-def test_parse_kvs_body():
-    client = Client()
-    parse_bson_body = getattr(client, "_parse_bson_body")
+def test_parse_kvs_body(mocked_client):
+    parse_bson_body = getattr(mocked_client, "_parse_bson_body")
     bson_dict = {
         "table_name": "test-table",
         "primary_key": {
@@ -79,9 +83,8 @@ def test_parse_kvs_body():
     assert parse_bson_body(kvs) == bson.encode(bson_dict)
 
 
-def test_parse_bson_type():
-    client = Client()
-    parse_bson_body = getattr(client, "_parse_bson_body")
+def test_parse_bson_type(mocked_client):
+    parse_bson_body = getattr(mocked_client, "_parse_bson_body")
     assert parse_bson_body(None) is None
     assert parse_bson_body({}) == bson.encode({})
     dict_data = {

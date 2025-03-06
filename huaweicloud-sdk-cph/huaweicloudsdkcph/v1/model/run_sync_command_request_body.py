@@ -39,7 +39,7 @@ class RunSyncCommandRequestBody:
         :type command: str
         :param content: 待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
         :type content: str
-        :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
+        :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
         :type phone_ids: list[str]
         :param server_ids: 云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
         :type server_ids: list[str]
@@ -108,7 +108,7 @@ class RunSyncCommandRequestBody:
     def phone_ids(self):
         """Gets the phone_ids of this RunSyncCommandRequestBody.
 
-        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
 
         :return: The phone_ids of this RunSyncCommandRequestBody.
         :rtype: list[str]
@@ -119,7 +119,7 @@ class RunSyncCommandRequestBody:
     def phone_ids(self, phone_ids):
         """Sets the phone_ids of this RunSyncCommandRequestBody.
 
-        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
 
         :param phone_ids: The phone_ids of this RunSyncCommandRequestBody.
         :type phone_ids: list[str]

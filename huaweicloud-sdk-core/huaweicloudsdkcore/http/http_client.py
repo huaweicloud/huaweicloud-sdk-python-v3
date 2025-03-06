@@ -52,6 +52,7 @@ class HttpClient(object):
 
         self._retry_status_list = [429]
         self._session = self._init_session()
+        self._closed = False
 
         self._executor = ThreadPoolExecutor(max_workers=8)
 
@@ -132,3 +133,11 @@ class HttpClient(object):
                 raise exceptions.RetryOutageException(str(tooManyRedirects))
 
         return response_hook
+
+    def close(self):
+        try:
+            if not self._closed:
+                self._session.close()
+                self._closed = True
+        except Exception as e:
+            self._logger.warning("Close session failed, %s", e)

@@ -45,8 +45,11 @@ def mocked_responses():
 
 @pytest.fixture
 def mocked_http_client():
-    yield HttpClient(HttpConfig.get_default_config(), HttpHandler(), DefaultExceptionHandler(),
-                     logging.getLogger("test"))
+    http_client = HttpClient(HttpConfig.get_default_config(), HttpHandler(), DefaultExceptionHandler(),
+               logging.getLogger("test"))
+    yield http_client
+    http_client.close()
+
 
 
 def test_basic_credentials_sign_with_auth_token(sdk_request):

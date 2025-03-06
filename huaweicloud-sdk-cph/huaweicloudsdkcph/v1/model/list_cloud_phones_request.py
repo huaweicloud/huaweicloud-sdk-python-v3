@@ -41,7 +41,7 @@ class ListCloudPhonesRequest:
 
         :param offset: 偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
         :type offset: int
-        :param limit: 每页返回的资源个数。取值范围：1~200（默认值为200），一般设置为10、20、50。
+        :param limit: 每页返回的资源个数。取值范围：1~200（默认值为100），一般设置为10、20、50。
         :type limit: int
         :param phone_name: 云手机名称，支持模糊查询。
         :type phone_name: str
@@ -102,7 +102,7 @@ class ListCloudPhonesRequest:
     def limit(self):
         """Gets the limit of this ListCloudPhonesRequest.
 
-        每页返回的资源个数。取值范围：1~200（默认值为200），一般设置为10、20、50。
+        每页返回的资源个数。取值范围：1~200（默认值为100），一般设置为10、20、50。
 
         :return: The limit of this ListCloudPhonesRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListCloudPhonesRequest:
     def limit(self, limit):
         """Sets the limit of this ListCloudPhonesRequest.
 
-        每页返回的资源个数。取值范围：1~200（默认值为200），一般设置为10、20、50。
+        每页返回的资源个数。取值范围：1~200（默认值为100），一般设置为10、20、50。
 
         :param limit: The limit of this ListCloudPhonesRequest.
         :type limit: int

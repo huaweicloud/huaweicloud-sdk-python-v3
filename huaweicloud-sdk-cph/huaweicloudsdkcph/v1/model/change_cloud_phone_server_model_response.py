@@ -20,16 +20,20 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     openapi_types = {
         'request_id': 'str',
         'order_id': 'str',
-        'product_id': 'str'
+        'product_id': 'str',
+        'error_msg': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'order_id': 'order_id',
-        'product_id': 'product_id'
+        'product_id': 'product_id',
+        'error_msg': 'error_msg',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, request_id=None, order_id=None, product_id=None):
+    def __init__(self, request_id=None, order_id=None, product_id=None, error_msg=None, error_code=None):
         """ChangeCloudPhoneServerModelResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +44,10 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
         :type order_id: str
         :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
+        :param error_msg: 任务错误码说明。
+        :type error_msg: str
+        :param error_code: 任务错误码。
+        :type error_code: str
         """
         
         super(ChangeCloudPhoneServerModelResponse, self).__init__()
@@ -47,6 +55,8 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
         self._request_id = None
         self._order_id = None
         self._product_id = None
+        self._error_msg = None
+        self._error_code = None
         self.discriminator = None
 
         if request_id is not None:
@@ -55,6 +65,10 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
             self.order_id = order_id
         if product_id is not None:
             self.product_id = product_id
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def request_id(self):
@@ -121,6 +135,50 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this ChangeCloudPhoneServerModelResponse.
+
+        任务错误码说明。
+
+        :return: The error_msg of this ChangeCloudPhoneServerModelResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this ChangeCloudPhoneServerModelResponse.
+
+        任务错误码说明。
+
+        :param error_msg: The error_msg of this ChangeCloudPhoneServerModelResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this ChangeCloudPhoneServerModelResponse.
+
+        任务错误码。
+
+        :return: The error_code of this ChangeCloudPhoneServerModelResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this ChangeCloudPhoneServerModelResponse.
+
+        任务错误码。
+
+        :param error_code: The error_code of this ChangeCloudPhoneServerModelResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

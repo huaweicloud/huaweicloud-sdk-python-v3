@@ -26,6 +26,7 @@ class CreateInstanceRequestBody:
         'security_group_id': 'str',
         'password': 'str',
         'mode': 'str',
+        'product_type': 'str',
         'flavor': 'list[CreateInstanceFlavorOption]',
         'configuration_id': 'str',
         'backup_strategy': 'BackupStrategyOption',
@@ -48,6 +49,7 @@ class CreateInstanceRequestBody:
         'security_group_id': 'security_group_id',
         'password': 'password',
         'mode': 'mode',
+        'product_type': 'product_type',
         'flavor': 'flavor',
         'configuration_id': 'configuration_id',
         'backup_strategy': 'backup_strategy',
@@ -60,7 +62,7 @@ class CreateInstanceRequestBody:
         'availability_zone_detail': 'availability_zone_detail'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -81,8 +83,10 @@ class CreateInstanceRequestBody:
         :type security_group_id: str
         :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
-        :param mode: 实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
+        :param mode: 实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
         :type mode: str
+        :param product_type: 产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        :type product_type: str
         :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
         :param configuration_id: 参数模板ID。
@@ -116,6 +120,7 @@ class CreateInstanceRequestBody:
         self._security_group_id = None
         self._password = None
         self._mode = None
+        self._product_type = None
         self._flavor = None
         self._configuration_id = None
         self._backup_strategy = None
@@ -137,6 +142,8 @@ class CreateInstanceRequestBody:
         self.security_group_id = security_group_id
         self.password = password
         self.mode = mode
+        if product_type is not None:
+            self.product_type = product_type
         self.flavor = flavor
         if configuration_id is not None:
             self.configuration_id = configuration_id
@@ -333,7 +340,7 @@ class CreateInstanceRequestBody:
     def mode(self):
         """Gets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
+        实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
 
         :return: The mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -344,12 +351,34 @@ class CreateInstanceRequestBody:
     def mode(self, mode):
         """Sets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
+        实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
 
         :param mode: The mode of this CreateInstanceRequestBody.
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def product_type(self):
+        """Gets the product_type of this CreateInstanceRequestBody.
+
+        产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+
+        :return: The product_type of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._product_type
+
+    @product_type.setter
+    def product_type(self, product_type):
+        """Sets the product_type of this CreateInstanceRequestBody.
+
+        产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+
+        :param product_type: The product_type of this CreateInstanceRequestBody.
+        :type product_type: str
+        """
+        self._product_type = product_type
 
     @property
     def flavor(self):

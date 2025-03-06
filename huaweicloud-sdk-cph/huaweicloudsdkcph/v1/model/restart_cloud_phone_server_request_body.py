@@ -29,7 +29,7 @@ class RestartCloudPhoneServerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_ids: 云手机服务器id列表。
+        :param server_ids: 云手机服务器id列表。传入的服务器id个数范围为[1, 100]
         :type server_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class RestartCloudPhoneServerRequestBody:
     def server_ids(self):
         """Gets the server_ids of this RestartCloudPhoneServerRequestBody.
 
-        云手机服务器id列表。
+        云手机服务器id列表。传入的服务器id个数范围为[1, 100]
 
         :return: The server_ids of this RestartCloudPhoneServerRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class RestartCloudPhoneServerRequestBody:
     def server_ids(self, server_ids):
         """Sets the server_ids of this RestartCloudPhoneServerRequestBody.
 
-        云手机服务器id列表。
+        云手机服务器id列表。传入的服务器id个数范围为[1, 100]
 
         :param server_ids: The server_ids of this RestartCloudPhoneServerRequestBody.
         :type server_ids: list[str]

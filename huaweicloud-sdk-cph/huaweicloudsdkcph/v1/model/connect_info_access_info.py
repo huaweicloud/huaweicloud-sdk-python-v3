@@ -41,7 +41,7 @@ class ConnectInfoAccessInfo:
 
         The model defined in huaweicloud sdk
 
-        :param access_ip: 云手机实例的访问IP
+        :param access_ip: 云手机实例的公网访问IP
         :type access_ip: str
         :param intranet_ip: 云手机实例的内网访问IP
         :type intranet_ip: str
@@ -87,7 +87,7 @@ class ConnectInfoAccessInfo:
     def access_ip(self):
         """Gets the access_ip of this ConnectInfoAccessInfo.
 
-        云手机实例的访问IP
+        云手机实例的公网访问IP
 
         :return: The access_ip of this ConnectInfoAccessInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class ConnectInfoAccessInfo:
     def access_ip(self, access_ip):
         """Sets the access_ip of this ConnectInfoAccessInfo.
 
-        云手机实例的访问IP
+        云手机实例的公网访问IP
 
         :param access_ip: The access_ip of this ConnectInfoAccessInfo.
         :type access_ip: str

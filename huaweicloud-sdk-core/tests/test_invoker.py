@@ -76,6 +76,7 @@ def mocked_client():
               .with_endpoints(["https://example.com"]))
     client.init_http_client()
     yield client
+    client.close()
 
 
 @responses.activate

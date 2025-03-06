@@ -51,6 +51,7 @@ def test_upload_download(mocker):
                                       response_type="SdkStreamResponse")
 
     response.consume_download_stream(process_stream)
+    client.close()
 
 
 if __name__ == "__main__":

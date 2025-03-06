@@ -18,15 +18,17 @@ class ServerMetadata:
 
     openapi_types = {
         'product_id': 'str',
-        'order_id': 'str'
+        'order_id': 'str',
+        'charging_mode': 'int'
     }
 
     attribute_map = {
         'product_id': 'product_id',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'charging_mode': 'charging_mode'
     }
 
-    def __init__(self, product_id=None, order_id=None):
+    def __init__(self, product_id=None, order_id=None, charging_mode=None):
         """ServerMetadata
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ServerMetadata:
         :type product_id: str
         :param order_id: 产品ID，不超过64个字节。
         :type order_id: str
+        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        :type charging_mode: int
         """
         
         
 
         self._product_id = None
         self._order_id = None
+        self._charging_mode = None
         self.discriminator = None
 
         if product_id is not None:
             self.product_id = product_id
         if order_id is not None:
             self.order_id = order_id
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
 
     @property
     def product_id(self):
@@ -91,6 +98,28 @@ class ServerMetadata:
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this ServerMetadata.
+
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+
+        :return: The charging_mode of this ServerMetadata.
+        :rtype: int
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this ServerMetadata.
+
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+
+        :param charging_mode: The charging_mode of this ServerMetadata.
+        :type charging_mode: int
+        """
+        self._charging_mode = charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

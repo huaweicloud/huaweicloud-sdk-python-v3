@@ -17,20 +17,24 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     sensitive_list = []
 
     openapi_types = {
+        'charging_mode': 'int',
         'product_id': 'str',
         'order_id': 'str'
     }
 
     attribute_map = {
+        'charging_mode': 'charging_mode',
         'product_id': 'product_id',
         'order_id': 'order_id'
     }
 
-    def __init__(self, product_id=None, order_id=None):
+    def __init__(self, charging_mode=None, product_id=None, order_id=None):
         """ShowCloudPhoneServerDetailResponseBodyMetadata
 
         The model defined in huaweicloud sdk
 
+        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+        :type charging_mode: int
         :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
         :param order_id: 订单ID，不超过64个字节。
@@ -39,14 +43,39 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
         
         
 
+        self._charging_mode = None
         self._product_id = None
         self._order_id = None
         self.discriminator = None
 
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
         if product_id is not None:
             self.product_id = product_id
         if order_id is not None:
             self.order_id = order_id
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+
+        :return: The charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        :rtype: int
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+
+        :param charging_mode: The charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        :type charging_mode: int
+        """
+        self._charging_mode = charging_mode
 
     @property
     def product_id(self):

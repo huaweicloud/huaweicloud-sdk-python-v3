@@ -2877,6 +2877,10 @@ class GaussDBforNoSQLAsyncClient(Client):
         query_params = []
         if 'engine_name' in local_var_params:
             query_params.append(('engine_name', local_var_params['engine_name']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+        if 'product_type' in local_var_params:
+            query_params.append(('product_type', local_var_params['product_type']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -5521,9 +5525,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def restart_instance_async(self, request):
-        """重启实例的数据库服务
+        """重启实例或节点的数据库服务
 
-        重启实例的数据库服务。
+        重启实例或节点的数据库服务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5564,6 +5568,8 @@ class GaussDBforNoSQLAsyncClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -7594,6 +7600,8 @@ class GaussDBforNoSQLAsyncClient(Client):
             query_params.append(('datastore_type', local_var_params['datastore_type']))
         if 'mode' in local_var_params:
             query_params.append(('mode', local_var_params['mode']))
+        if 'product_type' in local_var_params:
+            query_params.append(('product_type', local_var_params['product_type']))
 
         header_params = {}
 

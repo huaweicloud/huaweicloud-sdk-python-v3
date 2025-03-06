@@ -37,7 +37,7 @@ class ListShareFilesRequest:
 
         :param offset: 偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
         :type offset: int
-        :param limit: 每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+        :param limit: 每页返回的资源个数。取值范围：1~50（默认值为50）。
         :type limit: int
         :param server_ids: 云手机服务器ID列表，多个服务器ID用逗号（,）分隔。
         :type server_ids: str
@@ -86,7 +86,7 @@ class ListShareFilesRequest:
     def limit(self):
         """Gets the limit of this ListShareFilesRequest.
 
-        每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+        每页返回的资源个数。取值范围：1~50（默认值为50）。
 
         :return: The limit of this ListShareFilesRequest.
         :rtype: int
@@ -97,7 +97,7 @@ class ListShareFilesRequest:
     def limit(self, limit):
         """Sets the limit of this ListShareFilesRequest.
 
-        每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+        每页返回的资源个数。取值范围：1~50（默认值为50）。
 
         :param limit: The limit of this ListShareFilesRequest.
         :type limit: int
