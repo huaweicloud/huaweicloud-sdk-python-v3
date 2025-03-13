@@ -43,6 +43,7 @@ class ClusterDetail:
         'parameter_group': 'ParameterGroup',
         'node_type_id': 'str',
         'security_group_id': 'str',
+        'order_id': 'str',
         'private_ip': 'list[str]',
         'maintain_window': 'MaintainWindow',
         'resize_info': 'ResizeInfo',
@@ -77,6 +78,7 @@ class ClusterDetail:
         'parameter_group': 'parameter_group',
         'node_type_id': 'node_type_id',
         'security_group_id': 'security_group_id',
+        'order_id': 'order_id',
         'private_ip': 'private_ip',
         'maintain_window': 'maintain_window',
         'resize_info': 'resize_info',
@@ -84,7 +86,7 @@ class ClusterDetail:
         'elb': 'elb'
     }
 
-    def __init__(self, id=None, name=None, status=None, version=None, updated=None, created=None, port=None, endpoints=None, nodes=None, tags=None, user_name=None, number_of_node=None, recent_event=None, availability_zone=None, enterprise_project_id=None, node_type=None, vpc_id=None, subnet_id=None, public_ip=None, public_endpoints=None, action_progress=None, sub_status=None, task_status=None, parameter_group=None, node_type_id=None, security_group_id=None, private_ip=None, maintain_window=None, resize_info=None, failed_reasons=None, elb=None):
+    def __init__(self, id=None, name=None, status=None, version=None, updated=None, created=None, port=None, endpoints=None, nodes=None, tags=None, user_name=None, number_of_node=None, recent_event=None, availability_zone=None, enterprise_project_id=None, node_type=None, vpc_id=None, subnet_id=None, public_ip=None, public_endpoints=None, action_progress=None, sub_status=None, task_status=None, parameter_group=None, node_type_id=None, security_group_id=None, order_id=None, private_ip=None, maintain_window=None, resize_info=None, failed_reasons=None, elb=None):
         """ClusterDetail
 
         The model defined in huaweicloud sdk
@@ -141,6 +143,8 @@ class ClusterDetail:
         :type node_type_id: str
         :param security_group_id: 安全组ID
         :type security_group_id: str
+        :param order_id: 订单ID，仅包周期场景返回。
+        :type order_id: str
         :param private_ip: 内网IP地址列表
         :type private_ip: list[str]
         :param maintain_window: 
@@ -181,6 +185,7 @@ class ClusterDetail:
         self._parameter_group = None
         self._node_type_id = None
         self._security_group_id = None
+        self._order_id = None
         self._private_ip = None
         self._maintain_window = None
         self._resize_info = None
@@ -215,6 +220,8 @@ class ClusterDetail:
             self.parameter_group = parameter_group
         self.node_type_id = node_type_id
         self.security_group_id = security_group_id
+        if order_id is not None:
+            self.order_id = order_id
         self.private_ip = private_ip
         self.maintain_window = maintain_window
         if resize_info is not None:
@@ -787,6 +794,28 @@ class ClusterDetail:
         :type security_group_id: str
         """
         self._security_group_id = security_group_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ClusterDetail.
+
+        订单ID，仅包周期场景返回。
+
+        :return: The order_id of this ClusterDetail.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ClusterDetail.
+
+        订单ID，仅包周期场景返回。
+
+        :param order_id: The order_id of this ClusterDetail.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     @property
     def private_ip(self):

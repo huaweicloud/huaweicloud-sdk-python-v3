@@ -8,6 +8,7 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+
 try:
     from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 except ImportError as e:
@@ -46,6 +47,7 @@ class AosClient(Client):
           * 该API会返回provider_source字段，该字段按照“huawei.com/private-provider/{provider_name}”的形式拼接。关于provider_name和provider_source字段在模板中的使用细节，详见下方描述中。
           * 如果用户期望使用名称中不含有大写英文的provider，可以按照如下展示将provider_source字段指定为模板中定义的required_providers中的source参数。
           * 如果用户期望使用名称含有大写英文的provider，需要将provider_name完全转化为小写英文创建。同时用户既可以在模板中使用API返回的provider_source参数，也可以在模板中以 “huawei.com/private-provider”为固定前缀，按照原含大写英文的provider_name，拼写provider_source参数。
+          * 用户在使用该私有provider时，如果期望RFS使用委托调用FG以及OBS，可在创建私有provider时提供委托信息，该委托对私有provider下所有版本生效。provider_agency_name或provider_agency_urn二者最多只能提供一个，推荐用户在使用信任委托时给予provider_agency_urn，provider_agency_name只支持接收普通委托名称，如果给予了信任委托名称，则会在使用私有provider部署资源栈时失败。
         
         以HCL格式的模板为例，模板中引用私有provider的语法如下：
         &#x60;&#x60;&#x60;
@@ -71,23 +73,23 @@ class AosClient(Client):
         }
         &#x60;&#x60;&#x60;
         
-        RFS在支持用户使用FunctionGraph(以下简称：FG)的HTTP函数运行私有Provider时，定义了一套详细的对接规则，以实现RFS与私有Provider之间的成功交互。
-        其中关于FG的HTTP函数使用，请参考官网文档： https://support.huaweicloud.com/productdesc-functiongraph/functiongraph_02_1002.html。
-        用户需要在提供的FG的HTTP函数方法中，按照如下规则实现一系列对应方法：
+        RFS在支持用户使用FunctionGraph(以下简称：FG)的事件函数运行私有Provider时，定义了一套详细的对接规则，以实现RFS与私有Provider之间的成功交互。
+        其中关于FG的事件函数使用，请参考官网文档： https://support.huaweicloud.com/productdesc-functiongraph/functiongraph_02_1002.html。
+        用户需要在提供的FG的事件函数方法中，按照如下规则实现一系列对应方法：
           1. 用户需要首先在FG中启动一个HTTP Server，用于接受来自RFS的HTTP请求，请求的Path固定为\&quot;/provider\&quot;，请求方法为\&quot;POST\&quot;。RFS规定了发送给FG的HTTP请求体，请求体格式如下所示：
-            &#x60;&#x60;&#x60;
-            {
-              \&quot;method_name\&quot;: String,
-              \&quot;request_data\&quot;: String,
-              \&quot;context\&quot;:{
-                \&quot;session_id\&quot;: String,
-                \&quot;config_data\&quot;: String
-              }
-            }
-            &#x60;&#x60;&#x60;
-             用户提供的FG的HTTP函数需要能够接收如上请求。否则会调用私有Provider失败，导致资源编排失败。
+                &#x60;&#x60;&#x60;
+                {
+                  \&quot;method_name\&quot;: String,
+                  \&quot;request_data\&quot;: String,
+                  \&quot;context\&quot;:{
+                    \&quot;session_id\&quot;: String,
+                    \&quot;config_data\&quot;: String
+                  }
+                }
+                &#x60;&#x60;&#x60;
+             用户提供的FG的事件函数需要能够接收如上请求。否则会调用私有Provider失败，导致资源编排失败。
           2. 下面对FG中如何使用请求体中的各个参数，以实现FG与RFS的成功交互做详细解释：
-             \&quot;method_name\&quot;：RFS期望FG的HTTP函数中调用的私有provider的gRPC方法名。RFS会在请求体中，根据实际业务场景，每次从如下方法中选择一个进行传递。其中每个方法名需要与provider中原生的gRPC方法一一对应。在收到携带有某个方法名的请求后，FG的HTTP函数内能够调用对应的私有provider的原生gRPC方法，实现具体资源的处理逻辑。
+             \&quot;method_name\&quot;：RFS期望FG的事件函数中调用的私有provider的gRPC方法名。RFS会在请求体中，根据实际业务场景，每次从如下方法中选择一个进行传递。其中每个方法名需要与provider中原生的gRPC方法一一对应。在收到携带有某个方法名的请求后，FG的事件函数内能够调用对应的私有provider的原生gRPC方法，实现具体资源的处理逻辑。
              provider内提供的原生gRPC协议请参考：tfplugin5.proto和grpc_controller.proto。方法名列表如下：
                 &#x60;&#x60;&#x60;
                 tfplugin5.proto：
@@ -106,26 +108,51 @@ class AosClient(Client):
                 grpc_controller.proto：
                   \&quot;/plugin.GRPCController/Shutdown\&quot;
                 &#x60;&#x60;&#x60;
-             \&quot;request_data\&quot;：RFS传递给FG的HTTP函数中每个方法的请求内容。在每个方法的处理逻辑中，需要先将request_data中的数据使用base64解码，然后作为私有provider的gRPC方法的数据传入。
-             \&quot;config_data\&quot;：用于自定义provider处理实际请求前的初始化，如果context中config_data非空，FG的HTTP函数需要先将config_data作为输入调用/tfplugin5.Provider/Configure方法，进行初始化，再根据method_name调用对应的方法获取响应。
+             \&quot;request_data\&quot;：RFS传递给FG的事件函数中每个方法的请求内容。在每个方法的处理逻辑中，需要先将request_data中的数据使用base64解码，然后作为私有provider的gRPC方法的数据传入。
+             \&quot;config_data\&quot;：用于自定义provider处理实际请求前的初始化，如果context中config_data非空，FG的事件函数需要先将config_data作为输入调用/tfplugin5.Provider/Configure方法，进行初始化，再根据method_name调用对应的方法获取响应。
              \&quot;session_id\&quot;：表示请求是否来自同一个模板中的同一批编排任务。session_id相同，表示请求来自同一个模板中的同一批编排任务。
              注意：用户启动的同一个provider进程不能接受多个来自RFS的请求。RFS推荐用户处理请求时，每次都启动新的进程处理相关请求。
-          3. 在FG的HTTP函数中实现的请求响应按照固定格式进行返回，响应体的格式如下，成功响应码固定为200，任何其他响应码均视为失败请求，会导致资源编排失败。
-            &#x60;&#x60;&#x60;
-            {
-              \&quot;response_data\&quot;: String,
-              \&quot;error\&quot;: String
-            }
-            &#x60;&#x60;&#x60;
-            \&quot;response_data\&quot;：调用私有provider的gRPC方法返回的内容。在FG的HTTP函数中，需要将gRPC方法返回的响应序列化后使用base64编码返回。
-            \&quot;error\&quot;：调用gRPC方法返回的错误信息。
+          3. 在FG的事件函数中实现的请求响应按照固定格式进行返回，响应体的格式如下，成功响应码固定为200，任何其他响应码均视为失败请求，会导致资源编排失败。
+                &#x60;&#x60;&#x60;
+                {
+                  \&quot;response_data\&quot;: String,
+                  \&quot;error\&quot;: String
+                }
+                &#x60;&#x60;&#x60;
+             \&quot;response_data\&quot;：调用私有provider的gRPC方法返回的内容。在FG的事件函数中，需要将gRPC方法返回的响应序列化后使用base64编码返回。
+             \&quot;error\&quot;：调用gRPC方法返回的错误信息。
+          4. 用户需要对FG事件函数进行异步配置，针对于不涉及资源操作的读相关的gRPC请求，RFS默认通过同步接口调用FG；针对于涉及资源操作的写相关的gRPC请求，RFS默认通过异步接口调用FG。
+             以下gRPC请求默认同步调用：
+                &#x60;&#x60;&#x60;
+                tfplugin5.proto：
+                  \&quot;/tfplugin5.Provider/GetSchema\&quot;
+                  \&quot;/tfplugin5.Provider/PrepareProviderConfig\&quot;
+                  \&quot;/tfplugin5.Provider/ValidateResourceTypeConfig\&quot;
+                  \&quot;/tfplugin5.Provider/ValidateDataSourceConfig\&quot;
+                  \&quot;/tfplugin5.Provider/UpgradeResourceState\&quot;
+                  \&quot;/tfplugin5.Provider/Configure\&quot;
+                  \&quot;/tfplugin5.Provider/ReadResource\&quot;
+                  \&quot;/tfplugin5.Provider/ImportResourceState\&quot;
+                  \&quot;/tfplugin5.Provider/ReadDataSource\&quot;
+                &#x60;&#x60;&#x60;
+             以下gRPC请求默认异步调用：
+                &#x60;&#x60;&#x60;
+                tfplugin5.proto：
+                  \&quot;/tfplugin5.Provider/PlanResourceChange\&quot;
+                  \&quot;/tfplugin5.Provider/ApplyResourceChange\&quot;
+                  \&quot;/tfplugin5.Provider/Stop\&quot;
+                grpc_controller.proto：
+                  \&quot;/plugin.GRPCController/Shutdown\&quot;
+                &#x60;&#x60;&#x60;
+             目前FG异步配置的成功和失败时通知的目标服务只支持OBS，用户如果开启异步调用状态持久化，RFS会通过轮询FG获取函数异步调用请求列表来获取异步调用的状态，否则会轮询OBS是否存在异步调用结果来判断异步调用状态。
+             对于同步调用，RFS阻塞等待FG返回调用结果；对于异步调用，RFS在判断异步调用结束后，获取OBS桶中的异步调用结果。
         
         **约束与限制：**
           1. 私有provider为用户自行定义，提供给RFS的provider插件，RFS不负责校验其内部逻辑是否正确。
           2. RFS不负责维护私有provider的生命周期。用户使用私有provider部署的资源栈，由于私有provider缺失或问题，导致资源栈无法继续部署管理的，RFS不负责提供解决方案。
           3. RFS不负责保障私有provider的信息安全。用户使用私有provider部署的资源栈，由于模板中存在敏感数据，进而导致敏感信息泄露给第三方相关资源的，RFS不承担其相关责任。
           4. 当前调用私有provider过程中增加了网络因素，因此使用私有provider部署的失败概率会增加。如果出现因网络原因导致的部署失败，可以增加重试操作。
-          5. 当前RFS会同步调用用户在FG中定义的一系列方法，单次方法需要确保运行时间不超过30s，否则会极大增加失败概率。
+          5. 当前RFS默认会同步调用在FG中定义的读相关gRPC请求，单次方法需要确保运行时间不超过30s，否则会极大增加失败概率。
           6. 当前仅支持在模板中固定私有provider版本，不支持&gt;,&gt;&#x3D;,&lt;,&lt;&#x3D;,~&gt;等定义宽松版本的表达式。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -567,6 +594,60 @@ class AosClient(Client):
               * huaweicloud_drs_job: 
                   * 支持的计费模式：按需
               * huaweicloud_apig_instance: 
+                  * 支持的计费模式：按需
+              * huaweicloud_dms_rabbitmq_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_hss_quota: 
+                  * 支持的计费模式：包周期
+              * huaweicloud_hss_host_protection: 
+                  * 支持的计费模式：按需
+              * huaweicloud_cbr_vault: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_cbh_instance: 
+                  * 支持的计费模式：包周期
+              * huaweicloud_cbh_ha_instance: 
+                  * 支持的计费模式：包周期
+              * huaweicloud_waf_cloud_instance: 
+                  * 支持的计费模式：包周期
+              * huaweicloud_lb_loadbalancer: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_elb_loadbalancer: 
+                  * 支持的计费模式：按需
+              * huaweicloud_modelarts_resource_pool: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_cnad_advanced_black_white_list: 
+                  * 支持的计费模式：免费
+              * huaweicloud_cnad_advanced_policy: 
+                  * 支持的计费模式：免费
+              * huaweicloud_cnad_advanced_protected_object: 
+                  * 支持的计费模式：免费
+              * huaweicloud_antiddos_basic: 
+                  * 支持的计费模式：免费
+              * huaweicloud_obs_bucket: 
+                  * 支持的计费模式：免费
+              * huaweicloud_obs_bucket_replication: 
+                  * 支持的计费模式：免费
+              * huaweicloud_workspace_desktop: 
+                  * 支持的计费模式：按需
+              * huaweicloud_dws_cluster: 
+                  * 支持的计费模式：按需
+              * huaweicloud_dws_ext_data_source: 
+                  * 支持的计费模式：免费
+              * huaweicloud_dws_snapshot: 
+                  * 支持的计费模式：免费
+              * huaweicloud_dds_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_rds_read_replica_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_cce_node: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_dms_rocketmq_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_gaussdb_opengauss_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_vpcep_endpoint: 
+                  * 支持的计费模式：按需
+              * huaweicloud_kms_key: 
                   * 支持的计费模式：按需
         
         Please refer to HUAWEI cloud API Explorer for details.

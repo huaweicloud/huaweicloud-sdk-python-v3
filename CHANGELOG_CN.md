@@ -1,3 +1,138 @@
+# 3.1.139 2025-03-13
+
+### HuaweiCloud SDK AOS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePrivateProvider**
+    - 请求参数变更
+      - `+ provider_agency_urn`
+      - `+ provider_agency_name`
+
+### HuaweiCloud SDK CAE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecrets`
+    - `CreateSecret`
+    - `UpdateSecret`
+    - `DeleteSecret`
+    - `ListEffectiveComponents`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAutopilotMaintenanceWindow`
+    - `UpdateAutopilotMaintenanceWindow`
+    - `CreateAutopilotMaintenanceWindow`
+    - `DeleteAutopilotMaintenanceWindow`
+    - `ListAutopilotUpgradePlans`
+    - `UpdateAutopilotUpgradePlan`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `CreateSecurityDataClassificationCombineRule`
+    - `UpdateSecurityDataClassificationCombineRule`
+    - `CheckSecurityDataClassificationCombineRule`
+    - `DeleteSecurityDataClassificationRuleGroup`
+    - `ListSecurityResourcePermissions`
+    - `CreateSecurityResourcePermissionPolicy`
+    - `ShowSecurityResourcePermissionPolicy`
+    - `UpdateSecurityResourcePermissionPolicy`
+    - `BatchDeleteSecurityResourcePermissionPolicies`
+    - `ShowSecuritySensitiveDataDiagnoseResult`
+    - `ShowSecurityNoMaskingTableResult`
+    - `ShowSecurityDatasourceProtectionDiagnoseResult`
+    - `ListSecurityDataCategories`
+    - `ImportSecurityBuiltinCategoryGroups`
+    - `ExecuteSecurityDiagnose`
+    - `ListSecurityUnreasonablePermissions`
+    - `ShowSecurityPermissionManagementDiagnoseResult`
+    - `ShowSecurityAdmin`
+    - `ModifySecurityAdmin`
+    - `ListSecurityApprovals`
+    - `CreateSecurityDataClassificationRuleGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KVS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PutKv**
+    - 请求参数变更
+      - `+ condition_expression.single_kv_expression`
+  - **UpdateKv**
+    - 请求参数变更
+      - `+ condition_expression.single_kv_expression`
+  - **DeleteKv**
+    - 请求参数变更
+      - `+ condition_expression.single_kv_expression`
+  - **ScanKv**
+    - 请求参数变更
+      - `+ filter_expression.single_kv_expression`
+  - **ScanSkeyKv**
+    - 请求参数变更
+      - `+ filter_expression.single_kv_expression`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListVolumeInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`BatchCreateVpnUsers`、`BatchDeleteVpnUsers`、`ListExtendedAvailabilityZones`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListP2cVgws**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListVpnServersByProject**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+
 # 3.1.138 2025-03-06
 
 ### HuaweiCloud SDK CAE

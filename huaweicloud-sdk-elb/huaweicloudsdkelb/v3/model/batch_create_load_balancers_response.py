@@ -40,7 +40,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
         :type loadbalancer_ids: list[str]
         :param job_id: 批量创建负载均衡器的job ID。
         :type job_id: str
-        :param order_id: 订单号[（只有批量创建包周期示例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param order_id: 订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type order_id: str
         :param request_id: 请求ID。 注：自动生成 。
         :type request_id: str
@@ -111,7 +111,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this BatchCreateLoadBalancersResponse.
 
-        订单号[（只有批量创建包周期示例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The order_id of this BatchCreateLoadBalancersResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this BatchCreateLoadBalancersResponse.
 
-        订单号[（只有批量创建包周期示例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param order_id: The order_id of this BatchCreateLoadBalancersResponse.
         :type order_id: str

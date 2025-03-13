@@ -19,16 +19,18 @@ class ConditionExpression:
     openapi_types = {
         'single_field_expression': 'SingleFieldExpression',
         'multi_field_expression': 'MultiFieldExpression',
-        'composed_expression': 'ComposedExpression'
+        'composed_expression': 'ComposedExpression',
+        'single_kv_expression': 'SingleKvExpression'
     }
 
     attribute_map = {
         'single_field_expression': 'single_field_expression',
         'multi_field_expression': 'multi_field_expression',
-        'composed_expression': 'composed_expression'
+        'composed_expression': 'composed_expression',
+        'single_kv_expression': 'single_kv_expression'
     }
 
-    def __init__(self, single_field_expression=None, multi_field_expression=None, composed_expression=None):
+    def __init__(self, single_field_expression=None, multi_field_expression=None, composed_expression=None, single_kv_expression=None):
         """ConditionExpression
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ConditionExpression:
         :type multi_field_expression: :class:`huaweicloudsdkkvs.v1.MultiFieldExpression`
         :param composed_expression: 
         :type composed_expression: :class:`huaweicloudsdkkvs.v1.ComposedExpression`
+        :param single_kv_expression: 
+        :type single_kv_expression: :class:`huaweicloudsdkkvs.v1.SingleKvExpression`
         """
         
         
@@ -46,6 +50,7 @@ class ConditionExpression:
         self._single_field_expression = None
         self._multi_field_expression = None
         self._composed_expression = None
+        self._single_kv_expression = None
         self.discriminator = None
 
         if single_field_expression is not None:
@@ -54,6 +59,8 @@ class ConditionExpression:
             self.multi_field_expression = multi_field_expression
         if composed_expression is not None:
             self.composed_expression = composed_expression
+        if single_kv_expression is not None:
+            self.single_kv_expression = single_kv_expression
 
     @property
     def single_field_expression(self):
@@ -108,6 +115,24 @@ class ConditionExpression:
         :type composed_expression: :class:`huaweicloudsdkkvs.v1.ComposedExpression`
         """
         self._composed_expression = composed_expression
+
+    @property
+    def single_kv_expression(self):
+        """Gets the single_kv_expression of this ConditionExpression.
+
+        :return: The single_kv_expression of this ConditionExpression.
+        :rtype: :class:`huaweicloudsdkkvs.v1.SingleKvExpression`
+        """
+        return self._single_kv_expression
+
+    @single_kv_expression.setter
+    def single_kv_expression(self, single_kv_expression):
+        """Sets the single_kv_expression of this ConditionExpression.
+
+        :param single_kv_expression: The single_kv_expression of this ConditionExpression.
+        :type single_kv_expression: :class:`huaweicloudsdkkvs.v1.SingleKvExpression`
+        """
+        self._single_kv_expression = single_kv_expression
 
     def to_dict(self):
         """Returns the model properties as a dict"""

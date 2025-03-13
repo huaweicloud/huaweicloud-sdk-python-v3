@@ -21,7 +21,9 @@ class CreatePrivateProviderRequestBody:
         'provider_description': 'str',
         'provider_version': 'str',
         'version_description': 'str',
-        'function_graph_urn': 'str'
+        'function_graph_urn': 'str',
+        'provider_agency_urn': 'str',
+        'provider_agency_name': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class CreatePrivateProviderRequestBody:
         'provider_description': 'provider_description',
         'provider_version': 'provider_version',
         'version_description': 'version_description',
-        'function_graph_urn': 'function_graph_urn'
+        'function_graph_urn': 'function_graph_urn',
+        'provider_agency_urn': 'provider_agency_urn',
+        'provider_agency_name': 'provider_agency_name'
     }
 
-    def __init__(self, provider_name=None, provider_description=None, provider_version=None, version_description=None, function_graph_urn=None):
+    def __init__(self, provider_name=None, provider_description=None, provider_version=None, version_description=None, function_graph_urn=None, provider_agency_urn=None, provider_agency_name=None):
         """CreatePrivateProviderRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class CreatePrivateProviderRequestBody:
         :type version_description: str
         :param function_graph_urn: FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
         :type function_graph_urn: str
+        :param provider_agency_urn: 自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
+        :type provider_agency_urn: str
+        :param provider_agency_name: 自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
+        :type provider_agency_name: str
         """
         
         
@@ -56,6 +64,8 @@ class CreatePrivateProviderRequestBody:
         self._provider_version = None
         self._version_description = None
         self._function_graph_urn = None
+        self._provider_agency_urn = None
+        self._provider_agency_name = None
         self.discriminator = None
 
         self.provider_name = provider_name
@@ -67,6 +77,10 @@ class CreatePrivateProviderRequestBody:
             self.version_description = version_description
         if function_graph_urn is not None:
             self.function_graph_urn = function_graph_urn
+        if provider_agency_urn is not None:
+            self.provider_agency_urn = provider_agency_urn
+        if provider_agency_name is not None:
+            self.provider_agency_name = provider_agency_name
 
     @property
     def provider_name(self):
@@ -177,6 +191,50 @@ class CreatePrivateProviderRequestBody:
         :type function_graph_urn: str
         """
         self._function_graph_urn = function_graph_urn
+
+    @property
+    def provider_agency_urn(self):
+        """Gets the provider_agency_urn of this CreatePrivateProviderRequestBody.
+
+        自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
+
+        :return: The provider_agency_urn of this CreatePrivateProviderRequestBody.
+        :rtype: str
+        """
+        return self._provider_agency_urn
+
+    @provider_agency_urn.setter
+    def provider_agency_urn(self, provider_agency_urn):
+        """Sets the provider_agency_urn of this CreatePrivateProviderRequestBody.
+
+        自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
+
+        :param provider_agency_urn: The provider_agency_urn of this CreatePrivateProviderRequestBody.
+        :type provider_agency_urn: str
+        """
+        self._provider_agency_urn = provider_agency_urn
+
+    @property
+    def provider_agency_name(self):
+        """Gets the provider_agency_name of this CreatePrivateProviderRequestBody.
+
+        自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
+
+        :return: The provider_agency_name of this CreatePrivateProviderRequestBody.
+        :rtype: str
+        """
+        return self._provider_agency_name
+
+    @provider_agency_name.setter
+    def provider_agency_name(self, provider_agency_name):
+        """Sets the provider_agency_name of this CreatePrivateProviderRequestBody.
+
+        自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
+
+        :param provider_agency_name: The provider_agency_name of this CreatePrivateProviderRequestBody.
+        :type provider_agency_name: str
+        """
+        self._provider_agency_name = provider_agency_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

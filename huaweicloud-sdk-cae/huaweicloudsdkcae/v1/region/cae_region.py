@@ -21,6 +21,15 @@ class CaeRegion:
     AF_SOUTH_1 = Region("af-south-1",
                         "https://cae.af-south-1.myhuaweicloud.com",
                         "https://cae.af-south-1.myhuaweicloud.cn")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://cae.me-east-1.myhuaweicloud.com",
+                        "https://cae.me-east-1.myhuaweicloud.cn")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://cae.la-north-2.myhuaweicloud.com",
+                        "https://cae.la-north-2.myhuaweicloud.cn")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://cae.tr-west-1.myhuaweicloud.com",
+                        "https://cae.tr-west-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -28,6 +37,9 @@ class CaeRegion:
         "cn-south-1": CN_SOUTH_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "af-south-1": AF_SOUTH_1,
+        "me-east-1": ME_EAST_1,
+        "la-north-2": LA_NORTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

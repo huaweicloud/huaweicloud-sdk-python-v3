@@ -18,20 +18,51 @@ class DeleteComponentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str'
     }
 
     attribute_map = {
+        'job_id': 'job_id'
     }
 
-    def __init__(self):
+    def __init__(self, job_id=None):
         """DeleteComponentResponse
 
         The model defined in huaweicloud sdk
 
+        :param job_id: 任务ID。
+        :type job_id: str
         """
         
         super(DeleteComponentResponse, self).__init__()
+
+        self._job_id = None
         self.discriminator = None
+
+        if job_id is not None:
+            self.job_id = job_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this DeleteComponentResponse.
+
+        任务ID。
+
+        :return: The job_id of this DeleteComponentResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this DeleteComponentResponse.
+
+        任务ID。
+
+        :param job_id: The job_id of this DeleteComponentResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

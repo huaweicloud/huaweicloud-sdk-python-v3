@@ -83,12 +83,9 @@ class DataClassificationRuleOperateDTO:
         self._category_id = None
         self.discriminator = None
 
-        if rule_type is not None:
-            self.rule_type = rule_type
-        if secrecy_level_id is not None:
-            self.secrecy_level_id = secrecy_level_id
-        if name is not None:
-            self.name = name
+        self.rule_type = rule_type
+        self.secrecy_level_id = secrecy_level_id
+        self.name = name
         if method is not None:
             self.method = method
         if content_expression is not None:

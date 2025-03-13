@@ -86,6 +86,10 @@ from huaweicloudsdkcae.v1.model.create_notice_rule_req import CreateNoticeRuleRe
 from huaweicloudsdkcae.v1.model.create_notice_rule_request import CreateNoticeRuleRequest
 from huaweicloudsdkcae.v1.model.create_notice_rule_resp_item import CreateNoticeRuleRespItem
 from huaweicloudsdkcae.v1.model.create_notice_rule_response import CreateNoticeRuleResponse
+from huaweicloudsdkcae.v1.model.create_or_update_secret_detail import CreateOrUpdateSecretDetail
+from huaweicloudsdkcae.v1.model.create_or_update_secret_req import CreateOrUpdateSecretReq
+from huaweicloudsdkcae.v1.model.create_secret_request import CreateSecretRequest
+from huaweicloudsdkcae.v1.model.create_secret_response import CreateSecretResponse
 from huaweicloudsdkcae.v1.model.create_spec_cert import CreateSpecCert
 from huaweicloudsdkcae.v1.model.create_timer_rule_req import CreateTimerRuleReq
 from huaweicloudsdkcae.v1.model.create_timer_rule_request import CreateTimerRuleRequest
@@ -110,6 +114,8 @@ from huaweicloudsdkcae.v1.model.delete_environment_request import DeleteEnvironm
 from huaweicloudsdkcae.v1.model.delete_environment_response import DeleteEnvironmentResponse
 from huaweicloudsdkcae.v1.model.delete_notice_rule_request import DeleteNoticeRuleRequest
 from huaweicloudsdkcae.v1.model.delete_notice_rule_response import DeleteNoticeRuleResponse
+from huaweicloudsdkcae.v1.model.delete_secret_request import DeleteSecretRequest
+from huaweicloudsdkcae.v1.model.delete_secret_response import DeleteSecretResponse
 from huaweicloudsdkcae.v1.model.delete_timer_rule_request import DeleteTimerRuleRequest
 from huaweicloudsdkcae.v1.model.delete_timer_rule_response import DeleteTimerRuleResponse
 from huaweicloudsdkcae.v1.model.delete_volume_request import DeleteVolumeRequest
@@ -154,6 +160,8 @@ from huaweicloudsdkcae.v1.model.list_components_request import ListComponentsReq
 from huaweicloudsdkcae.v1.model.list_components_response import ListComponentsResponse
 from huaweicloudsdkcae.v1.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcae.v1.model.list_domains_response import ListDomainsResponse
+from huaweicloudsdkcae.v1.model.list_effective_components_request import ListEffectiveComponentsRequest
+from huaweicloudsdkcae.v1.model.list_effective_components_response import ListEffectiveComponentsResponse
 from huaweicloudsdkcae.v1.model.list_eip_response_body_spec import ListEipResponseBodySpec
 from huaweicloudsdkcae.v1.model.list_eip_response_body_spec_egress import ListEipResponseBodySpecEgress
 from huaweicloudsdkcae.v1.model.list_eip_response_body_spec_ingress import ListEipResponseBodySpecIngress
@@ -163,6 +171,8 @@ from huaweicloudsdkcae.v1.model.list_environments_request import ListEnvironment
 from huaweicloudsdkcae.v1.model.list_environments_response import ListEnvironmentsResponse
 from huaweicloudsdkcae.v1.model.list_notice_rules_request import ListNoticeRulesRequest
 from huaweicloudsdkcae.v1.model.list_notice_rules_response import ListNoticeRulesResponse
+from huaweicloudsdkcae.v1.model.list_secrets_request import ListSecretsRequest
+from huaweicloudsdkcae.v1.model.list_secrets_response import ListSecretsResponse
 from huaweicloudsdkcae.v1.model.list_timer_rules_request import ListTimerRulesRequest
 from huaweicloudsdkcae.v1.model.list_timer_rules_response import ListTimerRulesResponse
 from huaweicloudsdkcae.v1.model.list_volumes_request import ListVolumesRequest
@@ -187,6 +197,7 @@ from huaweicloudsdkcae.v1.model.retry_job_response import RetryJobResponse
 from huaweicloudsdkcae.v1.model.scale_configuration_data_advanced import ScaleConfigurationDataAdvanced
 from huaweicloudsdkcae.v1.model.scale_configuration_data_trigger import ScaleConfigurationDataTrigger
 from huaweicloudsdkcae.v1.model.scaling_trigger_meta import ScalingTriggerMeta
+from huaweicloudsdkcae.v1.model.secret_detail import SecretDetail
 from huaweicloudsdkcae.v1.model.show_application_request import ShowApplicationRequest
 from huaweicloudsdkcae.v1.model.show_application_response import ShowApplicationResponse
 from huaweicloudsdkcae.v1.model.show_component_request import ShowComponentRequest
@@ -226,6 +237,8 @@ from huaweicloudsdkcae.v1.model.update_notice_rule_item import UpdateNoticeRuleI
 from huaweicloudsdkcae.v1.model.update_notice_rule_req import UpdateNoticeRuleReq
 from huaweicloudsdkcae.v1.model.update_notice_rule_request import UpdateNoticeRuleRequest
 from huaweicloudsdkcae.v1.model.update_notice_rule_response import UpdateNoticeRuleResponse
+from huaweicloudsdkcae.v1.model.update_secret_request import UpdateSecretRequest
+from huaweicloudsdkcae.v1.model.update_secret_response import UpdateSecretResponse
 from huaweicloudsdkcae.v1.model.update_spec_cert import UpdateSpecCert
 from huaweicloudsdkcae.v1.model.update_timer_rule_details import UpdateTimerRuleDetails
 from huaweicloudsdkcae.v1.model.update_timer_rule_req import UpdateTimerRuleReq

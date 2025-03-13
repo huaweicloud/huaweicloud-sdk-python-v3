@@ -185,8 +185,7 @@ class ClusterSpec:
             self.ipv6enable = ipv6enable
         self.host_network = host_network
         self.container_network = container_network
-        if eni_network is not None:
-            self.eni_network = eni_network
+        self.eni_network = eni_network
         if service_network is not None:
             self.service_network = service_network
         if authentication is not None:

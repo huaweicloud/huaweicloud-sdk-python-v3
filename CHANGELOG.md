@@ -1,3 +1,138 @@
+# 3.1.139 2025-03-13
+
+### HuaweiCloud SDK AOS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePrivateProvider**
+    - changes of request param
+      - `+ provider_agency_urn`
+      - `+ provider_agency_name`
+
+### HuaweiCloud SDK CAE
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListSecrets`
+    - `CreateSecret`
+    - `UpdateSecret`
+    - `DeleteSecret`
+    - `ListEffectiveComponents`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowAutopilotMaintenanceWindow`
+    - `UpdateAutopilotMaintenanceWindow`
+    - `CreateAutopilotMaintenanceWindow`
+    - `DeleteAutopilotMaintenanceWindow`
+    - `ListAutopilotUpgradePlans`
+    - `UpdateAutopilotUpgradePlan`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CreateSecurityDataClassificationCombineRule`
+    - `UpdateSecurityDataClassificationCombineRule`
+    - `CheckSecurityDataClassificationCombineRule`
+    - `DeleteSecurityDataClassificationRuleGroup`
+    - `ListSecurityResourcePermissions`
+    - `CreateSecurityResourcePermissionPolicy`
+    - `ShowSecurityResourcePermissionPolicy`
+    - `UpdateSecurityResourcePermissionPolicy`
+    - `BatchDeleteSecurityResourcePermissionPolicies`
+    - `ShowSecuritySensitiveDataDiagnoseResult`
+    - `ShowSecurityNoMaskingTableResult`
+    - `ShowSecurityDatasourceProtectionDiagnoseResult`
+    - `ListSecurityDataCategories`
+    - `ImportSecurityBuiltinCategoryGroups`
+    - `ExecuteSecurityDiagnose`
+    - `ListSecurityUnreasonablePermissions`
+    - `ShowSecurityPermissionManagementDiagnoseResult`
+    - `ShowSecurityAdmin`
+    - `ModifySecurityAdmin`
+    - `ListSecurityApprovals`
+    - `CreateSecurityDataClassificationRuleGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PutKv**
+    - changes of request param
+      - `+ condition_expression.single_kv_expression`
+  - **UpdateKv**
+    - changes of request param
+      - `+ condition_expression.single_kv_expression`
+  - **DeleteKv**
+    - changes of request param
+      - `+ condition_expression.single_kv_expression`
+  - **ScanKv**
+    - changes of request param
+      - `+ filter_expression.single_kv_expression`
+  - **ScanSkeyKv**
+    - changes of request param
+      - `+ filter_expression.single_kv_expression`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListVolumeInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `BatchCreateVpnUsers`, `BatchDeleteVpnUsers`, `ListExtendedAvailabilityZones`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListP2cVgws**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListVpnServersByProject**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+
 # 3.1.138 2025-03-06
 
 ### HuaweiCloud SDK CAE

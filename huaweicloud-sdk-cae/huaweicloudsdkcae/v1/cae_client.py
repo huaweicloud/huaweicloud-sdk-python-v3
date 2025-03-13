@@ -8,6 +8,7 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+
 try:
     from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 except ImportError as e:
@@ -2763,6 +2764,343 @@ class CaeClient(Client):
         path_params = {}
         if 'rule_id' in local_var_params:
             path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_secret(self, request):
+        """关联租户已注册的凭据。
+
+        关联租户已注册的凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecret
+        :type request: :class:`huaweicloudsdkcae.v1.CreateSecretRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateSecretResponse`
+        """
+        http_info = self._create_secret_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_secret_invoker(self, request):
+        http_info = self._create_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_secret_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/dew-secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_secret(self, request):
+        """删除用户已在DEW服务上注册的凭据。
+
+        删除用户已在DEW服务上注册的凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSecret
+        :type request: :class:`huaweicloudsdkcae.v1.DeleteSecretRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.DeleteSecretResponse`
+        """
+        http_info = self._delete_secret_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_secret_invoker(self, request):
+        http_info = self._delete_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_secret_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/dew-secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'secret_id' in local_var_params:
+            path_params['secret_id'] = local_var_params['secret_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_effective_components(self, request):
+        """获取当前正在使用对应凭据组件列表。
+
+        获取当前正在使用的对应凭据组件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEffectiveComponents
+        :type request: :class:`huaweicloudsdkcae.v1.ListEffectiveComponentsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListEffectiveComponentsResponse`
+        """
+        http_info = self._list_effective_components_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_effective_components_invoker(self, request):
+        http_info = self._list_effective_components_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_effective_components_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/dew-secrets/{secret_id}/effective-components",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEffectiveComponentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'secret_id' in local_var_params:
+            path_params['secret_id'] = local_var_params['secret_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_secrets(self, request):
+        """获取用户现有的凭据。
+
+        获取用户现有的凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecrets
+        :type request: :class:`huaweicloudsdkcae.v1.ListSecretsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListSecretsResponse`
+        """
+        http_info = self._list_secrets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_secrets_invoker(self, request):
+        http_info = self._list_secrets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_secrets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/dew-secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_secret(self, request):
+        """修改用户已在DEW服务上注册的凭据版本。
+
+        修改用户已在DEW服务上注册的凭据版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecret
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateSecretRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateSecretResponse`
+        """
+        http_info = self._update_secret_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_secret_invoker(self, request):
+        http_info = self._update_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_secret_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/dew-secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'secret_id' in local_var_params:
+            path_params['secret_id'] = local_var_params['secret_id']
 
         query_params = []
 

@@ -8,6 +8,7 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+
 try:
     from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
 except ImportError as e:
@@ -6473,6 +6474,73 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def create_autopilot_maintenance_window_async(self, request):
+        """创建集群维护窗口
+
+        该API用于创建集群维护窗口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAutopilotMaintenanceWindow
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAutopilotMaintenanceWindowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAutopilotMaintenanceWindowResponse`
+        """
+        http_info = self._create_autopilot_maintenance_window_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_autopilot_maintenance_window_async_invoker(self, request):
+        http_info = self._create_autopilot_maintenance_window_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_autopilot_maintenance_window_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/maintenancewindows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutopilotMaintenanceWindowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_autopilot_post_check_async(self, request):
         """集群升级后确认
 
@@ -6925,6 +6993,71 @@ class CceAsyncClient(Client):
             query_params.append(('delete_sfs30', local_var_params['delete_sfs30']))
         if 'lts_reclaim_policy' in local_var_params:
             query_params.append(('lts_reclaim_policy', local_var_params['lts_reclaim_policy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_autopilot_maintenance_window_async(self, request):
+        """删除集群维护窗口
+
+        该API用于删除集群维护窗口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAutopilotMaintenanceWindow
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAutopilotMaintenanceWindowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAutopilotMaintenanceWindowResponse`
+        """
+        http_info = self._delete_autopilot_maintenance_window_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_autopilot_maintenance_window_async_invoker(self, request):
+        http_info = self._delete_autopilot_maintenance_window_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_autopilot_maintenance_window_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/maintenancewindows",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutopilotMaintenanceWindowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -7740,6 +7873,71 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def list_autopilot_upgrade_plans_async(self, request):
+        """获取自动升级计划
+
+        该API用于获取集群自动升级计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAutopilotUpgradePlans
+        :type request: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradePlansRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAutopilotUpgradePlansResponse`
+        """
+        http_info = self._list_autopilot_upgrade_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_autopilot_upgrade_plans_async_invoker(self, request):
+        http_info = self._list_autopilot_upgrade_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_autopilot_upgrade_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/upgradeplans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutopilotUpgradePlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_autopilot_upgrade_work_flows_async(self, request):
         """获取UpgradeWorkFlows列表
 
@@ -8375,6 +8573,71 @@ class CceAsyncClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_autopilot_maintenance_window_async(self, request):
+        """获取集群维护窗口
+
+        该API用于获取集群维护窗口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAutopilotMaintenanceWindow
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAutopilotMaintenanceWindowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAutopilotMaintenanceWindowResponse`
+        """
+        http_info = self._show_autopilot_maintenance_window_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_autopilot_maintenance_window_async_invoker(self, request):
+        http_info = self._show_autopilot_maintenance_window_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_autopilot_maintenance_window_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/maintenancewindows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutopilotMaintenanceWindowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -9145,6 +9408,73 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def update_autopilot_maintenance_window_async(self, request):
+        """更新集群维护窗口
+
+        该API用于更新集群维护窗口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAutopilotMaintenanceWindow
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotMaintenanceWindowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotMaintenanceWindowResponse`
+        """
+        http_info = self._update_autopilot_maintenance_window_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_maintenance_window_async_invoker(self, request):
+        http_info = self._update_autopilot_maintenance_window_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_autopilot_maintenance_window_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/maintenancewindows",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotMaintenanceWindowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_autopilot_release_async(self, request):
         """更新指定模板实例
 
@@ -9185,6 +9515,75 @@ class CceAsyncClient(Client):
             path_params['namespace'] = local_var_params['namespace']
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_autopilot_upgrade_plan_async(self, request):
+        """延期自动升级计划
+
+        该API用于延期集群自动升级计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAutopilotUpgradePlan
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAutopilotUpgradePlanRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotUpgradePlanResponse`
+        """
+        http_info = self._update_autopilot_upgrade_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_autopilot_upgrade_plan_async_invoker(self, request):
+        http_info = self._update_autopilot_upgrade_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_autopilot_upgrade_plan_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autopilot/v3/projects/{project_id}/clusters/{cluster_id}/upgradeplans/{upgrade_plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutopilotUpgradePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'upgrade_plan_id' in local_var_params:
+            path_params['upgrade_plan_id'] = local_var_params['upgrade_plan_id']
 
         query_params = []
 

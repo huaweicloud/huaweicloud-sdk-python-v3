@@ -8,13 +8,14 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+from huaweicloudsdkkvs.v1.kvs_client_interface import KvsClientInterface
 try:
     from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 except ImportError as e:
     warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkkvs'")
 
 
-class KvsClient(Client):
+class KvsClient(Client, KvsClientInterface):
     def __init__(self):
         super(KvsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkvs.v1.model")

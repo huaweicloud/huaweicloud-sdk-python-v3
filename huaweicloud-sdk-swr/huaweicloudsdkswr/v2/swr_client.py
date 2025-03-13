@@ -8,6 +8,7 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+
 try:
     from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 except ImportError as e:

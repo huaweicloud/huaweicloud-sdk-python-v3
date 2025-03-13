@@ -8,6 +8,7 @@ import warnings
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+
 try:
     from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 except ImportError as e:
@@ -1133,6 +1134,10 @@ class VpnClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -2574,6 +2579,69 @@ class VpnClient(Client):
 
         return http_info
 
+    def list_extended_availability_zones(self, request):
+        """查询VPN网关可用区
+
+        查询VPN网关可用区
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListExtendedAvailabilityZones
+        :type request: :class:`huaweicloudsdkvpn.v5.ListExtendedAvailabilityZonesRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListExtendedAvailabilityZonesResponse`
+        """
+        http_info = self._list_extended_availability_zones_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_extended_availability_zones_invoker(self, request):
+        http_info = self._list_extended_availability_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_extended_availability_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5.1/{project_id}/vpn-gateways/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExtendedAvailabilityZonesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_vgws(self, request):
         """查询VPN网关列表
 
@@ -3275,6 +3343,10 @@ class VpnClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3392,6 +3464,142 @@ class VpnClient(Client):
             "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateVpnServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_vpn_users(self, request):
+        """批量创建VPN用户
+
+        批量创建P2C VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateVpnUsers
+        :type request: :class:`huaweicloudsdkvpn.v5.BatchCreateVpnUsersRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.BatchCreateVpnUsersResponse`
+        """
+        http_info = self._batch_create_vpn_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_vpn_users_invoker(self, request):
+        http_info = self._batch_create_vpn_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_vpn_users_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateVpnUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_server_id' in local_var_params:
+            path_params['vpn_server_id'] = local_var_params['vpn_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_vpn_users(self, request):
+        """批量删除VPN用户
+
+        批量删除P2C VPN用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteVpnUsers
+        :type request: :class:`huaweicloudsdkvpn.v5.BatchDeleteVpnUsersRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.BatchDeleteVpnUsersResponse`
+        """
+        http_info = self._batch_delete_vpn_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_vpn_users_invoker(self, request):
+        http_info = self._batch_delete_vpn_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_vpn_users_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/vpn-servers/{vpn_server_id}/users/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteVpnUsersResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

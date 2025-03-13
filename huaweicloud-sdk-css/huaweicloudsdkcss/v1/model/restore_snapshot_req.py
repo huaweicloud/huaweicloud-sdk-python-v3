@@ -20,17 +20,19 @@ class RestoreSnapshotReq:
         'target_cluster': 'str',
         'indices': 'str',
         'rename_pattern': 'str',
-        'rename_replacement': 'str'
+        'rename_replacement': 'str',
+        'replace_exist_indices': 'bool'
     }
 
     attribute_map = {
         'target_cluster': 'targetCluster',
         'indices': 'indices',
         'rename_pattern': 'renamePattern',
-        'rename_replacement': 'renameReplacement'
+        'rename_replacement': 'renameReplacement',
+        'replace_exist_indices': 'replace_exist_indices'
     }
 
-    def __init__(self, target_cluster=None, indices=None, rename_pattern=None, rename_replacement=None):
+    def __init__(self, target_cluster=None, indices=None, rename_pattern=None, rename_replacement=None, replace_exist_indices=None):
         """RestoreSnapshotReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class RestoreSnapshotReq:
         :type rename_pattern: str
         :param rename_replacement: 索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
         :type rename_replacement: str
+        :param replace_exist_indices: 替换已存在的索引。    
+        :type replace_exist_indices: bool
         """
         
         
@@ -51,6 +55,7 @@ class RestoreSnapshotReq:
         self._indices = None
         self._rename_pattern = None
         self._rename_replacement = None
+        self._replace_exist_indices = None
         self.discriminator = None
 
         self.target_cluster = target_cluster
@@ -60,6 +65,8 @@ class RestoreSnapshotReq:
             self.rename_pattern = rename_pattern
         if rename_replacement is not None:
             self.rename_replacement = rename_replacement
+        if replace_exist_indices is not None:
+            self.replace_exist_indices = replace_exist_indices
 
     @property
     def target_cluster(self):
@@ -148,6 +155,28 @@ class RestoreSnapshotReq:
         :type rename_replacement: str
         """
         self._rename_replacement = rename_replacement
+
+    @property
+    def replace_exist_indices(self):
+        """Gets the replace_exist_indices of this RestoreSnapshotReq.
+
+        替换已存在的索引。    
+
+        :return: The replace_exist_indices of this RestoreSnapshotReq.
+        :rtype: bool
+        """
+        return self._replace_exist_indices
+
+    @replace_exist_indices.setter
+    def replace_exist_indices(self, replace_exist_indices):
+        """Sets the replace_exist_indices of this RestoreSnapshotReq.
+
+        替换已存在的索引。    
+
+        :param replace_exist_indices: The replace_exist_indices of this RestoreSnapshotReq.
+        :type replace_exist_indices: bool
+        """
+        self._replace_exist_indices = replace_exist_indices
 
     def to_dict(self):
         """Returns the model properties as a dict"""

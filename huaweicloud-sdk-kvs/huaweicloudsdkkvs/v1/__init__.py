@@ -58,6 +58,7 @@ from huaweicloudsdkkvs.v1.model.scan_skey_kv_response import ScanSkeyKvResponse
 from huaweicloudsdkkvs.v1.model.secondary_index import SecondaryIndex
 from huaweicloudsdkkvs.v1.model.secondary_index_info import SecondaryIndexInfo
 from huaweicloudsdkkvs.v1.model.single_field_expression import SingleFieldExpression
+from huaweicloudsdkkvs.v1.model.single_kv_expression import SingleKvExpression
 from huaweicloudsdkkvs.v1.model.table_batch import TableBatch
 from huaweicloudsdkkvs.v1.model.table_info import TableInfo
 from huaweicloudsdkkvs.v1.model.table_oper_ids import TableOperIds
