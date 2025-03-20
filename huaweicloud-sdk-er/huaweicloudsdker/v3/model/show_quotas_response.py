@@ -18,29 +18,36 @@ class ShowQuotasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'list[Quota]'
+        'quotas': 'list[Quota]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'quotas': 'quotas'
+        'quotas': 'quotas',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, quotas=None):
+    def __init__(self, quotas=None, page_info=None):
         """ShowQuotasResponse
 
         The model defined in huaweicloud sdk
 
         :param quotas: 配额使用详情
         :type quotas: list[:class:`huaweicloudsdker.v3.Quota`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
         """
         
         super(ShowQuotasResponse, self).__init__()
 
         self._quotas = None
+        self._page_info = None
         self.discriminator = None
 
         if quotas is not None:
             self.quotas = quotas
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def quotas(self):
@@ -63,6 +70,24 @@ class ShowQuotasResponse(SdkResponse):
         :type quotas: list[:class:`huaweicloudsdker.v3.Quota`]
         """
         self._quotas = quotas
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ShowQuotasResponse.
+
+        :return: The page_info of this ShowQuotasResponse.
+        :rtype: :class:`huaweicloudsdker.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ShowQuotasResponse.
+
+        :param page_info: The page_info of this ShowQuotasResponse.
+        :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

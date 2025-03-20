@@ -19,11 +19,14 @@
 """
 import bson
 import pytest
-from bson import MaxKey, MinKey, Regex, ObjectId, Code
+from bson import MaxKey, MinKey, Regex, ObjectId, Code, Decimal128, Timestamp
+from huaweicloudsdkcore.utils import http_utils
+
 from huaweicloudsdkcore.client import Client
 from tests.model.kvs import BsonBody
 from tests.model.kvs import GetKvRequest
 from tests.model.vpc import Vpc
+import datetime
 
 
 class CustomIter:
@@ -76,10 +79,11 @@ def test_parse_kvs_body(mocked_client):
         "table_name": "test-table",
         "primary_key": {
             "name": "tom",
-            "age": 10
+            "age": 10,
+            "birthday": datetime.datetime(2025, 3, 14)
         }
     }
-    kvs = GetKvRequest(table_name="test-table", primary_key={"name": "tom", "age": 10})
+    kvs = GetKvRequest(table_name="test-table", primary_key={"name": "tom", "age": 10, "birthday": datetime.datetime(2025, 3, 14)})
     assert parse_bson_body(kvs) == bson.encode(bson_dict)
 
 
@@ -89,7 +93,8 @@ def test_parse_bson_type(mocked_client):
     assert parse_bson_body({}) == bson.encode({})
     dict_data = {
         "user": "jack",
-        "age": 10
+        "age": 10,
+        "birthday": datetime.datetime(2025, 3, 14)
     }
     binary_data = b'\x00\x01\x02\x03\x04'
     regex_pattern = "^[A-Za-z0-9]*$"
@@ -102,10 +107,36 @@ def test_parse_bson_type(mocked_client):
         "max_key_field": MaxKey(),
         "regex_field": Regex(regex_pattern),
         "object_id_field": object_id,
-        "js_code_field": Code(js_code)
+        "js_code_field": Code(js_code),
+        "string_field": "Hello, BSON!",  # 字符串
+        "int32_field": 123456,  # 32 位整数
+        "int64_field": 9876543210123,  # 64 位整数
+        "double_field": 3.1415926535,  # 浮点数
+        "decimal128_field": Decimal128("1234567890.123456789"),  # 高精度 Decimal128
+        "boolean_field": True,  # 布尔值
+        "array_field": [1, 2, 3, "abc"],  # 数组
+        "timestamp_field": Timestamp(12345, 6789)
     }
-    body = BsonBody(doc_field=dict_data, binary_field=binary_data, min_key_field=MinKey(), max_key_field=MaxKey(),
-                    object_id_field=object_id, regex_field=Regex(regex_pattern), js_code_field=Code(js_code))
+
+    body = BsonBody(
+        doc_field=dict_data,
+        binary_field=binary_data,
+        min_key_field=MinKey(),
+        max_key_field=MaxKey(),
+        regex_field=Regex(regex_pattern),
+        object_id_field=object_id,
+        js_code_field=Code(js_code),
+        string_field="Hello, BSON!",
+        int32_field=123456,
+        int64_field=9876543210123,
+        double_field=3.1415926535,
+        decimal128_field=Decimal128("1234567890.123456789"),
+        boolean_field=True,
+        null_field=None,
+        array_field=[1, 2, 3, "abc"],
+        timestamp_field=Timestamp(12345, 6789)
+    )
+    assert http_utils.sanitize_for_bson_serialization(body) == bson_dict
     assert parse_bson_body(body) == bson.encode(bson_dict)
 
 

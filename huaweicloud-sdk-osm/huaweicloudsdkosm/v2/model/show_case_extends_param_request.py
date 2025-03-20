@@ -37,7 +37,7 @@ class ShowCaseExtendsParamRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，同组其他工单时，该id必传
         :type group_id: str
         :param case_id: 工单id
         :type case_id: str
@@ -58,7 +58,8 @@ class ShowCaseExtendsParamRequest:
         self._x_time_zone = None
         self.discriminator = None
 
-        self.group_id = group_id
+        if group_id is not None:
+            self.group_id = group_id
         self.case_id = case_id
         if x_site is not None:
             self.x_site = x_site
@@ -71,7 +72,7 @@ class ShowCaseExtendsParamRequest:
     def group_id(self):
         """Gets the group_id of this ShowCaseExtendsParamRequest.
 
-        组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :return: The group_id of this ShowCaseExtendsParamRequest.
         :rtype: str
@@ -82,7 +83,7 @@ class ShowCaseExtendsParamRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ShowCaseExtendsParamRequest.
 
-        组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :param group_id: The group_id of this ShowCaseExtendsParamRequest.
         :type group_id: str

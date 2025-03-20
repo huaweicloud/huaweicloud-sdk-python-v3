@@ -20,16 +20,18 @@ class ListFlowLogsResponse(SdkResponse):
     openapi_types = {
         'flow_logs': 'list[FlowLog]',
         'request_id': 'str',
+        'total_count': 'int',
         'page_info': 'PageInfo'
     }
 
     attribute_map = {
         'flow_logs': 'flow_logs',
         'request_id': 'request_id',
+        'total_count': 'total_count',
         'page_info': 'page_info'
     }
 
-    def __init__(self, flow_logs=None, request_id=None, page_info=None):
+    def __init__(self, flow_logs=None, request_id=None, total_count=None, page_info=None):
         """ListFlowLogsResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListFlowLogsResponse(SdkResponse):
         :type flow_logs: list[:class:`huaweicloudsdker.v3.FlowLog`]
         :param request_id: 请求ID
         :type request_id: str
+        :param total_count: 总计数量
+        :type total_count: int
         :param page_info: 
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
         """
@@ -46,6 +50,7 @@ class ListFlowLogsResponse(SdkResponse):
 
         self._flow_logs = None
         self._request_id = None
+        self._total_count = None
         self._page_info = None
         self.discriminator = None
 
@@ -53,6 +58,8 @@ class ListFlowLogsResponse(SdkResponse):
             self.flow_logs = flow_logs
         if request_id is not None:
             self.request_id = request_id
+        if total_count is not None:
+            self.total_count = total_count
         if page_info is not None:
             self.page_info = page_info
 
@@ -95,6 +102,28 @@ class ListFlowLogsResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListFlowLogsResponse.
+
+        总计数量
+
+        :return: The total_count of this ListFlowLogsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListFlowLogsResponse.
+
+        总计数量
+
+        :param total_count: The total_count of this ListFlowLogsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def page_info(self):

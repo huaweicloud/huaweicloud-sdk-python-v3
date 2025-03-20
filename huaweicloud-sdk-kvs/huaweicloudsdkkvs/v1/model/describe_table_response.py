@@ -23,7 +23,8 @@ class DescribeTableResponse(SdkResponse):
         'local_secondary_index_schema': 'list[SecondaryIndex]',
         'global_secondary_index_schema': 'list[GlobalSecondaryIndex]',
         'run_time_info': 'RunTimeInfo',
-        'ttl_specification': 'TtlSpecification'
+        'ttl_specification': 'TtlSpecification',
+        'sse_specification': 'SseSpecification'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class DescribeTableResponse(SdkResponse):
         'local_secondary_index_schema': 'local_secondary_index_schema',
         'global_secondary_index_schema': 'global_secondary_index_schema',
         'run_time_info': 'run_time_info',
-        'ttl_specification': 'ttl_specification'
+        'ttl_specification': 'ttl_specification',
+        'sse_specification': 'sse_specification'
     }
 
-    def __init__(self, table_name=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, run_time_info=None, ttl_specification=None):
+    def __init__(self, table_name=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, run_time_info=None, ttl_specification=None, sse_specification=None):
         """DescribeTableResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class DescribeTableResponse(SdkResponse):
         :type run_time_info: :class:`huaweicloudsdkkvs.v1.RunTimeInfo`
         :param ttl_specification: 
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
+        :param sse_specification: 
+        :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`
         """
         
         super(DescribeTableResponse, self).__init__()
@@ -62,6 +66,7 @@ class DescribeTableResponse(SdkResponse):
         self._global_secondary_index_schema = None
         self._run_time_info = None
         self._ttl_specification = None
+        self._sse_specification = None
         self.discriminator = None
 
         if table_name is not None:
@@ -76,6 +81,8 @@ class DescribeTableResponse(SdkResponse):
             self.run_time_info = run_time_info
         if ttl_specification is not None:
             self.ttl_specification = ttl_specification
+        if sse_specification is not None:
+            self.sse_specification = sse_specification
 
     @property
     def table_name(self):
@@ -196,6 +203,24 @@ class DescribeTableResponse(SdkResponse):
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
         """
         self._ttl_specification = ttl_specification
+
+    @property
+    def sse_specification(self):
+        """Gets the sse_specification of this DescribeTableResponse.
+
+        :return: The sse_specification of this DescribeTableResponse.
+        :rtype: :class:`huaweicloudsdkkvs.v1.SseSpecification`
+        """
+        return self._sse_specification
+
+    @sse_specification.setter
+    def sse_specification(self, sse_specification):
+        """Sets the sse_specification of this DescribeTableResponse.
+
+        :param sse_specification: The sse_specification of this DescribeTableResponse.
+        :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`
+        """
+        self._sse_specification = sse_specification
 
     def to_dict(self):
         """Returns the model properties as a dict"""

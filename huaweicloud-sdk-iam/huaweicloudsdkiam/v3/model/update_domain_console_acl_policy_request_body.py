@@ -17,7 +17,7 @@ class UpdateDomainConsoleAclPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'console_acl_policy': 'ConsoleAclPolicyOption'
+        'console_acl_policy': 'AclPolicyOption'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class UpdateDomainConsoleAclPolicyRequestBody:
         The model defined in huaweicloud sdk
 
         :param console_acl_policy: 
-        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyOption`
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
         
         
@@ -45,7 +45,7 @@ class UpdateDomainConsoleAclPolicyRequestBody:
         """Gets the console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
 
         :return: The console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
-        :rtype: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyOption`
+        :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
         return self._console_acl_policy
 
@@ -54,7 +54,7 @@ class UpdateDomainConsoleAclPolicyRequestBody:
         """Sets the console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
 
         :param console_acl_policy: The console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
-        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyOption`
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
         self._console_acl_policy = console_acl_policy
 

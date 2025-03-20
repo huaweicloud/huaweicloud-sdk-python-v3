@@ -23,7 +23,8 @@ class UpgradeInstanceData:
         'port_num': 'int',
         'bind_domain_num': 'int',
         'elastic_service_bandwidth_type': 'int',
-        'elastic_service_bandwidth': 'int'
+        'elastic_service_bandwidth': 'int',
+        'basic_qps': 'int'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UpgradeInstanceData:
         'port_num': 'port_num',
         'bind_domain_num': 'bind_domain_num',
         'elastic_service_bandwidth_type': 'elastic_service_bandwidth_type',
-        'elastic_service_bandwidth': 'elastic_service_bandwidth'
+        'elastic_service_bandwidth': 'elastic_service_bandwidth',
+        'basic_qps': 'basic_qps'
     }
 
-    def __init__(self, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, port_num=None, bind_domain_num=None, elastic_service_bandwidth_type=None, elastic_service_bandwidth=None):
+    def __init__(self, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, port_num=None, bind_domain_num=None, elastic_service_bandwidth_type=None, elastic_service_bandwidth=None, basic_qps=None):
         """UpgradeInstanceData
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class UpgradeInstanceData:
         :type elastic_service_bandwidth_type: int
         :param elastic_service_bandwidth: 弹性业务带宽增加值
         :type elastic_service_bandwidth: int
+        :param basic_qps: 业务QPS(如果实例没购买过QPS，需要在页面上升级一次规格开通QPS，之后才可以通过接口修改规格)
+        :type basic_qps: int
         """
         
         
@@ -66,6 +70,7 @@ class UpgradeInstanceData:
         self._bind_domain_num = None
         self._elastic_service_bandwidth_type = None
         self._elastic_service_bandwidth = None
+        self._basic_qps = None
         self.discriminator = None
 
         if basic_bandwidth is not None:
@@ -82,6 +87,8 @@ class UpgradeInstanceData:
             self.elastic_service_bandwidth_type = elastic_service_bandwidth_type
         if elastic_service_bandwidth is not None:
             self.elastic_service_bandwidth = elastic_service_bandwidth
+        if basic_qps is not None:
+            self.basic_qps = basic_qps
 
     @property
     def basic_bandwidth(self):
@@ -236,6 +243,28 @@ class UpgradeInstanceData:
         :type elastic_service_bandwidth: int
         """
         self._elastic_service_bandwidth = elastic_service_bandwidth
+
+    @property
+    def basic_qps(self):
+        """Gets the basic_qps of this UpgradeInstanceData.
+
+        业务QPS(如果实例没购买过QPS，需要在页面上升级一次规格开通QPS，之后才可以通过接口修改规格)
+
+        :return: The basic_qps of this UpgradeInstanceData.
+        :rtype: int
+        """
+        return self._basic_qps
+
+    @basic_qps.setter
+    def basic_qps(self, basic_qps):
+        """Sets the basic_qps of this UpgradeInstanceData.
+
+        业务QPS(如果实例没购买过QPS，需要在页面上升级一次规格开通QPS，之后才可以通过接口修改规格)
+
+        :param basic_qps: The basic_qps of this UpgradeInstanceData.
+        :type basic_qps: int
+        """
+        self._basic_qps = basic_qps
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,7 +35,7 @@ class ShowLatestPublishedAgreementRequest:
 
         The model defined in huaweicloud sdk
 
-        :param agreement_type: 协议类型
+        :param agreement_type: 协议类型，0 新建工单-普通用户，1 新建工单-ISV用户，2 授权
         :type agreement_type: str
         :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
         :type x_site: int
@@ -66,7 +66,7 @@ class ShowLatestPublishedAgreementRequest:
     def agreement_type(self):
         """Gets the agreement_type of this ShowLatestPublishedAgreementRequest.
 
-        协议类型
+        协议类型，0 新建工单-普通用户，1 新建工单-ISV用户，2 授权
 
         :return: The agreement_type of this ShowLatestPublishedAgreementRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ShowLatestPublishedAgreementRequest:
     def agreement_type(self, agreement_type):
         """Sets the agreement_type of this ShowLatestPublishedAgreementRequest.
 
-        协议类型
+        协议类型，0 新建工单-普通用户，1 新建工单-ISV用户，2 授权
 
         :param agreement_type: The agreement_type of this ShowLatestPublishedAgreementRequest.
         :type agreement_type: str

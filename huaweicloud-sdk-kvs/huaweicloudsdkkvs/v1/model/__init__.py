@@ -18,6 +18,9 @@ from huaweicloudsdkkvs.v1.model.delete_kv import DeleteKv
 from huaweicloudsdkkvs.v1.model.delete_kv_request import DeleteKvRequest
 from huaweicloudsdkkvs.v1.model.delete_kv_request_body import DeleteKvRequestBody
 from huaweicloudsdkkvs.v1.model.delete_kv_response import DeleteKvResponse
+from huaweicloudsdkkvs.v1.model.delete_table_request import DeleteTableRequest
+from huaweicloudsdkkvs.v1.model.delete_table_request_body import DeleteTableRequestBody
+from huaweicloudsdkkvs.v1.model.delete_table_response import DeleteTableResponse
 from huaweicloudsdkkvs.v1.model.describe_table_request import DescribeTableRequest
 from huaweicloudsdkkvs.v1.model.describe_table_request_body import DescribeTableRequestBody
 from huaweicloudsdkkvs.v1.model.describe_table_response import DescribeTableResponse
@@ -57,6 +60,7 @@ from huaweicloudsdkkvs.v1.model.secondary_index import SecondaryIndex
 from huaweicloudsdkkvs.v1.model.secondary_index_info import SecondaryIndexInfo
 from huaweicloudsdkkvs.v1.model.single_field_expression import SingleFieldExpression
 from huaweicloudsdkkvs.v1.model.single_kv_expression import SingleKvExpression
+from huaweicloudsdkkvs.v1.model.sse_specification import SseSpecification
 from huaweicloudsdkkvs.v1.model.table_batch import TableBatch
 from huaweicloudsdkkvs.v1.model.table_info import TableInfo
 from huaweicloudsdkkvs.v1.model.table_oper_ids import TableOperIds

@@ -24,7 +24,8 @@ class CreateTableRequestBody:
         'local_secondary_index_schema': 'list[SecondaryIndex]',
         'global_secondary_index_schema': 'list[GlobalSecondaryIndex]',
         'pre_split_key_options': 'PreSplitKeyOptions',
-        'ttl_specification': 'TtlSpecification'
+        'ttl_specification': 'TtlSpecification',
+        'sse_specification': 'SseSpecification'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateTableRequestBody:
         'local_secondary_index_schema': 'local_secondary_index_schema',
         'global_secondary_index_schema': 'global_secondary_index_schema',
         'pre_split_key_options': 'pre_split_key_options',
-        'ttl_specification': 'ttl_specification'
+        'ttl_specification': 'ttl_specification',
+        'sse_specification': 'sse_specification'
     }
 
-    def __init__(self, table_name=None, bill_mode=None, provisioned_throughput=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, pre_split_key_options=None, ttl_specification=None):
+    def __init__(self, table_name=None, bill_mode=None, provisioned_throughput=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, pre_split_key_options=None, ttl_specification=None, sse_specification=None):
         """CreateTableRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateTableRequestBody:
         :type pre_split_key_options: :class:`huaweicloudsdkkvs.v1.PreSplitKeyOptions`
         :param ttl_specification: 
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
+        :param sse_specification: 
+        :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`
         """
         
         
@@ -71,6 +75,7 @@ class CreateTableRequestBody:
         self._global_secondary_index_schema = None
         self._pre_split_key_options = None
         self._ttl_specification = None
+        self._sse_specification = None
         self.discriminator = None
 
         self.table_name = table_name
@@ -87,6 +92,8 @@ class CreateTableRequestBody:
             self.pre_split_key_options = pre_split_key_options
         if ttl_specification is not None:
             self.ttl_specification = ttl_specification
+        if sse_specification is not None:
+            self.sse_specification = sse_specification
 
     @property
     def table_name(self):
@@ -247,6 +254,24 @@ class CreateTableRequestBody:
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
         """
         self._ttl_specification = ttl_specification
+
+    @property
+    def sse_specification(self):
+        """Gets the sse_specification of this CreateTableRequestBody.
+
+        :return: The sse_specification of this CreateTableRequestBody.
+        :rtype: :class:`huaweicloudsdkkvs.v1.SseSpecification`
+        """
+        return self._sse_specification
+
+    @sse_specification.setter
+    def sse_specification(self, sse_specification):
+        """Sets the sse_specification of this CreateTableRequestBody.
+
+        :param sse_specification: The sse_specification of this CreateTableRequestBody.
+        :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`
+        """
+        self._sse_specification = sse_specification
 
     def to_dict(self):
         """Returns the model properties as a dict"""

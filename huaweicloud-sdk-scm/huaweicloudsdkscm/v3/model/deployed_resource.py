@@ -35,7 +35,7 @@ class DeployedResource:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源Id,部署WAF与ELB时，必传此字段。
+        :param id: 资源Id，部署WAF与ELB时，必传此字段。
         :type id: str
         :param type: 资源类型，当前仅部署WAF资源时需传入，即独享模式（premium）与云模式（cloud）。
         :type type: str
@@ -66,7 +66,7 @@ class DeployedResource:
     def id(self):
         """Gets the id of this DeployedResource.
 
-        资源Id,部署WAF与ELB时，必传此字段。
+        资源Id，部署WAF与ELB时，必传此字段。
 
         :return: The id of this DeployedResource.
         :rtype: str
@@ -77,7 +77,7 @@ class DeployedResource:
     def id(self, id):
         """Sets the id of this DeployedResource.
 
-        资源Id,部署WAF与ELB时，必传此字段。
+        资源Id，部署WAF与ELB时，必传此字段。
 
         :param id: The id of this DeployedResource.
         :type id: str

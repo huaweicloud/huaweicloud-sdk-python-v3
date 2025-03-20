@@ -19,16 +19,18 @@ class CreateRoute:
     openapi_types = {
         'destination': 'str',
         'attachment_id': 'str',
-        'is_blackhole': 'bool'
+        'is_blackhole': 'bool',
+        'description': 'str'
     }
 
     attribute_map = {
         'destination': 'destination',
         'attachment_id': 'attachment_id',
-        'is_blackhole': 'is_blackhole'
+        'is_blackhole': 'is_blackhole',
+        'description': 'description'
     }
 
-    def __init__(self, destination=None, attachment_id=None, is_blackhole=None):
+    def __init__(self, destination=None, attachment_id=None, is_blackhole=None, description=None):
         """CreateRoute
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateRoute:
         :type attachment_id: str
         :param is_blackhole: 是否为黑洞路由，默认为false
         :type is_blackhole: bool
+        :param description: 路由描述信息
+        :type description: str
         """
         
         
@@ -46,6 +50,7 @@ class CreateRoute:
         self._destination = None
         self._attachment_id = None
         self._is_blackhole = None
+        self._description = None
         self.discriminator = None
 
         self.destination = destination
@@ -53,6 +58,8 @@ class CreateRoute:
             self.attachment_id = attachment_id
         if is_blackhole is not None:
             self.is_blackhole = is_blackhole
+        if description is not None:
+            self.description = description
 
     @property
     def destination(self):
@@ -119,6 +126,28 @@ class CreateRoute:
         :type is_blackhole: bool
         """
         self._is_blackhole = is_blackhole
+
+    @property
+    def description(self):
+        """Gets the description of this CreateRoute.
+
+        路由描述信息
+
+        :return: The description of this CreateRoute.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreateRoute.
+
+        路由描述信息
+
+        :param description: The description of this CreateRoute.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

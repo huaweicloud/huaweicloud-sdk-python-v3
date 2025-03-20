@@ -47,7 +47,7 @@ class UpdateCaseContactInfoReq:
         :type remind_mail: str
         :param remind_time: 联系时间
         :type remind_time: str
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，操作查询同组其他工单时，该id必传
         :type group_id: str
         :param extension_map: 扩展参数
         :type extension_map: dict(str, object)
@@ -168,7 +168,7 @@ class UpdateCaseContactInfoReq:
     def group_id(self):
         """Gets the group_id of this UpdateCaseContactInfoReq.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :return: The group_id of this UpdateCaseContactInfoReq.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateCaseContactInfoReq:
     def group_id(self, group_id):
         """Sets the group_id of this UpdateCaseContactInfoReq.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :param group_id: The group_id of this UpdateCaseContactInfoReq.
         :type group_id: str

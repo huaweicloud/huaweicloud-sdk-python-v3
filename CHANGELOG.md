@@ -1,3 +1,264 @@
+# 3.1.140 2025-03-20
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeInstanceSpec**
+    - changes of request param
+      - `+ upgrade_data.basic_qps`
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowPatchBaseline`
+    - `ListCceCompliant`
+    - `ShowAccount`
+    - `ListPersonnel`
+    - `SyncAddPersonnel`
+    - `ShowAlarm`
+    - `ListAlarmHandleHistories`
+    - `ShowSloDetail`
+    - `ListInterruptRecords`
+    - `ShowSlaOrder`
+    - `ShowSlaCustomizedTemplate`
+    - `ListScheduledTask`
+    - `CreateScheduledTask`
+    - `ShowScheduledTask`
+    - `UpdateScheduledTask`
+    - `DeleteScheduledTask`
+    - `ListScheduledTaskHistory`
+    - `EnableScheduledTask`
+    - `DisableScheduledTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListDesignDataLayers`, `UpdateDesignDataLayers`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAllStandards**
+    - changes of request param
+      - `+ need_path`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListServerVolumeAttachments`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ER
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowQuotas**
+    - changes of response param
+      - `+ page_info`
+  - **ListFlowLogs**
+    - changes of response param
+      - `+ total_count`
+  - **ShowStaticRoute**
+    - changes of response param
+      - `+ route.description`
+  - **UpdateStaticRoute**
+    - changes of request param
+      - `+ route.description`
+    - changes of response param
+      - `+ route.description`
+  - **ListStaticRoutes**
+    - changes of response param
+      - `+ routes.description`
+  - **CreateStaticRoute**
+    - changes of request param
+      - `+ route.description`
+    - changes of response param
+      - `+ route.description`
+  - **ListEffectiveRoutes**
+    - changes of response param
+      - `+ routes.description`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVolumes**
+    - changes of request param
+      - `+ not_metadata`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `CreateUnscopeTokenByIdpInitiated`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainConsoleAclPolicy**
+    - changes of response param
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyResult> -> object<AclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - changes of request param
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyOption> -> object<AclPolicyOption>`
+    - changes of response param
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyResult> -> object<AclPolicyResult>`
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `DeleteTable`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTable**
+    - changes of request param
+      - `+ sse_specification`
+    - changes of response param
+      - `+ sse_specification`
+  - **DescribeTable**
+    - changes of response param
+      - `+ sse_specification`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDomain**
+    - changes of response param
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+  - **CreateDomain**
+    - changes of request param
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+    - changes of response param
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+  - **ShowDomain**
+    - changes of response param
+      - `+ domain_info.pull_protocol`
+      - `+ domain_info.service_area: enum value [global]`
+
+### HuaweiCloud SDK Moderation
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `RunCreateDocumentModerationJob`, `RunQueryDocumentModerationJob`, `RunCreateVideoStreamModerationJob`, `RunCloseVideoStreamModerationJob`
+
+### HuaweiCloud SDK OSM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSignedLatestPublishedAgreement**
+    - changes of request param
+      - `+ agreement_type: enum value [0,1,2]`
+  - **ShowCaseExtendsParam**
+    - changes of request param
+      - `* group_id: required -> optional`
+  - **UploadJsonAccessories**
+    - changes of request param
+      - `+ accessory_from: enum value [incident,message]`
+  - **ListPrivileges**
+    - changes of request param
+      - `+ privilege: enum value [export,createCase]`
+  - **CreatePrivileges**
+    - changes of request param
+      - `+ privilege: enum value [export,createCase]`
+  - **ShowLatestPublishedAgreement**
+    - changes of request param
+      - `+ agreement_type: enum value [0,1,2]`
+  - **ListAccessoryAccessUrls**
+    - changes of request param
+      - `* group_id: required -> optional`
+    - changes of response param
+      - `+ accessory_urls.accessory_name`
+  - **ListCases**
+    - changes of response param
+      - `+ incident_info_list.product_category_name`
+      - `+ incident_info_list.incident_service_type`
+      - `+ incident_info_list.root_cause`
+      - `+ incident_info_list.resolution`
+      - `+ incident_info_list.confirmed_time`
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportCertificate**
+    - changes of request param
+      - `+ duplicate_check`
+  - **ListCertificates**
+    - changes of request param
+      - `+ expired_days_since`
+    - changes of response param
+      - `+ certificates.domain_id`
+  - **SubscribeCertificate**
+    - changes of request param
+      - `+ tags`
+  - **ShowCertificate**
+    - changes of response param
+      - `+ shared`
+      - `+ description`
+      - `+ application_info`
+
 # 3.1.139 2025-03-13
 
 ### HuaweiCloud SDK AOS

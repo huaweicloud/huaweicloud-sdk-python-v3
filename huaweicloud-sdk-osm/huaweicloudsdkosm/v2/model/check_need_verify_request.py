@@ -41,7 +41,7 @@ class CheckNeedVerifyRequest:
 
         :param contact_value: 联系方式值
         :type contact_value: str
-        :param contact_way: 联系方式类型
+        :param contact_way: 联系方式类型，0: 手机; 1: 邮箱
         :type contact_way: int
         :param area_code: 国家码
         :type area_code: str
@@ -100,7 +100,7 @@ class CheckNeedVerifyRequest:
     def contact_way(self):
         """Gets the contact_way of this CheckNeedVerifyRequest.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :return: The contact_way of this CheckNeedVerifyRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class CheckNeedVerifyRequest:
     def contact_way(self, contact_way):
         """Sets the contact_way of this CheckNeedVerifyRequest.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :param contact_way: The contact_way of this CheckNeedVerifyRequest.
         :type contact_way: int

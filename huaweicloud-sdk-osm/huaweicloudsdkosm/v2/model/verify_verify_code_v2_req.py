@@ -43,7 +43,7 @@ class VerifyVerifyCodeV2Req:
         :type verify_code: str
         :param contact_value: 联系方式的值
         :type contact_value: str
-        :param contact_way: 联系方式的类型。0：短信；1：邮件
+        :param contact_way: 联系方式的类型，0：短信；1：邮件
         :type contact_way: int
         :param area_code: 国家码
         :type area_code: str
@@ -121,7 +121,7 @@ class VerifyVerifyCodeV2Req:
     def contact_way(self):
         """Gets the contact_way of this VerifyVerifyCodeV2Req.
 
-        联系方式的类型。0：短信；1：邮件
+        联系方式的类型，0：短信；1：邮件
 
         :return: The contact_way of this VerifyVerifyCodeV2Req.
         :rtype: int
@@ -132,7 +132,7 @@ class VerifyVerifyCodeV2Req:
     def contact_way(self, contact_way):
         """Sets the contact_way of this VerifyVerifyCodeV2Req.
 
-        联系方式的类型。0：短信；1：邮件
+        联系方式的类型，0：短信；1：邮件
 
         :param contact_way: The contact_way of this VerifyVerifyCodeV2Req.
         :type contact_way: int

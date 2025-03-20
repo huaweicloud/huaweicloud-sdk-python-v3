@@ -32,6 +32,7 @@ class CertificateDetail:
         'domain_count': 'int',
         'wildcard_count': 'int',
         'description': 'str',
+        'domain_id': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -51,10 +52,11 @@ class CertificateDetail:
         'domain_count': 'domain_count',
         'wildcard_count': 'wildcard_count',
         'description': 'description',
+        'domain_id': 'domain_id',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None, domain_id=None, enterprise_project_id=None):
         """CertificateDetail
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class CertificateDetail:
         :type wildcard_count: int
         :param description: 证书描述。
         :type description: str
+        :param domain_id: 账号ID。
+        :type domain_id: str
         :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
         :type enterprise_project_id: str
         """
@@ -110,6 +114,7 @@ class CertificateDetail:
         self._domain_count = None
         self._wildcard_count = None
         self._description = None
+        self._domain_id = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -128,6 +133,8 @@ class CertificateDetail:
         self.domain_count = domain_count
         self.wildcard_count = wildcard_count
         self.description = description
+        if domain_id is not None:
+            self.domain_id = domain_id
         self.enterprise_project_id = enterprise_project_id
 
     @property
@@ -459,6 +466,28 @@ class CertificateDetail:
         :type description: str
         """
         self._description = description
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this CertificateDetail.
+
+        账号ID。
+
+        :return: The domain_id of this CertificateDetail.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this CertificateDetail.
+
+        账号ID。
+
+        :param domain_id: The domain_id of this CertificateDetail.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
 
     @property
     def enterprise_project_id(self):

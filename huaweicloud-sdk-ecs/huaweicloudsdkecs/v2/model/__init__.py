@@ -145,6 +145,8 @@ from huaweicloudsdkecs.v2.model.list_server_interfaces_request import ListServer
 from huaweicloudsdkecs.v2.model.list_server_interfaces_response import ListServerInterfacesResponse
 from huaweicloudsdkecs.v2.model.list_server_tags_request import ListServerTagsRequest
 from huaweicloudsdkecs.v2.model.list_server_tags_response import ListServerTagsResponse
+from huaweicloudsdkecs.v2.model.list_server_volume_attachments_request import ListServerVolumeAttachmentsRequest
+from huaweicloudsdkecs.v2.model.list_server_volume_attachments_response import ListServerVolumeAttachmentsResponse
 from huaweicloudsdkecs.v2.model.list_servers_by_tag_request import ListServersByTagRequest
 from huaweicloudsdkecs.v2.model.list_servers_by_tag_request_body import ListServersByTagRequestBody
 from huaweicloudsdkecs.v2.model.list_servers_by_tag_response import ListServersByTagResponse
@@ -315,6 +317,7 @@ from huaweicloudsdkecs.v2.model.server_system_tag import ServerSystemTag
 from huaweicloudsdkecs.v2.model.server_tag import ServerTag
 from huaweicloudsdkecs.v2.model.server_tag_match import ServerTagMatch
 from huaweicloudsdkecs.v2.model.server_tags import ServerTags
+from huaweicloudsdkecs.v2.model.server_volume_attachment import ServerVolumeAttachment
 from huaweicloudsdkecs.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkecs.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkecs.v2.model.show_reset_password_flag_request import ShowResetPasswordFlagRequest

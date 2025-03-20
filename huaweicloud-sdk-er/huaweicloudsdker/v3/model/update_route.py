@@ -18,15 +18,17 @@ class UpdateRoute:
 
     openapi_types = {
         'attachment_id': 'str',
-        'is_blackhole': 'bool'
+        'is_blackhole': 'bool',
+        'description': 'str'
     }
 
     attribute_map = {
         'attachment_id': 'attachment_id',
-        'is_blackhole': 'is_blackhole'
+        'is_blackhole': 'is_blackhole',
+        'description': 'description'
     }
 
-    def __init__(self, attachment_id=None, is_blackhole=None):
+    def __init__(self, attachment_id=None, is_blackhole=None, description=None):
         """UpdateRoute
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class UpdateRoute:
         :type attachment_id: str
         :param is_blackhole: 是否为黑洞路由
         :type is_blackhole: bool
+        :param description: 路由描述信息
+        :type description: str
         """
         
         
 
         self._attachment_id = None
         self._is_blackhole = None
+        self._description = None
         self.discriminator = None
 
         if attachment_id is not None:
             self.attachment_id = attachment_id
         if is_blackhole is not None:
             self.is_blackhole = is_blackhole
+        if description is not None:
+            self.description = description
 
     @property
     def attachment_id(self):
@@ -91,6 +98,28 @@ class UpdateRoute:
         :type is_blackhole: bool
         """
         self._is_blackhole = is_blackhole
+
+    @property
+    def description(self):
+        """Gets the description of this UpdateRoute.
+
+        路由描述信息
+
+        :return: The description of this UpdateRoute.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdateRoute.
+
+        路由描述信息
+
+        :param description: The description of this UpdateRoute.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

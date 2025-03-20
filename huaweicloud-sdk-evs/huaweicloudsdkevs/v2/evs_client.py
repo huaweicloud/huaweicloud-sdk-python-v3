@@ -1180,6 +1180,8 @@ class EvsClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'server_id' in local_var_params:
             query_params.append(('server_id', local_var_params['server_id']))
+        if 'not_metadata' in local_var_params:
+            query_params.append(('not_metadata', local_var_params['not_metadata']))
 
         header_params = {}
 

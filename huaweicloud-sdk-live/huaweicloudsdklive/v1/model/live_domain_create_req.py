@@ -21,7 +21,8 @@ class LiveDomainCreateReq:
         'domain_type': 'str',
         'region': 'str',
         'service_area': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'pull_protocol': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class LiveDomainCreateReq:
         'domain_type': 'domain_type',
         'region': 'region',
         'service_area': 'service_area',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'pull_protocol': 'pull_protocol'
     }
 
-    def __init__(self, domain=None, domain_type=None, region=None, service_area=None, enterprise_project_id=None):
+    def __init__(self, domain=None, domain_type=None, region=None, service_area=None, enterprise_project_id=None, pull_protocol=None):
         """LiveDomainCreateReq
 
         The model defined in huaweicloud sdk
@@ -43,10 +45,12 @@ class LiveDomainCreateReq:
         :type domain_type: str
         :param region: 直播所属的直播中心
         :type region: str
-        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
         :type service_area: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param pull_protocol: 域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+        :type pull_protocol: str
         """
         
         
@@ -56,6 +60,7 @@ class LiveDomainCreateReq:
         self._region = None
         self._service_area = None
         self._enterprise_project_id = None
+        self._pull_protocol = None
         self.discriminator = None
 
         self.domain = domain
@@ -65,6 +70,8 @@ class LiveDomainCreateReq:
             self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if pull_protocol is not None:
+            self.pull_protocol = pull_protocol
 
     @property
     def domain(self):
@@ -136,7 +143,7 @@ class LiveDomainCreateReq:
     def service_area(self):
         """Gets the service_area of this LiveDomainCreateReq.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
         :return: The service_area of this LiveDomainCreateReq.
         :rtype: str
@@ -147,7 +154,7 @@ class LiveDomainCreateReq:
     def service_area(self, service_area):
         """Sets the service_area of this LiveDomainCreateReq.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
         :param service_area: The service_area of this LiveDomainCreateReq.
         :type service_area: str
@@ -175,6 +182,28 @@ class LiveDomainCreateReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def pull_protocol(self):
+        """Gets the pull_protocol of this LiveDomainCreateReq.
+
+        域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+
+        :return: The pull_protocol of this LiveDomainCreateReq.
+        :rtype: str
+        """
+        return self._pull_protocol
+
+    @pull_protocol.setter
+    def pull_protocol(self, pull_protocol):
+        """Sets the pull_protocol of this LiveDomainCreateReq.
+
+        域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+
+        :param pull_protocol: The pull_protocol of this LiveDomainCreateReq.
+        :type pull_protocol: str
+        """
+        self._pull_protocol = pull_protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

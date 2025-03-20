@@ -55,6 +55,39 @@ def sanitize_for_serialization(obj):
     elif isinstance(obj, dict):
         obj_dict = obj
 
+    else:
+        obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in six.iteritems(obj.openapi_types)
+                    if getattr(obj, attr) is not None}
+
+    return {key: sanitize_for_serialization(val)
+            for key, val in six.iteritems(obj_dict)}
+
+
+def sanitize_for_bson_serialization(obj):
+    if obj is None:
+        return None
+
+    elif isinstance(obj, PRIMITIVE_TYPES):
+        return obj
+
+    elif isinstance(obj, decimal.Decimal):
+        return obj
+
+    elif isinstance(obj, list):
+        return [sanitize_for_bson_serialization(sub_obj) for sub_obj in obj]
+
+    elif isinstance(obj, tuple):
+        return tuple(sanitize_for_bson_serialization(sub_obj) for sub_obj in obj)
+
+    elif isinstance(obj, (datetime.datetime, datetime.date)):
+        return obj
+
+    elif isinstance(obj, FormFile):
+        return obj
+
+    elif isinstance(obj, dict):
+        obj_dict = obj
+
     elif isinstance(obj, BSON_TYPES):
         return obj
 
@@ -62,7 +95,7 @@ def sanitize_for_serialization(obj):
         obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in six.iteritems(obj.openapi_types)
                     if getattr(obj, attr) is not None}
 
-    return {key: sanitize_for_serialization(val)
+    return {key: sanitize_for_bson_serialization(val)
             for key, val in six.iteritems(obj_dict)}
 
 

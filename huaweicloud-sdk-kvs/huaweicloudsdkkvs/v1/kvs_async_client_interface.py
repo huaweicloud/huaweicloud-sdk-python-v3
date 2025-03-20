@@ -14,6 +14,14 @@ class KvsAsyncClientInterface(ABC):
         pass
 
     @abstractmethod
+    def delete_table_async(self, request):
+        pass
+
+    @abstractmethod
+    def delete_table_async_invoker(self, request):
+        pass
+
+    @abstractmethod
     def describe_table_async(self, request):
         pass
 

@@ -28,6 +28,7 @@ class DecoupledLiveDomainInfo:
         'status_describe': 'str',
         'service_area': 'str',
         'enterprise_project_id': 'str',
+        'pull_protocol': 'str',
         'is_ipv6': 'bool'
     }
 
@@ -43,10 +44,11 @@ class DecoupledLiveDomainInfo:
         'status_describe': 'status_describe',
         'service_area': 'service_area',
         'enterprise_project_id': 'enterprise_project_id',
+        'pull_protocol': 'pull_protocol',
         'is_ipv6': 'is_ipv6'
     }
 
-    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None, enterprise_project_id=None, is_ipv6=None):
+    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None, enterprise_project_id=None, pull_protocol=None, is_ipv6=None):
         """DecoupledLiveDomainInfo
 
         The model defined in huaweicloud sdk
@@ -69,10 +71,12 @@ class DecoupledLiveDomainInfo:
         :type create_time: datetime
         :param status_describe: 状态描述
         :type status_describe: str
-        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
         :type service_area: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param pull_protocol: 域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+        :type pull_protocol: str
         :param is_ipv6: IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
         :type is_ipv6: bool
         """
@@ -90,6 +94,7 @@ class DecoupledLiveDomainInfo:
         self._status_describe = None
         self._service_area = None
         self._enterprise_project_id = None
+        self._pull_protocol = None
         self._is_ipv6 = None
         self.discriminator = None
 
@@ -107,6 +112,8 @@ class DecoupledLiveDomainInfo:
             self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if pull_protocol is not None:
+            self.pull_protocol = pull_protocol
         if is_ipv6 is not None:
             self.is_ipv6 = is_ipv6
 
@@ -312,7 +319,7 @@ class DecoupledLiveDomainInfo:
     def service_area(self):
         """Gets the service_area of this DecoupledLiveDomainInfo.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
         :return: The service_area of this DecoupledLiveDomainInfo.
         :rtype: str
@@ -323,7 +330,7 @@ class DecoupledLiveDomainInfo:
     def service_area(self, service_area):
         """Sets the service_area of this DecoupledLiveDomainInfo.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
         :param service_area: The service_area of this DecoupledLiveDomainInfo.
         :type service_area: str
@@ -351,6 +358,28 @@ class DecoupledLiveDomainInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def pull_protocol(self):
+        """Gets the pull_protocol of this DecoupledLiveDomainInfo.
+
+        域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+
+        :return: The pull_protocol of this DecoupledLiveDomainInfo.
+        :rtype: str
+        """
+        return self._pull_protocol
+
+    @pull_protocol.setter
+    def pull_protocol(self, pull_protocol):
+        """Sets the pull_protocol of this DecoupledLiveDomainInfo.
+
+        域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
+
+        :param pull_protocol: The pull_protocol of this DecoupledLiveDomainInfo.
+        :type pull_protocol: str
+        """
+        self._pull_protocol = pull_protocol
 
     @property
     def is_ipv6(self):

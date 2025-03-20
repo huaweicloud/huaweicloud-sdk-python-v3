@@ -59,9 +59,9 @@ class CreateCsrRequestBody:
         :type company_country: str
         :param company_province: 省份，当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
         :type company_province: str
-        :param company_city: 城市，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
+        :param company_city: 城市。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
         :type company_city: str
-        :param company_name: 公司名称，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。
+        :param company_name: 公司名称。当“usage”取值为“ENTERPRISE”时，本参数必填。
         :type company_name: str
         """
         
@@ -251,7 +251,7 @@ class CreateCsrRequestBody:
     def company_city(self):
         """Gets the company_city of this CreateCsrRequestBody.
 
-        城市，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
+        城市。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
         :return: The company_city of this CreateCsrRequestBody.
         :rtype: str
@@ -262,7 +262,7 @@ class CreateCsrRequestBody:
     def company_city(self, company_city):
         """Sets the company_city of this CreateCsrRequestBody.
 
-        城市，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
+        城市。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
         :param company_city: The company_city of this CreateCsrRequestBody.
         :type company_city: str
@@ -273,7 +273,7 @@ class CreateCsrRequestBody:
     def company_name(self):
         """Gets the company_name of this CreateCsrRequestBody.
 
-        公司名称，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。
+        公司名称。当“usage”取值为“ENTERPRISE”时，本参数必填。
 
         :return: The company_name of this CreateCsrRequestBody.
         :rtype: str
@@ -284,7 +284,7 @@ class CreateCsrRequestBody:
     def company_name(self, company_name):
         """Sets the company_name of this CreateCsrRequestBody.
 
-        公司名称，用途为企业证书场景下必填。当“usage”取值为“ENTERPRISE”时，本参数必填。
+        公司名称。当“usage”取值为“ENTERPRISE”时，本参数必填。
 
         :param company_name: The company_name of this CreateCsrRequestBody.
         :type company_name: str

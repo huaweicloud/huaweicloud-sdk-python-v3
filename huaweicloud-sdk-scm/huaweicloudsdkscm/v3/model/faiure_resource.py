@@ -31,7 +31,7 @@ class FaiureResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource: 部署失败的资源信息,部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
+        :param resource: 部署失败的资源信息，部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
         :type resource: str
         :param failure_info: 失败原因，一般为目标服务返回的错误码信息。
         :type failure_info: str
@@ -52,7 +52,7 @@ class FaiureResource:
     def resource(self):
         """Gets the resource of this FaiureResource.
 
-        部署失败的资源信息,部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
+        部署失败的资源信息，部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
 
         :return: The resource of this FaiureResource.
         :rtype: str
@@ -63,7 +63,7 @@ class FaiureResource:
     def resource(self, resource):
         """Sets the resource of this FaiureResource.
 
-        部署失败的资源信息,部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
+        部署失败的资源信息，部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
 
         :param resource: The resource of this FaiureResource.
         :type resource: str

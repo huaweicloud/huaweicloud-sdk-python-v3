@@ -25,7 +25,8 @@ class Route:
         'attachments': 'list[RouteAttachment]',
         'route_table_id': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class Route:
         'attachments': 'attachments',
         'route_table_id': 'route_table_id',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, type=None, state=None, is_blackhole=None, destination=None, attachments=None, route_table_id=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, type=None, state=None, is_blackhole=None, destination=None, attachments=None, route_table_id=None, created_at=None, updated_at=None, description=None):
         """Route
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class Route:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param description: 路由描述信息
+        :type description: str
         """
         
         
@@ -76,6 +80,7 @@ class Route:
         self._route_table_id = None
         self._created_at = None
         self._updated_at = None
+        self._description = None
         self.discriminator = None
 
         self.id = id
@@ -90,6 +95,8 @@ class Route:
         self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -288,6 +295,28 @@ class Route:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def description(self):
+        """Gets the description of this Route.
+
+        路由描述信息
+
+        :return: The description of this Route.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this Route.
+
+        路由描述信息
+
+        :param description: The description of this Route.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

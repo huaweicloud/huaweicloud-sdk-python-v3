@@ -29,7 +29,7 @@ class UpdateUnreadNewInstantMsgV2Req:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，操作查询同组其他工单时，该id必传
         :type group_id: str
         """
         
@@ -45,7 +45,7 @@ class UpdateUnreadNewInstantMsgV2Req:
     def group_id(self):
         """Gets the group_id of this UpdateUnreadNewInstantMsgV2Req.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :return: The group_id of this UpdateUnreadNewInstantMsgV2Req.
         :rtype: str
@@ -56,7 +56,7 @@ class UpdateUnreadNewInstantMsgV2Req:
     def group_id(self, group_id):
         """Sets the group_id of this UpdateUnreadNewInstantMsgV2Req.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :param group_id: The group_id of this UpdateUnreadNewInstantMsgV2Req.
         :type group_id: str

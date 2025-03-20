@@ -21,6 +21,7 @@ class ImportCertificateRequestBody:
         'certificate': 'str',
         'certificate_chain': 'str',
         'private_key': 'str',
+        'duplicate_check': 'bool',
         'enterprise_project_id': 'str',
         'enc_certificate': 'str',
         'enc_private_key': 'str'
@@ -31,17 +32,18 @@ class ImportCertificateRequestBody:
         'certificate': 'certificate',
         'certificate_chain': 'certificate_chain',
         'private_key': 'private_key',
+        'duplicate_check': 'duplicate_check',
         'enterprise_project_id': 'enterprise_project_id',
         'enc_certificate': 'enc_certificate',
         'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, duplicate_check=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
         """ImportCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 证书名称。字符长度为3~63位。
+        :param name: 证书名称。字符长度为3~63位, 请输入英文字符，数字，下划线，中划线，英文句点。
         :type name: str
         :param certificate: 证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type certificate: str
@@ -49,7 +51,9 @@ class ImportCertificateRequestBody:
         :type certificate_chain: str
         :param private_key: 证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type private_key: str
-        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :param duplicate_check: 是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+        :type duplicate_check: bool
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
         :type enterprise_project_id: str
         :param enc_certificate: 可选参数，国密证书的加密证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type enc_certificate: str
@@ -63,6 +67,7 @@ class ImportCertificateRequestBody:
         self._certificate = None
         self._certificate_chain = None
         self._private_key = None
+        self._duplicate_check = None
         self._enterprise_project_id = None
         self._enc_certificate = None
         self._enc_private_key = None
@@ -73,6 +78,8 @@ class ImportCertificateRequestBody:
         if certificate_chain is not None:
             self.certificate_chain = certificate_chain
         self.private_key = private_key
+        if duplicate_check is not None:
+            self.duplicate_check = duplicate_check
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if enc_certificate is not None:
@@ -84,7 +91,7 @@ class ImportCertificateRequestBody:
     def name(self):
         """Gets the name of this ImportCertificateRequestBody.
 
-        证书名称。字符长度为3~63位。
+        证书名称。字符长度为3~63位, 请输入英文字符，数字，下划线，中划线，英文句点。
 
         :return: The name of this ImportCertificateRequestBody.
         :rtype: str
@@ -95,7 +102,7 @@ class ImportCertificateRequestBody:
     def name(self, name):
         """Sets the name of this ImportCertificateRequestBody.
 
-        证书名称。字符长度为3~63位。
+        证书名称。字符长度为3~63位, 请输入英文字符，数字，下划线，中划线，英文句点。
 
         :param name: The name of this ImportCertificateRequestBody.
         :type name: str
@@ -169,10 +176,32 @@ class ImportCertificateRequestBody:
         self._private_key = private_key
 
     @property
+    def duplicate_check(self):
+        """Gets the duplicate_check of this ImportCertificateRequestBody.
+
+        是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+
+        :return: The duplicate_check of this ImportCertificateRequestBody.
+        :rtype: bool
+        """
+        return self._duplicate_check
+
+    @duplicate_check.setter
+    def duplicate_check(self, duplicate_check):
+        """Sets the duplicate_check of this ImportCertificateRequestBody.
+
+        是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+
+        :param duplicate_check: The duplicate_check of this ImportCertificateRequestBody.
+        :type duplicate_check: bool
+        """
+        self._duplicate_check = duplicate_check
+
+    @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ImportCertificateRequestBody.
 
-        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :return: The enterprise_project_id of this ImportCertificateRequestBody.
         :rtype: str
@@ -183,7 +212,7 @@ class ImportCertificateRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ImportCertificateRequestBody.
 
-        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :param enterprise_project_id: The enterprise_project_id of this ImportCertificateRequestBody.
         :type enterprise_project_id: str

@@ -14,6 +14,14 @@ class KvsClientInterface(ABC):
         pass
 
     @abstractmethod
+    def delete_table(self, request):
+        pass
+
+    @abstractmethod
+    def delete_table_invoker(self, request):
+        pass
+
+    @abstractmethod
     def describe_table(self, request):
         pass
 

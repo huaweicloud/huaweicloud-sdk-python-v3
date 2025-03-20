@@ -35,7 +35,7 @@ class ContactV2:
 
         The model defined in huaweicloud sdk
 
-        :param contact_way: 联系方式类型
+        :param contact_way: 联系方式类型，0: 手机; 1: 邮箱
         :type contact_way: int
         :param contact_value: 联系方式值
         :type contact_value: str
@@ -66,7 +66,7 @@ class ContactV2:
     def contact_way(self):
         """Gets the contact_way of this ContactV2.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :return: The contact_way of this ContactV2.
         :rtype: int
@@ -77,7 +77,7 @@ class ContactV2:
     def contact_way(self, contact_way):
         """Sets the contact_way of this ContactV2.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :param contact_way: The contact_way of this ContactV2.
         :type contact_way: int

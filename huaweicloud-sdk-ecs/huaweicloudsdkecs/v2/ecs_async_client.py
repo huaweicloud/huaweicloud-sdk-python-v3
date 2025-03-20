@@ -2609,6 +2609,71 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def list_server_volume_attachments_async(self, request):
+        """查询弹性云服务器挂载磁盘列表信息
+
+        查询弹性云服务器挂载的磁盘信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListServerVolumeAttachments
+        :type request: :class:`huaweicloudsdkecs.v2.ListServerVolumeAttachmentsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerVolumeAttachmentsResponse`
+        """
+        http_info = self._list_server_volume_attachments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_server_volume_attachments_async_invoker(self, request):
+        http_info = self._list_server_volume_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_server_volume_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-volume_attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerVolumeAttachmentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_servers_by_tag_async(self, request):
         """按标签查询云服务器列表
 

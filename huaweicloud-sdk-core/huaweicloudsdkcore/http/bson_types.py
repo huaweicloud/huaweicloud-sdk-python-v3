@@ -19,9 +19,9 @@
  under the LICENSE.
 """
 
-from bson import MinKey, MaxKey, Regex, Code, ObjectId
+from bson import MinKey, MaxKey, Regex, Code, ObjectId, Timestamp, Decimal128
 
-BSON_TYPES = (MinKey, MaxKey, Regex, Code, ObjectId)
+BSON_TYPES = (MinKey, MaxKey, Regex, Code, ObjectId, Timestamp, Decimal128)
 
 BSON_TYPES_MAPPING = {
     'dict': dict,

@@ -34,7 +34,8 @@ class ListVolumesRequest:
         'id': 'str',
         'ids': 'str',
         'enterprise_project_id': 'str',
-        'server_id': 'str'
+        'server_id': 'str',
+        'not_metadata': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ListVolumesRequest:
         'id': 'id',
         'ids': 'ids',
         'enterprise_project_id': 'enterprise_project_id',
-        'server_id': 'server_id'
+        'server_id': 'server_id',
+        'not_metadata': 'not_metadata'
     }
 
-    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None):
+    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None, not_metadata=None):
         """ListVolumesRequest
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class ListVolumesRequest:
         :type enterprise_project_id: str
         :param server_id: 云服务器id。
         :type server_id: str
+        :param not_metadata: 查询不包含所选元数据的云硬盘
+        :type not_metadata: str
         """
         
         
@@ -121,6 +125,7 @@ class ListVolumesRequest:
         self._ids = None
         self._enterprise_project_id = None
         self._server_id = None
+        self._not_metadata = None
         self.discriminator = None
 
         if marker is not None:
@@ -159,6 +164,8 @@ class ListVolumesRequest:
             self.enterprise_project_id = enterprise_project_id
         if server_id is not None:
             self.server_id = server_id
+        if not_metadata is not None:
+            self.not_metadata = not_metadata
 
     @property
     def marker(self):
@@ -555,6 +562,28 @@ class ListVolumesRequest:
         :type server_id: str
         """
         self._server_id = server_id
+
+    @property
+    def not_metadata(self):
+        """Gets the not_metadata of this ListVolumesRequest.
+
+        查询不包含所选元数据的云硬盘
+
+        :return: The not_metadata of this ListVolumesRequest.
+        :rtype: str
+        """
+        return self._not_metadata
+
+    @not_metadata.setter
+    def not_metadata(self, not_metadata):
+        """Sets the not_metadata of this ListVolumesRequest.
+
+        查询不包含所选元数据的云硬盘
+
+        :param not_metadata: The not_metadata of this ListVolumesRequest.
+        :type not_metadata: str
+        """
+        self._not_metadata = not_metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

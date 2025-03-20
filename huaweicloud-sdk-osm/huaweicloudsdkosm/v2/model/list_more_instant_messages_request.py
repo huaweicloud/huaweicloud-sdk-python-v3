@@ -49,7 +49,7 @@ class ListMoreInstantMessagesRequest:
         :type create_time: str
         :param type: 上一条消息的留言方式 0是客户留言 1是客服回留言
         :type type: int
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，同组其他工单时，该id必传
         :type group_id: str
         :param limit: 查询数量
         :type limit: int
@@ -156,7 +156,7 @@ class ListMoreInstantMessagesRequest:
     def group_id(self):
         """Gets the group_id of this ListMoreInstantMessagesRequest.
 
-        组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :return: The group_id of this ListMoreInstantMessagesRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ListMoreInstantMessagesRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListMoreInstantMessagesRequest.
 
-        组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :param group_id: The group_id of this ListMoreInstantMessagesRequest.
         :type group_id: str

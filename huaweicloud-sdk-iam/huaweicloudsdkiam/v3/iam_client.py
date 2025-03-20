@@ -1276,6 +1276,80 @@ class IamClient(Client):
 
         return http_info
 
+    def create_unscope_token_by_idp_initiated(self, request):
+        """获取联邦认证unscoped token(IdP initiated)
+
+        该接口可以用于通过IdP initiated的联邦认证方式获取unscoped token。
+        
+        Unscoped token不能用来鉴权，若联邦用户需要使用token进行鉴权，请参考[获取联邦认证scoped token](https://support.huaweicloud.com/api-iam/iam_13_0604.html)获取scoped token。
+        
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        &gt; - 该接口支持在命令行侧调用，需要客户端使用IdP initiated的联邦认证方式获取SAMLResponse，并采用浏览器提交表单数据的方式，获取unscoped token。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateUnscopeTokenByIdpInitiated
+        :type request: :class:`huaweicloudsdkiam.v3.CreateUnscopeTokenByIdpInitiatedRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateUnscopeTokenByIdpInitiatedResponse`
+        """
+        http_info = self._create_unscope_token_by_idp_initiated_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_unscope_token_by_idp_initiated_invoker(self, request):
+        http_info = self._create_unscope_token_by_idp_initiated_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_unscope_token_by_idp_initiated_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-FEDERATION/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUnscopeTokenByIdpInitiatedResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_idp_id' in local_var_params:
+            header_params['X-Idp-Id'] = local_var_params['x_idp_id']
+
+        form_params = {}
+        if 'saml_response' in local_var_params:
+            form_params['SAMLResponse'] = local_var_params['saml_response']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Subject-Token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/x-www-form-urlencoded'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_unscoped_token_with_id_token(self, request):
         """获取联邦认证unscoped token(OpenId Connect Id token方式)
 

@@ -105,6 +105,73 @@ class KvsClient(Client, KvsClientInterface):
 
         return http_info
 
+    def delete_table(self, request):
+        """删除表
+
+        删除指定表及所有kv文档，表标记为删除后，空间不会立刻释放，并发的读写访问仍需继续完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTable
+        :type request: :class:`huaweicloudsdkkvs.v1.DeleteTableRequest`
+        :rtype: :class:`huaweicloudsdkkvs.v1.DeleteTableResponse`
+        """
+        http_info = self._delete_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_table_invoker(self, request):
+        http_info = self._delete_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/delete-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'store_name' in local_var_params:
+            cname = local_var_params['store_name']
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/bson'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def describe_table(self, request):
         """查询表
 

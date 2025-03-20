@@ -1,3 +1,264 @@
+# 3.1.140 2025-03-20
+
+### HuaweiCloud SDK AAD
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeInstanceSpec**
+    - 请求参数变更
+      - `+ upgrade_data.basic_qps`
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowPatchBaseline`
+    - `ListCceCompliant`
+    - `ShowAccount`
+    - `ListPersonnel`
+    - `SyncAddPersonnel`
+    - `ShowAlarm`
+    - `ListAlarmHandleHistories`
+    - `ShowSloDetail`
+    - `ListInterruptRecords`
+    - `ShowSlaOrder`
+    - `ShowSlaCustomizedTemplate`
+    - `ListScheduledTask`
+    - `CreateScheduledTask`
+    - `ShowScheduledTask`
+    - `UpdateScheduledTask`
+    - `DeleteScheduledTask`
+    - `ListScheduledTaskHistory`
+    - `EnableScheduledTask`
+    - `DisableScheduledTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListDesignDataLayers`、`UpdateDesignDataLayers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAllStandards**
+    - 请求参数变更
+      - `+ need_path`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListServerVolumeAttachments`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ER
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuotas**
+    - 响应参数变更
+      - `+ page_info`
+  - **ListFlowLogs**
+    - 响应参数变更
+      - `+ total_count`
+  - **ShowStaticRoute**
+    - 响应参数变更
+      - `+ route.description`
+  - **UpdateStaticRoute**
+    - 请求参数变更
+      - `+ route.description`
+    - 响应参数变更
+      - `+ route.description`
+  - **ListStaticRoutes**
+    - 响应参数变更
+      - `+ routes.description`
+  - **CreateStaticRoute**
+    - 请求参数变更
+      - `+ route.description`
+    - 响应参数变更
+      - `+ route.description`
+  - **ListEffectiveRoutes**
+    - 响应参数变更
+      - `+ routes.description`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVolumes**
+    - 请求参数变更
+      - `+ not_metadata`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`CreateUnscopeTokenByIdpInitiated`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainConsoleAclPolicy**
+    - 响应参数变更
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyResult> -> object<AclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - 请求参数变更
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyOption> -> object<AclPolicyOption>`
+    - 响应参数变更
+      - `- console_acl_policy.allow_address_netmasks_ipv6`
+      - `- console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<ConsoleAclPolicyResult> -> object<AclPolicyResult>`
+
+### HuaweiCloud SDK KVS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`DeleteTable`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateTable**
+    - 请求参数变更
+      - `+ sse_specification`
+    - 响应参数变更
+      - `+ sse_specification`
+  - **DescribeTable**
+    - 响应参数变更
+      - `+ sse_specification`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDomain**
+    - 响应参数变更
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+  - **CreateDomain**
+    - 请求参数变更
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+    - 响应参数变更
+      - `+ pull_protocol`
+      - `+ service_area: enum value [global]`
+  - **ShowDomain**
+    - 响应参数变更
+      - `+ domain_info.pull_protocol`
+      - `+ domain_info.service_area: enum value [global]`
+
+### HuaweiCloud SDK Moderation
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`RunCreateDocumentModerationJob`、`RunQueryDocumentModerationJob`、`RunCreateVideoStreamModerationJob`、`RunCloseVideoStreamModerationJob`
+
+### HuaweiCloud SDK OSM
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSignedLatestPublishedAgreement**
+    - 请求参数变更
+      - `+ agreement_type: enum value [0,1,2]`
+  - **ShowCaseExtendsParam**
+    - 请求参数变更
+      - `* group_id: required -> optional`
+  - **UploadJsonAccessories**
+    - 请求参数变更
+      - `+ accessory_from: enum value [incident,message]`
+  - **ListPrivileges**
+    - 请求参数变更
+      - `+ privilege: enum value [export,createCase]`
+  - **CreatePrivileges**
+    - 请求参数变更
+      - `+ privilege: enum value [export,createCase]`
+  - **ShowLatestPublishedAgreement**
+    - 请求参数变更
+      - `+ agreement_type: enum value [0,1,2]`
+  - **ListAccessoryAccessUrls**
+    - 请求参数变更
+      - `* group_id: required -> optional`
+    - 响应参数变更
+      - `+ accessory_urls.accessory_name`
+  - **ListCases**
+    - 响应参数变更
+      - `+ incident_info_list.product_category_name`
+      - `+ incident_info_list.incident_service_type`
+      - `+ incident_info_list.root_cause`
+      - `+ incident_info_list.resolution`
+      - `+ incident_info_list.confirmed_time`
+
+### HuaweiCloud SDK SCM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ImportCertificate**
+    - 请求参数变更
+      - `+ duplicate_check`
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ expired_days_since`
+    - 响应参数变更
+      - `+ certificates.domain_id`
+  - **SubscribeCertificate**
+    - 请求参数变更
+      - `+ tags`
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ shared`
+      - `+ description`
+      - `+ application_info`
+
 # 3.1.139 2025-03-13
 
 ### HuaweiCloud SDK AOS

@@ -18,21 +18,25 @@ class AccessoryUrl:
 
     openapi_types = {
         'accessory_id': 'str',
+        'accessory_name': 'str',
         'accessory_url': 'str'
     }
 
     attribute_map = {
         'accessory_id': 'accessory_id',
+        'accessory_name': 'accessory_name',
         'accessory_url': 'accessory_url'
     }
 
-    def __init__(self, accessory_id=None, accessory_url=None):
+    def __init__(self, accessory_id=None, accessory_name=None, accessory_url=None):
         """AccessoryUrl
 
         The model defined in huaweicloud sdk
 
         :param accessory_id: 附件id
         :type accessory_id: str
+        :param accessory_name: 文件名称
+        :type accessory_name: str
         :param accessory_url: 附件链接
         :type accessory_url: str
         """
@@ -40,11 +44,14 @@ class AccessoryUrl:
         
 
         self._accessory_id = None
+        self._accessory_name = None
         self._accessory_url = None
         self.discriminator = None
 
         if accessory_id is not None:
             self.accessory_id = accessory_id
+        if accessory_name is not None:
+            self.accessory_name = accessory_name
         if accessory_url is not None:
             self.accessory_url = accessory_url
 
@@ -69,6 +76,28 @@ class AccessoryUrl:
         :type accessory_id: str
         """
         self._accessory_id = accessory_id
+
+    @property
+    def accessory_name(self):
+        """Gets the accessory_name of this AccessoryUrl.
+
+        文件名称
+
+        :return: The accessory_name of this AccessoryUrl.
+        :rtype: str
+        """
+        return self._accessory_name
+
+    @accessory_name.setter
+    def accessory_name(self, accessory_name):
+        """Sets the accessory_name of this AccessoryUrl.
+
+        文件名称
+
+        :param accessory_name: The accessory_name of this AccessoryUrl.
+        :type accessory_name: str
+        """
+        self._accessory_name = accessory_name
 
     @property
     def accessory_url(self):

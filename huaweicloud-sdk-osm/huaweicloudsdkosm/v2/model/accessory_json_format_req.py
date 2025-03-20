@@ -37,9 +37,9 @@ class AccessoryJsonFormatReq:
 
         :param accessory_name: 文件名称
         :type accessory_name: str
-        :param accessory_from: 文件来源
+        :param accessory_from: 文件来源，创建工单附件传incident，留言附件传message
         :type accessory_from: str
-        :param upload_type: 上传类型
+        :param upload_type: 上传类型，默认为0，markdown模式为1
         :type upload_type: int
         :param accessory_data: 文件内容，Base64格式
         :type accessory_data: str
@@ -85,7 +85,7 @@ class AccessoryJsonFormatReq:
     def accessory_from(self):
         """Gets the accessory_from of this AccessoryJsonFormatReq.
 
-        文件来源
+        文件来源，创建工单附件传incident，留言附件传message
 
         :return: The accessory_from of this AccessoryJsonFormatReq.
         :rtype: str
@@ -96,7 +96,7 @@ class AccessoryJsonFormatReq:
     def accessory_from(self, accessory_from):
         """Sets the accessory_from of this AccessoryJsonFormatReq.
 
-        文件来源
+        文件来源，创建工单附件传incident，留言附件传message
 
         :param accessory_from: The accessory_from of this AccessoryJsonFormatReq.
         :type accessory_from: str
@@ -107,7 +107,7 @@ class AccessoryJsonFormatReq:
     def upload_type(self):
         """Gets the upload_type of this AccessoryJsonFormatReq.
 
-        上传类型
+        上传类型，默认为0，markdown模式为1
 
         :return: The upload_type of this AccessoryJsonFormatReq.
         :rtype: int
@@ -118,7 +118,7 @@ class AccessoryJsonFormatReq:
     def upload_type(self, upload_type):
         """Sets the upload_type of this AccessoryJsonFormatReq.
 
-        上传类型
+        上传类型，默认为0，markdown模式为1
 
         :param upload_type: The upload_type of this AccessoryJsonFormatReq.
         :type upload_type: int

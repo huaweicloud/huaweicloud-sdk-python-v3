@@ -23,10 +23,15 @@ class IncidentInfoV2:
         'incident_id': 'str',
         'business_type_name': 'str',
         'incident_type_name': 'str',
+        'product_category_name': 'str',
+        'incident_service_type': 'str',
         'customer_id': 'str',
         'dc_name': 'str',
         'simple_description': 'str',
+        'root_cause': 'str',
+        'resolution': 'str',
         'create_time': 'datetime',
+        'confirmed_time': 'datetime',
         'label_list': 'list[LabelInfo]'
     }
 
@@ -37,14 +42,19 @@ class IncidentInfoV2:
         'incident_id': 'incident_id',
         'business_type_name': 'business_type_name',
         'incident_type_name': 'incident_type_name',
+        'product_category_name': 'product_category_name',
+        'incident_service_type': 'incident_service_type',
         'customer_id': 'customer_id',
         'dc_name': 'dc_name',
         'simple_description': 'simple_description',
+        'root_cause': 'root_cause',
+        'resolution': 'resolution',
         'create_time': 'create_time',
+        'confirmed_time': 'confirmed_time',
         'label_list': 'label_list'
     }
 
-    def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, create_time=None, label_list=None):
+    def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, incident_id=None, business_type_name=None, incident_type_name=None, product_category_name=None, incident_service_type=None, customer_id=None, dc_name=None, simple_description=None, root_cause=None, resolution=None, create_time=None, confirmed_time=None, label_list=None):
         """IncidentInfoV2
 
         The model defined in huaweicloud sdk
@@ -61,14 +71,24 @@ class IncidentInfoV2:
         :type business_type_name: str
         :param incident_type_name: 工单类型名称
         :type incident_type_name: str
+        :param product_category_name: 产品类型名称
+        :type product_category_name: str
+        :param incident_service_type: 服务类型
+        :type incident_service_type: str
         :param customer_id: 客户id
         :type customer_id: str
         :param dc_name: 区域名称
         :type dc_name: str
         :param simple_description: 简要描述
         :type simple_description: str
+        :param root_cause: 问题归属方
+        :type root_cause: str
+        :param resolution: 解决方案
+        :type resolution: str
         :param create_time: 创建时间
         :type create_time: datetime
+        :param confirmed_time: 解决时间
+        :type confirmed_time: datetime
         :param label_list: 标签列表
         :type label_list: list[:class:`huaweicloudsdkosm.v2.LabelInfo`]
         """
@@ -81,10 +101,15 @@ class IncidentInfoV2:
         self._incident_id = None
         self._business_type_name = None
         self._incident_type_name = None
+        self._product_category_name = None
+        self._incident_service_type = None
         self._customer_id = None
         self._dc_name = None
         self._simple_description = None
+        self._root_cause = None
+        self._resolution = None
         self._create_time = None
+        self._confirmed_time = None
         self._label_list = None
         self.discriminator = None
 
@@ -96,10 +121,20 @@ class IncidentInfoV2:
         self.incident_id = incident_id
         self.business_type_name = business_type_name
         self.incident_type_name = incident_type_name
+        if product_category_name is not None:
+            self.product_category_name = product_category_name
+        if incident_service_type is not None:
+            self.incident_service_type = incident_service_type
         self.customer_id = customer_id
         self.dc_name = dc_name
         self.simple_description = simple_description
+        if root_cause is not None:
+            self.root_cause = root_cause
+        if resolution is not None:
+            self.resolution = resolution
         self.create_time = create_time
+        if confirmed_time is not None:
+            self.confirmed_time = confirmed_time
         if label_list is not None:
             self.label_list = label_list
 
@@ -236,6 +271,50 @@ class IncidentInfoV2:
         self._incident_type_name = incident_type_name
 
     @property
+    def product_category_name(self):
+        """Gets the product_category_name of this IncidentInfoV2.
+
+        产品类型名称
+
+        :return: The product_category_name of this IncidentInfoV2.
+        :rtype: str
+        """
+        return self._product_category_name
+
+    @product_category_name.setter
+    def product_category_name(self, product_category_name):
+        """Sets the product_category_name of this IncidentInfoV2.
+
+        产品类型名称
+
+        :param product_category_name: The product_category_name of this IncidentInfoV2.
+        :type product_category_name: str
+        """
+        self._product_category_name = product_category_name
+
+    @property
+    def incident_service_type(self):
+        """Gets the incident_service_type of this IncidentInfoV2.
+
+        服务类型
+
+        :return: The incident_service_type of this IncidentInfoV2.
+        :rtype: str
+        """
+        return self._incident_service_type
+
+    @incident_service_type.setter
+    def incident_service_type(self, incident_service_type):
+        """Sets the incident_service_type of this IncidentInfoV2.
+
+        服务类型
+
+        :param incident_service_type: The incident_service_type of this IncidentInfoV2.
+        :type incident_service_type: str
+        """
+        self._incident_service_type = incident_service_type
+
+    @property
     def customer_id(self):
         """Gets the customer_id of this IncidentInfoV2.
 
@@ -302,6 +381,50 @@ class IncidentInfoV2:
         self._simple_description = simple_description
 
     @property
+    def root_cause(self):
+        """Gets the root_cause of this IncidentInfoV2.
+
+        问题归属方
+
+        :return: The root_cause of this IncidentInfoV2.
+        :rtype: str
+        """
+        return self._root_cause
+
+    @root_cause.setter
+    def root_cause(self, root_cause):
+        """Sets the root_cause of this IncidentInfoV2.
+
+        问题归属方
+
+        :param root_cause: The root_cause of this IncidentInfoV2.
+        :type root_cause: str
+        """
+        self._root_cause = root_cause
+
+    @property
+    def resolution(self):
+        """Gets the resolution of this IncidentInfoV2.
+
+        解决方案
+
+        :return: The resolution of this IncidentInfoV2.
+        :rtype: str
+        """
+        return self._resolution
+
+    @resolution.setter
+    def resolution(self, resolution):
+        """Sets the resolution of this IncidentInfoV2.
+
+        解决方案
+
+        :param resolution: The resolution of this IncidentInfoV2.
+        :type resolution: str
+        """
+        self._resolution = resolution
+
+    @property
     def create_time(self):
         """Gets the create_time of this IncidentInfoV2.
 
@@ -322,6 +445,28 @@ class IncidentInfoV2:
         :type create_time: datetime
         """
         self._create_time = create_time
+
+    @property
+    def confirmed_time(self):
+        """Gets the confirmed_time of this IncidentInfoV2.
+
+        解决时间
+
+        :return: The confirmed_time of this IncidentInfoV2.
+        :rtype: datetime
+        """
+        return self._confirmed_time
+
+    @confirmed_time.setter
+    def confirmed_time(self, confirmed_time):
+        """Sets the confirmed_time of this IncidentInfoV2.
+
+        解决时间
+
+        :param confirmed_time: The confirmed_time of this IncidentInfoV2.
+        :type confirmed_time: datetime
+        """
+        self._confirmed_time = confirmed_time
 
     @property
     def label_list(self):

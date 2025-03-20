@@ -29,7 +29,8 @@ class PurchaseCertificateRequestBody:
         'wildcard_domain_number': 'int',
         'is_auto_pay': 'bool',
         'enterprise_project_id': 'str',
-        'order_id': 'str'
+        'order_id': 'str',
+        'tags': 'list[ScsResourceTag]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class PurchaseCertificateRequestBody:
         'wildcard_domain_number': 'wildcard_domain_number',
         'is_auto_pay': 'is_auto_pay',
         'enterprise_project_id': 'enterprise_project_id',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, cert_brand=None, cert_type=None, domain_type=None, effective_time=None, domain_numbers=None, order_number=None, agree_privacy_protection=None, primary_domain_type=None, single_domain_number=None, wildcard_domain_number=None, is_auto_pay=None, enterprise_project_id=None, order_id=None):
+    def __init__(self, cert_brand=None, cert_type=None, domain_type=None, effective_time=None, domain_numbers=None, order_number=None, agree_privacy_protection=None, primary_domain_type=None, single_domain_number=None, wildcard_domain_number=None, is_auto_pay=None, enterprise_project_id=None, order_id=None, tags=None):
         """PurchaseCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -67,7 +69,7 @@ class PurchaseCertificateRequestBody:
         :type order_number: int
         :param agree_privacy_protection: 是否同意隐私协议，此处仅能设置为true才能成功购买证书。 - true：同意隐私协议。 - false：不同意隐私协议。
         :type agree_privacy_protection: bool
-        :param primary_domain_type: 多域名中的主域名类型 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
+        :param primary_domain_type: 多域名中的主域名类型。 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
         :type primary_domain_type: str
         :param single_domain_number: 附加单域名数量。
         :type single_domain_number: int
@@ -75,10 +77,12 @@ class PurchaseCertificateRequestBody:
         :type wildcard_domain_number: int
         :param is_auto_pay: 是否开启自动支付。 - true：开启自动支付。 - false：不开启自动支付。
         :type is_auto_pay: bool
-        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
         :type enterprise_project_id: str
-        :param order_id: 订单号。仅组合购场景使用
+        :param order_id: 订单号。仅组合购买场景使用。
         :type order_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkscm.v3.ScsResourceTag`]
         """
         
         
@@ -96,6 +100,7 @@ class PurchaseCertificateRequestBody:
         self._is_auto_pay = None
         self._enterprise_project_id = None
         self._order_id = None
+        self._tags = None
         self.discriminator = None
 
         self.cert_brand = cert_brand
@@ -117,6 +122,8 @@ class PurchaseCertificateRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if order_id is not None:
             self.order_id = order_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def cert_brand(self):
@@ -276,7 +283,7 @@ class PurchaseCertificateRequestBody:
     def primary_domain_type(self):
         """Gets the primary_domain_type of this PurchaseCertificateRequestBody.
 
-        多域名中的主域名类型 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
+        多域名中的主域名类型。 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
 
         :return: The primary_domain_type of this PurchaseCertificateRequestBody.
         :rtype: str
@@ -287,7 +294,7 @@ class PurchaseCertificateRequestBody:
     def primary_domain_type(self, primary_domain_type):
         """Sets the primary_domain_type of this PurchaseCertificateRequestBody.
 
-        多域名中的主域名类型 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
+        多域名中的主域名类型。 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
 
         :param primary_domain_type: The primary_domain_type of this PurchaseCertificateRequestBody.
         :type primary_domain_type: str
@@ -364,7 +371,7 @@ class PurchaseCertificateRequestBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this PurchaseCertificateRequestBody.
 
-        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :return: The enterprise_project_id of this PurchaseCertificateRequestBody.
         :rtype: str
@@ -375,7 +382,7 @@ class PurchaseCertificateRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this PurchaseCertificateRequestBody.
 
-        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :param enterprise_project_id: The enterprise_project_id of this PurchaseCertificateRequestBody.
         :type enterprise_project_id: str
@@ -386,7 +393,7 @@ class PurchaseCertificateRequestBody:
     def order_id(self):
         """Gets the order_id of this PurchaseCertificateRequestBody.
 
-        订单号。仅组合购场景使用
+        订单号。仅组合购买场景使用。
 
         :return: The order_id of this PurchaseCertificateRequestBody.
         :rtype: str
@@ -397,12 +404,34 @@ class PurchaseCertificateRequestBody:
     def order_id(self, order_id):
         """Sets the order_id of this PurchaseCertificateRequestBody.
 
-        订单号。仅组合购场景使用
+        订单号。仅组合购买场景使用。
 
         :param order_id: The order_id of this PurchaseCertificateRequestBody.
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this PurchaseCertificateRequestBody.
+
+        标签列表。
+
+        :return: The tags of this PurchaseCertificateRequestBody.
+        :rtype: list[:class:`huaweicloudsdkscm.v3.ScsResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this PurchaseCertificateRequestBody.
+
+        标签列表。
+
+        :param tags: The tags of this PurchaseCertificateRequestBody.
+        :type tags: list[:class:`huaweicloudsdkscm.v3.ScsResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

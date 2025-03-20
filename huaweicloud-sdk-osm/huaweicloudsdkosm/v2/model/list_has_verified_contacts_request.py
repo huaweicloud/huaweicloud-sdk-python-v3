@@ -51,7 +51,7 @@ class ListHasVerifiedContactsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param contact_way: 联系方式类型
+        :param contact_way: 联系方式类型，0: 手机; 1: 邮箱
         :type contact_way: int
         :param customer_id: 客户id
         :type customer_id: str
@@ -122,7 +122,7 @@ class ListHasVerifiedContactsRequest:
     def contact_way(self):
         """Gets the contact_way of this ListHasVerifiedContactsRequest.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :return: The contact_way of this ListHasVerifiedContactsRequest.
         :rtype: int
@@ -133,7 +133,7 @@ class ListHasVerifiedContactsRequest:
     def contact_way(self, contact_way):
         """Sets the contact_way of this ListHasVerifiedContactsRequest.
 
-        联系方式类型
+        联系方式类型，0: 手机; 1: 邮箱
 
         :param contact_way: The contact_way of this ListHasVerifiedContactsRequest.
         :type contact_way: int

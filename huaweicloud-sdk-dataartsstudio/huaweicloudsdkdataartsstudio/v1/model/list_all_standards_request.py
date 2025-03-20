@@ -22,6 +22,7 @@ class ListAllStandardsRequest:
         'directory_id': 'str',
         'begin_time': 'str',
         'end_time': 'str',
+        'need_path': 'bool',
         'limit': 'int',
         'offset': 'int'
     }
@@ -32,11 +33,12 @@ class ListAllStandardsRequest:
         'directory_id': 'directory_id',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
+        'need_path': 'need_path',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, x_project_id=None, directory_id=None, begin_time=None, end_time=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, directory_id=None, begin_time=None, end_time=None, need_path=None, limit=None, offset=None):
         """ListAllStandardsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListAllStandardsRequest:
         :type begin_time: str
         :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
+        :param need_path: 查询数据标准目录时，是否查询数据标准目录信息。
+        :type need_path: bool
         :param limit: 每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
         :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
@@ -64,6 +68,7 @@ class ListAllStandardsRequest:
         self._directory_id = None
         self._begin_time = None
         self._end_time = None
+        self._need_path = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -77,6 +82,8 @@ class ListAllStandardsRequest:
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
+        if need_path is not None:
+            self.need_path = need_path
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -191,6 +198,28 @@ class ListAllStandardsRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def need_path(self):
+        """Gets the need_path of this ListAllStandardsRequest.
+
+        查询数据标准目录时，是否查询数据标准目录信息。
+
+        :return: The need_path of this ListAllStandardsRequest.
+        :rtype: bool
+        """
+        return self._need_path
+
+    @need_path.setter
+    def need_path(self, need_path):
+        """Sets the need_path of this ListAllStandardsRequest.
+
+        查询数据标准目录时，是否查询数据标准目录信息。
+
+        :param need_path: The need_path of this ListAllStandardsRequest.
+        :type need_path: bool
+        """
+        self._need_path = need_path
 
     @property
     def limit(self):

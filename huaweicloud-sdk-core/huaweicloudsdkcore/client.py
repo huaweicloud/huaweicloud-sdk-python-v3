@@ -370,7 +370,7 @@ class Client(object):
     def _parse_bson_body(cls, body):
         if body is None:
             return None
-        body_dict = http_utils.sanitize_for_serialization(body)
+        body_dict = http_utils.sanitize_for_bson_serialization(body)
         return bson.encode(body_dict)
 
     @classmethod

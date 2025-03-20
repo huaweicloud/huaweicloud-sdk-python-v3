@@ -97,11 +97,11 @@ class ApplyCertificateRequestBody:
         :type auto_dns_auth: bool
         :param agree_privacy_protection: 是否同意授权隐私协议。此处仅能设置为true才能成功申请证书。 - true：同意隐私协议。 - false：不同意隐私协议。
         :type agree_privacy_protection: bool
-        :param domain_method: 域名验证方式。 - DNS: DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE: 文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL: 邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
+        :param domain_method: 域名验证方式。 - DNS：DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE：文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL：邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
         :type domain_method: str
         :param key_algorithm: 密钥算法。默认RSA_2048
         :type key_algorithm: str
-        :param ca_hash_algorithm: 签名算法。Geo OV证书必填 - DEFAULT - SHA-256
+        :param ca_hash_algorithm: 签名算法。Geo OV证书必填。 - DEFAULT - SHA-256
         :type ca_hash_algorithm: str
         """
         
@@ -517,7 +517,7 @@ class ApplyCertificateRequestBody:
     def domain_method(self):
         """Gets the domain_method of this ApplyCertificateRequestBody.
 
-        域名验证方式。 - DNS: DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE: 文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL: 邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
+        域名验证方式。 - DNS：DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE：文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL：邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
 
         :return: The domain_method of this ApplyCertificateRequestBody.
         :rtype: str
@@ -528,7 +528,7 @@ class ApplyCertificateRequestBody:
     def domain_method(self, domain_method):
         """Sets the domain_method of this ApplyCertificateRequestBody.
 
-        域名验证方式。 - DNS: DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE: 文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL: 邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
+        域名验证方式。 - DNS：DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE：文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL：邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
 
         :param domain_method: The domain_method of this ApplyCertificateRequestBody.
         :type domain_method: str
@@ -561,7 +561,7 @@ class ApplyCertificateRequestBody:
     def ca_hash_algorithm(self):
         """Gets the ca_hash_algorithm of this ApplyCertificateRequestBody.
 
-        签名算法。Geo OV证书必填 - DEFAULT - SHA-256
+        签名算法。Geo OV证书必填。 - DEFAULT - SHA-256
 
         :return: The ca_hash_algorithm of this ApplyCertificateRequestBody.
         :rtype: str
@@ -572,7 +572,7 @@ class ApplyCertificateRequestBody:
     def ca_hash_algorithm(self, ca_hash_algorithm):
         """Sets the ca_hash_algorithm of this ApplyCertificateRequestBody.
 
-        签名算法。Geo OV证书必填 - DEFAULT - SHA-256
+        签名算法。Geo OV证书必填。 - DEFAULT - SHA-256
 
         :param ca_hash_algorithm: The ca_hash_algorithm of this ApplyCertificateRequestBody.
         :type ca_hash_algorithm: str

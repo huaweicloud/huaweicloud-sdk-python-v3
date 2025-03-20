@@ -84,6 +84,23 @@ class MultichannelKvsClient(AbstractMultichannelKvsClient, KvsClientInterface):
         return self.get_kvs_client_by_polling().client.create_table_invoker(request)
 
 
+    def delete_table(self, request):
+        retry_count = 0
+        while retry_count < self._config.api_retry_count:
+            managed_client = self.get_kvs_client_by_polling_with_retry(retry_count)
+            try:
+                return managed_client.client.delete_table(request)
+            except (ConnectionException, RequestTimeoutException) as e:
+                managed_client.is_usable = False
+                retry_count += 1
+                self._logger.info("this is client: %s DeleteTable throwing Exception %d time. errorInfo: %s",
+                                  managed_client.endpoint.name, retry_count, e)
+        raise SdkException("retry DeleteTable " + str(retry_count) + " times, and failed!")
+
+    def delete_table_invoker(self, request):
+        return self.get_kvs_client_by_polling().client.delete_table_invoker(request)
+
+
     def describe_table(self, request):
         retry_count = 0
         while retry_count < self._config.api_retry_count:

@@ -432,7 +432,7 @@ class ScmAsyncClient(Client):
     def import_certificate_async(self, request):
         """导入证书
 
-        导入证书到SCM服务管理。
+        导入证书到CCM服务管理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -546,6 +546,8 @@ class ScmAsyncClient(Client):
             query_params.append(('deploy_support', local_var_params['deploy_support']))
         if 'owned_by_self' in local_var_params:
             query_params.append(('owned_by_self', local_var_params['owned_by_self']))
+        if 'expired_days_since' in local_var_params:
+            query_params.append(('expired_days_since', local_var_params['expired_days_since']))
 
         header_params = {}
 
@@ -576,7 +578,7 @@ class ScmAsyncClient(Client):
     def list_deployed_resources_async(self, request):
         """查询已部署资源
 
-        查询证书已部署的具体资源。针对已签发和上传的非国密证书
+        查询证书已部署的具体资源。针对已签发和上传的非国密证书。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

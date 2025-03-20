@@ -37,7 +37,7 @@ class ListAccessoryAccessUrlsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，查询同组其他工单时，该id必传
         :type group_id: str
         :param accessory_ids: 附件id列表
         :type accessory_ids: list[str]
@@ -58,7 +58,8 @@ class ListAccessoryAccessUrlsRequest:
         self._x_time_zone = None
         self.discriminator = None
 
-        self.group_id = group_id
+        if group_id is not None:
+            self.group_id = group_id
         self.accessory_ids = accessory_ids
         if x_site is not None:
             self.x_site = x_site
@@ -71,7 +72,7 @@ class ListAccessoryAccessUrlsRequest:
     def group_id(self):
         """Gets the group_id of this ListAccessoryAccessUrlsRequest.
 
-        组id
+        华为云IAM组id，查询同组其他工单时，该id必传
 
         :return: The group_id of this ListAccessoryAccessUrlsRequest.
         :rtype: str
@@ -82,7 +83,7 @@ class ListAccessoryAccessUrlsRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListAccessoryAccessUrlsRequest.
 
-        组id
+        华为云IAM组id，查询同组其他工单时，该id必传
 
         :param group_id: The group_id of this ListAccessoryAccessUrlsRequest.
         :type group_id: str

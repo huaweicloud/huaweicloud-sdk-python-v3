@@ -33,7 +33,7 @@ class PutCaseExtParamReq:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，操作查询同组其他工单时，该id必传
         :type group_id: str
         :param message_id: 消息id
         :type message_id: str
@@ -59,7 +59,7 @@ class PutCaseExtParamReq:
     def group_id(self):
         """Gets the group_id of this PutCaseExtParamReq.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :return: The group_id of this PutCaseExtParamReq.
         :rtype: str
@@ -70,7 +70,7 @@ class PutCaseExtParamReq:
     def group_id(self, group_id):
         """Sets the group_id of this PutCaseExtParamReq.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :param group_id: The group_id of this PutCaseExtParamReq.
         :type group_id: str

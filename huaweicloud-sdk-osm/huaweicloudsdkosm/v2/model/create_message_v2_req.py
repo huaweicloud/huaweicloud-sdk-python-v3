@@ -33,7 +33,7 @@ class CreateMessageV2Req:
 
         :param message: 
         :type message: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
-        :param group_id: 组id
+        :param group_id: 华为云IAM组id，操作查询同组其他工单时，该id必传
         :type group_id: str
         """
         
@@ -69,7 +69,7 @@ class CreateMessageV2Req:
     def group_id(self):
         """Gets the group_id of this CreateMessageV2Req.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :return: The group_id of this CreateMessageV2Req.
         :rtype: str
@@ -80,7 +80,7 @@ class CreateMessageV2Req:
     def group_id(self, group_id):
         """Sets the group_id of this CreateMessageV2Req.
 
-        组id
+        华为云IAM组id，操作查询同组其他工单时，该id必传
 
         :param group_id: The group_id of this CreateMessageV2Req.
         :type group_id: str

@@ -48,7 +48,16 @@ class BsonBody(object):
         'max_key_field': 'MaxKey',
         'regex_field': 'Regex',
         'object_id_field': 'ObjectId',
-        'js_code_field': 'Code'
+        'js_code_field': 'Code',
+        'string_field': 'str',  # 字符串
+        'int32_field': 'int',  # 32位整数
+        'int64_field': 'int',  # 64位整数（Python中int类型即可）
+        'double_field': 'float',  # 浮点数
+        'decimal128_field': 'Decimal128',  # 高精度 Decimal128
+        'boolean_field': 'bool',  # 布尔值
+        'null_field': 'NoneType',  # 空值
+        'array_field': 'list',  # 数组
+        'timestamp_field': 'Timestamp'  # 时间戳
     }
 
     attribute_map = {
@@ -58,11 +67,37 @@ class BsonBody(object):
         'max_key_field': 'max_key_field',
         'regex_field': 'regex_field',
         'object_id_field': 'object_id_field',
-        'js_code_field': 'js_code_field'
+        'js_code_field': 'js_code_field',
+        'string_field': 'string_field',
+        'int32_field': 'int32_field',
+        'int64_field': 'int64_field',
+        'double_field': 'double_field',
+        'decimal128_field': 'decimal128_field',
+        'boolean_field': 'boolean_field',
+        'null_field': 'null_field',
+        'array_field': 'array_field',
+        'timestamp_field': 'timestamp_field'
     }
 
-    def __init__(self, doc_field=None, binary_field=None, min_key_field=None, max_key_field=None, regex_field=None,
-                 object_id_field=None, js_code_field=None):
+    def __init__(self,
+                 doc_field=None,
+                 binary_field=None,
+                 min_key_field=None,
+                 max_key_field=None,
+                 regex_field=None,
+                 object_id_field=None,
+                 js_code_field=None,
+                 string_field=None,
+                 int32_field=None,
+                 int64_field=None,
+                 double_field=None,
+                 decimal128_field=None,
+                 boolean_field=None,
+                 null_field=None,
+                 array_field=None,
+                 timestamp_field=None):
+
+        # 初始化所有字段为 None
         self.doc_field = None
         self.binary_field = None
         self.min_key_field = None
@@ -70,7 +105,17 @@ class BsonBody(object):
         self.regex_field = None
         self.object_id_field = None
         self.js_code_field = None
+        self.string_field = None
+        self.int32_field = None
+        self.int64_field = None
+        self.double_field = None
+        self.decimal128_field = None
+        self.boolean_field = None
+        self.null_field = None
+        self.array_field = None
+        self.timestamp_field = None
 
+        # 根据传入的参数赋值
         if doc_field is not None:
             self.doc_field = doc_field
         if binary_field is not None:
@@ -85,3 +130,21 @@ class BsonBody(object):
             self.object_id_field = object_id_field
         if js_code_field is not None:
             self.js_code_field = js_code_field
+        if string_field is not None:
+            self.string_field = string_field
+        if int32_field is not None:
+            self.int32_field = int32_field
+        if int64_field is not None:
+            self.int64_field = int64_field
+        if double_field is not None:
+            self.double_field = double_field
+        if decimal128_field is not None:
+            self.decimal128_field = decimal128_field
+        if boolean_field is not None:
+            self.boolean_field = boolean_field
+        if null_field is not None:
+            self.null_field = null_field
+        if array_field is not None:
+            self.array_field = array_field
+        if timestamp_field is not None:
+            self.timestamp_field = timestamp_field

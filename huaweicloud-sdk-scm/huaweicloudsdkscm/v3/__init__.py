@@ -50,8 +50,10 @@ from huaweicloudsdkscm.v3.model.push_certificate_response import PushCertificate
 from huaweicloudsdkscm.v3.model.region_resource_detail import RegionResourceDetail
 from huaweicloudsdkscm.v3.model.resource_detail import ResourceDetail
 from huaweicloudsdkscm.v3.model.result_detail import ResultDetail
+from huaweicloudsdkscm.v3.model.scs_resource_tag import ScsResourceTag
 from huaweicloudsdkscm.v3.model.show_certificate_request import ShowCertificateRequest
 from huaweicloudsdkscm.v3.model.show_certificate_response import ShowCertificateResponse
+from huaweicloudsdkscm.v3.model.show_certificate_response_body_application_info import ShowCertificateResponseBodyApplicationInfo
 from huaweicloudsdkscm.v3.model.show_csr_private_key_request import ShowCsrPrivateKeyRequest
 from huaweicloudsdkscm.v3.model.show_csr_private_key_response import ShowCsrPrivateKeyResponse
 from huaweicloudsdkscm.v3.model.show_csr_request import ShowCsrRequest

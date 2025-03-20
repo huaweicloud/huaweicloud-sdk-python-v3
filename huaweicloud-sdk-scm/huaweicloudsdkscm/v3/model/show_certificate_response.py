@@ -39,6 +39,9 @@ class ShowCertificateResponse(SdkResponse):
         'domain_count': 'int',
         'wildcard_count': 'int',
         'fingerprint': 'str',
+        'shared': 'bool',
+        'application_info': 'ShowCertificateResponseBodyApplicationInfo',
+        'description': 'str',
         'enterprise_project_id': 'str',
         'authentification': 'list[Authentification]'
     }
@@ -65,11 +68,14 @@ class ShowCertificateResponse(SdkResponse):
         'domain_count': 'domain_count',
         'wildcard_count': 'wildcard_count',
         'fingerprint': 'fingerprint',
+        'shared': 'shared',
+        'application_info': 'application_info',
+        'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
         'authentification': 'authentification'
     }
 
-    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, multi_domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, enterprise_project_id=None, authentification=None):
+    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, multi_domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, shared=None, application_info=None, description=None, enterprise_project_id=None, authentification=None):
         """ShowCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -104,7 +110,7 @@ class ShowCertificateResponse(SdkResponse):
         :type validation_method: str
         :param domain_type: 域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
         :type domain_type: str
-        :param multi_domain_type: 多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+        :param multi_domain_type: 多域名类型，取值如下： - primary_single：主单域名 - primary_wildcard：主泛域名
         :type multi_domain_type: str
         :param domain: 证书绑定域名。
         :type domain: str
@@ -116,6 +122,12 @@ class ShowCertificateResponse(SdkResponse):
         :type wildcard_count: int
         :param fingerprint: 证书的SHA-1指纹。
         :type fingerprint: str
+        :param shared: 是否是共享资源。
+        :type shared: bool
+        :param application_info: 
+        :type application_info: :class:`huaweicloudsdkscm.v3.ShowCertificateResponseBodyApplicationInfo`
+        :param description: 证书的描述。
+        :type description: str
         :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
         :type enterprise_project_id: str
         :param authentification: 域名所有权认证信息，详情请参见Authentification字段数据结构说明。
@@ -145,6 +157,9 @@ class ShowCertificateResponse(SdkResponse):
         self._domain_count = None
         self._wildcard_count = None
         self._fingerprint = None
+        self._shared = None
+        self._application_info = None
+        self._description = None
         self._enterprise_project_id = None
         self._authentification = None
         self.discriminator = None
@@ -191,6 +206,12 @@ class ShowCertificateResponse(SdkResponse):
             self.wildcard_count = wildcard_count
         if fingerprint is not None:
             self.fingerprint = fingerprint
+        if shared is not None:
+            self.shared = shared
+        if application_info is not None:
+            self.application_info = application_info
+        if description is not None:
+            self.description = description
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if authentification is not None:
@@ -530,7 +551,7 @@ class ShowCertificateResponse(SdkResponse):
     def multi_domain_type(self):
         """Gets the multi_domain_type of this ShowCertificateResponse.
 
-        多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+        多域名类型，取值如下： - primary_single：主单域名 - primary_wildcard：主泛域名
 
         :return: The multi_domain_type of this ShowCertificateResponse.
         :rtype: str
@@ -541,7 +562,7 @@ class ShowCertificateResponse(SdkResponse):
     def multi_domain_type(self, multi_domain_type):
         """Sets the multi_domain_type of this ShowCertificateResponse.
 
-        多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+        多域名类型，取值如下： - primary_single：主单域名 - primary_wildcard：主泛域名
 
         :param multi_domain_type: The multi_domain_type of this ShowCertificateResponse.
         :type multi_domain_type: str
@@ -657,6 +678,68 @@ class ShowCertificateResponse(SdkResponse):
         :type fingerprint: str
         """
         self._fingerprint = fingerprint
+
+    @property
+    def shared(self):
+        """Gets the shared of this ShowCertificateResponse.
+
+        是否是共享资源。
+
+        :return: The shared of this ShowCertificateResponse.
+        :rtype: bool
+        """
+        return self._shared
+
+    @shared.setter
+    def shared(self, shared):
+        """Sets the shared of this ShowCertificateResponse.
+
+        是否是共享资源。
+
+        :param shared: The shared of this ShowCertificateResponse.
+        :type shared: bool
+        """
+        self._shared = shared
+
+    @property
+    def application_info(self):
+        """Gets the application_info of this ShowCertificateResponse.
+
+        :return: The application_info of this ShowCertificateResponse.
+        :rtype: :class:`huaweicloudsdkscm.v3.ShowCertificateResponseBodyApplicationInfo`
+        """
+        return self._application_info
+
+    @application_info.setter
+    def application_info(self, application_info):
+        """Sets the application_info of this ShowCertificateResponse.
+
+        :param application_info: The application_info of this ShowCertificateResponse.
+        :type application_info: :class:`huaweicloudsdkscm.v3.ShowCertificateResponseBodyApplicationInfo`
+        """
+        self._application_info = application_info
+
+    @property
+    def description(self):
+        """Gets the description of this ShowCertificateResponse.
+
+        证书的描述。
+
+        :return: The description of this ShowCertificateResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowCertificateResponse.
+
+        证书的描述。
+
+        :param description: The description of this ShowCertificateResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def enterprise_project_id(self):

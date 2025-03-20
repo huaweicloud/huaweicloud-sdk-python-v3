@@ -39,7 +39,7 @@ class DownloadImagesRequest:
 
         :param accessory_id: 附件id
         :type accessory_id: str
-        :param group_id: 对应的组id
+        :param group_id: 华为云IAM组id，同组其他工单时，该id必传
         :type group_id: str
         :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
         :type x_site: int
@@ -94,7 +94,7 @@ class DownloadImagesRequest:
     def group_id(self):
         """Gets the group_id of this DownloadImagesRequest.
 
-        对应的组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :return: The group_id of this DownloadImagesRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class DownloadImagesRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DownloadImagesRequest.
 
-        对应的组id
+        华为云IAM组id，同组其他工单时，该id必传
 
         :param group_id: The group_id of this DownloadImagesRequest.
         :type group_id: str

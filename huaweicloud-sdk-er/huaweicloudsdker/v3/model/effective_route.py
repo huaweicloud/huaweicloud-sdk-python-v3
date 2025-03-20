@@ -21,7 +21,8 @@ class EffectiveRoute:
         'destination': 'str',
         'next_hops': 'list[RouteAttachment]',
         'is_blackhole': 'bool',
-        'route_type': 'str'
+        'route_type': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class EffectiveRoute:
         'destination': 'destination',
         'next_hops': 'next_hops',
         'is_blackhole': 'is_blackhole',
-        'route_type': 'route_type'
+        'route_type': 'route_type',
+        'description': 'description'
     }
 
-    def __init__(self, route_id=None, destination=None, next_hops=None, is_blackhole=None, route_type=None):
+    def __init__(self, route_id=None, destination=None, next_hops=None, is_blackhole=None, route_type=None, description=None):
         """EffectiveRoute
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class EffectiveRoute:
         :type is_blackhole: bool
         :param route_type: 路由类型
         :type route_type: str
+        :param description: 路由描述信息
+        :type description: str
         """
         
         
@@ -56,6 +60,7 @@ class EffectiveRoute:
         self._next_hops = None
         self._is_blackhole = None
         self._route_type = None
+        self._description = None
         self.discriminator = None
 
         if route_id is not None:
@@ -68,6 +73,8 @@ class EffectiveRoute:
             self.is_blackhole = is_blackhole
         if route_type is not None:
             self.route_type = route_type
+        if description is not None:
+            self.description = description
 
     @property
     def route_id(self):
@@ -178,6 +185,28 @@ class EffectiveRoute:
         :type route_type: str
         """
         self._route_type = route_type
+
+    @property
+    def description(self):
+        """Gets the description of this EffectiveRoute.
+
+        路由描述信息
+
+        :return: The description of this EffectiveRoute.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this EffectiveRoute.
+
+        路由描述信息
+
+        :param description: The description of this EffectiveRoute.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""
