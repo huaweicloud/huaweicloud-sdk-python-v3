@@ -506,6 +506,72 @@ class CbrClient(Client):
 
         return http_info
 
+    def change_vault_charge_mode(self, request):
+        """修改付费模式
+
+        修改资源的付费模式，暂时只支持按需资源转包周期资源。
+        &gt; 该接口目前输入公测阶段，部分region暂时无法使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeVaultChargeMode
+        :type request: :class:`huaweicloudsdkcbr.v1.ChangeVaultChargeModeRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ChangeVaultChargeModeResponse`
+        """
+        http_info = self._change_vault_charge_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_vault_charge_mode_invoker(self, request):
+        http_info = self._change_vault_charge_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_vault_charge_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/change-charge-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeVaultChargeModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_agent(self, request):
         """查询agent状态
 

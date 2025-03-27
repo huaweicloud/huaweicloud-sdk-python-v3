@@ -127,7 +127,7 @@ if __name__ == "__main__":
     # 可通过环境变量等方式配置认证信息，参考2.4认证信息管理章节
     # 如果未填写project_id，SDK会自动调用IAM服务查询所在region对应的项目id
     credentials = BasicCredentials(os.getenv("HUAWEICLOUD_SDK_AK"), os.getenv("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
-        .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com") # 配置SDK内置的IAM服务地址，默认为https://iam.myhuaweicloud.com
+        .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com") # 配置SDK内置的IAM服务地址
 
     # 使用默认配置
     http_config = HttpConfig.get_default_config()
@@ -698,9 +698,11 @@ client = IamClient.new_builder() \
 
 ##### 3.3.1 IAM endpoint配置 [:top:](#用户手册-top)
 
-自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com， **欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.eu**
+自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口。
 
-用户可以通过以下两种方式来修改endpoint
+默认访问的endpoint会从[映射表](./huaweicloud-sdk-core/huaweicloudsdkcore/auth/endpoint.py)中查询，如果查不到则会使用默认值 **https://iam.myhuaweicloud.com**
+
+**欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.eu** ，用户可以通过以下两种方式来修改endpoint
 
 ###### 3.3.1.1 全局级 [:top:](#用户手册-top)
 

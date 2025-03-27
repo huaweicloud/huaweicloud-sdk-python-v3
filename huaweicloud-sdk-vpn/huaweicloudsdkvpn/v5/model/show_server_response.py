@@ -26,6 +26,7 @@ class ShowServerResponse:
         'server_certificate': 'ShowServerResponseServerCertificate',
         'client_ca_certificates': 'list[QueryClientCaCertificateBody]',
         'ssl_options': 'ShowServerResponseSslOptions',
+        'dns_servers': 'list[str]',
         'status': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -41,12 +42,13 @@ class ShowServerResponse:
         'server_certificate': 'server_certificate',
         'client_ca_certificates': 'client_ca_certificates',
         'ssl_options': 'ssl_options',
+        'dns_servers': 'dns_servers',
         'status': 'status',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, p2c_vgw_id=None, client_cidr=None, local_subnets=None, client_auth_type=None, tunnel_protocol=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, status=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, p2c_vgw_id=None, client_cidr=None, local_subnets=None, client_auth_type=None, tunnel_protocol=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None, status=None, created_at=None, updated_at=None):
         """ShowServerResponse
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ShowServerResponse:
         :type client_ca_certificates: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]
         :param ssl_options: 
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
+        :param dns_servers: DNS服务器列表
+        :type dns_servers: list[str]
         :param status: 服务端状态
         :type status: str
         :param created_at: 创建时间
@@ -88,6 +92,7 @@ class ShowServerResponse:
         self._server_certificate = None
         self._client_ca_certificates = None
         self._ssl_options = None
+        self._dns_servers = None
         self._status = None
         self._created_at = None
         self._updated_at = None
@@ -111,6 +116,8 @@ class ShowServerResponse:
             self.client_ca_certificates = client_ca_certificates
         if ssl_options is not None:
             self.ssl_options = ssl_options
+        if dns_servers is not None:
+            self.dns_servers = dns_servers
         if status is not None:
             self.status = status
         if created_at is not None:
@@ -303,6 +310,28 @@ class ShowServerResponse:
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
         """
         self._ssl_options = ssl_options
+
+    @property
+    def dns_servers(self):
+        """Gets the dns_servers of this ShowServerResponse.
+
+        DNS服务器列表
+
+        :return: The dns_servers of this ShowServerResponse.
+        :rtype: list[str]
+        """
+        return self._dns_servers
+
+    @dns_servers.setter
+    def dns_servers(self, dns_servers):
+        """Sets the dns_servers of this ShowServerResponse.
+
+        DNS服务器列表
+
+        :param dns_servers: The dns_servers of this ShowServerResponse.
+        :type dns_servers: list[str]
+        """
+        self._dns_servers = dns_servers
 
     @property
     def status(self):

@@ -29,9 +29,10 @@ from requests.exceptions import HTTPError
 from six.moves.urllib.parse import urlparse
 from urllib3.exceptions import SSLError, NewConnectionError
 
-from huaweicloudsdkcore.utils.six_utils import JSON_DECODE_ERROR
+from huaweicloudsdkcore.auth.endpoint import get_iam_endpoint_by_id
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.sdk_request import SdkRequest
+from huaweicloudsdkcore.utils.six_utils import JSON_DECODE_ERROR
 
 _NO_DOMAIN_ID_ERR_MSG = '''no domain id found, please select one of the following solutions:
   1. Manually specify domain_id when initializing the credentials, credentials = GlobalCredentials(ak, sk, domain_id)
@@ -80,10 +81,15 @@ class Iam(object):
     KEYSTONE_LIST_AUTH_DOMAINS_URI = "/v3/auth/domains"
     CREATE_TOKEN_BY_ID_TOKEN_URI = "/v3.0/OS-AUTH/id-token/tokens"
     IAM_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
+    __ENDPOINTS = None
 
     @classmethod
-    def get_iam_endpoint(cls):
-        return os.environ.get(cls.IAM_ENDPOINT_ENV_NAME, cls.DEFAULT_ENDPOINT)
+    def get_iam_endpoint(cls, region_id=None):
+        env = os.getenv(cls.IAM_ENDPOINT_ENV_NAME)
+        if env:
+            return env
+
+        return get_iam_endpoint_by_id(region_id, cls.DEFAULT_ENDPOINT)
 
     @classmethod
     def get_keystone_list_projects_request(cls, config, iam_endpoint=None, region_id=None):

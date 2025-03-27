@@ -21,17 +21,19 @@ class CreateVpnUser:
         'name': 'str',
         'password': 'str',
         'description': 'str',
-        'user_group_name': 'str'
+        'user_group_name': 'str',
+        'static_ip': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'password': 'password',
         'description': 'description',
-        'user_group_name': 'user_group_name'
+        'user_group_name': 'user_group_name',
+        'static_ip': 'static_ip'
     }
 
-    def __init__(self, name=None, password=None, description=None, user_group_name=None):
+    def __init__(self, name=None, password=None, description=None, user_group_name=None, static_ip=None):
         """CreateVpnUser
 
         The model defined in huaweicloud sdk
@@ -42,8 +44,10 @@ class CreateVpnUser:
         :type password: str
         :param description: 用户描述，0-64字符，中文、英文、数字包含下划线
         :type description: str
-        :param user_group_name: 所属用户组ID
+        :param user_group_name: 所属用户组名称
         :type user_group_name: str
+        :param static_ip: 静态客户端IP地址，默认值disable，表示随机分配客户端IP
+        :type static_ip: str
         """
         
         
@@ -52,6 +56,7 @@ class CreateVpnUser:
         self._password = None
         self._description = None
         self._user_group_name = None
+        self._static_ip = None
         self.discriminator = None
 
         if name is not None:
@@ -62,6 +67,8 @@ class CreateVpnUser:
             self.description = description
         if user_group_name is not None:
             self.user_group_name = user_group_name
+        if static_ip is not None:
+            self.static_ip = static_ip
 
     @property
     def name(self):
@@ -133,7 +140,7 @@ class CreateVpnUser:
     def user_group_name(self):
         """Gets the user_group_name of this CreateVpnUser.
 
-        所属用户组ID
+        所属用户组名称
 
         :return: The user_group_name of this CreateVpnUser.
         :rtype: str
@@ -144,12 +151,34 @@ class CreateVpnUser:
     def user_group_name(self, user_group_name):
         """Sets the user_group_name of this CreateVpnUser.
 
-        所属用户组ID
+        所属用户组名称
 
         :param user_group_name: The user_group_name of this CreateVpnUser.
         :type user_group_name: str
         """
         self._user_group_name = user_group_name
+
+    @property
+    def static_ip(self):
+        """Gets the static_ip of this CreateVpnUser.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :return: The static_ip of this CreateVpnUser.
+        :rtype: str
+        """
+        return self._static_ip
+
+    @static_ip.setter
+    def static_ip(self, static_ip):
+        """Sets the static_ip of this CreateVpnUser.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :param static_ip: The static_ip of this CreateVpnUser.
+        :type static_ip: str
+        """
+        self._static_ip = static_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

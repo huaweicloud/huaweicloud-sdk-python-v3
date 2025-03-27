@@ -45,7 +45,7 @@ class AddAppIdResponse(SdkResponse):
 
         :param app_name: 企业应用名称
         :type app_name: str
-        :param app_id: 企业应用
+        :param app_id: 企业应用ID
         :type app_id: str
         :param app_key: 企业应用appkey
         :type app_key: str
@@ -111,7 +111,7 @@ class AddAppIdResponse(SdkResponse):
     def app_id(self):
         """Gets the app_id of this AddAppIdResponse.
 
-        企业应用
+        企业应用ID
 
         :return: The app_id of this AddAppIdResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class AddAppIdResponse(SdkResponse):
     def app_id(self, app_id):
         """Sets the app_id of this AddAppIdResponse.
 
-        企业应用
+        企业应用ID
 
         :param app_id: The app_id of this AddAppIdResponse.
         :type app_id: str

@@ -2191,7 +2191,7 @@ class VodAsyncClient(Client):
     def modify_subtitle_async(self, request):
         """多字幕封装
 
-        多字幕封装，仅支持 HLS VTT格式
+        多字幕封装，仅支持 HLS VTT格式和HLS SRT格式
         
         Please refer to HUAWEI cloud API Explorer for details.
 

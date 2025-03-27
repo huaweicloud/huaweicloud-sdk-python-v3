@@ -19,23 +19,31 @@ class ListVpnServersByVgwResponse(SdkResponse):
 
     openapi_types = {
         'vpn_servers': 'list[ShowServerResponse]',
+        'total_count': 'int',
+        'page_info': 'PageInfo',
         'request_id': 'str',
         'header_response_token': 'str'
     }
 
     attribute_map = {
         'vpn_servers': 'vpn_servers',
+        'total_count': 'total_count',
+        'page_info': 'page_info',
         'request_id': 'request_id',
         'header_response_token': 'header-response-token'
     }
 
-    def __init__(self, vpn_servers=None, request_id=None, header_response_token=None):
+    def __init__(self, vpn_servers=None, total_count=None, page_info=None, request_id=None, header_response_token=None):
         """ListVpnServersByVgwResponse
 
         The model defined in huaweicloud sdk
 
         :param vpn_servers: 
         :type vpn_servers: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
+        :param total_count: 总数
+        :type total_count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
         :param request_id: 请求id
         :type request_id: str
         :param header_response_token: 
@@ -45,12 +53,18 @@ class ListVpnServersByVgwResponse(SdkResponse):
         super(ListVpnServersByVgwResponse, self).__init__()
 
         self._vpn_servers = None
+        self._total_count = None
+        self._page_info = None
         self._request_id = None
         self._header_response_token = None
         self.discriminator = None
 
         if vpn_servers is not None:
             self.vpn_servers = vpn_servers
+        if total_count is not None:
+            self.total_count = total_count
+        if page_info is not None:
+            self.page_info = page_info
         if request_id is not None:
             self.request_id = request_id
         if header_response_token is not None:
@@ -73,6 +87,46 @@ class ListVpnServersByVgwResponse(SdkResponse):
         :type vpn_servers: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
         """
         self._vpn_servers = vpn_servers
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListVpnServersByVgwResponse.
+
+        总数
+
+        :return: The total_count of this ListVpnServersByVgwResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListVpnServersByVgwResponse.
+
+        总数
+
+        :param total_count: The total_count of this ListVpnServersByVgwResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListVpnServersByVgwResponse.
+
+        :return: The page_info of this ListVpnServersByVgwResponse.
+        :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListVpnServersByVgwResponse.
+
+        :param page_info: The page_info of this ListVpnServersByVgwResponse.
+        :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def request_id(self):

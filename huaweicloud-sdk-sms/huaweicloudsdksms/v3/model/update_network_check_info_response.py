@@ -30,7 +30,7 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 更新网络检测结果成功。
         :type body: str
         """
         
@@ -46,6 +46,8 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
     def body(self):
         """Gets the body of this UpdateNetworkCheckInfoResponse.
 
+        更新网络检测结果成功。
+
         :return: The body of this UpdateNetworkCheckInfoResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNetworkCheckInfoResponse.
+
+        更新网络检测结果成功。
 
         :param body: The body of this UpdateNetworkCheckInfoResponse.
         :type body: str

@@ -19,9 +19,11 @@ class CreateVgwRequestBodyContent:
     openapi_types = {
         'name': 'str',
         'attachment_type': 'str',
+        'ip_version': 'str',
         'er_id': 'str',
         'vpc_id': 'str',
         'local_subnets': 'list[str]',
+        'local_subnets_v6': 'list[str]',
         'connect_subnet': 'str',
         'bgp_asn': 'int',
         'flavor': 'str',
@@ -41,9 +43,11 @@ class CreateVgwRequestBodyContent:
     attribute_map = {
         'name': 'name',
         'attachment_type': 'attachment_type',
+        'ip_version': 'ip_version',
         'er_id': 'er_id',
         'vpc_id': 'vpc_id',
         'local_subnets': 'local_subnets',
+        'local_subnets_v6': 'local_subnets_v6',
         'connect_subnet': 'connect_subnet',
         'bgp_asn': 'bgp_asn',
         'flavor': 'flavor',
@@ -60,7 +64,7 @@ class CreateVgwRequestBodyContent:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, attachment_type=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, bgp_asn=None, flavor=None, availability_zone_ids=None, enterprise_project_id=None, eip1=None, eip2=None, access_private_ip_1=None, access_private_ip_2=None, network_type=None, access_vpc_id=None, access_subnet_id=None, ha_mode=None, tags=None):
+    def __init__(self, name=None, attachment_type=None, ip_version=None, er_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, bgp_asn=None, flavor=None, availability_zone_ids=None, enterprise_project_id=None, eip1=None, eip2=None, access_private_ip_1=None, access_private_ip_2=None, network_type=None, access_vpc_id=None, access_subnet_id=None, ha_mode=None, tags=None):
         """CreateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -69,12 +73,16 @@ class CreateVgwRequestBodyContent:
         :type name: str
         :param attachment_type: 关联模式
         :type attachment_type: str
+        :param ip_version: 网关的IP协议版本
+        :type ip_version: str
         :param er_id: VPN网关所连接的ER实例的ID，当attachment_type配置为\&quot;er\&quot;时必填，否则不填
         :type er_id: str
         :param vpc_id: VPN网关所连接的VPC的ID
         :type vpc_id: str
-        :param local_subnets: 本端子网，当attachment_type配置为\&quot;vpc\&quot;时必填，否则不填
+        :param local_subnets: 本端子网，当attachment_type配置为\&quot;vpc\&quot;且ip_version为\&quot;ipv4\&quot;时必填，否则不填
         :type local_subnets: list[str]
+        :param local_subnets_v6: 使能ipv6的本端子网，当attachment_type配置为\&quot;vpc\&quot;且ip_version为\&quot;ipv6\&quot;时必填，否则不填
+        :type local_subnets_v6: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
         :param bgp_asn: bgp所使用的asn号
@@ -109,9 +117,11 @@ class CreateVgwRequestBodyContent:
 
         self._name = None
         self._attachment_type = None
+        self._ip_version = None
         self._er_id = None
         self._vpc_id = None
         self._local_subnets = None
+        self._local_subnets_v6 = None
         self._connect_subnet = None
         self._bgp_asn = None
         self._flavor = None
@@ -132,12 +142,16 @@ class CreateVgwRequestBodyContent:
             self.name = name
         if attachment_type is not None:
             self.attachment_type = attachment_type
+        if ip_version is not None:
+            self.ip_version = ip_version
         if er_id is not None:
             self.er_id = er_id
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if local_subnets is not None:
             self.local_subnets = local_subnets
+        if local_subnets_v6 is not None:
+            self.local_subnets_v6 = local_subnets_v6
         if connect_subnet is not None:
             self.connect_subnet = connect_subnet
         if bgp_asn is not None:
@@ -212,6 +226,28 @@ class CreateVgwRequestBodyContent:
         self._attachment_type = attachment_type
 
     @property
+    def ip_version(self):
+        """Gets the ip_version of this CreateVgwRequestBodyContent.
+
+        网关的IP协议版本
+
+        :return: The ip_version of this CreateVgwRequestBodyContent.
+        :rtype: str
+        """
+        return self._ip_version
+
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this CreateVgwRequestBodyContent.
+
+        网关的IP协议版本
+
+        :param ip_version: The ip_version of this CreateVgwRequestBodyContent.
+        :type ip_version: str
+        """
+        self._ip_version = ip_version
+
+    @property
     def er_id(self):
         """Gets the er_id of this CreateVgwRequestBodyContent.
 
@@ -259,7 +295,7 @@ class CreateVgwRequestBodyContent:
     def local_subnets(self):
         """Gets the local_subnets of this CreateVgwRequestBodyContent.
 
-        本端子网，当attachment_type配置为\"vpc\"时必填，否则不填
+        本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv4\"时必填，否则不填
 
         :return: The local_subnets of this CreateVgwRequestBodyContent.
         :rtype: list[str]
@@ -270,12 +306,34 @@ class CreateVgwRequestBodyContent:
     def local_subnets(self, local_subnets):
         """Sets the local_subnets of this CreateVgwRequestBodyContent.
 
-        本端子网，当attachment_type配置为\"vpc\"时必填，否则不填
+        本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv4\"时必填，否则不填
 
         :param local_subnets: The local_subnets of this CreateVgwRequestBodyContent.
         :type local_subnets: list[str]
         """
         self._local_subnets = local_subnets
+
+    @property
+    def local_subnets_v6(self):
+        """Gets the local_subnets_v6 of this CreateVgwRequestBodyContent.
+
+        使能ipv6的本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv6\"时必填，否则不填
+
+        :return: The local_subnets_v6 of this CreateVgwRequestBodyContent.
+        :rtype: list[str]
+        """
+        return self._local_subnets_v6
+
+    @local_subnets_v6.setter
+    def local_subnets_v6(self, local_subnets_v6):
+        """Sets the local_subnets_v6 of this CreateVgwRequestBodyContent.
+
+        使能ipv6的本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv6\"时必填，否则不填
+
+        :param local_subnets_v6: The local_subnets_v6 of this CreateVgwRequestBodyContent.
+        :type local_subnets_v6: list[str]
+        """
+        self._local_subnets_v6 = local_subnets_v6
 
     @property
     def connect_subnet(self):

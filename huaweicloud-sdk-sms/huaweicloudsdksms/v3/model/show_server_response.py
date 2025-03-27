@@ -45,7 +45,8 @@ class ShowServerResponse(SdkResponse):
         'totalsize': 'int',
         'last_visit_time': 'int',
         'stage_action_time': 'int',
-        'agent_version': 'str'
+        'agent_version': 'str',
+        'has_tc': 'bool'
     }
 
     attribute_map = {
@@ -76,10 +77,11 @@ class ShowServerResponse(SdkResponse):
         'totalsize': 'totalsize',
         'last_visit_time': 'last_visit_time',
         'stage_action_time': 'stage_action_time',
-        'agent_version': 'agent_version'
+        'agent_version': 'agent_version',
+        'has_tc': 'has_tc'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None, has_tc=None):
         """ShowServerResponse
 
         The model defined in huaweicloud sdk
@@ -102,7 +104,7 @@ class ShowServerResponse(SdkResponse):
         :type os_version: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
-        :param state: 当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
+        :param state: 当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
         :type state: str
         :param connected: 与Agent连接状态
         :type connected: bool
@@ -126,7 +128,7 @@ class ShowServerResponse(SdkResponse):
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         :param checks: 源端环境校验信息
         :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
-        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
         :type migration_cycle: str
         :param state_action_time: 源端状态（state）上次发生变化的时间戳
         :type state_action_time: int
@@ -140,6 +142,8 @@ class ShowServerResponse(SdkResponse):
         :type stage_action_time: int
         :param agent_version: Agent版本信息
         :type agent_version: str
+        :param has_tc: 是否安装tc组件，Linux系统此参数为必选
+        :type has_tc: bool
         """
         
         super(ShowServerResponse, self).__init__()
@@ -172,6 +176,7 @@ class ShowServerResponse(SdkResponse):
         self._last_visit_time = None
         self._stage_action_time = None
         self._agent_version = None
+        self._has_tc = None
         self.discriminator = None
 
         if id is not None:
@@ -230,6 +235,8 @@ class ShowServerResponse(SdkResponse):
             self.stage_action_time = stage_action_time
         if agent_version is not None:
             self.agent_version = agent_version
+        if has_tc is not None:
+            self.has_tc = has_tc
 
     @property
     def id(self):
@@ -433,7 +440,7 @@ class ShowServerResponse(SdkResponse):
     def state(self):
         """Gets the state of this ShowServerResponse.
 
-        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
+        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
         :return: The state of this ShowServerResponse.
         :rtype: str
@@ -444,7 +451,7 @@ class ShowServerResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this ShowServerResponse.
 
-        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
+        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
         :param state: The state of this ShowServerResponse.
         :type state: str
@@ -689,7 +696,7 @@ class ShowServerResponse(SdkResponse):
     def migration_cycle(self):
         """Gets the migration_cycle of this ShowServerResponse.
 
-        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
         :return: The migration_cycle of this ShowServerResponse.
         :rtype: str
@@ -700,7 +707,7 @@ class ShowServerResponse(SdkResponse):
     def migration_cycle(self, migration_cycle):
         """Sets the migration_cycle of this ShowServerResponse.
 
-        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
         :param migration_cycle: The migration_cycle of this ShowServerResponse.
         :type migration_cycle: str
@@ -838,6 +845,28 @@ class ShowServerResponse(SdkResponse):
         :type agent_version: str
         """
         self._agent_version = agent_version
+
+    @property
+    def has_tc(self):
+        """Gets the has_tc of this ShowServerResponse.
+
+        是否安装tc组件，Linux系统此参数为必选
+
+        :return: The has_tc of this ShowServerResponse.
+        :rtype: bool
+        """
+        return self._has_tc
+
+    @has_tc.setter
+    def has_tc(self, has_tc):
+        """Sets the has_tc of this ShowServerResponse.
+
+        是否安装tc组件，Linux系统此参数为必选
+
+        :param has_tc: The has_tc of this ShowServerResponse.
+        :type has_tc: bool
+        """
+        self._has_tc = has_tc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,7 +18,7 @@ class UpdateConsistencyResultRequest:
 
     openapi_types = {
         'task_id': 'str',
-        'body': 'ConsistencyResultRequestBody'
+        'body': 'SetConsistencyResultRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateConsistencyResultRequest:
         :param task_id: 任务id
         :type task_id: str
         :param body: Body of the UpdateConsistencyResultRequest
-        :type body: :class:`huaweicloudsdksms.v3.ConsistencyResultRequestBody`
+        :type body: :class:`huaweicloudsdksms.v3.SetConsistencyResultRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateConsistencyResultRequest:
         """Gets the body of this UpdateConsistencyResultRequest.
 
         :return: The body of this UpdateConsistencyResultRequest.
-        :rtype: :class:`huaweicloudsdksms.v3.ConsistencyResultRequestBody`
+        :rtype: :class:`huaweicloudsdksms.v3.SetConsistencyResultRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateConsistencyResultRequest:
         """Sets the body of this UpdateConsistencyResultRequest.
 
         :param body: The body of this UpdateConsistencyResultRequest.
-        :type body: :class:`huaweicloudsdksms.v3.ConsistencyResultRequestBody`
+        :type body: :class:`huaweicloudsdksms.v3.SetConsistencyResultRequestBody`
         """
         self._body = body
 

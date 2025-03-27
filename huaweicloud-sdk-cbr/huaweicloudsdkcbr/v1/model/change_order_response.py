@@ -19,7 +19,7 @@ class ChangeOrderResponse(SdkResponse):
 
     openapi_types = {
         'order_id': 'str',
-        'ret_code': 'str',
+        'ret_code': 'float',
         'ret_msg': 'str'
     }
 
@@ -37,7 +37,7 @@ class ChangeOrderResponse(SdkResponse):
         :param order_id: 订单ID
         :type order_id: str
         :param ret_code: 变更状态码
-        :type ret_code: str
+        :type ret_code: float
         :param ret_msg: 变更信息
         :type ret_msg: str
         """
@@ -85,7 +85,7 @@ class ChangeOrderResponse(SdkResponse):
         变更状态码
 
         :return: The ret_code of this ChangeOrderResponse.
-        :rtype: str
+        :rtype: float
         """
         return self._ret_code
 
@@ -96,7 +96,7 @@ class ChangeOrderResponse(SdkResponse):
         变更状态码
 
         :param ret_code: The ret_code of this ChangeOrderResponse.
-        :type ret_code: str
+        :type ret_code: float
         """
         self._ret_code = ret_code
 

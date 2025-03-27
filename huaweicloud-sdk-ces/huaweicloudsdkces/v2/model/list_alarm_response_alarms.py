@@ -83,7 +83,7 @@ class ListAlarmResponseAlarms:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID，不填时会使用默认的企业项目ID
         :type enterprise_project_id: str
         :param alarm_template_id: 告警规则关联告警模板ID
         :type alarm_template_id: str
@@ -425,7 +425,7 @@ class ListAlarmResponseAlarms:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAlarmResponseAlarms.
 
-        企业项目ID
+        企业项目ID，不填时会使用默认的企业项目ID
 
         :return: The enterprise_project_id of this ListAlarmResponseAlarms.
         :rtype: str
@@ -436,7 +436,7 @@ class ListAlarmResponseAlarms:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAlarmResponseAlarms.
 
-        企业项目ID
+        企业项目ID，不填时会使用默认的企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListAlarmResponseAlarms.
         :type enterprise_project_id: str

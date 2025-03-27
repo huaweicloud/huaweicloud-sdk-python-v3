@@ -76,6 +76,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'allow_ephemeral_storage': 'bool',
         'network_controller': 'NetworkControlConfig',
         'is_return_stream': 'bool',
+        'enable_lts_log': 'bool',
         'lts_custom_tag': 'dict(str, str)'
     }
 
@@ -138,10 +139,11 @@ class ShowFunctionConfigResponse(SdkResponse):
         'allow_ephemeral_storage': 'allow_ephemeral_storage',
         'network_controller': 'network_controller',
         'is_return_stream': 'is_return_stream',
+        'enable_lts_log': 'enable_lts_log',
         'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, peering_cidr=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, allow_ephemeral_storage=None, network_controller=None, is_return_stream=None, lts_custom_tag=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, peering_cidr=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, allow_ephemeral_storage=None, network_controller=None, is_return_stream=None, enable_lts_log=None, lts_custom_tag=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -262,6 +264,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         :param is_return_stream: 是否返回流式数据（已废弃）
         :type is_return_stream: bool
+        :param enable_lts_log: 是否开启日志。
+        :type enable_lts_log: bool
         :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
         :type lts_custom_tag: dict(str, str)
         """
@@ -326,6 +330,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._allow_ephemeral_storage = None
         self._network_controller = None
         self._is_return_stream = None
+        self._enable_lts_log = None
         self._lts_custom_tag = None
         self.discriminator = None
 
@@ -445,6 +450,8 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.network_controller = network_controller
         if is_return_stream is not None:
             self.is_return_stream = is_return_stream
+        if enable_lts_log is not None:
+            self.enable_lts_log = enable_lts_log
         if lts_custom_tag is not None:
             self.lts_custom_tag = lts_custom_tag
 
@@ -1703,6 +1710,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type is_return_stream: bool
         """
         self._is_return_stream = is_return_stream
+
+    @property
+    def enable_lts_log(self):
+        """Gets the enable_lts_log of this ShowFunctionConfigResponse.
+
+        是否开启日志。
+
+        :return: The enable_lts_log of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_lts_log
+
+    @enable_lts_log.setter
+    def enable_lts_log(self, enable_lts_log):
+        """Sets the enable_lts_log of this ShowFunctionConfigResponse.
+
+        是否开启日志。
+
+        :param enable_lts_log: The enable_lts_log of this ShowFunctionConfigResponse.
+        :type enable_lts_log: bool
+        """
+        self._enable_lts_log = enable_lts_log
 
     @property
     def lts_custom_tag(self):

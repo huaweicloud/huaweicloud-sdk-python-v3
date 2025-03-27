@@ -53,7 +53,7 @@ class DeleteAutopilotClusterRequest:
         :type delete_obs: str
         :param delete_sfs30: 是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
         :type delete_sfs30: str
-        :param lts_reclaim_policy: 是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :param lts_reclaim_policy: 是否删除LTS资源（日志组/日志流）。 枚举取值： - Delete_Log_Group：删除日志组，失败则忽略，并继续执行后续流程。 - Delete_Master_Log_Stream：删除Master接入日志流，失败则忽略，并继续执行后续流程，默认选项。 - Retain：跳过删除流程。
         :type lts_reclaim_policy: str
         """
         
@@ -218,7 +218,7 @@ class DeleteAutopilotClusterRequest:
     def lts_reclaim_policy(self):
         """Gets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
 
-        是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除LTS资源（日志组/日志流）。 枚举取值： - Delete_Log_Group：删除日志组，失败则忽略，并继续执行后续流程。 - Delete_Master_Log_Stream：删除Master接入日志流，失败则忽略，并继续执行后续流程，默认选项。 - Retain：跳过删除流程。
 
         :return: The lts_reclaim_policy of this DeleteAutopilotClusterRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class DeleteAutopilotClusterRequest:
     def lts_reclaim_policy(self, lts_reclaim_policy):
         """Sets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
 
-        是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除LTS资源（日志组/日志流）。 枚举取值： - Delete_Log_Group：删除日志组，失败则忽略，并继续执行后续流程。 - Delete_Master_Log_Stream：删除Master接入日志流，失败则忽略，并继续执行后续流程，默认选项。 - Retain：跳过删除流程。
 
         :param lts_reclaim_policy: The lts_reclaim_policy of this DeleteAutopilotClusterRequest.
         :type lts_reclaim_policy: str

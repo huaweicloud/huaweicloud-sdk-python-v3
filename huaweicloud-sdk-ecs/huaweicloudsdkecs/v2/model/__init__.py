@@ -107,6 +107,9 @@ from huaweicloudsdkecs.v2.model.disassociate_server_virtual_ip_option import Dis
 from huaweicloudsdkecs.v2.model.disassociate_server_virtual_ip_request import DisassociateServerVirtualIpRequest
 from huaweicloudsdkecs.v2.model.disassociate_server_virtual_ip_request_body import DisassociateServerVirtualIpRequestBody
 from huaweicloudsdkecs.v2.model.disassociate_server_virtual_ip_response import DisassociateServerVirtualIpResponse
+from huaweicloudsdkecs.v2.model.event_response import EventResponse
+from huaweicloudsdkecs.v2.model.event_response_execute_options import EventResponseExecuteOptions
+from huaweicloudsdkecs.v2.model.event_response_source import EventResponseSource
 from huaweicloudsdkecs.v2.model.fault import Fault
 from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
@@ -124,6 +127,7 @@ from huaweicloudsdkecs.v2.model.job_entities import JobEntities
 from huaweicloudsdkecs.v2.model.link import Link
 from huaweicloudsdkecs.v2.model.list_cloud_servers_request import ListCloudServersRequest
 from huaweicloudsdkecs.v2.model.list_cloud_servers_response import ListCloudServersResponse
+from huaweicloudsdkecs.v2.model.list_events_response_page_info import ListEventsResponsePageInfo
 from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_request import ListFlavorSellPoliciesRequest
 from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_response import ListFlavorSellPoliciesResponse
 from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_result import ListFlavorSellPoliciesResult
@@ -132,6 +136,8 @@ from huaweicloudsdkecs.v2.model.list_flavors_response import ListFlavorsResponse
 from huaweicloudsdkecs.v2.model.list_resize_flavors_request import ListResizeFlavorsRequest
 from huaweicloudsdkecs.v2.model.list_resize_flavors_response import ListResizeFlavorsResponse
 from huaweicloudsdkecs.v2.model.list_resize_flavors_result import ListResizeFlavorsResult
+from huaweicloudsdkecs.v2.model.list_scheduled_events_request import ListScheduledEventsRequest
+from huaweicloudsdkecs.v2.model.list_scheduled_events_response import ListScheduledEventsResponse
 from huaweicloudsdkecs.v2.model.list_server_az_info import ListServerAzInfo
 from huaweicloudsdkecs.v2.model.list_server_az_info_request import ListServerAzInfoRequest
 from huaweicloudsdkecs.v2.model.list_server_az_info_response import ListServerAzInfoResponse

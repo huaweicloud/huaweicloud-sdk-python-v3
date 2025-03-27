@@ -32,6 +32,7 @@ class ShowResponseP2cVgw:
         'order_id': 'str',
         'admin_state_up': 'bool',
         'frozen_effect': 'int',
+        'version': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -52,11 +53,12 @@ class ShowResponseP2cVgw:
         'order_id': 'order_id',
         'admin_state_up': 'admin_state_up',
         'frozen_effect': 'frozen_effect',
+        'version': 'version',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, created_at=None, updated_at=None):
         """ShowResponseP2cVgw
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class ShowResponseP2cVgw:
         :type admin_state_up: bool
         :param frozen_effect: 冻结场景：0未冻结；1 冻结可删除；2冻结不可删除
         :type frozen_effect: int
+        :param version: 网关版本
+        :type version: str
         :param created_at: 创建时间
         :type created_at: datetime
         :param updated_at: 更新时间
@@ -114,6 +118,7 @@ class ShowResponseP2cVgw:
         self._order_id = None
         self._admin_state_up = None
         self._frozen_effect = None
+        self._version = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -148,6 +153,8 @@ class ShowResponseP2cVgw:
             self.admin_state_up = admin_state_up
         if frozen_effect is not None:
             self.frozen_effect = frozen_effect
+        if version is not None:
+            self.version = version
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -478,6 +485,28 @@ class ShowResponseP2cVgw:
         :type frozen_effect: int
         """
         self._frozen_effect = frozen_effect
+
+    @property
+    def version(self):
+        """Gets the version of this ShowResponseP2cVgw.
+
+        网关版本
+
+        :return: The version of this ShowResponseP2cVgw.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this ShowResponseP2cVgw.
+
+        网关版本
+
+        :param version: The version of this ShowResponseP2cVgw.
+        :type version: str
+        """
+        self._version = version
 
     @property
     def created_at(self):

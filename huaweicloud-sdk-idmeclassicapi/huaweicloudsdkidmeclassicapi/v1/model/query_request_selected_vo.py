@@ -30,7 +30,8 @@ class QueryRequestSelectedVo:
         'public_data': 'str',
         'selected_field': 'list[SelectedField]',
         'sort': 'str',
-        'sorts': 'list[SortInfoVo]'
+        'sorts': 'list[SortInfoVo]',
+        'is_transform_res_body': 'bool'
     }
 
     attribute_map = {
@@ -47,42 +48,45 @@ class QueryRequestSelectedVo:
         'public_data': 'publicData',
         'selected_field': 'selectedField',
         'sort': 'sort',
-        'sorts': 'sorts'
+        'sorts': 'sorts',
+        'is_transform_res_body': 'isTransformResBody'
     }
 
-    def __init__(self, character_set=None, conditions=None, decrypt=None, entity_type=None, filter=None, is_need_total=None, is_present_all=None, need_present_detail=None, order_by=None, order_by_table_alias=None, public_data=None, selected_field=None, sort=None, sorts=None):
+    def __init__(self, character_set=None, conditions=None, decrypt=None, entity_type=None, filter=None, is_need_total=None, is_present_all=None, need_present_detail=None, order_by=None, order_by_table_alias=None, public_data=None, selected_field=None, sort=None, sorts=None, is_transform_res_body=None):
         """QueryRequestSelectedVo
 
         The model defined in huaweicloud sdk
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
-        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
         :type decrypt: bool
-        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type entity_type: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
-        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
         :type is_need_total: bool
-        :param is_present_all: **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        :param is_present_all: **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
         :type is_present_all: bool
-        :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type need_present_detail: list[str]
-        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by: str
-        :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by_table_alias: str
-        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
         :type public_data: str
-        :param selected_field: **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param selected_field: **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type selected_field: list[:class:`huaweicloudsdkidmeclassicapi.v1.SelectedField`]
-        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。 
+        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。
         :type sort: str
-        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
+        :param is_transform_res_body: **参数解释：**  是否需要格式化分类属性。  **约束限制：**  不涉及。  **取值范围：**  - true：需要格式化分类属性。 - false：不需要格式化分类属性。  **默认取值：**  不涉及。
+        :type is_transform_res_body: bool
         """
         
         
@@ -101,6 +105,7 @@ class QueryRequestSelectedVo:
         self._selected_field = None
         self._sort = None
         self._sorts = None
+        self._is_transform_res_body = None
         self.discriminator = None
 
         if character_set is not None:
@@ -130,6 +135,8 @@ class QueryRequestSelectedVo:
             self.sort = sort
         if sorts is not None:
             self.sorts = sorts
+        if is_transform_res_body is not None:
+            self.is_transform_res_body = is_transform_res_body
 
     @property
     def character_set(self):
@@ -153,7 +160,7 @@ class QueryRequestSelectedVo:
     def conditions(self):
         """Gets the conditions of this QueryRequestSelectedVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The conditions of this QueryRequestSelectedVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -164,7 +171,7 @@ class QueryRequestSelectedVo:
     def conditions(self, conditions):
         """Sets the conditions of this QueryRequestSelectedVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param conditions: The conditions of this QueryRequestSelectedVo.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -175,7 +182,7 @@ class QueryRequestSelectedVo:
     def decrypt(self):
         """Gets the decrypt of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
         :return: The decrypt of this QueryRequestSelectedVo.
         :rtype: bool
@@ -186,7 +193,7 @@ class QueryRequestSelectedVo:
     def decrypt(self, decrypt):
         """Sets the decrypt of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
         :param decrypt: The decrypt of this QueryRequestSelectedVo.
         :type decrypt: bool
@@ -197,7 +204,7 @@ class QueryRequestSelectedVo:
     def entity_type(self):
         """Gets the entity_type of this QueryRequestSelectedVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The entity_type of this QueryRequestSelectedVo.
         :rtype: str
@@ -208,7 +215,7 @@ class QueryRequestSelectedVo:
     def entity_type(self, entity_type):
         """Sets the entity_type of this QueryRequestSelectedVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param entity_type: The entity_type of this QueryRequestSelectedVo.
         :type entity_type: str
@@ -237,7 +244,7 @@ class QueryRequestSelectedVo:
     def is_need_total(self):
         """Gets the is_need_total of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :return: The is_need_total of this QueryRequestSelectedVo.
         :rtype: bool
@@ -248,7 +255,7 @@ class QueryRequestSelectedVo:
     def is_need_total(self, is_need_total):
         """Sets the is_need_total of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :param is_need_total: The is_need_total of this QueryRequestSelectedVo.
         :type is_need_total: bool
@@ -259,7 +266,7 @@ class QueryRequestSelectedVo:
     def is_present_all(self):
         """Gets the is_present_all of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :return: The is_present_all of this QueryRequestSelectedVo.
         :rtype: bool
@@ -270,7 +277,7 @@ class QueryRequestSelectedVo:
     def is_present_all(self, is_present_all):
         """Sets the is_present_all of this QueryRequestSelectedVo.
 
-        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :param is_present_all: The is_present_all of this QueryRequestSelectedVo.
         :type is_present_all: bool
@@ -281,7 +288,7 @@ class QueryRequestSelectedVo:
     def need_present_detail(self):
         """Gets the need_present_detail of this QueryRequestSelectedVo.
 
-        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The need_present_detail of this QueryRequestSelectedVo.
         :rtype: list[str]
@@ -292,7 +299,7 @@ class QueryRequestSelectedVo:
     def need_present_detail(self, need_present_detail):
         """Sets the need_present_detail of this QueryRequestSelectedVo.
 
-        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param need_present_detail: The need_present_detail of this QueryRequestSelectedVo.
         :type need_present_detail: list[str]
@@ -303,7 +310,7 @@ class QueryRequestSelectedVo:
     def order_by(self):
         """Gets the order_by of this QueryRequestSelectedVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The order_by of this QueryRequestSelectedVo.
         :rtype: str
@@ -314,7 +321,7 @@ class QueryRequestSelectedVo:
     def order_by(self, order_by):
         """Sets the order_by of this QueryRequestSelectedVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param order_by: The order_by of this QueryRequestSelectedVo.
         :type order_by: str
@@ -325,7 +332,7 @@ class QueryRequestSelectedVo:
     def order_by_table_alias(self):
         """Gets the order_by_table_alias of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The order_by_table_alias of this QueryRequestSelectedVo.
         :rtype: str
@@ -336,7 +343,7 @@ class QueryRequestSelectedVo:
     def order_by_table_alias(self, order_by_table_alias):
         """Sets the order_by_table_alias of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param order_by_table_alias: The order_by_table_alias of this QueryRequestSelectedVo.
         :type order_by_table_alias: str
@@ -347,7 +354,7 @@ class QueryRequestSelectedVo:
     def public_data(self):
         """Gets the public_data of this QueryRequestSelectedVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :return: The public_data of this QueryRequestSelectedVo.
         :rtype: str
@@ -358,7 +365,7 @@ class QueryRequestSelectedVo:
     def public_data(self, public_data):
         """Sets the public_data of this QueryRequestSelectedVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :param public_data: The public_data of this QueryRequestSelectedVo.
         :type public_data: str
@@ -369,7 +376,7 @@ class QueryRequestSelectedVo:
     def selected_field(self):
         """Gets the selected_field of this QueryRequestSelectedVo.
 
-        **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The selected_field of this QueryRequestSelectedVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.SelectedField`]
@@ -380,7 +387,7 @@ class QueryRequestSelectedVo:
     def selected_field(self, selected_field):
         """Sets the selected_field of this QueryRequestSelectedVo.
 
-        **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param selected_field: The selected_field of this QueryRequestSelectedVo.
         :type selected_field: list[:class:`huaweicloudsdkidmeclassicapi.v1.SelectedField`]
@@ -391,7 +398,7 @@ class QueryRequestSelectedVo:
     def sort(self):
         """Gets the sort of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。
 
         :return: The sort of this QueryRequestSelectedVo.
         :rtype: str
@@ -402,7 +409,7 @@ class QueryRequestSelectedVo:
     def sort(self, sort):
         """Sets the sort of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。
 
         :param sort: The sort of this QueryRequestSelectedVo.
         :type sort: str
@@ -413,7 +420,7 @@ class QueryRequestSelectedVo:
     def sorts(self):
         """Gets the sorts of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The sorts of this QueryRequestSelectedVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
@@ -424,12 +431,34 @@ class QueryRequestSelectedVo:
     def sorts(self, sorts):
         """Sets the sorts of this QueryRequestSelectedVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param sorts: The sorts of this QueryRequestSelectedVo.
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
         """
         self._sorts = sorts
+
+    @property
+    def is_transform_res_body(self):
+        """Gets the is_transform_res_body of this QueryRequestSelectedVo.
+
+        **参数解释：**  是否需要格式化分类属性。  **约束限制：**  不涉及。  **取值范围：**  - true：需要格式化分类属性。 - false：不需要格式化分类属性。  **默认取值：**  不涉及。
+
+        :return: The is_transform_res_body of this QueryRequestSelectedVo.
+        :rtype: bool
+        """
+        return self._is_transform_res_body
+
+    @is_transform_res_body.setter
+    def is_transform_res_body(self, is_transform_res_body):
+        """Sets the is_transform_res_body of this QueryRequestSelectedVo.
+
+        **参数解释：**  是否需要格式化分类属性。  **约束限制：**  不涉及。  **取值范围：**  - true：需要格式化分类属性。 - false：不需要格式化分类属性。  **默认取值：**  不涉及。
+
+        :param is_transform_res_body: The is_transform_res_body of this QueryRequestSelectedVo.
+        :type is_transform_res_body: bool
+        """
+        self._is_transform_res_body = is_transform_res_body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

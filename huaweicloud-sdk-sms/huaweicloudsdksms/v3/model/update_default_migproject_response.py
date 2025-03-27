@@ -18,20 +18,51 @@ class UpdateDefaultMigprojectResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'str'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         """UpdateDefaultMigprojectResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 更改默认迁移项目成功
+        :type body: str
         """
         
         super(UpdateDefaultMigprojectResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateDefaultMigprojectResponse.
+
+        更改默认迁移项目成功
+
+        :return: The body of this UpdateDefaultMigprojectResponse.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateDefaultMigprojectResponse.
+
+        更改默认迁移项目成功
+
+        :param body: The body of this UpdateDefaultMigprojectResponse.
+        :type body: str
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

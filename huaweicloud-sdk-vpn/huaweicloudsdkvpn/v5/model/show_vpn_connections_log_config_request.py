@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ConsistencyResultRequestBody:
+class ShowVpnConnectionsLogConfigRequest:
 
     """
     Attributes:
@@ -17,79 +17,50 @@ class ConsistencyResultRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'consistency_result': 'list[ConsistencyResult]',
-        'finished_time': 'int'
+        'p2c_vgw_id': 'str'
     }
 
     attribute_map = {
-        'consistency_result': 'consistency_result',
-        'finished_time': 'finished_time'
+        'p2c_vgw_id': 'p2c_vgw_id'
     }
 
-    def __init__(self, consistency_result=None, finished_time=None):
-        """ConsistencyResultRequestBody
+    def __init__(self, p2c_vgw_id=None):
+        """ShowVpnConnectionsLogConfigRequest
 
         The model defined in huaweicloud sdk
 
-        :param consistency_result: 校验结果
-        :type consistency_result: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
-        :param finished_time: 检验完成时间
-        :type finished_time: int
+        :param p2c_vgw_id: P2C VPN网关实例ID
+        :type p2c_vgw_id: str
         """
         
         
 
-        self._consistency_result = None
-        self._finished_time = None
+        self._p2c_vgw_id = None
         self.discriminator = None
 
-        self.consistency_result = consistency_result
-        if finished_time is not None:
-            self.finished_time = finished_time
+        self.p2c_vgw_id = p2c_vgw_id
 
     @property
-    def consistency_result(self):
-        """Gets the consistency_result of this ConsistencyResultRequestBody.
+    def p2c_vgw_id(self):
+        """Gets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
 
-        校验结果
+        P2C VPN网关实例ID
 
-        :return: The consistency_result of this ConsistencyResultRequestBody.
-        :rtype: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
+        :return: The p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
+        :rtype: str
         """
-        return self._consistency_result
+        return self._p2c_vgw_id
 
-    @consistency_result.setter
-    def consistency_result(self, consistency_result):
-        """Sets the consistency_result of this ConsistencyResultRequestBody.
+    @p2c_vgw_id.setter
+    def p2c_vgw_id(self, p2c_vgw_id):
+        """Sets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
 
-        校验结果
+        P2C VPN网关实例ID
 
-        :param consistency_result: The consistency_result of this ConsistencyResultRequestBody.
-        :type consistency_result: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
+        :param p2c_vgw_id: The p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
+        :type p2c_vgw_id: str
         """
-        self._consistency_result = consistency_result
-
-    @property
-    def finished_time(self):
-        """Gets the finished_time of this ConsistencyResultRequestBody.
-
-        检验完成时间
-
-        :return: The finished_time of this ConsistencyResultRequestBody.
-        :rtype: int
-        """
-        return self._finished_time
-
-    @finished_time.setter
-    def finished_time(self, finished_time):
-        """Sets the finished_time of this ConsistencyResultRequestBody.
-
-        检验完成时间
-
-        :param finished_time: The finished_time of this ConsistencyResultRequestBody.
-        :type finished_time: int
-        """
-        self._finished_time = finished_time
+        self._p2c_vgw_id = p2c_vgw_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -133,7 +104,7 @@ class ConsistencyResultRequestBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConsistencyResultRequestBody):
+        if not isinstance(other, ShowVpnConnectionsLogConfigRequest):
             return False
 
         return self.__dict__ == other.__dict__

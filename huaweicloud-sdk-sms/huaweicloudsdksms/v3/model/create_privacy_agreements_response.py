@@ -30,7 +30,7 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 请求成功
         :type body: str
         """
         
@@ -46,6 +46,8 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
     def body(self):
         """Gets the body of this CreatePrivacyAgreementsResponse.
 
+        请求成功
+
         :return: The body of this CreatePrivacyAgreementsResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePrivacyAgreementsResponse.
+
+        请求成功
 
         :param body: The body of this CreatePrivacyAgreementsResponse.
         :type body: str

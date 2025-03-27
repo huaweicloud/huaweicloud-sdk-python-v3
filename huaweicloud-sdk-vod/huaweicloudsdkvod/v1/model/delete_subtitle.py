@@ -31,7 +31,7 @@ class DeleteSubtitle:
 
         The model defined in huaweicloud sdk
 
-        :param type: 字幕类型，字幕封装当前仅支持VTT
+        :param type: 字幕类型，字幕封装当前仅支持VTT和SRT
         :type type: str
         :param language: 字幕语言
         :type language: str
@@ -50,7 +50,7 @@ class DeleteSubtitle:
     def type(self):
         """Gets the type of this DeleteSubtitle.
 
-        字幕类型，字幕封装当前仅支持VTT
+        字幕类型，字幕封装当前仅支持VTT和SRT
 
         :return: The type of this DeleteSubtitle.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteSubtitle:
     def type(self, type):
         """Sets the type of this DeleteSubtitle.
 
-        字幕类型，字幕封装当前仅支持VTT
+        字幕类型，字幕封装当前仅支持VTT和SRT
 
         :param type: The type of this DeleteSubtitle.
         :type type: str

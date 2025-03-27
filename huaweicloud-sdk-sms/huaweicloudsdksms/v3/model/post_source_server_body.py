@@ -47,7 +47,9 @@ class PostSourceServerBody:
         'state': 'str',
         'oem_system': 'bool',
         'start_type': 'str',
-        'io_read_wait': 'float'
+        'io_read_wait': 'float',
+        'has_tc': 'bool',
+        'platform': 'str'
     }
 
     attribute_map = {
@@ -81,10 +83,12 @@ class PostSourceServerBody:
         'state': 'state',
         'oem_system': 'oem_system',
         'start_type': 'start_type',
-        'io_read_wait': 'io_read_wait'
+        'io_read_wait': 'io_read_wait',
+        'has_tc': 'has_tc',
+        'platform': 'platform'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
         """PostSourceServerBody
 
         The model defined in huaweicloud sdk
@@ -141,9 +145,9 @@ class PostSourceServerBody:
         :type agent_version: str
         :param kernel_version: 内核版本信息
         :type kernel_version: str
-        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
         :type migration_cycle: str
-        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
         :type state: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
@@ -151,6 +155,10 @@ class PostSourceServerBody:
         :type start_type: str
         :param io_read_wait: 磁盘IO读时延，单位为ms
         :type io_read_wait: float
+        :param has_tc: 是否安装tc组件，Linux系统此参数为必选
+        :type has_tc: bool
+        :param platform: 平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+        :type platform: str
         """
         
         
@@ -186,6 +194,8 @@ class PostSourceServerBody:
         self._oem_system = None
         self._start_type = None
         self._io_read_wait = None
+        self._has_tc = None
+        self._platform = None
         self.discriminator = None
 
         if id is not None:
@@ -250,6 +260,10 @@ class PostSourceServerBody:
             self.start_type = start_type
         if io_read_wait is not None:
             self.io_read_wait = io_read_wait
+        if has_tc is not None:
+            self.has_tc = has_tc
+        if platform is not None:
+            self.platform = platform
 
     @property
     def id(self):
@@ -827,7 +841,7 @@ class PostSourceServerBody:
     def migration_cycle(self):
         """Gets the migration_cycle of this PostSourceServerBody.
 
-        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
         :return: The migration_cycle of this PostSourceServerBody.
         :rtype: str
@@ -838,7 +852,7 @@ class PostSourceServerBody:
     def migration_cycle(self, migration_cycle):
         """Sets the migration_cycle of this PostSourceServerBody.
 
-        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
         :param migration_cycle: The migration_cycle of this PostSourceServerBody.
         :type migration_cycle: str
@@ -849,7 +863,7 @@ class PostSourceServerBody:
     def state(self):
         """Gets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
         :return: The state of this PostSourceServerBody.
         :rtype: str
@@ -860,7 +874,7 @@ class PostSourceServerBody:
     def state(self, state):
         """Sets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
         :param state: The state of this PostSourceServerBody.
         :type state: str
@@ -932,6 +946,50 @@ class PostSourceServerBody:
         :type io_read_wait: float
         """
         self._io_read_wait = io_read_wait
+
+    @property
+    def has_tc(self):
+        """Gets the has_tc of this PostSourceServerBody.
+
+        是否安装tc组件，Linux系统此参数为必选
+
+        :return: The has_tc of this PostSourceServerBody.
+        :rtype: bool
+        """
+        return self._has_tc
+
+    @has_tc.setter
+    def has_tc(self, has_tc):
+        """Sets the has_tc of this PostSourceServerBody.
+
+        是否安装tc组件，Linux系统此参数为必选
+
+        :param has_tc: The has_tc of this PostSourceServerBody.
+        :type has_tc: bool
+        """
+        self._has_tc = has_tc
+
+    @property
+    def platform(self):
+        """Gets the platform of this PostSourceServerBody.
+
+        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+
+        :return: The platform of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._platform
+
+    @platform.setter
+    def platform(self, platform):
+        """Sets the platform of this PostSourceServerBody.
+
+        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+
+        :param platform: The platform of this PostSourceServerBody.
+        :type platform: str
+        """
+        self._platform = platform
 
     def to_dict(self):
         """Returns the model properties as a dict"""

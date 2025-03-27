@@ -30,6 +30,32 @@ class CbhRegion:
                         "https://cbh.ru-moscow-1.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://cbh.my-kualalumpur-1.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://cbh.cn-north-1.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://cbh.af-south-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://cbh.ap-southeast-1.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://cbh.cn-east-2.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://cbh.ap-southeast-2.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://cbh.af-north-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://cbh.ap-southeast-5.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://cbh.cn-east-4.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://cbh.cn-east-5.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://cbh.cn-north-11.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://cbh.cn-south-2.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://cbh.me-east-1.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://cbh.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -44,6 +70,19 @@ class CbhRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "cn-north-1": CN_NORTH_1,
+        "af-south-1": AF_SOUTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "cn-east-2": CN_EAST_2,
+        "ap-southeast-2": AP_SOUTHEAST_2,
+        "af-north-1": AF_NORTH_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
+        "cn-east-4": CN_EAST_4,
+        "cn-east-5": CN_EAST_5,
+        "cn-north-11": CN_NORTH_11,
+        "cn-south-2": CN_SOUTH_2,
+        "me-east-1": ME_EAST_1,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

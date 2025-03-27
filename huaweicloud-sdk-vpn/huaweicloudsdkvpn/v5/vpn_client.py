@@ -964,6 +964,73 @@ class VpnClient(Client):
 
         return http_info
 
+    def delete_p2c_vgw_connection(self, request):
+        """断开P2C VPN网关连接
+
+        断开P2C VPN网关连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteP2cVgwConnection
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteP2cVgwConnectionRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteP2cVgwConnectionResponse`
+        """
+        http_info = self._delete_p2c_vgw_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_p2c_vgw_connection_invoker(self, request):
+        http_info = self._delete_p2c_vgw_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_p2c_vgw_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/connections/{connection_id}/disconnect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteP2cVgwConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_p2c_vgw_availability_zones(self, request):
         """查询P2C VPN网关可用区
 
@@ -2319,6 +2386,71 @@ class VpnClient(Client):
 
         return http_info
 
+    def show_vpn_connection_log(self, request):
+        """查询VPN连接日志
+
+        根据连接ID，查询指定的VPN连接日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVpnConnectionLog
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionLogRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionLogResponse`
+        """
+        http_info = self._show_vpn_connection_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vpn_connection_log_invoker(self, request):
+        http_info = self._show_vpn_connection_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpn_connection_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnConnectionLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_connection_id' in local_var_params:
+            path_params['vpn_connection_id'] = local_var_params['vpn_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_vpn_connection(self, request):
         """更新VPN连接
 
@@ -2355,6 +2487,203 @@ class VpnClient(Client):
         path_params = {}
         if 'vpn_connection_id' in local_var_params:
             path_params['vpn_connection_id'] = local_var_params['vpn_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vpn_connections_log_config(self, request):
+        """删除VPN连接日志配置
+
+        删除VPN连接日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVpnConnectionsLogConfig
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnConnectionsLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnConnectionsLogConfigResponse`
+        """
+        http_info = self._delete_vpn_connections_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vpn_connections_log_config_invoker(self, request):
+        http_info = self._delete_vpn_connections_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpn_connections_log_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/log-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnConnectionsLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_vpn_connections_log_config(self, request):
+        """查询VPN连接日志配置
+
+        查询VPN连接日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVpnConnectionsLogConfig
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionsLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionsLogConfigResponse`
+        """
+        http_info = self._show_vpn_connections_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vpn_connections_log_config_invoker(self, request):
+        http_info = self._show_vpn_connections_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpn_connections_log_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/log-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnConnectionsLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vpn_connections_log_config(self, request):
+        """更新VPN连接日志配置
+
+        更新VPN连接日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateVpnConnectionsLogConfig
+        :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionsLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionsLogConfigResponse`
+        """
+        http_info = self._update_vpn_connections_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vpn_connections_log_config_invoker(self, request):
+        http_info = self._update_vpn_connections_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vpn_connections_log_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/log-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnConnectionsLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
 
         query_params = []
 
@@ -3286,6 +3615,8 @@ class VpnClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

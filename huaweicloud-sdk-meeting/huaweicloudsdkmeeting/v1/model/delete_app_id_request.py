@@ -37,7 +37,7 @@ class DeleteAppIdRequest:
         :type x_request_id: str
         :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param app_id: 需要修改的app
+        :param app_id: 企业应用ID
         :type app_id: str
         """
         
@@ -102,7 +102,7 @@ class DeleteAppIdRequest:
     def app_id(self):
         """Gets the app_id of this DeleteAppIdRequest.
 
-        需要修改的app
+        企业应用ID
 
         :return: The app_id of this DeleteAppIdRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class DeleteAppIdRequest:
     def app_id(self, app_id):
         """Sets the app_id of this DeleteAppIdRequest.
 
-        需要修改的app
+        企业应用ID
 
         :param app_id: The app_id of this DeleteAppIdRequest.
         :type app_id: str

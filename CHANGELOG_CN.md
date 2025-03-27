@@ -1,3 +1,356 @@
+# 3.1.141 2025-03-27
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 优化自动获取账号ID流程
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSubEnterpriseAccount**
+    - 请求参数变更
+      - `+ financial_custody`
+  - **ListPartnerAdjustRecords**
+    - 响应参数变更
+      - `+ records.memo`
+
+### HuaweiCloud SDK CBR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ChangeVaultChargeMode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeOrder**
+    - 响应参数变更
+      - `* retCode: string -> number`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteAutopilotCluster**
+    - 请求参数变更
+      - `+ lts_reclaim_policy: enum value [Delete_Log_Group,Delete_Master_Log_Stream,Retain]`
+      - `+ lts_reclaim_policy: enum value [true,block,try,false,skip]`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListScheduledEvents`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ enable_lts_log`
+    - 响应参数变更
+      - `+ enable_lts_log`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `+ enable_lts_log`
+  - **UpdateFunctionConfig**
+    - 请求参数变更
+      - `+ enable_lts_log`
+    - 响应参数变更
+      - `+ enable_lts_log`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`CreateRsaDatakeyPair`、`CreateEcDatakeyPair`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KVS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateKv**
+    - 请求参数变更
+      - `+ update_fields.upsert`
+
+### HuaweiCloud SDK SMS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`UnlockTargetEcs`、`CheckNetAcl`、`ShowSha256`
+  - **UpdateTaskStatus**
+    - 请求参数变更
+      - `+ operation: enum value [skip,clear]`
+  - **UpdateTaskSpeed**
+    - 请求参数变更
+      - `+ total_cpu_usage`
+      - `+ agent_cpu_usage`
+      - `+ total_mem_usage`
+      - `+ agent_mem_usage`
+      - `+ total_disk_io`
+      - `+ agent_disk_io`
+      - `+ agent_time`
+  - **ShowOverview**
+    - 响应参数变更
+      - `+ replicate`
+      - `+ stopped`
+      - `+ unconfigured`
+      - `+ unavailable`
+      - `+ cutovering`
+      - `+ finished`
+      - `+ error`
+      - `+ deleting`
+      - `+ stopping`
+      - `+ initialize`
+      - `+ skipping`
+      - `+ cloning`
+      - `- other`
+      - `- replicating`
+  - **UpdateCopyState**
+    - 请求参数变更
+      - `+ copystate: enum value [SKIPPING,clearing,cleared,clearfailed]`
+  - **CollectLog**
+    - 请求参数变更
+      - `- log_expire`
+  - **ShowsSpeedLimits**
+    - 响应参数变更
+      - `+ speed_limit.over_speed_threshold`
+  - **UpdateSpeed**
+    - 请求参数变更
+      - `+ speed_limit.over_speed_threshold`
+  - **ShowConsistencyResult**
+    - 响应参数变更
+      - `+ result_list`
+      - `+ task_id`
+      - `- finished_time`
+      - `- consistency_result`
+  - **UpdateConsistencyResult**
+    - 请求参数变更
+      - `- finished_time`
+      - `- consistency_result`
+  - **ShowServer**
+    - 响应参数变更
+      - `+ has_tc`
+      - `+ state: enum value [clearing,cleared,clearfailed]`
+      - `+ networks.ipv6`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ tasks.total_cpu_usage`
+      - `+ tasks.agent_cpu_usage`
+      - `+ tasks.total_mem_usage`
+      - `+ tasks.agent_mem_usage`
+      - `+ tasks.total_disk_io`
+      - `+ tasks.agent_disk_io`
+      - `+ tasks.source_server.state: enum value [clearing,cleared,clearfailed]`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ speed_limit`
+      - `+ over_speed_threshold`
+      - `+ is_need_consistency_check`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ agent_disk_io`
+      - `+ total_disk_io`
+      - `+ agent_cpu_usage`
+      - `+ agent_mem_usage`
+      - `+ total_cpu_usage`
+      - `+ total_mem_usage`
+      - `+ source_server.state: enum value [clearing,cleared,clearfailed]`
+  - **UpdateTask**
+    - 请求参数变更
+      - `+ source_server.has_tc`
+      - `+ source_server.platform`
+      - `+ source_server.state: enum value [clearing,cleared,clearfailed]`
+      - `+ source_server.networks.ipv6`
+      - `* target_server.btrfs_list: list<string> -> list<BtrfsFileSystem>`
+  - **RegisterServer**
+    - 请求参数变更
+      - `+ has_tc`
+      - `+ platform`
+      - `+ state: enum value [clearing,cleared,clearfailed]`
+      - `+ networks.ipv6`
+  - **ListServers**
+    - 请求参数变更
+      - `+ state: enum value [skipping,clearing,cleared,clearfailed]`
+    - 响应参数变更
+      - `+ source_servers.has_tc`
+      - `+ source_servers.state: enum value [clearing,cleared,clearfailed]`
+      - `- source_servers.current_task.log_expire`
+
+### HuaweiCloud SDK VOD
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateStorageMode**
+    - 请求参数变更
+      - `+ X-Sdk-Date`
+  - **ModifySubtitle**
+    - 请求参数变更
+      - `+ X-Sdk-Date`
+      - `+ delete_subtitles.type: enum value [SRT]`
+      - `+ add_subtitles.type: enum value [SRT]`
+  - **DeleteTranscodeProduct**
+    - 请求参数变更
+      - `+ X-Sdk-Date`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ShowVpnConnectionLog`
+    - `DeleteP2cVgwConnection`
+    - `ShowVpnConnectionsLogConfig`
+    - `UpdateVpnConnectionsLogConfig`
+    - `DeleteVpnConnectionsLogConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateVpnServer**
+    - 请求参数变更
+      - `+ vpn_server.dns_servers`
+  - **BatchCreateVpnUsers**
+    - 请求参数变更
+      - `+ users.static_ip`
+    - 响应参数变更
+      - `+ invalid_users.static_ip`
+  - **ListP2cVgws**
+    - 响应参数变更
+      - `+ total_count`
+      - `+ page_info`
+      - `+ p2c_vpn_gateways.version`
+  - **ShowP2cVgw**
+    - 响应参数变更
+      - `+ p2c_vpn_gateway.version`
+  - **ListVpnServersByVgw**
+    - 响应参数变更
+      - `+ total_count`
+      - `+ page_info`
+      - `+ vpn_servers.dns_servers`
+  - **ListVpnServersByProject**
+    - 响应参数变更
+      - `+ total_count`
+      - `+ page_info`
+      - `+ vpn_servers.dns_servers`
+  - **ListVpnConnections**
+    - 响应参数变更
+      - `+ vpn_connections.enable_hub`
+      - `+ vpn_connections.peer_subnets_v6`
+      - `+ vpn_connections.tunnel_local_address_v6`
+      - `+ vpn_connections.tunnel_peer_address_v6`
+      - `+ vpn_connections.policy_rules_v6`
+  - **CreateVpnConnection**
+    - 请求参数变更
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+    - 响应参数变更
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **ShowVpnConnection**
+    - 响应参数变更
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **UpdateVpnConnection**
+    - 请求参数变更
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+    - 响应参数变更
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **ListVgws**
+    - 响应参数变更
+      - `+ vpn_gateways.ip_version`
+      - `+ vpn_gateways.er_attachment_id`
+      - `+ vpn_gateways.local_subnets_v6`
+      - `+ vpn_gateways.public_border_group`
+      - `+ vpn_gateways.supported_features`
+  - **CreateVgw**
+    - 请求参数变更
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+      - `+ vpn_gateway.flavor: enum value [Professional3,Professional3-NonFixedIP,GM]`
+    - 响应参数变更
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+  - **ShowVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.er_attachment_id`
+      - `+ vpn_gateway.local_subnets_v6`
+      - `+ vpn_gateway.public_border_group`
+      - `+ vpn_gateway.supported_features`
+  - **UpdateVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+  - **UpdatePostpaidVgwSpecification**
+    - 响应参数变更
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+
 # 3.1.140 2025-03-20
 
 ### HuaweiCloud SDK AAD

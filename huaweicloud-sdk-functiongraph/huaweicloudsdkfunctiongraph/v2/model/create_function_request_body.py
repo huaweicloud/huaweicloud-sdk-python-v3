@@ -48,6 +48,7 @@ class CreateFunctionRequestBody:
         'network_controller': 'NetworkControlConfig',
         'is_stateful_function': 'bool',
         'enable_dynamic_memory': 'bool',
+        'enable_lts_log': 'bool',
         'lts_custom_tag': 'dict(str, str)'
     }
 
@@ -83,10 +84,11 @@ class CreateFunctionRequestBody:
         'network_controller': 'network_controller',
         'is_stateful_function': 'is_stateful_function',
         'enable_dynamic_memory': 'enable_dynamic_memory',
+        'enable_lts_log': 'enable_lts_log',
         'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, lts_custom_tag=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -153,6 +155,8 @@ class CreateFunctionRequestBody:
         :type is_stateful_function: bool
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
+        :param enable_lts_log: 是否开启日志，缺省值为false。创建函数时，若此开关为true，且未传入log_config，则由FunctionGraph自动创建日志组日志流。
+        :type enable_lts_log: bool
         :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
         :type lts_custom_tag: dict(str, str)
         """
@@ -190,6 +194,7 @@ class CreateFunctionRequestBody:
         self._network_controller = None
         self._is_stateful_function = None
         self._enable_dynamic_memory = None
+        self._enable_lts_log = None
         self._lts_custom_tag = None
         self.discriminator = None
 
@@ -249,6 +254,8 @@ class CreateFunctionRequestBody:
             self.is_stateful_function = is_stateful_function
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
+        if enable_lts_log is not None:
+            self.enable_lts_log = enable_lts_log
         if lts_custom_tag is not None:
             self.lts_custom_tag = lts_custom_tag
 
@@ -909,6 +916,28 @@ class CreateFunctionRequestBody:
         :type enable_dynamic_memory: bool
         """
         self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def enable_lts_log(self):
+        """Gets the enable_lts_log of this CreateFunctionRequestBody.
+
+        是否开启日志，缺省值为false。创建函数时，若此开关为true，且未传入log_config，则由FunctionGraph自动创建日志组日志流。
+
+        :return: The enable_lts_log of this CreateFunctionRequestBody.
+        :rtype: bool
+        """
+        return self._enable_lts_log
+
+    @enable_lts_log.setter
+    def enable_lts_log(self, enable_lts_log):
+        """Sets the enable_lts_log of this CreateFunctionRequestBody.
+
+        是否开启日志，缺省值为false。创建函数时，若此开关为true，且未传入log_config，则由FunctionGraph自动创建日志组日志流。
+
+        :param enable_lts_log: The enable_lts_log of this CreateFunctionRequestBody.
+        :type enable_lts_log: bool
+        """
+        self._enable_lts_log = enable_lts_log
 
     @property
     def lts_custom_tag(self):

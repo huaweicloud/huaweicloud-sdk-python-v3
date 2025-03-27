@@ -25,7 +25,8 @@ class AdjustRecordV3:
         'apply_scene': 'str',
         'operation_time': 'str',
         'measure_id': 'int',
-        'trans_id': 'str'
+        'trans_id': 'str',
+        'memo': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class AdjustRecordV3:
         'apply_scene': 'apply_scene',
         'operation_time': 'operation_time',
         'measure_id': 'measure_id',
-        'trans_id': 'trans_id'
+        'trans_id': 'trans_id',
+        'memo': 'memo'
     }
 
-    def __init__(self, customer_id=None, customer_name=None, operation_type=None, amount=None, currency=None, apply_scene=None, operation_time=None, measure_id=None, trans_id=None):
+    def __init__(self, customer_id=None, customer_name=None, operation_type=None, amount=None, currency=None, apply_scene=None, operation_time=None, measure_id=None, trans_id=None, memo=None):
         """AdjustRecordV3
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class AdjustRecordV3:
         :type measure_id: int
         :param trans_id: 事务ID。
         :type trans_id: str
+        :param memo: 备注。
+        :type memo: str
         """
         
         
@@ -76,6 +80,7 @@ class AdjustRecordV3:
         self._operation_time = None
         self._measure_id = None
         self._trans_id = None
+        self._memo = None
         self.discriminator = None
 
         if customer_id is not None:
@@ -96,6 +101,8 @@ class AdjustRecordV3:
             self.measure_id = measure_id
         if trans_id is not None:
             self.trans_id = trans_id
+        if memo is not None:
+            self.memo = memo
 
     @property
     def customer_id(self):
@@ -294,6 +301,28 @@ class AdjustRecordV3:
         :type trans_id: str
         """
         self._trans_id = trans_id
+
+    @property
+    def memo(self):
+        """Gets the memo of this AdjustRecordV3.
+
+        备注。
+
+        :return: The memo of this AdjustRecordV3.
+        :rtype: str
+        """
+        return self._memo
+
+    @memo.setter
+    def memo(self, memo):
+        """Sets the memo of this AdjustRecordV3.
+
+        备注。
+
+        :param memo: The memo of this AdjustRecordV3.
+        :type memo: str
+        """
+        self._memo = memo
 
     def to_dict(self):
         """Returns the model properties as a dict"""

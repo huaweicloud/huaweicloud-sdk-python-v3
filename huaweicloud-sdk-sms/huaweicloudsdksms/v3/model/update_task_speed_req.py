@@ -24,7 +24,14 @@ class UpdateTaskSpeedReq:
         'process_trace': 'str',
         'migrate_speed': 'float',
         'compress_rate': 'float',
-        'remain_time': 'int'
+        'remain_time': 'int',
+        'total_cpu_usage': 'float',
+        'agent_cpu_usage': 'float',
+        'total_mem_usage': 'float',
+        'agent_mem_usage': 'float',
+        'total_disk_io': 'float',
+        'agent_disk_io': 'float',
+        'agent_time': 'str'
     }
 
     attribute_map = {
@@ -35,10 +42,17 @@ class UpdateTaskSpeedReq:
         'process_trace': 'process_trace',
         'migrate_speed': 'migrate_speed',
         'compress_rate': 'compress_rate',
-        'remain_time': 'remain_time'
+        'remain_time': 'remain_time',
+        'total_cpu_usage': 'total_cpu_usage',
+        'agent_cpu_usage': 'agent_cpu_usage',
+        'total_mem_usage': 'total_mem_usage',
+        'agent_mem_usage': 'agent_mem_usage',
+        'total_disk_io': 'total_disk_io',
+        'agent_disk_io': 'agent_disk_io',
+        'agent_time': 'agent_time'
     }
 
-    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None):
+    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, agent_time=None):
         """UpdateTaskSpeedReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +73,20 @@ class UpdateTaskSpeedReq:
         :type compress_rate: float
         :param remain_time: 剩余时间
         :type remain_time: int
+        :param total_cpu_usage: 主机的CPU使用率，0到100，单位是百分比
+        :type total_cpu_usage: float
+        :param agent_cpu_usage: Agent的CPU使用率，0到100，单位是百分比
+        :type agent_cpu_usage: float
+        :param total_mem_usage: 主机的内存使用值，单位是MB
+        :type total_mem_usage: float
+        :param agent_mem_usage: Agent的内存使用值，单位是MB
+        :type agent_mem_usage: float
+        :param total_disk_io: 主机的磁盘I/O值，单位是MB/s
+        :type total_disk_io: float
+        :param agent_disk_io: Agent的磁盘I/O值，单位是MB/s
+        :type agent_disk_io: float
+        :param agent_time: Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
+        :type agent_time: str
         """
         
         
@@ -71,6 +99,13 @@ class UpdateTaskSpeedReq:
         self._migrate_speed = None
         self._compress_rate = None
         self._remain_time = None
+        self._total_cpu_usage = None
+        self._agent_cpu_usage = None
+        self._total_mem_usage = None
+        self._agent_mem_usage = None
+        self._total_disk_io = None
+        self._agent_disk_io = None
+        self._agent_time = None
         self.discriminator = None
 
         self.subtask_name = subtask_name
@@ -84,6 +119,20 @@ class UpdateTaskSpeedReq:
             self.compress_rate = compress_rate
         if remain_time is not None:
             self.remain_time = remain_time
+        if total_cpu_usage is not None:
+            self.total_cpu_usage = total_cpu_usage
+        if agent_cpu_usage is not None:
+            self.agent_cpu_usage = agent_cpu_usage
+        if total_mem_usage is not None:
+            self.total_mem_usage = total_mem_usage
+        if agent_mem_usage is not None:
+            self.agent_mem_usage = agent_mem_usage
+        if total_disk_io is not None:
+            self.total_disk_io = total_disk_io
+        if agent_disk_io is not None:
+            self.agent_disk_io = agent_disk_io
+        if agent_time is not None:
+            self.agent_time = agent_time
 
     @property
     def subtask_name(self):
@@ -260,6 +309,160 @@ class UpdateTaskSpeedReq:
         :type remain_time: int
         """
         self._remain_time = remain_time
+
+    @property
+    def total_cpu_usage(self):
+        """Gets the total_cpu_usage of this UpdateTaskSpeedReq.
+
+        主机的CPU使用率，0到100，单位是百分比
+
+        :return: The total_cpu_usage of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._total_cpu_usage
+
+    @total_cpu_usage.setter
+    def total_cpu_usage(self, total_cpu_usage):
+        """Sets the total_cpu_usage of this UpdateTaskSpeedReq.
+
+        主机的CPU使用率，0到100，单位是百分比
+
+        :param total_cpu_usage: The total_cpu_usage of this UpdateTaskSpeedReq.
+        :type total_cpu_usage: float
+        """
+        self._total_cpu_usage = total_cpu_usage
+
+    @property
+    def agent_cpu_usage(self):
+        """Gets the agent_cpu_usage of this UpdateTaskSpeedReq.
+
+        Agent的CPU使用率，0到100，单位是百分比
+
+        :return: The agent_cpu_usage of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._agent_cpu_usage
+
+    @agent_cpu_usage.setter
+    def agent_cpu_usage(self, agent_cpu_usage):
+        """Sets the agent_cpu_usage of this UpdateTaskSpeedReq.
+
+        Agent的CPU使用率，0到100，单位是百分比
+
+        :param agent_cpu_usage: The agent_cpu_usage of this UpdateTaskSpeedReq.
+        :type agent_cpu_usage: float
+        """
+        self._agent_cpu_usage = agent_cpu_usage
+
+    @property
+    def total_mem_usage(self):
+        """Gets the total_mem_usage of this UpdateTaskSpeedReq.
+
+        主机的内存使用值，单位是MB
+
+        :return: The total_mem_usage of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._total_mem_usage
+
+    @total_mem_usage.setter
+    def total_mem_usage(self, total_mem_usage):
+        """Sets the total_mem_usage of this UpdateTaskSpeedReq.
+
+        主机的内存使用值，单位是MB
+
+        :param total_mem_usage: The total_mem_usage of this UpdateTaskSpeedReq.
+        :type total_mem_usage: float
+        """
+        self._total_mem_usage = total_mem_usage
+
+    @property
+    def agent_mem_usage(self):
+        """Gets the agent_mem_usage of this UpdateTaskSpeedReq.
+
+        Agent的内存使用值，单位是MB
+
+        :return: The agent_mem_usage of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._agent_mem_usage
+
+    @agent_mem_usage.setter
+    def agent_mem_usage(self, agent_mem_usage):
+        """Sets the agent_mem_usage of this UpdateTaskSpeedReq.
+
+        Agent的内存使用值，单位是MB
+
+        :param agent_mem_usage: The agent_mem_usage of this UpdateTaskSpeedReq.
+        :type agent_mem_usage: float
+        """
+        self._agent_mem_usage = agent_mem_usage
+
+    @property
+    def total_disk_io(self):
+        """Gets the total_disk_io of this UpdateTaskSpeedReq.
+
+        主机的磁盘I/O值，单位是MB/s
+
+        :return: The total_disk_io of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._total_disk_io
+
+    @total_disk_io.setter
+    def total_disk_io(self, total_disk_io):
+        """Sets the total_disk_io of this UpdateTaskSpeedReq.
+
+        主机的磁盘I/O值，单位是MB/s
+
+        :param total_disk_io: The total_disk_io of this UpdateTaskSpeedReq.
+        :type total_disk_io: float
+        """
+        self._total_disk_io = total_disk_io
+
+    @property
+    def agent_disk_io(self):
+        """Gets the agent_disk_io of this UpdateTaskSpeedReq.
+
+        Agent的磁盘I/O值，单位是MB/s
+
+        :return: The agent_disk_io of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._agent_disk_io
+
+    @agent_disk_io.setter
+    def agent_disk_io(self, agent_disk_io):
+        """Sets the agent_disk_io of this UpdateTaskSpeedReq.
+
+        Agent的磁盘I/O值，单位是MB/s
+
+        :param agent_disk_io: The agent_disk_io of this UpdateTaskSpeedReq.
+        :type agent_disk_io: float
+        """
+        self._agent_disk_io = agent_disk_io
+
+    @property
+    def agent_time(self):
+        """Gets the agent_time of this UpdateTaskSpeedReq.
+
+        Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
+
+        :return: The agent_time of this UpdateTaskSpeedReq.
+        :rtype: str
+        """
+        return self._agent_time
+
+    @agent_time.setter
+    def agent_time(self, agent_time):
+        """Sets the agent_time of this UpdateTaskSpeedReq.
+
+        Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
+
+        :param agent_time: The agent_time of this UpdateTaskSpeedReq.
+        :type agent_time: str
+        """
+        self._agent_time = agent_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

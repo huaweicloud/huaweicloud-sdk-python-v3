@@ -38,8 +38,7 @@ class UpdateServerRequestServerCertificate:
         self._id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
 
     @property
     def id(self):

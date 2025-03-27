@@ -77,6 +77,7 @@ class CreateFunctionResponse(SdkResponse):
         'resource_id': 'str',
         'is_return_stream': 'bool',
         'enable_auth_in_header': 'bool',
+        'enable_lts_log': 'bool',
         'lts_custom_tag': 'dict(str, str)'
     }
 
@@ -140,10 +141,11 @@ class CreateFunctionResponse(SdkResponse):
         'resource_id': 'resource_id',
         'is_return_stream': 'is_return_stream',
         'enable_auth_in_header': 'enable_auth_in_header',
+        'enable_lts_log': 'enable_lts_log',
         'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, domain_names=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, reserved_instance_count=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, custom_image=None, is_bridge_function=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, ephemeral_storage=None, network_controller=None, resource_id=None, is_return_stream=None, enable_auth_in_header=None, lts_custom_tag=None):
+    def __init__(self, func_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, domain_names=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, reserved_instance_count=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, custom_image=None, is_bridge_function=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, ephemeral_storage=None, network_controller=None, resource_id=None, is_return_stream=None, enable_auth_in_header=None, enable_lts_log=None, lts_custom_tag=None):
         """CreateFunctionResponse
 
         The model defined in huaweicloud sdk
@@ -266,6 +268,8 @@ class CreateFunctionResponse(SdkResponse):
         :type is_return_stream: bool
         :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息，只支持自定义镜像函数（创建函数时不支持修改）
         :type enable_auth_in_header: bool
+        :param enable_lts_log: 是否开启日志。
+        :type enable_lts_log: bool
         :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
         :type lts_custom_tag: dict(str, str)
         """
@@ -331,6 +335,7 @@ class CreateFunctionResponse(SdkResponse):
         self._resource_id = None
         self._is_return_stream = None
         self._enable_auth_in_header = None
+        self._enable_lts_log = None
         self._lts_custom_tag = None
         self.discriminator = None
 
@@ -452,6 +457,8 @@ class CreateFunctionResponse(SdkResponse):
             self.is_return_stream = is_return_stream
         if enable_auth_in_header is not None:
             self.enable_auth_in_header = enable_auth_in_header
+        if enable_lts_log is not None:
+            self.enable_lts_log = enable_lts_log
         if lts_custom_tag is not None:
             self.lts_custom_tag = lts_custom_tag
 
@@ -1732,6 +1739,28 @@ class CreateFunctionResponse(SdkResponse):
         :type enable_auth_in_header: bool
         """
         self._enable_auth_in_header = enable_auth_in_header
+
+    @property
+    def enable_lts_log(self):
+        """Gets the enable_lts_log of this CreateFunctionResponse.
+
+        是否开启日志。
+
+        :return: The enable_lts_log of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._enable_lts_log
+
+    @enable_lts_log.setter
+    def enable_lts_log(self, enable_lts_log):
+        """Sets the enable_lts_log of this CreateFunctionResponse.
+
+        是否开启日志。
+
+        :param enable_lts_log: The enable_lts_log of this CreateFunctionResponse.
+        :type enable_lts_log: bool
+        """
+        self._enable_lts_log = enable_lts_log
 
     @property
     def lts_custom_tag(self):

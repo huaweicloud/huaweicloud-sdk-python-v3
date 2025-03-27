@@ -17,28 +17,35 @@ class ExportClientConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'vpn_server_id': 'str'
+        'vpn_server_id': 'str',
+        'body': 'ExportClientConfigRequestBody'
     }
 
     attribute_map = {
-        'vpn_server_id': 'vpn_server_id'
+        'vpn_server_id': 'vpn_server_id',
+        'body': 'body'
     }
 
-    def __init__(self, vpn_server_id=None):
+    def __init__(self, vpn_server_id=None, body=None):
         """ExportClientConfigRequest
 
         The model defined in huaweicloud sdk
 
         :param vpn_server_id: VPN服务端 ID
         :type vpn_server_id: str
+        :param body: Body of the ExportClientConfigRequest
+        :type body: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequestBody`
         """
         
         
 
         self._vpn_server_id = None
+        self._body = None
         self.discriminator = None
 
         self.vpn_server_id = vpn_server_id
+        if body is not None:
+            self.body = body
 
     @property
     def vpn_server_id(self):
@@ -61,6 +68,24 @@ class ExportClientConfigRequest:
         :type vpn_server_id: str
         """
         self._vpn_server_id = vpn_server_id
+
+    @property
+    def body(self):
+        """Gets the body of this ExportClientConfigRequest.
+
+        :return: The body of this ExportClientConfigRequest.
+        :rtype: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ExportClientConfigRequest.
+
+        :param body: The body of this ExportClientConfigRequest.
+        :type body: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

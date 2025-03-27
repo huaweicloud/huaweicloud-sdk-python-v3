@@ -91,23 +91,23 @@ class PutTaskReq:
 
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
         :param id: 迁移任务ID
         :type id: str
-        :param priority: 进程优先级  0：低  1：标准（默认）  2：高 
+        :param priority: 进程优先级  0：低  1：标准（默认）  2：高
         :type priority: int
         :param region_id: 目的端服务器的区域ID
         :type region_id: str
-        :param start_target_server: 迁移完成后是否启动目的端服务器  true：启动  false：停止 
+        :param start_target_server: 迁移完成后是否启动目的端服务器  true：启动  false：停止
         :type start_target_server: bool
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param exist_server: 目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
         :type exist_server: bool
-        :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址 
+        :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
         :type migration_ip: str
         :param region_name: 目的端服务器的区域名称
         :type region_name: str
@@ -277,7 +277,7 @@ class PutTaskReq:
     def type(self):
         """Gets the type of this PutTaskReq.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :return: The type of this PutTaskReq.
         :rtype: str
@@ -288,7 +288,7 @@ class PutTaskReq:
     def type(self, type):
         """Sets the type of this PutTaskReq.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :param type: The type of this PutTaskReq.
         :type type: str
@@ -343,7 +343,7 @@ class PutTaskReq:
     def priority(self):
         """Gets the priority of this PutTaskReq.
 
-        进程优先级  0：低  1：标准（默认）  2：高 
+        进程优先级  0：低  1：标准（默认）  2：高
 
         :return: The priority of this PutTaskReq.
         :rtype: int
@@ -354,7 +354,7 @@ class PutTaskReq:
     def priority(self, priority):
         """Sets the priority of this PutTaskReq.
 
-        进程优先级  0：低  1：标准（默认）  2：高 
+        进程优先级  0：低  1：标准（默认）  2：高
 
         :param priority: The priority of this PutTaskReq.
         :type priority: int
@@ -387,7 +387,7 @@ class PutTaskReq:
     def start_target_server(self):
         """Gets the start_target_server of this PutTaskReq.
 
-        迁移完成后是否启动目的端服务器  true：启动  false：停止 
+        迁移完成后是否启动目的端服务器  true：启动  false：停止
 
         :return: The start_target_server of this PutTaskReq.
         :rtype: bool
@@ -398,7 +398,7 @@ class PutTaskReq:
     def start_target_server(self, start_target_server):
         """Sets the start_target_server of this PutTaskReq.
 
-        迁移完成后是否启动目的端服务器  true：启动  false：停止 
+        迁移完成后是否启动目的端服务器  true：启动  false：停止
 
         :param start_target_server: The start_target_server of this PutTaskReq.
         :type start_target_server: bool
@@ -453,7 +453,7 @@ class PutTaskReq:
     def migration_ip(self):
         """Gets the migration_ip of this PutTaskReq.
 
-        目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址 
+        目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
         :return: The migration_ip of this PutTaskReq.
         :rtype: str
@@ -464,7 +464,7 @@ class PutTaskReq:
     def migration_ip(self, migration_ip):
         """Sets the migration_ip of this PutTaskReq.
 
-        目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址 
+        目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
         :param migration_ip: The migration_ip of this PutTaskReq.
         :type migration_ip: str

@@ -5849,6 +5849,93 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def show_statics_page(self, request):
+        """分页查询数据实例的统计信息
+
+        分页查询数据实例的统计信息，支持分组和简单函数分页统计。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowStaticsPage
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ShowStaticsPageRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ShowStaticsPageResponse`
+        """
+        http_info = self._show_statics_page_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statics_page_invoker(self, request):
+        http_info = self._show_statics_page_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_statics_page_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/staticsPage/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStaticsPageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_statics_using_post(self, request):
         """查询指定数据模型的实例统计信息
 

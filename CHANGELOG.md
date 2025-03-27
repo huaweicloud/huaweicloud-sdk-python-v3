@@ -1,3 +1,356 @@
+# 3.1.141 2025-03-27
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Optimize the process of automatically obtaining account IDs.
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSubEnterpriseAccount**
+    - changes of request param
+      - `+ financial_custody`
+  - **ListPartnerAdjustRecords**
+    - changes of response param
+      - `+ records.memo`
+
+### HuaweiCloud SDK CBR
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ChangeVaultChargeMode`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeOrder**
+    - changes of response param
+      - `* retCode: string -> number`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteAutopilotCluster**
+    - changes of request param
+      - `+ lts_reclaim_policy: enum value [Delete_Log_Group,Delete_Master_Log_Stream,Retain]`
+      - `+ lts_reclaim_policy: enum value [true,block,try,false,skip]`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListScheduledEvents`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFunction**
+    - changes of request param
+      - `+ enable_lts_log`
+    - changes of response param
+      - `+ enable_lts_log`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ enable_lts_log`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ enable_lts_log`
+    - changes of response param
+      - `+ enable_lts_log`
+
+### HuaweiCloud SDK KMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `CreateRsaDatakeyPair`, `CreateEcDatakeyPair`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateKv**
+    - changes of request param
+      - `+ update_fields.upsert`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the APIs `UnlockTargetEcs`, `CheckNetAcl`, `ShowSha256`
+  - **UpdateTaskStatus**
+    - changes of request param
+      - `+ operation: enum value [skip,clear]`
+  - **UpdateTaskSpeed**
+    - changes of request param
+      - `+ total_cpu_usage`
+      - `+ agent_cpu_usage`
+      - `+ total_mem_usage`
+      - `+ agent_mem_usage`
+      - `+ total_disk_io`
+      - `+ agent_disk_io`
+      - `+ agent_time`
+  - **ShowOverview**
+    - changes of response param
+      - `+ replicate`
+      - `+ stopped`
+      - `+ unconfigured`
+      - `+ unavailable`
+      - `+ cutovering`
+      - `+ finished`
+      - `+ error`
+      - `+ deleting`
+      - `+ stopping`
+      - `+ initialize`
+      - `+ skipping`
+      - `+ cloning`
+      - `- other`
+      - `- replicating`
+  - **UpdateCopyState**
+    - changes of request param
+      - `+ copystate: enum value [SKIPPING,clearing,cleared,clearfailed]`
+  - **CollectLog**
+    - changes of request param
+      - `- log_expire`
+  - **ShowsSpeedLimits**
+    - changes of response param
+      - `+ speed_limit.over_speed_threshold`
+  - **UpdateSpeed**
+    - changes of request param
+      - `+ speed_limit.over_speed_threshold`
+  - **ShowConsistencyResult**
+    - changes of response param
+      - `+ result_list`
+      - `+ task_id`
+      - `- finished_time`
+      - `- consistency_result`
+  - **UpdateConsistencyResult**
+    - changes of request param
+      - `- finished_time`
+      - `- consistency_result`
+  - **ShowServer**
+    - changes of response param
+      - `+ has_tc`
+      - `+ state: enum value [clearing,cleared,clearfailed]`
+      - `+ networks.ipv6`
+  - **ListTasks**
+    - changes of response param
+      - `+ tasks.total_cpu_usage`
+      - `+ tasks.agent_cpu_usage`
+      - `+ tasks.total_mem_usage`
+      - `+ tasks.agent_mem_usage`
+      - `+ tasks.total_disk_io`
+      - `+ tasks.agent_disk_io`
+      - `+ tasks.source_server.state: enum value [clearing,cleared,clearfailed]`
+  - **CreateTask**
+    - changes of request param
+      - `+ speed_limit`
+      - `+ over_speed_threshold`
+      - `+ is_need_consistency_check`
+  - **ShowTask**
+    - changes of response param
+      - `+ agent_disk_io`
+      - `+ total_disk_io`
+      - `+ agent_cpu_usage`
+      - `+ agent_mem_usage`
+      - `+ total_cpu_usage`
+      - `+ total_mem_usage`
+      - `+ source_server.state: enum value [clearing,cleared,clearfailed]`
+  - **UpdateTask**
+    - changes of request param
+      - `+ source_server.has_tc`
+      - `+ source_server.platform`
+      - `+ source_server.state: enum value [clearing,cleared,clearfailed]`
+      - `+ source_server.networks.ipv6`
+      - `* target_server.btrfs_list: list<string> -> list<BtrfsFileSystem>`
+  - **RegisterServer**
+    - changes of request param
+      - `+ has_tc`
+      - `+ platform`
+      - `+ state: enum value [clearing,cleared,clearfailed]`
+      - `+ networks.ipv6`
+  - **ListServers**
+    - changes of request param
+      - `+ state: enum value [skipping,clearing,cleared,clearfailed]`
+    - changes of response param
+      - `+ source_servers.has_tc`
+      - `+ source_servers.state: enum value [clearing,cleared,clearfailed]`
+      - `- source_servers.current_task.log_expire`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateStorageMode**
+    - changes of request param
+      - `+ X-Sdk-Date`
+  - **ModifySubtitle**
+    - changes of request param
+      - `+ X-Sdk-Date`
+      - `+ delete_subtitles.type: enum value [SRT]`
+      - `+ add_subtitles.type: enum value [SRT]`
+  - **DeleteTranscodeProduct**
+    - changes of request param
+      - `+ X-Sdk-Date`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ShowVpnConnectionLog`
+    - `DeleteP2cVgwConnection`
+    - `ShowVpnConnectionsLogConfig`
+    - `UpdateVpnConnectionsLogConfig`
+    - `DeleteVpnConnectionsLogConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVpnServer**
+    - changes of request param
+      - `+ vpn_server.dns_servers`
+  - **BatchCreateVpnUsers**
+    - changes of request param
+      - `+ users.static_ip`
+    - changes of response param
+      - `+ invalid_users.static_ip`
+  - **ListP2cVgws**
+    - changes of response param
+      - `+ total_count`
+      - `+ page_info`
+      - `+ p2c_vpn_gateways.version`
+  - **ShowP2cVgw**
+    - changes of response param
+      - `+ p2c_vpn_gateway.version`
+  - **ListVpnServersByVgw**
+    - changes of response param
+      - `+ total_count`
+      - `+ page_info`
+      - `+ vpn_servers.dns_servers`
+  - **ListVpnServersByProject**
+    - changes of response param
+      - `+ total_count`
+      - `+ page_info`
+      - `+ vpn_servers.dns_servers`
+  - **ListVpnConnections**
+    - changes of response param
+      - `+ vpn_connections.enable_hub`
+      - `+ vpn_connections.peer_subnets_v6`
+      - `+ vpn_connections.tunnel_local_address_v6`
+      - `+ vpn_connections.tunnel_peer_address_v6`
+      - `+ vpn_connections.policy_rules_v6`
+  - **CreateVpnConnection**
+    - changes of request param
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+    - changes of response param
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **ShowVpnConnection**
+    - changes of response param
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **UpdateVpnConnection**
+    - changes of request param
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+    - changes of response param
+      - `+ vpn_connection.enable_hub`
+      - `+ vpn_connection.peer_subnets_v6`
+      - `+ vpn_connection.tunnel_local_address_v6`
+      - `+ vpn_connection.tunnel_peer_address_v6`
+      - `+ vpn_connection.policy_rules_v6`
+  - **ListVgws**
+    - changes of response param
+      - `+ vpn_gateways.ip_version`
+      - `+ vpn_gateways.er_attachment_id`
+      - `+ vpn_gateways.local_subnets_v6`
+      - `+ vpn_gateways.public_border_group`
+      - `+ vpn_gateways.supported_features`
+  - **CreateVgw**
+    - changes of request param
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+      - `+ vpn_gateway.flavor: enum value [Professional3,Professional3-NonFixedIP,GM]`
+    - changes of response param
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+  - **ShowVgw**
+    - changes of response param
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.er_attachment_id`
+      - `+ vpn_gateway.local_subnets_v6`
+      - `+ vpn_gateway.public_border_group`
+      - `+ vpn_gateway.supported_features`
+  - **UpdateVgw**
+    - changes of response param
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+  - **UpdatePostpaidVgwSpecification**
+    - changes of response param
+      - `+ vpn_gateway.ip_version`
+      - `+ vpn_gateway.local_subnets_v6`
+
 # 3.1.140 2025-03-20
 
 ### HuaweiCloud SDK AAD

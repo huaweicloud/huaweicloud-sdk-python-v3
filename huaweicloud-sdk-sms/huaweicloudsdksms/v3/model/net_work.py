@@ -19,6 +19,7 @@ class NetWork:
     openapi_types = {
         'name': 'str',
         'ip': 'str',
+        'ipv6': 'str',
         'netmask': 'str',
         'gateway': 'str',
         'mtu': 'int',
@@ -29,6 +30,7 @@ class NetWork:
     attribute_map = {
         'name': 'name',
         'ip': 'ip',
+        'ipv6': 'ipv6',
         'netmask': 'netmask',
         'gateway': 'gateway',
         'mtu': 'mtu',
@@ -36,7 +38,7 @@ class NetWork:
         'id': 'id'
     }
 
-    def __init__(self, name=None, ip=None, netmask=None, gateway=None, mtu=None, mac=None, id=None):
+    def __init__(self, name=None, ip=None, ipv6=None, netmask=None, gateway=None, mtu=None, mac=None, id=None):
         """NetWork
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class NetWork:
         :type name: str
         :param ip: 该网卡绑定的IP
         :type ip: str
+        :param ipv6: IPv6地址
+        :type ipv6: str
         :param netmask: 掩码
         :type netmask: str
         :param gateway: 网关
@@ -61,6 +65,7 @@ class NetWork:
 
         self._name = None
         self._ip = None
+        self._ipv6 = None
         self._netmask = None
         self._gateway = None
         self._mtu = None
@@ -70,6 +75,8 @@ class NetWork:
 
         self.name = name
         self.ip = ip
+        if ipv6 is not None:
+            self.ipv6 = ipv6
         self.netmask = netmask
         self.gateway = gateway
         if mtu is not None:
@@ -121,6 +128,28 @@ class NetWork:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def ipv6(self):
+        """Gets the ipv6 of this NetWork.
+
+        IPv6地址
+
+        :return: The ipv6 of this NetWork.
+        :rtype: str
+        """
+        return self._ipv6
+
+    @ipv6.setter
+    def ipv6(self, ipv6):
+        """Sets the ipv6 of this NetWork.
+
+        IPv6地址
+
+        :param ipv6: The ipv6 of this NetWork.
+        :type ipv6: str
+        """
+        self._ipv6 = ipv6
 
     @property
     def netmask(self):

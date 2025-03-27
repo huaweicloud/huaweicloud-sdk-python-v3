@@ -6276,7 +6276,7 @@ class CceClient(Client):
     def create_autopilot_cluster(self, request):
         """创建集群
 
-        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。
+        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。
         
         
         &gt;   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。

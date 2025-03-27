@@ -17,34 +17,28 @@ class UploadLogRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'log_bucket': 'str',
-        'log_expire': 'int'
+        'log_bucket': 'str'
     }
 
     attribute_map = {
-        'log_bucket': 'log_bucket',
-        'log_expire': 'log_expire'
+        'log_bucket': 'log_bucket'
     }
 
-    def __init__(self, log_bucket=None, log_expire=None):
+    def __init__(self, log_bucket=None):
         """UploadLogRequestBody
 
         The model defined in huaweicloud sdk
 
         :param log_bucket: 指定桶名称
         :type log_bucket: str
-        :param log_expire: 指定有效期
-        :type log_expire: int
         """
         
         
 
         self._log_bucket = None
-        self._log_expire = None
         self.discriminator = None
 
         self.log_bucket = log_bucket
-        self.log_expire = log_expire
 
     @property
     def log_bucket(self):
@@ -67,28 +61,6 @@ class UploadLogRequestBody:
         :type log_bucket: str
         """
         self._log_bucket = log_bucket
-
-    @property
-    def log_expire(self):
-        """Gets the log_expire of this UploadLogRequestBody.
-
-        指定有效期
-
-        :return: The log_expire of this UploadLogRequestBody.
-        :rtype: int
-        """
-        return self._log_expire
-
-    @log_expire.setter
-    def log_expire(self, log_expire):
-        """Sets the log_expire of this UploadLogRequestBody.
-
-        指定有效期
-
-        :param log_expire: The log_expire of this UploadLogRequestBody.
-        :type log_expire: int
-        """
-        self._log_expire = log_expire
 
     def to_dict(self):
         """Returns the model properties as a dict"""

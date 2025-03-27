@@ -51,6 +51,9 @@ from huaweicloudsdkcbr.v1.model.cbc_product_info_update import CbcProductInfoUpd
 from huaweicloudsdkcbr.v1.model.cbc_update import CbcUpdate
 from huaweicloudsdkcbr.v1.model.change_order_request import ChangeOrderRequest
 from huaweicloudsdkcbr.v1.model.change_order_response import ChangeOrderResponse
+from huaweicloudsdkcbr.v1.model.change_to_period import ChangeToPeriod
+from huaweicloudsdkcbr.v1.model.change_vault_charge_mode_request import ChangeVaultChargeModeRequest
+from huaweicloudsdkcbr.v1.model.change_vault_charge_mode_response import ChangeVaultChargeModeResponse
 from huaweicloudsdkcbr.v1.model.check_agent_request import CheckAgentRequest
 from huaweicloudsdkcbr.v1.model.check_agent_response import CheckAgentResponse
 from huaweicloudsdkcbr.v1.model.checkpoint_create import CheckpointCreate

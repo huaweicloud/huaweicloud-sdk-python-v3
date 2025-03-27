@@ -35,7 +35,7 @@ class UpdateTaskStatusReq:
 
         The model defined in huaweicloud sdk
 
-        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
+        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源
         :type operation: str
         :param template_id: 模板id
         :type template_id: str
@@ -65,7 +65,7 @@ class UpdateTaskStatusReq:
     def operation(self):
         """Gets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源
 
         :return: The operation of this UpdateTaskStatusReq.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateTaskStatusReq:
     def operation(self, operation):
         """Sets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源
 
         :param operation: The operation of this UpdateTaskStatusReq.
         :type operation: str

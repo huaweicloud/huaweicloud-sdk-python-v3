@@ -565,6 +565,71 @@ class KmsAsyncClient(Client):
 
         return http_info
 
+    def create_ec_datakey_pair_async(self, request):
+        """创建EC数据密钥对
+
+        - 功能介绍：创建EC数据密钥对，返回结果包含明文公钥和密文私钥，根据参数决定是否返回明文私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEcDatakeyPair
+        :type request: :class:`huaweicloudsdkkms.v2.CreateEcDatakeyPairRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateEcDatakeyPairResponse`
+        """
+        http_info = self._create_ec_datakey_pair_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ec_datakey_pair_async_invoker(self, request):
+        http_info = self._create_ec_datakey_pair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ec_datakey_pair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-ec-datakey-pair",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEcDatakeyPairResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_grant_async(self, request):
         """创建授权
 
@@ -923,6 +988,71 @@ class KmsAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/kms/gen-random",
             "request_type": request.__class__.__name__,
             "response_type": "CreateRandomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_rsa_datakey_pair_async(self, request):
+        """创建RSA数据密钥对
+
+        - 功能介绍：创建rsa数据密钥对，返回结果包含明文公钥和密文私钥，根据参数决定是否返回明文私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRsaDatakeyPair
+        :type request: :class:`huaweicloudsdkkms.v2.CreateRsaDatakeyPairRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateRsaDatakeyPairResponse`
+        """
+        http_info = self._create_rsa_datakey_pair_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_rsa_datakey_pair_async_invoker(self, request):
+        http_info = self._create_rsa_datakey_pair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_rsa_datakey_pair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-rsa-datakey-pair",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRsaDatakeyPairResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -26,7 +26,7 @@ class TargetServer:
         'firmware': 'str',
         'cpu_quantity': 'int',
         'memory': 'int',
-        'btrfs_list': 'list[str]',
+        'btrfs_list': 'list[BtrfsFileSystem]',
         'networks': 'list[NetWork]',
         'domain_id': 'str',
         'has_rsync': 'bool',
@@ -100,7 +100,7 @@ class TargetServer:
         :param memory: 内存大小，单位MB
         :type memory: int
         :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
-        :type btrfs_list: list[str]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         :param networks: 源端服务器的网卡信息
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         :param domain_id: 租户的domainId
@@ -424,7 +424,7 @@ class TargetServer:
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :return: The btrfs_list of this TargetServer.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         return self._btrfs_list
 
@@ -435,7 +435,7 @@ class TargetServer:
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :param btrfs_list: The btrfs_list of this TargetServer.
-        :type btrfs_list: list[str]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         self._btrfs_list = btrfs_list
 

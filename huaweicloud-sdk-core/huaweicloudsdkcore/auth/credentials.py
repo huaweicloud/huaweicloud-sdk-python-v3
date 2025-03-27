@@ -265,7 +265,7 @@ class BasicCredentials(Credentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.get_iam_endpoint()
+            self.iam_endpoint = Iam.get_iam_endpoint(region_id)
         req = Iam.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
         try:
             http_client.logger.info("project id of region '%s' not found in BasicCredentials, "
@@ -353,7 +353,7 @@ class GlobalCredentials(Credentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.get_iam_endpoint()
+            self.iam_endpoint = Iam.get_iam_endpoint(region_id)
         req = Iam.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
         try:
             http_client.logger.info('domain id not found in GlobalCredentials, '

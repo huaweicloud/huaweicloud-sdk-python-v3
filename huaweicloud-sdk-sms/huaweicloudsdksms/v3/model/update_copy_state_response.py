@@ -18,20 +18,51 @@ class UpdateCopyStateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'str'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         """UpdateCopyStateResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 更新任务对应源端复制状态成功
+        :type body: str
         """
         
         super(UpdateCopyStateResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateCopyStateResponse.
+
+        更新任务对应源端复制状态成功
+
+        :return: The body of this UpdateCopyStateResponse.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateCopyStateResponse.
+
+        更新任务对应源端复制状态成功
+
+        :param body: The body of this UpdateCopyStateResponse.
+        :type body: str
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

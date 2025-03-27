@@ -28,6 +28,7 @@ class ResponseVpnConnection:
         'tunnel_local_address': 'str',
         'tunnel_peer_address': 'str',
         'enable_nqa': 'bool',
+        'enable_hub': 'bool',
         'policy_rules': 'list[PolicyRule]',
         'ikepolicy': 'IkePolicy',
         'ipsecpolicy': 'IpsecPolicy',
@@ -36,7 +37,11 @@ class ResponseVpnConnection:
         'enterprise_project_id': 'str',
         'connection_monitor_id': 'str',
         'ha_role': 'str',
-        'tags': 'list[VpnResourceTag]'
+        'tags': 'list[VpnResourceTag]',
+        'peer_subnets_v6': 'list[str]',
+        'tunnel_local_address_v6': 'str',
+        'tunnel_peer_address_v6': 'str',
+        'policy_rules_v6': 'list[PolicyRule]'
     }
 
     attribute_map = {
@@ -51,6 +56,7 @@ class ResponseVpnConnection:
         'tunnel_local_address': 'tunnel_local_address',
         'tunnel_peer_address': 'tunnel_peer_address',
         'enable_nqa': 'enable_nqa',
+        'enable_hub': 'enable_hub',
         'policy_rules': 'policy_rules',
         'ikepolicy': 'ikepolicy',
         'ipsecpolicy': 'ipsecpolicy',
@@ -59,10 +65,14 @@ class ResponseVpnConnection:
         'enterprise_project_id': 'enterprise_project_id',
         'connection_monitor_id': 'connection_monitor_id',
         'ha_role': 'ha_role',
-        'tags': 'tags'
+        'tags': 'tags',
+        'peer_subnets_v6': 'peer_subnets_v6',
+        'tunnel_local_address_v6': 'tunnel_local_address_v6',
+        'tunnel_peer_address_v6': 'tunnel_peer_address_v6',
+        'policy_rules_v6': 'policy_rules_v6'
     }
 
-    def __init__(self, id=None, name=None, status=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None, peer_subnets_v6=None, tunnel_local_address_v6=None, tunnel_peer_address_v6=None, policy_rules_v6=None):
         """ResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -89,6 +99,8 @@ class ResponseVpnConnection:
         :type tunnel_peer_address: str
         :param enable_nqa: 开启NQA检测
         :type enable_nqa: bool
+        :param enable_hub: 开启分支互联
+        :type enable_hub: bool
         :param policy_rules: 策略模式的策略规则组
         :type policy_rules: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
         :param ikepolicy: 
@@ -107,6 +119,14 @@ class ResponseVpnConnection:
         :type ha_role: str
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        :param peer_subnets_v6: 使能ipv6的对端子网
+        :type peer_subnets_v6: list[str]
+        :param tunnel_local_address_v6: 本端ipv6隧道口地址
+        :type tunnel_local_address_v6: str
+        :param tunnel_peer_address_v6: 对端ipv6隧道口地址
+        :type tunnel_peer_address_v6: str
+        :param policy_rules_v6: 策略模式的ipv6策略规则组
+        :type policy_rules_v6: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
         """
         
         
@@ -122,6 +142,7 @@ class ResponseVpnConnection:
         self._tunnel_local_address = None
         self._tunnel_peer_address = None
         self._enable_nqa = None
+        self._enable_hub = None
         self._policy_rules = None
         self._ikepolicy = None
         self._ipsecpolicy = None
@@ -131,6 +152,10 @@ class ResponseVpnConnection:
         self._connection_monitor_id = None
         self._ha_role = None
         self._tags = None
+        self._peer_subnets_v6 = None
+        self._tunnel_local_address_v6 = None
+        self._tunnel_peer_address_v6 = None
+        self._policy_rules_v6 = None
         self.discriminator = None
 
         if id is not None:
@@ -155,6 +180,8 @@ class ResponseVpnConnection:
             self.tunnel_peer_address = tunnel_peer_address
         if enable_nqa is not None:
             self.enable_nqa = enable_nqa
+        if enable_hub is not None:
+            self.enable_hub = enable_hub
         if policy_rules is not None:
             self.policy_rules = policy_rules
         if ikepolicy is not None:
@@ -173,6 +200,14 @@ class ResponseVpnConnection:
             self.ha_role = ha_role
         if tags is not None:
             self.tags = tags
+        if peer_subnets_v6 is not None:
+            self.peer_subnets_v6 = peer_subnets_v6
+        if tunnel_local_address_v6 is not None:
+            self.tunnel_local_address_v6 = tunnel_local_address_v6
+        if tunnel_peer_address_v6 is not None:
+            self.tunnel_peer_address_v6 = tunnel_peer_address_v6
+        if policy_rules_v6 is not None:
+            self.policy_rules_v6 = policy_rules_v6
 
     @property
     def id(self):
@@ -417,6 +452,28 @@ class ResponseVpnConnection:
         self._enable_nqa = enable_nqa
 
     @property
+    def enable_hub(self):
+        """Gets the enable_hub of this ResponseVpnConnection.
+
+        开启分支互联
+
+        :return: The enable_hub of this ResponseVpnConnection.
+        :rtype: bool
+        """
+        return self._enable_hub
+
+    @enable_hub.setter
+    def enable_hub(self, enable_hub):
+        """Sets the enable_hub of this ResponseVpnConnection.
+
+        开启分支互联
+
+        :param enable_hub: The enable_hub of this ResponseVpnConnection.
+        :type enable_hub: bool
+        """
+        self._enable_hub = enable_hub
+
+    @property
     def policy_rules(self):
         """Gets the policy_rules of this ResponseVpnConnection.
 
@@ -605,6 +662,94 @@ class ResponseVpnConnection:
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         self._tags = tags
+
+    @property
+    def peer_subnets_v6(self):
+        """Gets the peer_subnets_v6 of this ResponseVpnConnection.
+
+        使能ipv6的对端子网
+
+        :return: The peer_subnets_v6 of this ResponseVpnConnection.
+        :rtype: list[str]
+        """
+        return self._peer_subnets_v6
+
+    @peer_subnets_v6.setter
+    def peer_subnets_v6(self, peer_subnets_v6):
+        """Sets the peer_subnets_v6 of this ResponseVpnConnection.
+
+        使能ipv6的对端子网
+
+        :param peer_subnets_v6: The peer_subnets_v6 of this ResponseVpnConnection.
+        :type peer_subnets_v6: list[str]
+        """
+        self._peer_subnets_v6 = peer_subnets_v6
+
+    @property
+    def tunnel_local_address_v6(self):
+        """Gets the tunnel_local_address_v6 of this ResponseVpnConnection.
+
+        本端ipv6隧道口地址
+
+        :return: The tunnel_local_address_v6 of this ResponseVpnConnection.
+        :rtype: str
+        """
+        return self._tunnel_local_address_v6
+
+    @tunnel_local_address_v6.setter
+    def tunnel_local_address_v6(self, tunnel_local_address_v6):
+        """Sets the tunnel_local_address_v6 of this ResponseVpnConnection.
+
+        本端ipv6隧道口地址
+
+        :param tunnel_local_address_v6: The tunnel_local_address_v6 of this ResponseVpnConnection.
+        :type tunnel_local_address_v6: str
+        """
+        self._tunnel_local_address_v6 = tunnel_local_address_v6
+
+    @property
+    def tunnel_peer_address_v6(self):
+        """Gets the tunnel_peer_address_v6 of this ResponseVpnConnection.
+
+        对端ipv6隧道口地址
+
+        :return: The tunnel_peer_address_v6 of this ResponseVpnConnection.
+        :rtype: str
+        """
+        return self._tunnel_peer_address_v6
+
+    @tunnel_peer_address_v6.setter
+    def tunnel_peer_address_v6(self, tunnel_peer_address_v6):
+        """Sets the tunnel_peer_address_v6 of this ResponseVpnConnection.
+
+        对端ipv6隧道口地址
+
+        :param tunnel_peer_address_v6: The tunnel_peer_address_v6 of this ResponseVpnConnection.
+        :type tunnel_peer_address_v6: str
+        """
+        self._tunnel_peer_address_v6 = tunnel_peer_address_v6
+
+    @property
+    def policy_rules_v6(self):
+        """Gets the policy_rules_v6 of this ResponseVpnConnection.
+
+        策略模式的ipv6策略规则组
+
+        :return: The policy_rules_v6 of this ResponseVpnConnection.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
+        """
+        return self._policy_rules_v6
+
+    @policy_rules_v6.setter
+    def policy_rules_v6(self, policy_rules_v6):
+        """Sets the policy_rules_v6 of this ResponseVpnConnection.
+
+        策略模式的ipv6策略规则组
+
+        :param policy_rules_v6: The policy_rules_v6 of this ResponseVpnConnection.
+        :type policy_rules_v6: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
+        """
+        self._policy_rules_v6 = policy_rules_v6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

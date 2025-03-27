@@ -45,10 +45,12 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
         """
+        warnings.warn("Method 'check_net_acl_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._check_net_acl_http_info(request)
         return self._call_api(**http_info)
 
     def check_net_acl_async_invoker(self, request):
+        warnings.warn("Method 'check_net_acl_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._check_net_acl_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1323,9 +1325,9 @@ class SmsAsyncClient(Client):
         return http_info
 
     def show_cert_key_async(self, request):
-        """获取SSL目的端证书和私钥
+        """获取SSL证书和私钥
 
-        当源端服务器为Windows操作系统时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载目的端服务器所需要的证书和私钥(PEM格式)。
+        当迁移采用块级迁移的方式时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载迁移传输过程所需要的证书和私钥(PEM格式)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1457,7 +1459,7 @@ class SmsAsyncClient(Client):
     def show_config_setting_async(self, request):
         """查询配置资源
 
-        使用该接口查询任指定任务的指定配置类型的配置信息
+        使用该接口查询指定任务的指定配置类型的配置信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1919,10 +1921,12 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
         :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
         """
+        warnings.warn("Method 'show_sha256_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_sha256_http_info(request)
         return self._call_api(**http_info)
 
     def show_sha256_async_invoker(self, request):
+        warnings.warn("Method 'show_sha256_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_sha256_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2244,10 +2248,12 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
         """
+        warnings.warn("Method 'unlock_target_ecs_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._unlock_target_ecs_http_info(request)
         return self._call_api(**http_info)
 
     def unlock_target_ecs_async_invoker(self, request):
+        warnings.warn("Method 'unlock_target_ecs_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._unlock_target_ecs_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2765,9 +2771,9 @@ class SmsAsyncClient(Client):
         return http_info
 
     def update_server_name_async(self, request):
-        """修改指定ID的源端服务器名称
+        """修改指定ID的源端服务器信息
 
-        该功能用来修改SMS服务端的源端名称，方便用户对源端进行管理。
+        该功能用来修改SMS服务端的源端信息，方便用户对源端进行管理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2969,7 +2975,6 @@ class SmsAsyncClient(Client):
         """上报数据迁移进度和速率
 
         此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。
-        
         迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -3037,7 +3042,7 @@ class SmsAsyncClient(Client):
     def update_task_status_async(self, request):
         """管理迁移任务
 
-        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务。
+        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务，删除快照资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

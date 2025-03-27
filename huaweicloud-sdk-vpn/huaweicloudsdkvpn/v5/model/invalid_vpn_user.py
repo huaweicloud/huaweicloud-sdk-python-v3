@@ -20,6 +20,7 @@ class InvalidVpnUser:
         'name': 'str',
         'description': 'str',
         'user_group_name': 'str',
+        'static_ip': 'str',
         'cause': 'str'
     }
 
@@ -27,10 +28,11 @@ class InvalidVpnUser:
         'name': 'name',
         'description': 'description',
         'user_group_name': 'user_group_name',
+        'static_ip': 'static_ip',
         'cause': 'cause'
     }
 
-    def __init__(self, name=None, description=None, user_group_name=None, cause=None):
+    def __init__(self, name=None, description=None, user_group_name=None, static_ip=None, cause=None):
         """InvalidVpnUser
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class InvalidVpnUser:
         :type description: str
         :param user_group_name: 所属用户组名称
         :type user_group_name: str
+        :param static_ip: 静态客户端IP地址，默认值disable，表示随机分配客户端IP
+        :type static_ip: str
         :param cause: 失败原因
         :type cause: str
         """
@@ -50,6 +54,7 @@ class InvalidVpnUser:
         self._name = None
         self._description = None
         self._user_group_name = None
+        self._static_ip = None
         self._cause = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class InvalidVpnUser:
             self.description = description
         if user_group_name is not None:
             self.user_group_name = user_group_name
+        if static_ip is not None:
+            self.static_ip = static_ip
         if cause is not None:
             self.cause = cause
 
@@ -127,6 +134,28 @@ class InvalidVpnUser:
         :type user_group_name: str
         """
         self._user_group_name = user_group_name
+
+    @property
+    def static_ip(self):
+        """Gets the static_ip of this InvalidVpnUser.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :return: The static_ip of this InvalidVpnUser.
+        :rtype: str
+        """
+        return self._static_ip
+
+    @static_ip.setter
+    def static_ip(self, static_ip):
+        """Sets the static_ip of this InvalidVpnUser.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :param static_ip: The static_ip of this InvalidVpnUser.
+        :type static_ip: str
+        """
+        self._static_ip = static_ip
 
     @property
     def cause(self):

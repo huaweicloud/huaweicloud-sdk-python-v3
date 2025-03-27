@@ -19,16 +19,18 @@ class SpeedLimitlJson:
     openapi_types = {
         'start': 'str',
         'end': 'str',
-        'speed': 'int'
+        'speed': 'int',
+        'over_speed_threshold': 'float'
     }
 
     attribute_map = {
         'start': 'start',
         'end': 'end',
-        'speed': 'speed'
+        'speed': 'speed',
+        'over_speed_threshold': 'over_speed_threshold'
     }
 
-    def __init__(self, start=None, end=None, speed=None):
+    def __init__(self, start=None, end=None, speed=None, over_speed_threshold=None):
         """SpeedLimitlJson
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class SpeedLimitlJson:
         :type end: str
         :param speed: 时间段的速率，0-1000的整数，单位：Mbit/s。
         :type speed: int
+        :param over_speed_threshold: 停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+        :type over_speed_threshold: float
         """
         
         
@@ -46,11 +50,14 @@ class SpeedLimitlJson:
         self._start = None
         self._end = None
         self._speed = None
+        self._over_speed_threshold = None
         self.discriminator = None
 
         self.start = start
         self.end = end
         self.speed = speed
+        if over_speed_threshold is not None:
+            self.over_speed_threshold = over_speed_threshold
 
     @property
     def start(self):
@@ -117,6 +124,28 @@ class SpeedLimitlJson:
         :type speed: int
         """
         self._speed = speed
+
+    @property
+    def over_speed_threshold(self):
+        """Gets the over_speed_threshold of this SpeedLimitlJson.
+
+        停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+
+        :return: The over_speed_threshold of this SpeedLimitlJson.
+        :rtype: float
+        """
+        return self._over_speed_threshold
+
+    @over_speed_threshold.setter
+    def over_speed_threshold(self, over_speed_threshold):
+        """Sets the over_speed_threshold of this SpeedLimitlJson.
+
+        停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+
+        :param over_speed_threshold: The over_speed_threshold of this SpeedLimitlJson.
+        :type over_speed_threshold: float
+        """
+        self._over_speed_threshold = over_speed_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

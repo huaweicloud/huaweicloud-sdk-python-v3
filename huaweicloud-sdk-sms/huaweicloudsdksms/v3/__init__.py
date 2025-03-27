@@ -13,12 +13,12 @@ from huaweicloudsdksms.v3.model.clone_server import CloneServer
 from huaweicloudsdksms.v3.model.clone_server_brief import CloneServerBrief
 from huaweicloudsdksms.v3.model.collect_log_request import CollectLogRequest
 from huaweicloudsdksms.v3.model.collect_log_response import CollectLogResponse
-from huaweicloudsdksms.v3.model.comand_param import ComandParam
 from huaweicloudsdksms.v3.model.command_body import CommandBody
+from huaweicloudsdksms.v3.model.command_param import CommandParam
 from huaweicloudsdksms.v3.model.config_body import ConfigBody
 from huaweicloudsdksms.v3.model.configuration_request_body import ConfigurationRequestBody
 from huaweicloudsdksms.v3.model.consistency_result import ConsistencyResult
-from huaweicloudsdksms.v3.model.consistency_result_request_body import ConsistencyResultRequestBody
+from huaweicloudsdksms.v3.model.consistency_result_request_body_result_list import ConsistencyResultRequestBodyResultList
 from huaweicloudsdksms.v3.model.create_migproject_request import CreateMigprojectRequest
 from huaweicloudsdksms.v3.model.create_migproject_response import CreateMigprojectResponse
 from huaweicloudsdksms.v3.model.create_privacy_agreements_request import CreatePrivacyAgreementsRequest
@@ -86,6 +86,7 @@ from huaweicloudsdksms.v3.model.register_server_request import RegisterServerReq
 from huaweicloudsdksms.v3.model.register_server_response import RegisterServerResponse
 from huaweicloudsdksms.v3.model.server import Server
 from huaweicloudsdksms.v3.model.server_disk import ServerDisk
+from huaweicloudsdksms.v3.model.set_consistency_result_request_body import SetConsistencyResultRequestBody
 from huaweicloudsdksms.v3.model.sg_object import SgObject
 from huaweicloudsdksms.v3.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdksms.v3.model.show_api_version_response import ShowApiVersionResponse

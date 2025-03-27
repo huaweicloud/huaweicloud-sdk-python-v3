@@ -21,7 +21,8 @@ class UpdateServerRequest:
         'local_subnets': 'list[str]',
         'server_certificate': 'UpdateServerRequestServerCertificate',
         'ssl_options': 'UpdateServerRequestSslOptions',
-        'client_auth_type': 'str'
+        'client_auth_type': 'str',
+        'dns_servers': 'list[str]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class UpdateServerRequest:
         'local_subnets': 'local_subnets',
         'server_certificate': 'server_certificate',
         'ssl_options': 'ssl_options',
-        'client_auth_type': 'client_auth_type'
+        'client_auth_type': 'client_auth_type',
+        'dns_servers': 'dns_servers'
     }
 
-    def __init__(self, client_cidr=None, local_subnets=None, server_certificate=None, ssl_options=None, client_auth_type=None):
+    def __init__(self, client_cidr=None, local_subnets=None, server_certificate=None, ssl_options=None, client_auth_type=None, dns_servers=None):
         """UpdateServerRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateServerRequest:
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.UpdateServerRequestSslOptions`
         :param client_auth_type: 客户端认证类型
         :type client_auth_type: str
+        :param dns_servers: DNS服务器列表，最多两个DNS
+        :type dns_servers: list[str]
         """
         
         
@@ -56,6 +60,7 @@ class UpdateServerRequest:
         self._server_certificate = None
         self._ssl_options = None
         self._client_auth_type = None
+        self._dns_servers = None
         self.discriminator = None
 
         if client_cidr is not None:
@@ -68,6 +73,8 @@ class UpdateServerRequest:
             self.ssl_options = ssl_options
         if client_auth_type is not None:
             self.client_auth_type = client_auth_type
+        if dns_servers is not None:
+            self.dns_servers = dns_servers
 
     @property
     def client_cidr(self):
@@ -170,6 +177,28 @@ class UpdateServerRequest:
         :type client_auth_type: str
         """
         self._client_auth_type = client_auth_type
+
+    @property
+    def dns_servers(self):
+        """Gets the dns_servers of this UpdateServerRequest.
+
+        DNS服务器列表，最多两个DNS
+
+        :return: The dns_servers of this UpdateServerRequest.
+        :rtype: list[str]
+        """
+        return self._dns_servers
+
+    @dns_servers.setter
+    def dns_servers(self, dns_servers):
+        """Sets the dns_servers of this UpdateServerRequest.
+
+        DNS服务器列表，最多两个DNS
+
+        :param dns_servers: The dns_servers of this UpdateServerRequest.
+        :type dns_servers: list[str]
+        """
+        self._dns_servers = dns_servers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

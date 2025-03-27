@@ -18,80 +18,80 @@ class ShowConsistencyResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'consistency_result': 'list[ConsistencyResult]',
-        'finished_time': 'int'
+        'result_list': 'list[ConsistencyResultRequestBodyResultList]',
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'consistency_result': 'consistency_result',
-        'finished_time': 'finished_time'
+        'result_list': 'result_list',
+        'task_id': 'task_id'
     }
 
-    def __init__(self, consistency_result=None, finished_time=None):
+    def __init__(self, result_list=None, task_id=None):
         """ShowConsistencyResultResponse
 
         The model defined in huaweicloud sdk
 
-        :param consistency_result: 校验结果
-        :type consistency_result: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
-        :param finished_time: 检验完成时间
-        :type finished_time: int
+        :param result_list: 一致性校验结果列表
+        :type result_list: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
+        :param task_id: 任务id
+        :type task_id: str
         """
         
         super(ShowConsistencyResultResponse, self).__init__()
 
-        self._consistency_result = None
-        self._finished_time = None
+        self._result_list = None
+        self._task_id = None
         self.discriminator = None
 
-        if consistency_result is not None:
-            self.consistency_result = consistency_result
-        if finished_time is not None:
-            self.finished_time = finished_time
+        if result_list is not None:
+            self.result_list = result_list
+        if task_id is not None:
+            self.task_id = task_id
 
     @property
-    def consistency_result(self):
-        """Gets the consistency_result of this ShowConsistencyResultResponse.
+    def result_list(self):
+        """Gets the result_list of this ShowConsistencyResultResponse.
 
-        校验结果
+        一致性校验结果列表
 
-        :return: The consistency_result of this ShowConsistencyResultResponse.
-        :rtype: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
+        :return: The result_list of this ShowConsistencyResultResponse.
+        :rtype: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
         """
-        return self._consistency_result
+        return self._result_list
 
-    @consistency_result.setter
-    def consistency_result(self, consistency_result):
-        """Sets the consistency_result of this ShowConsistencyResultResponse.
+    @result_list.setter
+    def result_list(self, result_list):
+        """Sets the result_list of this ShowConsistencyResultResponse.
 
-        校验结果
+        一致性校验结果列表
 
-        :param consistency_result: The consistency_result of this ShowConsistencyResultResponse.
-        :type consistency_result: list[:class:`huaweicloudsdksms.v3.ConsistencyResult`]
+        :param result_list: The result_list of this ShowConsistencyResultResponse.
+        :type result_list: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
         """
-        self._consistency_result = consistency_result
+        self._result_list = result_list
 
     @property
-    def finished_time(self):
-        """Gets the finished_time of this ShowConsistencyResultResponse.
+    def task_id(self):
+        """Gets the task_id of this ShowConsistencyResultResponse.
 
-        检验完成时间
+        任务id
 
-        :return: The finished_time of this ShowConsistencyResultResponse.
-        :rtype: int
+        :return: The task_id of this ShowConsistencyResultResponse.
+        :rtype: str
         """
-        return self._finished_time
+        return self._task_id
 
-    @finished_time.setter
-    def finished_time(self, finished_time):
-        """Sets the finished_time of this ShowConsistencyResultResponse.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this ShowConsistencyResultResponse.
 
-        检验完成时间
+        任务id
 
-        :param finished_time: The finished_time of this ShowConsistencyResultResponse.
-        :type finished_time: int
+        :param task_id: The task_id of this ShowConsistencyResultResponse.
+        :type task_id: str
         """
-        self._finished_time = finished_time
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,7 +30,7 @@ class UpdateTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 更新指定ID的迁移任务
         :type body: str
         """
         
@@ -46,6 +46,8 @@ class UpdateTaskResponse(SdkResponse):
     def body(self):
         """Gets the body of this UpdateTaskResponse.
 
+        更新指定ID的迁移任务
+
         :return: The body of this UpdateTaskResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class UpdateTaskResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTaskResponse.
+
+        更新指定ID的迁移任务
 
         :param body: The body of this UpdateTaskResponse.
         :type body: str

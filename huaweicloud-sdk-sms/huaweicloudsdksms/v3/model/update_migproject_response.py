@@ -30,7 +30,7 @@ class UpdateMigprojectResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 修改默认迁移项目信息成功
         :type body: str
         """
         
@@ -46,6 +46,8 @@ class UpdateMigprojectResponse(SdkResponse):
     def body(self):
         """Gets the body of this UpdateMigprojectResponse.
 
+        修改默认迁移项目信息成功
+
         :return: The body of this UpdateMigprojectResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class UpdateMigprojectResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMigprojectResponse.
+
+        修改默认迁移项目信息成功
 
         :param body: The body of this UpdateMigprojectResponse.
         :type body: str

@@ -20,10 +20,12 @@ class UpdateResponseVpnGateway:
         'id': 'str',
         'name': 'str',
         'attachment_type': 'str',
+        'ip_version': 'str',
         'certificate_id': 'str',
         'er_id': 'str',
         'vpc_id': 'str',
         'local_subnets': 'list[str]',
+        'local_subnets_v6': 'list[str]',
         'connect_subnet': 'str',
         'network_type': 'str',
         'access_vpc_id': 'str',
@@ -50,10 +52,12 @@ class UpdateResponseVpnGateway:
         'id': 'id',
         'name': 'name',
         'attachment_type': 'attachment_type',
+        'ip_version': 'ip_version',
         'certificate_id': 'certificate_id',
         'er_id': 'er_id',
         'vpc_id': 'vpc_id',
         'local_subnets': 'local_subnets',
+        'local_subnets_v6': 'local_subnets_v6',
         'connect_subnet': 'connect_subnet',
         'network_type': 'network_type',
         'access_vpc_id': 'access_vpc_id',
@@ -76,7 +80,7 @@ class UpdateResponseVpnGateway:
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, tags=None):
+    def __init__(self, id=None, name=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, tags=None):
         """UpdateResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,8 @@ class UpdateResponseVpnGateway:
         :type name: str
         :param attachment_type: 关联模式
         :type attachment_type: str
+        :param ip_version: 网关的IP协议版本
+        :type ip_version: str
         :param certificate_id: 
         :type certificate_id: str
         :param er_id: VPN网关所连接的ER实例的ID
@@ -95,6 +101,8 @@ class UpdateResponseVpnGateway:
         :type vpc_id: str
         :param local_subnets: 本端子网
         :type local_subnets: list[str]
+        :param local_subnets_v6: 使能ipv6的本端子网
+        :type local_subnets_v6: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
         :param network_type: VPN网关的网络类型，默认为公网(public)
@@ -142,10 +150,12 @@ class UpdateResponseVpnGateway:
         self._id = None
         self._name = None
         self._attachment_type = None
+        self._ip_version = None
         self._certificate_id = None
         self._er_id = None
         self._vpc_id = None
         self._local_subnets = None
+        self._local_subnets_v6 = None
         self._connect_subnet = None
         self._network_type = None
         self._access_vpc_id = None
@@ -174,6 +184,8 @@ class UpdateResponseVpnGateway:
             self.name = name
         if attachment_type is not None:
             self.attachment_type = attachment_type
+        if ip_version is not None:
+            self.ip_version = ip_version
         if certificate_id is not None:
             self.certificate_id = certificate_id
         if er_id is not None:
@@ -182,6 +194,8 @@ class UpdateResponseVpnGateway:
             self.vpc_id = vpc_id
         if local_subnets is not None:
             self.local_subnets = local_subnets
+        if local_subnets_v6 is not None:
+            self.local_subnets_v6 = local_subnets_v6
         if connect_subnet is not None:
             self.connect_subnet = connect_subnet
         if network_type is not None:
@@ -290,6 +304,28 @@ class UpdateResponseVpnGateway:
         self._attachment_type = attachment_type
 
     @property
+    def ip_version(self):
+        """Gets the ip_version of this UpdateResponseVpnGateway.
+
+        网关的IP协议版本
+
+        :return: The ip_version of this UpdateResponseVpnGateway.
+        :rtype: str
+        """
+        return self._ip_version
+
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this UpdateResponseVpnGateway.
+
+        网关的IP协议版本
+
+        :param ip_version: The ip_version of this UpdateResponseVpnGateway.
+        :type ip_version: str
+        """
+        self._ip_version = ip_version
+
+    @property
     def certificate_id(self):
         """Gets the certificate_id of this UpdateResponseVpnGateway.
 
@@ -372,6 +408,28 @@ class UpdateResponseVpnGateway:
         :type local_subnets: list[str]
         """
         self._local_subnets = local_subnets
+
+    @property
+    def local_subnets_v6(self):
+        """Gets the local_subnets_v6 of this UpdateResponseVpnGateway.
+
+        使能ipv6的本端子网
+
+        :return: The local_subnets_v6 of this UpdateResponseVpnGateway.
+        :rtype: list[str]
+        """
+        return self._local_subnets_v6
+
+    @local_subnets_v6.setter
+    def local_subnets_v6(self, local_subnets_v6):
+        """Sets the local_subnets_v6 of this UpdateResponseVpnGateway.
+
+        使能ipv6的本端子网
+
+        :param local_subnets_v6: The local_subnets_v6 of this UpdateResponseVpnGateway.
+        :type local_subnets_v6: list[str]
+        """
+        self._local_subnets_v6 = local_subnets_v6
 
     @property
     def connect_subnet(self):

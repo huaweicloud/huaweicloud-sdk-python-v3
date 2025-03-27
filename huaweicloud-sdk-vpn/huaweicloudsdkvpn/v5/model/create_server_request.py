@@ -68,10 +68,12 @@ class CreateServerRequest:
         self._ssl_options = None
         self.discriminator = None
 
-        self.tunnel_protocol = tunnel_protocol
+        if tunnel_protocol is not None:
+            self.tunnel_protocol = tunnel_protocol
         self.client_cidr = client_cidr
         self.local_subnets = local_subnets
-        self.client_auth_type = client_auth_type
+        if client_auth_type is not None:
+            self.client_auth_type = client_auth_type
         if server_certificate is not None:
             self.server_certificate = server_certificate
         if client_ca_certificates is not None:

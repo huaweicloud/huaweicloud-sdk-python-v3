@@ -51,6 +51,7 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_timeout': 'int',
         'heartbeat_handler': 'str',
         'enable_class_isolation': 'bool',
+        'enable_lts_log': 'bool',
         'lts_custom_tag': 'dict(str, str)'
     }
 
@@ -89,10 +90,11 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_timeout': 'restore_hook_timeout',
         'heartbeat_handler': 'heartbeat_handler',
         'enable_class_isolation': 'enable_class_isolation',
+        'enable_lts_log': 'enable_lts_log',
         'lts_custom_tag': 'lts_custom_tag'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, lts_custom_tag=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, enable_lts_log=None, lts_custom_tag=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -165,6 +167,8 @@ class UpdateFunctionConfigRequestBody:
         :type heartbeat_handler: str
         :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
         :type enable_class_isolation: bool
+        :param enable_lts_log: 是否开启日志。
+        :type enable_lts_log: bool
         :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
         :type lts_custom_tag: dict(str, str)
         """
@@ -205,6 +209,7 @@ class UpdateFunctionConfigRequestBody:
         self._restore_hook_timeout = None
         self._heartbeat_handler = None
         self._enable_class_isolation = None
+        self._enable_lts_log = None
         self._lts_custom_tag = None
         self.discriminator = None
 
@@ -271,6 +276,8 @@ class UpdateFunctionConfigRequestBody:
             self.heartbeat_handler = heartbeat_handler
         if enable_class_isolation is not None:
             self.enable_class_isolation = enable_class_isolation
+        if enable_lts_log is not None:
+            self.enable_lts_log = enable_lts_log
         if lts_custom_tag is not None:
             self.lts_custom_tag = lts_custom_tag
 
@@ -997,6 +1004,28 @@ class UpdateFunctionConfigRequestBody:
         :type enable_class_isolation: bool
         """
         self._enable_class_isolation = enable_class_isolation
+
+    @property
+    def enable_lts_log(self):
+        """Gets the enable_lts_log of this UpdateFunctionConfigRequestBody.
+
+        是否开启日志。
+
+        :return: The enable_lts_log of this UpdateFunctionConfigRequestBody.
+        :rtype: bool
+        """
+        return self._enable_lts_log
+
+    @enable_lts_log.setter
+    def enable_lts_log(self, enable_lts_log):
+        """Sets the enable_lts_log of this UpdateFunctionConfigRequestBody.
+
+        是否开启日志。
+
+        :param enable_lts_log: The enable_lts_log of this UpdateFunctionConfigRequestBody.
+        :type enable_lts_log: bool
+        """
+        self._enable_lts_log = enable_lts_log
 
     @property
     def lts_custom_tag(self):

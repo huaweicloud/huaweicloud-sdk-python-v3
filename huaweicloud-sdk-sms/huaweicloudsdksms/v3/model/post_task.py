@@ -35,7 +35,10 @@ class PostTask:
         'use_ipv6': 'bool',
         'syncing': 'bool',
         'exist_server': 'bool',
-        'start_network_check': 'bool'
+        'start_network_check': 'bool',
+        'speed_limit': 'int',
+        'over_speed_threshold': 'float',
+        'is_need_consistency_check': 'bool'
     }
 
     attribute_map = {
@@ -57,10 +60,13 @@ class PostTask:
         'use_ipv6': 'use_ipv6',
         'syncing': 'syncing',
         'exist_server': 'exist_server',
-        'start_network_check': 'start_network_check'
+        'start_network_check': 'start_network_check',
+        'speed_limit': 'speed_limit',
+        'over_speed_threshold': 'over_speed_threshold',
+        'is_need_consistency_check': 'is_need_consistency_check'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None):
+    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None):
         """PostTask
 
         The model defined in huaweicloud sdk
@@ -103,6 +109,12 @@ class PostTask:
         :type exist_server: bool
         :param start_network_check: 是否开启网络检测
         :type start_network_check: bool
+        :param speed_limit: 迁移速率限制值
+        :type speed_limit: int
+        :param over_speed_threshold: 停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+        :type over_speed_threshold: float
+        :param is_need_consistency_check: 是否进行一致性校验
+        :type is_need_consistency_check: bool
         """
         
         
@@ -126,6 +138,9 @@ class PostTask:
         self._syncing = None
         self._exist_server = None
         self._start_network_check = None
+        self._speed_limit = None
+        self._over_speed_threshold = None
+        self._is_need_consistency_check = None
         self.discriminator = None
 
         self.name = name
@@ -157,6 +172,12 @@ class PostTask:
             self.exist_server = exist_server
         if start_network_check is not None:
             self.start_network_check = start_network_check
+        if speed_limit is not None:
+            self.speed_limit = speed_limit
+        if over_speed_threshold is not None:
+            self.over_speed_threshold = over_speed_threshold
+        if is_need_consistency_check is not None:
+            self.is_need_consistency_check = is_need_consistency_check
 
     @property
     def name(self):
@@ -567,6 +588,72 @@ class PostTask:
         :type start_network_check: bool
         """
         self._start_network_check = start_network_check
+
+    @property
+    def speed_limit(self):
+        """Gets the speed_limit of this PostTask.
+
+        迁移速率限制值
+
+        :return: The speed_limit of this PostTask.
+        :rtype: int
+        """
+        return self._speed_limit
+
+    @speed_limit.setter
+    def speed_limit(self, speed_limit):
+        """Sets the speed_limit of this PostTask.
+
+        迁移速率限制值
+
+        :param speed_limit: The speed_limit of this PostTask.
+        :type speed_limit: int
+        """
+        self._speed_limit = speed_limit
+
+    @property
+    def over_speed_threshold(self):
+        """Gets the over_speed_threshold of this PostTask.
+
+        停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+
+        :return: The over_speed_threshold of this PostTask.
+        :rtype: float
+        """
+        return self._over_speed_threshold
+
+    @over_speed_threshold.setter
+    def over_speed_threshold(self, over_speed_threshold):
+        """Sets the over_speed_threshold of this PostTask.
+
+        停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
+
+        :param over_speed_threshold: The over_speed_threshold of this PostTask.
+        :type over_speed_threshold: float
+        """
+        self._over_speed_threshold = over_speed_threshold
+
+    @property
+    def is_need_consistency_check(self):
+        """Gets the is_need_consistency_check of this PostTask.
+
+        是否进行一致性校验
+
+        :return: The is_need_consistency_check of this PostTask.
+        :rtype: bool
+        """
+        return self._is_need_consistency_check
+
+    @is_need_consistency_check.setter
+    def is_need_consistency_check(self, is_need_consistency_check):
+        """Sets the is_need_consistency_check of this PostTask.
+
+        是否进行一致性校验
+
+        :param is_need_consistency_check: The is_need_consistency_check of this PostTask.
+        :type is_need_consistency_check: bool
+        """
+        self._is_need_consistency_check = is_need_consistency_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

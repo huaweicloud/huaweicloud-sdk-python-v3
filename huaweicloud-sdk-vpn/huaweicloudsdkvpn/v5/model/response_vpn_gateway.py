@@ -21,10 +21,13 @@ class ResponseVpnGateway:
         'name': 'str',
         'status': 'str',
         'attachment_type': 'str',
+        'ip_version': 'str',
         'certificate_id': 'str',
         'er_id': 'str',
+        'er_attachment_id': 'str',
         'vpc_id': 'str',
         'local_subnets': 'list[str]',
+        'local_subnets_v6': 'list[str]',
         'connect_subnet': 'str',
         'network_type': 'str',
         'access_vpc_id': 'str',
@@ -34,6 +37,7 @@ class ResponseVpnGateway:
         'bgp_asn': 'int',
         'flavor': 'str',
         'availability_zone_ids': 'list[str]',
+        'public_border_group': 'str',
         'connection_number': 'int',
         'used_connection_number': 'int',
         'used_connection_group': 'int',
@@ -45,6 +49,7 @@ class ResponseVpnGateway:
         'updated_at': 'datetime',
         'policy_template': 'PolicyTemplate',
         'supported_flavors': 'list[str]',
+        'supported_features': 'list[str]',
         'tags': 'list[VpnResourceTag]'
     }
 
@@ -53,10 +58,13 @@ class ResponseVpnGateway:
         'name': 'name',
         'status': 'status',
         'attachment_type': 'attachment_type',
+        'ip_version': 'ip_version',
         'certificate_id': 'certificate_id',
         'er_id': 'er_id',
+        'er_attachment_id': 'er_attachment_id',
         'vpc_id': 'vpc_id',
         'local_subnets': 'local_subnets',
+        'local_subnets_v6': 'local_subnets_v6',
         'connect_subnet': 'connect_subnet',
         'network_type': 'network_type',
         'access_vpc_id': 'access_vpc_id',
@@ -66,6 +74,7 @@ class ResponseVpnGateway:
         'bgp_asn': 'bgp_asn',
         'flavor': 'flavor',
         'availability_zone_ids': 'availability_zone_ids',
+        'public_border_group': 'public_border_group',
         'connection_number': 'connection_number',
         'used_connection_number': 'used_connection_number',
         'used_connection_group': 'used_connection_group',
@@ -77,10 +86,11 @@ class ResponseVpnGateway:
         'updated_at': 'updated_at',
         'policy_template': 'policy_template',
         'supported_flavors': 'supported_flavors',
+        'supported_features': 'supported_features',
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, supported_flavors=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, er_attachment_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, public_border_group=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, supported_flavors=None, supported_features=None, tags=None):
         """ResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -93,14 +103,20 @@ class ResponseVpnGateway:
         :type status: str
         :param attachment_type: 关联模式
         :type attachment_type: str
+        :param ip_version: 网关的IP协议版本
+        :type ip_version: str
         :param certificate_id: 
         :type certificate_id: str
         :param er_id: VPN网关所连接的ER实例的ID
         :type er_id: str
+        :param er_attachment_id: VPN网关关联的ER连接ID
+        :type er_attachment_id: str
         :param vpc_id: VPN网关所连接的VPC的ID
         :type vpc_id: str
         :param local_subnets: 本端子网
         :type local_subnets: list[str]
+        :param local_subnets_v6: 使能ipv6的本端子网
+        :type local_subnets_v6: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
         :param network_type: VPN网关的网络类型，默认为公网(public)
@@ -119,6 +135,8 @@ class ResponseVpnGateway:
         :type flavor: str
         :param availability_zone_ids: 可用区列表
         :type availability_zone_ids: list[str]
+        :param public_border_group: 公共边界组
+        :type public_border_group: str
         :param connection_number: 最大可创建的VPN连接数
         :type connection_number: int
         :param used_connection_number: 当前已经使用的VPN连接数
@@ -141,6 +159,8 @@ class ResponseVpnGateway:
         :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
         :param supported_flavors: 网关可升配到的目标规格
         :type supported_flavors: list[str]
+        :param supported_features: 网关可支持的特性功能
+        :type supported_features: list[str]
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
@@ -151,10 +171,13 @@ class ResponseVpnGateway:
         self._name = None
         self._status = None
         self._attachment_type = None
+        self._ip_version = None
         self._certificate_id = None
         self._er_id = None
+        self._er_attachment_id = None
         self._vpc_id = None
         self._local_subnets = None
+        self._local_subnets_v6 = None
         self._connect_subnet = None
         self._network_type = None
         self._access_vpc_id = None
@@ -164,6 +187,7 @@ class ResponseVpnGateway:
         self._bgp_asn = None
         self._flavor = None
         self._availability_zone_ids = None
+        self._public_border_group = None
         self._connection_number = None
         self._used_connection_number = None
         self._used_connection_group = None
@@ -175,6 +199,7 @@ class ResponseVpnGateway:
         self._updated_at = None
         self._policy_template = None
         self._supported_flavors = None
+        self._supported_features = None
         self._tags = None
         self.discriminator = None
 
@@ -186,14 +211,20 @@ class ResponseVpnGateway:
             self.status = status
         if attachment_type is not None:
             self.attachment_type = attachment_type
+        if ip_version is not None:
+            self.ip_version = ip_version
         if certificate_id is not None:
             self.certificate_id = certificate_id
         if er_id is not None:
             self.er_id = er_id
+        if er_attachment_id is not None:
+            self.er_attachment_id = er_attachment_id
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if local_subnets is not None:
             self.local_subnets = local_subnets
+        if local_subnets_v6 is not None:
+            self.local_subnets_v6 = local_subnets_v6
         if connect_subnet is not None:
             self.connect_subnet = connect_subnet
         if network_type is not None:
@@ -212,6 +243,8 @@ class ResponseVpnGateway:
             self.flavor = flavor
         if availability_zone_ids is not None:
             self.availability_zone_ids = availability_zone_ids
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
         if connection_number is not None:
             self.connection_number = connection_number
         if used_connection_number is not None:
@@ -234,6 +267,8 @@ class ResponseVpnGateway:
             self.policy_template = policy_template
         if supported_flavors is not None:
             self.supported_flavors = supported_flavors
+        if supported_features is not None:
+            self.supported_features = supported_features
         if tags is not None:
             self.tags = tags
 
@@ -326,6 +361,28 @@ class ResponseVpnGateway:
         self._attachment_type = attachment_type
 
     @property
+    def ip_version(self):
+        """Gets the ip_version of this ResponseVpnGateway.
+
+        网关的IP协议版本
+
+        :return: The ip_version of this ResponseVpnGateway.
+        :rtype: str
+        """
+        return self._ip_version
+
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this ResponseVpnGateway.
+
+        网关的IP协议版本
+
+        :param ip_version: The ip_version of this ResponseVpnGateway.
+        :type ip_version: str
+        """
+        self._ip_version = ip_version
+
+    @property
     def certificate_id(self):
         """Gets the certificate_id of this ResponseVpnGateway.
 
@@ -364,6 +421,28 @@ class ResponseVpnGateway:
         :type er_id: str
         """
         self._er_id = er_id
+
+    @property
+    def er_attachment_id(self):
+        """Gets the er_attachment_id of this ResponseVpnGateway.
+
+        VPN网关关联的ER连接ID
+
+        :return: The er_attachment_id of this ResponseVpnGateway.
+        :rtype: str
+        """
+        return self._er_attachment_id
+
+    @er_attachment_id.setter
+    def er_attachment_id(self, er_attachment_id):
+        """Sets the er_attachment_id of this ResponseVpnGateway.
+
+        VPN网关关联的ER连接ID
+
+        :param er_attachment_id: The er_attachment_id of this ResponseVpnGateway.
+        :type er_attachment_id: str
+        """
+        self._er_attachment_id = er_attachment_id
 
     @property
     def vpc_id(self):
@@ -408,6 +487,28 @@ class ResponseVpnGateway:
         :type local_subnets: list[str]
         """
         self._local_subnets = local_subnets
+
+    @property
+    def local_subnets_v6(self):
+        """Gets the local_subnets_v6 of this ResponseVpnGateway.
+
+        使能ipv6的本端子网
+
+        :return: The local_subnets_v6 of this ResponseVpnGateway.
+        :rtype: list[str]
+        """
+        return self._local_subnets_v6
+
+    @local_subnets_v6.setter
+    def local_subnets_v6(self, local_subnets_v6):
+        """Sets the local_subnets_v6 of this ResponseVpnGateway.
+
+        使能ipv6的本端子网
+
+        :param local_subnets_v6: The local_subnets_v6 of this ResponseVpnGateway.
+        :type local_subnets_v6: list[str]
+        """
+        self._local_subnets_v6 = local_subnets_v6
 
     @property
     def connect_subnet(self):
@@ -606,6 +707,28 @@ class ResponseVpnGateway:
         :type availability_zone_ids: list[str]
         """
         self._availability_zone_ids = availability_zone_ids
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ResponseVpnGateway.
+
+        公共边界组
+
+        :return: The public_border_group of this ResponseVpnGateway.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ResponseVpnGateway.
+
+        公共边界组
+
+        :param public_border_group: The public_border_group of this ResponseVpnGateway.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     @property
     def connection_number(self):
@@ -836,6 +959,28 @@ class ResponseVpnGateway:
         :type supported_flavors: list[str]
         """
         self._supported_flavors = supported_flavors
+
+    @property
+    def supported_features(self):
+        """Gets the supported_features of this ResponseVpnGateway.
+
+        网关可支持的特性功能
+
+        :return: The supported_features of this ResponseVpnGateway.
+        :rtype: list[str]
+        """
+        return self._supported_features
+
+    @supported_features.setter
+    def supported_features(self, supported_features):
+        """Sets the supported_features of this ResponseVpnGateway.
+
+        网关可支持的特性功能
+
+        :param supported_features: The supported_features of this ResponseVpnGateway.
+        :type supported_features: list[str]
+        """
+        self._supported_features = supported_features
 
     @property
     def tags(self):

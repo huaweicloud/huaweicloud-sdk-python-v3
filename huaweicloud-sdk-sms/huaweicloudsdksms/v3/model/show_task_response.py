@@ -49,7 +49,13 @@ class ShowTaskResponse(SdkResponse):
         'target_snapshot_id': 'str',
         'clone_server': 'CloneServer',
         'sub_tasks': 'list[SubTask]',
-        'network_check_info': 'NetworkCheckInfoRequestBody'
+        'network_check_info': 'NetworkCheckInfoRequestBody',
+        'total_cpu_usage': 'float',
+        'agent_cpu_usage': 'float',
+        'total_mem_usage': 'float',
+        'agent_mem_usage': 'float',
+        'total_disk_io': 'float',
+        'agent_disk_io': 'float'
     }
 
     attribute_map = {
@@ -84,10 +90,16 @@ class ShowTaskResponse(SdkResponse):
         'target_snapshot_id': 'target_snapshot_id',
         'clone_server': 'clone_server',
         'sub_tasks': 'sub_tasks',
-        'network_check_info': 'network_check_info'
+        'network_check_info': 'network_check_info',
+        'total_cpu_usage': 'total_cpu_usage',
+        'agent_cpu_usage': 'agent_cpu_usage',
+        'total_mem_usage': 'total_mem_usage',
+        'agent_mem_usage': 'agent_mem_usage',
+        'total_disk_io': 'total_disk_io',
+        'agent_disk_io': 'agent_disk_io'
     }
 
-    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None, network_check_info=None):
+    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None, network_check_info=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
@@ -156,6 +168,18 @@ class ShowTaskResponse(SdkResponse):
         :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTask`]
         :param network_check_info: 
         :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        :param total_cpu_usage: 主机的CPU使用率，单位是百分比
+        :type total_cpu_usage: float
+        :param agent_cpu_usage: Agent的CPU使用率，单位是百分比
+        :type agent_cpu_usage: float
+        :param total_mem_usage: 主机的内存使用值，单位是MB
+        :type total_mem_usage: float
+        :param agent_mem_usage: Agent的内存使用值，单位是MB
+        :type agent_mem_usage: float
+        :param total_disk_io: 主机的磁盘I/O值，单位是MB/s
+        :type total_disk_io: float
+        :param agent_disk_io: Agent的磁盘I/O值，单位是MB/s
+        :type agent_disk_io: float
         """
         
         super(ShowTaskResponse, self).__init__()
@@ -192,6 +216,12 @@ class ShowTaskResponse(SdkResponse):
         self._clone_server = None
         self._sub_tasks = None
         self._network_check_info = None
+        self._total_cpu_usage = None
+        self._agent_cpu_usage = None
+        self._total_mem_usage = None
+        self._agent_mem_usage = None
+        self._total_disk_io = None
+        self._agent_disk_io = None
         self.discriminator = None
 
         if name is not None:
@@ -258,6 +288,18 @@ class ShowTaskResponse(SdkResponse):
             self.sub_tasks = sub_tasks
         if network_check_info is not None:
             self.network_check_info = network_check_info
+        if total_cpu_usage is not None:
+            self.total_cpu_usage = total_cpu_usage
+        if agent_cpu_usage is not None:
+            self.agent_cpu_usage = agent_cpu_usage
+        if total_mem_usage is not None:
+            self.total_mem_usage = total_mem_usage
+        if agent_mem_usage is not None:
+            self.agent_mem_usage = agent_mem_usage
+        if total_disk_io is not None:
+            self.total_disk_io = total_disk_io
+        if agent_disk_io is not None:
+            self.agent_disk_io = agent_disk_io
 
     @property
     def name(self):
@@ -946,6 +988,138 @@ class ShowTaskResponse(SdkResponse):
         :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
         """
         self._network_check_info = network_check_info
+
+    @property
+    def total_cpu_usage(self):
+        """Gets the total_cpu_usage of this ShowTaskResponse.
+
+        主机的CPU使用率，单位是百分比
+
+        :return: The total_cpu_usage of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._total_cpu_usage
+
+    @total_cpu_usage.setter
+    def total_cpu_usage(self, total_cpu_usage):
+        """Sets the total_cpu_usage of this ShowTaskResponse.
+
+        主机的CPU使用率，单位是百分比
+
+        :param total_cpu_usage: The total_cpu_usage of this ShowTaskResponse.
+        :type total_cpu_usage: float
+        """
+        self._total_cpu_usage = total_cpu_usage
+
+    @property
+    def agent_cpu_usage(self):
+        """Gets the agent_cpu_usage of this ShowTaskResponse.
+
+        Agent的CPU使用率，单位是百分比
+
+        :return: The agent_cpu_usage of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._agent_cpu_usage
+
+    @agent_cpu_usage.setter
+    def agent_cpu_usage(self, agent_cpu_usage):
+        """Sets the agent_cpu_usage of this ShowTaskResponse.
+
+        Agent的CPU使用率，单位是百分比
+
+        :param agent_cpu_usage: The agent_cpu_usage of this ShowTaskResponse.
+        :type agent_cpu_usage: float
+        """
+        self._agent_cpu_usage = agent_cpu_usage
+
+    @property
+    def total_mem_usage(self):
+        """Gets the total_mem_usage of this ShowTaskResponse.
+
+        主机的内存使用值，单位是MB
+
+        :return: The total_mem_usage of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._total_mem_usage
+
+    @total_mem_usage.setter
+    def total_mem_usage(self, total_mem_usage):
+        """Sets the total_mem_usage of this ShowTaskResponse.
+
+        主机的内存使用值，单位是MB
+
+        :param total_mem_usage: The total_mem_usage of this ShowTaskResponse.
+        :type total_mem_usage: float
+        """
+        self._total_mem_usage = total_mem_usage
+
+    @property
+    def agent_mem_usage(self):
+        """Gets the agent_mem_usage of this ShowTaskResponse.
+
+        Agent的内存使用值，单位是MB
+
+        :return: The agent_mem_usage of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._agent_mem_usage
+
+    @agent_mem_usage.setter
+    def agent_mem_usage(self, agent_mem_usage):
+        """Sets the agent_mem_usage of this ShowTaskResponse.
+
+        Agent的内存使用值，单位是MB
+
+        :param agent_mem_usage: The agent_mem_usage of this ShowTaskResponse.
+        :type agent_mem_usage: float
+        """
+        self._agent_mem_usage = agent_mem_usage
+
+    @property
+    def total_disk_io(self):
+        """Gets the total_disk_io of this ShowTaskResponse.
+
+        主机的磁盘I/O值，单位是MB/s
+
+        :return: The total_disk_io of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._total_disk_io
+
+    @total_disk_io.setter
+    def total_disk_io(self, total_disk_io):
+        """Sets the total_disk_io of this ShowTaskResponse.
+
+        主机的磁盘I/O值，单位是MB/s
+
+        :param total_disk_io: The total_disk_io of this ShowTaskResponse.
+        :type total_disk_io: float
+        """
+        self._total_disk_io = total_disk_io
+
+    @property
+    def agent_disk_io(self):
+        """Gets the agent_disk_io of this ShowTaskResponse.
+
+        Agent的磁盘I/O值，单位是MB/s
+
+        :return: The agent_disk_io of this ShowTaskResponse.
+        :rtype: float
+        """
+        return self._agent_disk_io
+
+    @agent_disk_io.setter
+    def agent_disk_io(self, agent_disk_io):
+        """Sets the agent_disk_io of this ShowTaskResponse.
+
+        Agent的磁盘I/O值，单位是MB/s
+
+        :param agent_disk_io: The agent_disk_io of this ShowTaskResponse.
+        :type agent_disk_io: float
+        """
+        self._agent_disk_io = agent_disk_io
 
     def to_dict(self):
         """Returns the model properties as a dict"""

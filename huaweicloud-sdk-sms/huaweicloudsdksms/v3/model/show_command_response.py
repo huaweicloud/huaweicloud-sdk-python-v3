@@ -19,7 +19,7 @@ class ShowCommandResponse(SdkResponse):
 
     openapi_types = {
         'command_name': 'str',
-        'command_param': 'ComandParam'
+        'command_param': 'CommandParam'
     }
 
     attribute_map = {
@@ -32,10 +32,10 @@ class ShowCommandResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param command_name: 命令名称，分为：START、STOP、DELETE、SYNC
+        :param command_name: 命令名称，分为：START、STOP、DELETE、SYNC、SKIP
         :type command_name: str
         :param command_param: 
-        :type command_param: :class:`huaweicloudsdksms.v3.ComandParam`
+        :type command_param: :class:`huaweicloudsdksms.v3.CommandParam`
         """
         
         super(ShowCommandResponse, self).__init__()
@@ -53,7 +53,7 @@ class ShowCommandResponse(SdkResponse):
     def command_name(self):
         """Gets the command_name of this ShowCommandResponse.
 
-        命令名称，分为：START、STOP、DELETE、SYNC
+        命令名称，分为：START、STOP、DELETE、SYNC、SKIP
 
         :return: The command_name of this ShowCommandResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowCommandResponse(SdkResponse):
     def command_name(self, command_name):
         """Sets the command_name of this ShowCommandResponse.
 
-        命令名称，分为：START、STOP、DELETE、SYNC
+        命令名称，分为：START、STOP、DELETE、SYNC、SKIP
 
         :param command_name: The command_name of this ShowCommandResponse.
         :type command_name: str
@@ -76,7 +76,7 @@ class ShowCommandResponse(SdkResponse):
         """Gets the command_param of this ShowCommandResponse.
 
         :return: The command_param of this ShowCommandResponse.
-        :rtype: :class:`huaweicloudsdksms.v3.ComandParam`
+        :rtype: :class:`huaweicloudsdksms.v3.CommandParam`
         """
         return self._command_param
 
@@ -85,7 +85,7 @@ class ShowCommandResponse(SdkResponse):
         """Sets the command_param of this ShowCommandResponse.
 
         :param command_param: The command_param of this ShowCommandResponse.
-        :type command_param: :class:`huaweicloudsdksms.v3.ComandParam`
+        :type command_param: :class:`huaweicloudsdksms.v3.CommandParam`
         """
         self._command_param = command_param
 

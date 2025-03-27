@@ -17,6 +17,7 @@ class UpdateFields:
     sensitive_list = []
 
     openapi_types = {
+        'upsert': 'dict',
         'set': 'dict',
         'add': 'dict',
         'rmv': 'list[str]',
@@ -24,17 +25,20 @@ class UpdateFields:
     }
 
     attribute_map = {
+        'upsert': 'upsert',
         'set': 'set',
         'add': 'add',
         'rmv': 'rmv',
         'insert': 'insert'
     }
 
-    def __init__(self, set=None, add=None, rmv=None, insert=None):
+    def __init__(self, upsert=None, set=None, add=None, rmv=None, insert=None):
         """UpdateFields
 
         The model defined in huaweicloud sdk
 
+        :param upsert: 文档不存在时，插入该完整文档。
+        :type upsert: dict
         :param set: 新增或覆盖更新1个或多个字段的值。 &gt; 禁止修改sortkey的字段。
         :type set: dict
         :param add: 对1个或多个字段做加法运算，并更新为运算后的值。
@@ -47,12 +51,15 @@ class UpdateFields:
         
         
 
+        self._upsert = None
         self._set = None
         self._add = None
         self._rmv = None
         self._insert = None
         self.discriminator = None
 
+        if upsert is not None:
+            self.upsert = upsert
         if set is not None:
             self.set = set
         if add is not None:
@@ -61,6 +68,28 @@ class UpdateFields:
             self.rmv = rmv
         if insert is not None:
             self.insert = insert
+
+    @property
+    def upsert(self):
+        """Gets the upsert of this UpdateFields.
+
+        文档不存在时，插入该完整文档。
+
+        :return: The upsert of this UpdateFields.
+        :rtype: dict
+        """
+        return self._upsert
+
+    @upsert.setter
+    def upsert(self, upsert):
+        """Sets the upsert of this UpdateFields.
+
+        文档不存在时，插入该完整文档。
+
+        :param upsert: The upsert of this UpdateFields.
+        :type upsert: dict
+        """
+        self._upsert = upsert
 
     @property
     def set(self):

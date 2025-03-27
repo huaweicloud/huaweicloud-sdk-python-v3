@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ComandParam:
+class ExportClientConfigRequestBody:
 
     """
     Attributes:
@@ -17,80 +17,51 @@ class ComandParam:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str',
-        'bucket': 'str'
+        'os_type': 'str'
     }
 
     attribute_map = {
-        'task_id': 'task_id',
-        'bucket': 'bucket'
+        'os_type': 'os_type'
     }
 
-    def __init__(self, task_id=None, bucket=None):
-        """ComandParam
+    def __init__(self, os_type=None):
+        """ExportClientConfigRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
-        :type task_id: str
-        :param bucket: 桶名
-        :type bucket: str
+        :param os_type: 操作系统类型
+        :type os_type: str
         """
         
         
 
-        self._task_id = None
-        self._bucket = None
+        self._os_type = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
-        if bucket is not None:
-            self.bucket = bucket
+        if os_type is not None:
+            self.os_type = os_type
 
     @property
-    def task_id(self):
-        """Gets the task_id of this ComandParam.
+    def os_type(self):
+        """Gets the os_type of this ExportClientConfigRequestBody.
 
-        任务ID
+        操作系统类型
 
-        :return: The task_id of this ComandParam.
+        :return: The os_type of this ExportClientConfigRequestBody.
         :rtype: str
         """
-        return self._task_id
+        return self._os_type
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ComandParam.
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this ExportClientConfigRequestBody.
 
-        任务ID
+        操作系统类型
 
-        :param task_id: The task_id of this ComandParam.
-        :type task_id: str
+        :param os_type: The os_type of this ExportClientConfigRequestBody.
+        :type os_type: str
         """
-        self._task_id = task_id
-
-    @property
-    def bucket(self):
-        """Gets the bucket of this ComandParam.
-
-        桶名
-
-        :return: The bucket of this ComandParam.
-        :rtype: str
-        """
-        return self._bucket
-
-    @bucket.setter
-    def bucket(self, bucket):
-        """Sets the bucket of this ComandParam.
-
-        桶名
-
-        :param bucket: The bucket of this ComandParam.
-        :type bucket: str
-        """
-        self._bucket = bucket
+        self._os_type = os_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +105,7 @@ class ComandParam:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ComandParam):
+        if not isinstance(other, ExportClientConfigRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

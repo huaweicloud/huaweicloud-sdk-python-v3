@@ -128,7 +128,7 @@ if __name__ == "__main__":
     # Authentication can be configured through environment variables and other methods. Please refer to Chapter 2.4 Authentication Management
     # If project_id is not filled in, the SDK will automatically call the IAM service to query the project id corresponding to the region.
     credentials = BasicCredentials(os.getenv("HUAWEICLOUD_SDK_AK"), os.getenv("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
-            .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com")  # Configure the SDK built-in IAM service endpoint, default is https://iam.myhuaweicloud.com
+            .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com")  # Configure the SDK built-in IAM service endpoint
 
     # Use default configuration
     http_config = HttpConfig.get_default_config()
@@ -706,7 +706,11 @@ client = IamClient.new_builder() \
 
 ##### 3.3.1 IAM endpoint configuration [:top:](#user-manual-top)
 
-Automatically acquiring projectId/domainId will invoke the [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) /[KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) interface of IAM service. The default iam enpoint is `https://iam.myhuaweicloud.com`, **European station users need to specify the endpoint as https://iam.eu-west-101.myhuaweicloud.eu**, you can modify the endpoint in the following two ways:
+Automatically acquiring projectId/domainId will invoke the [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) /[KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) interface of IAM service.
+
+The endpoint being called will be queried from the [mapping table](./huaweicloud-sdk-core/huaweicloudsdkcore/auth/endpoint.py), and if it cannot be found, the default value **https://iam.myhuaweicloud.com** will be used.
+
+**European station users need to specify the endpoint as https://iam.eu-west-101.myhuaweicloud.eu**, you can modify the endpoint in the following two ways.
 
 ###### 3.3.1.1 Global scope [:top:](#user-manual-top)
 
