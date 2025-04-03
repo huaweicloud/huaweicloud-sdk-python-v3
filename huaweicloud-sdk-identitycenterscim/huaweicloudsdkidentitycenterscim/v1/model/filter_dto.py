@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ConfirmSmartLiveRoomReq:
+class FilterDto:
 
     """
     Attributes:
@@ -17,80 +17,80 @@ class ConfirmSmartLiveRoomReq:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str',
-        'script_version': 'str'
+        'supported': 'bool',
+        'max_results': 'int'
     }
 
     attribute_map = {
-        'action': 'action',
-        'script_version': 'script_version'
+        'supported': 'supported',
+        'max_results': 'maxResults'
     }
 
-    def __init__(self, action=None, script_version=None):
-        """ConfirmSmartLiveRoomReq
+    def __init__(self, supported=None, max_results=None):
+        """FilterDto
 
         The model defined in huaweicloud sdk
 
-        :param action: 确认操作。 * confirm: 确认。 * reject: 拒绝。
-        :type action: str
-        :param script_version: 剧本版本。从查询直播间详情接口中获取。
-        :type script_version: str
+        :param supported: 一个布尔值，表示服务提供商是否支持这种操作
+        :type supported: bool
+        :param max_results: 最大结果数
+        :type max_results: int
         """
         
         
 
-        self._action = None
-        self._script_version = None
+        self._supported = None
+        self._max_results = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
-        if script_version is not None:
-            self.script_version = script_version
+        if supported is not None:
+            self.supported = supported
+        if max_results is not None:
+            self.max_results = max_results
 
     @property
-    def action(self):
-        """Gets the action of this ConfirmSmartLiveRoomReq.
+    def supported(self):
+        """Gets the supported of this FilterDto.
 
-        确认操作。 * confirm: 确认。 * reject: 拒绝。
+        一个布尔值，表示服务提供商是否支持这种操作
 
-        :return: The action of this ConfirmSmartLiveRoomReq.
-        :rtype: str
+        :return: The supported of this FilterDto.
+        :rtype: bool
         """
-        return self._action
+        return self._supported
 
-    @action.setter
-    def action(self, action):
-        """Sets the action of this ConfirmSmartLiveRoomReq.
+    @supported.setter
+    def supported(self, supported):
+        """Sets the supported of this FilterDto.
 
-        确认操作。 * confirm: 确认。 * reject: 拒绝。
+        一个布尔值，表示服务提供商是否支持这种操作
 
-        :param action: The action of this ConfirmSmartLiveRoomReq.
-        :type action: str
+        :param supported: The supported of this FilterDto.
+        :type supported: bool
         """
-        self._action = action
+        self._supported = supported
 
     @property
-    def script_version(self):
-        """Gets the script_version of this ConfirmSmartLiveRoomReq.
+    def max_results(self):
+        """Gets the max_results of this FilterDto.
 
-        剧本版本。从查询直播间详情接口中获取。
+        最大结果数
 
-        :return: The script_version of this ConfirmSmartLiveRoomReq.
-        :rtype: str
+        :return: The max_results of this FilterDto.
+        :rtype: int
         """
-        return self._script_version
+        return self._max_results
 
-    @script_version.setter
-    def script_version(self, script_version):
-        """Sets the script_version of this ConfirmSmartLiveRoomReq.
+    @max_results.setter
+    def max_results(self, max_results):
+        """Sets the max_results of this FilterDto.
 
-        剧本版本。从查询直播间详情接口中获取。
+        最大结果数
 
-        :param script_version: The script_version of this ConfirmSmartLiveRoomReq.
-        :type script_version: str
+        :param max_results: The max_results of this FilterDto.
+        :type max_results: int
         """
-        self._script_version = script_version
+        self._max_results = max_results
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +134,7 @@ class ConfirmSmartLiveRoomReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfirmSmartLiveRoomReq):
+        if not isinstance(other, FilterDto):
             return False
 
         return self.__dict__ == other.__dict__

@@ -20,17 +20,19 @@ class BackgroundConfigInfo:
         'background_type': 'str',
         'background_config': 'str',
         'background_color_config': 'str',
-        'background_asset_id': 'str'
+        'background_asset_id': 'str',
+        'background_image_config': 'BackgroundImageConfig'
     }
 
     attribute_map = {
         'background_type': 'background_type',
         'background_config': 'background_config',
         'background_color_config': 'background_color_config',
-        'background_asset_id': 'background_asset_id'
+        'background_asset_id': 'background_asset_id',
+        'background_image_config': 'background_image_config'
     }
 
-    def __init__(self, background_type=None, background_config=None, background_color_config=None, background_asset_id=None):
+    def __init__(self, background_type=None, background_config=None, background_color_config=None, background_asset_id=None, background_image_config=None):
         """BackgroundConfigInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class BackgroundConfigInfo:
         :type background_color_config: str
         :param background_asset_id: **参数解释**： 背景资产ID。 &gt; 背景是背景图片时，填图片资产ID。  **约束限制**： 不涉及 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
         :type background_asset_id: str
+        :param background_image_config: 
+        :type background_image_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundImageConfig`
         """
         
         
@@ -51,6 +55,7 @@ class BackgroundConfigInfo:
         self._background_config = None
         self._background_color_config = None
         self._background_asset_id = None
+        self._background_image_config = None
         self.discriminator = None
 
         self.background_type = background_type
@@ -60,6 +65,8 @@ class BackgroundConfigInfo:
             self.background_color_config = background_color_config
         if background_asset_id is not None:
             self.background_asset_id = background_asset_id
+        if background_image_config is not None:
+            self.background_image_config = background_image_config
 
     @property
     def background_type(self):
@@ -148,6 +155,24 @@ class BackgroundConfigInfo:
         :type background_asset_id: str
         """
         self._background_asset_id = background_asset_id
+
+    @property
+    def background_image_config(self):
+        """Gets the background_image_config of this BackgroundConfigInfo.
+
+        :return: The background_image_config of this BackgroundConfigInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundImageConfig`
+        """
+        return self._background_image_config
+
+    @background_image_config.setter
+    def background_image_config(self, background_image_config):
+        """Sets the background_image_config of this BackgroundConfigInfo.
+
+        :param background_image_config: The background_image_config of this BackgroundConfigInfo.
+        :type background_image_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundImageConfig`
+        """
+        self._background_image_config = background_image_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

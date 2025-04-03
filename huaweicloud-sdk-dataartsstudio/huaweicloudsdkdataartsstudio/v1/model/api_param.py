@@ -25,7 +25,8 @@ class ApiParam:
         'publish_status_type': 'str',
         'api_specific_type_str': 'str',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'authorization_status_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ApiParam:
         'publish_status_type': 'publish_status_type',
         'api_specific_type_str': 'api_specific_type_str',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'authorization_status_type': 'authorization_status_type'
     }
 
-    def __init__(self, name=None, create_user=None, description=None, tags=None, table_name=None, publish_status_type=None, api_specific_type_str=None, start_time=None, end_time=None):
+    def __init__(self, name=None, create_user=None, description=None, tags=None, table_name=None, publish_status_type=None, api_specific_type_str=None, start_time=None, end_time=None, authorization_status_type=None):
         """ApiParam
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ApiParam:
         :type start_time: str
         :param end_time: API创建结束时间。
         :type end_time: str
+        :param authorization_status_type: 
+        :type authorization_status_type: str
         """
         
         
@@ -76,6 +80,7 @@ class ApiParam:
         self._api_specific_type_str = None
         self._start_time = None
         self._end_time = None
+        self._authorization_status_type = None
         self.discriminator = None
 
         if name is not None:
@@ -96,6 +101,8 @@ class ApiParam:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if authorization_status_type is not None:
+            self.authorization_status_type = authorization_status_type
 
     @property
     def name(self):
@@ -294,6 +301,24 @@ class ApiParam:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def authorization_status_type(self):
+        """Gets the authorization_status_type of this ApiParam.
+
+        :return: The authorization_status_type of this ApiParam.
+        :rtype: str
+        """
+        return self._authorization_status_type
+
+    @authorization_status_type.setter
+    def authorization_status_type(self, authorization_status_type):
+        """Sets the authorization_status_type of this ApiParam.
+
+        :param authorization_status_type: The authorization_status_type of this ApiParam.
+        :type authorization_status_type: str
+        """
+        self._authorization_status_type = authorization_status_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

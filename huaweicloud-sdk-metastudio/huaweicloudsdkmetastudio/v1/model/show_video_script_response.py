@@ -29,11 +29,12 @@ class ShowVideoScriptResponse(SdkResponse):
         'priv_data': 'str',
         'background_music_config': 'BackgroundMusicConfig',
         'review_config': 'ReviewConfig',
+        'audio_files': 'ShootScriptAudioFiles',
+        'action_config': 'ActionConfig',
         'shoot_scripts': 'list[ShootScriptShowItem]',
         'script_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
-        'audio_files': 'ShootScriptAudioFiles',
         'script_cover_url': 'str',
         'x_request_id': 'str'
     }
@@ -50,16 +51,17 @@ class ShowVideoScriptResponse(SdkResponse):
         'priv_data': 'priv_data',
         'background_music_config': 'background_music_config',
         'review_config': 'review_config',
+        'audio_files': 'audio_files',
+        'action_config': 'action_config',
         'shoot_scripts': 'shoot_scripts',
         'script_id': 'script_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'audio_files': 'audio_files',
         'script_cover_url': 'script_cover_url',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, shoot_scripts=None, script_id=None, create_time=None, update_time=None, audio_files=None, script_cover_url=None, x_request_id=None):
+    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None, script_id=None, create_time=None, update_time=None, script_cover_url=None, x_request_id=None):
         """ShowVideoScriptResponse
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,10 @@ class ShowVideoScriptResponse(SdkResponse):
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param audio_files: 
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        :param action_config: 
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
         :param shoot_scripts: 拍摄脚本列表。
         :type shoot_scripts: list[:class:`huaweicloudsdkmetastudio.v1.ShootScriptShowItem`]
         :param script_id: 剧本ID。
@@ -94,8 +100,6 @@ class ShowVideoScriptResponse(SdkResponse):
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type update_time: str
-        :param audio_files: 
-        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
         :param script_cover_url: 剧本封面下载url。
         :type script_cover_url: str
         :param x_request_id: 
@@ -115,11 +119,12 @@ class ShowVideoScriptResponse(SdkResponse):
         self._priv_data = None
         self._background_music_config = None
         self._review_config = None
+        self._audio_files = None
+        self._action_config = None
         self._shoot_scripts = None
         self._script_id = None
         self._create_time = None
         self._update_time = None
-        self._audio_files = None
         self._script_cover_url = None
         self._x_request_id = None
         self.discriminator = None
@@ -146,6 +151,10 @@ class ShowVideoScriptResponse(SdkResponse):
             self.background_music_config = background_music_config
         if review_config is not None:
             self.review_config = review_config
+        if audio_files is not None:
+            self.audio_files = audio_files
+        if action_config is not None:
+            self.action_config = action_config
         if shoot_scripts is not None:
             self.shoot_scripts = shoot_scripts
         if script_id is not None:
@@ -154,8 +163,6 @@ class ShowVideoScriptResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
-        if audio_files is not None:
-            self.audio_files = audio_files
         if script_cover_url is not None:
             self.script_cover_url = script_cover_url
         if x_request_id is not None:
@@ -388,6 +395,42 @@ class ShowVideoScriptResponse(SdkResponse):
         self._review_config = review_config
 
     @property
+    def audio_files(self):
+        """Gets the audio_files of this ShowVideoScriptResponse.
+
+        :return: The audio_files of this ShowVideoScriptResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        return self._audio_files
+
+    @audio_files.setter
+    def audio_files(self, audio_files):
+        """Sets the audio_files of this ShowVideoScriptResponse.
+
+        :param audio_files: The audio_files of this ShowVideoScriptResponse.
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        self._audio_files = audio_files
+
+    @property
+    def action_config(self):
+        """Gets the action_config of this ShowVideoScriptResponse.
+
+        :return: The action_config of this ShowVideoScriptResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        return self._action_config
+
+    @action_config.setter
+    def action_config(self, action_config):
+        """Sets the action_config of this ShowVideoScriptResponse.
+
+        :param action_config: The action_config of this ShowVideoScriptResponse.
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        self._action_config = action_config
+
+    @property
     def shoot_scripts(self):
         """Gets the shoot_scripts of this ShowVideoScriptResponse.
 
@@ -474,24 +517,6 @@ class ShowVideoScriptResponse(SdkResponse):
         :type update_time: str
         """
         self._update_time = update_time
-
-    @property
-    def audio_files(self):
-        """Gets the audio_files of this ShowVideoScriptResponse.
-
-        :return: The audio_files of this ShowVideoScriptResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
-        """
-        return self._audio_files
-
-    @audio_files.setter
-    def audio_files(self, audio_files):
-        """Sets the audio_files of this ShowVideoScriptResponse.
-
-        :param audio_files: The audio_files of this ShowVideoScriptResponse.
-        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
-        """
-        self._audio_files = audio_files
 
     @property
     def script_cover_url(self):

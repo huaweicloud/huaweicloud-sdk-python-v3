@@ -83,7 +83,9 @@ class AggregationLogicTableVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'EnvTypeEnum'
+        'env_type': 'EnvTypeEnum',
+        'model_id': 'str',
+        'model': 'WorkspaceVO'
     }
 
     attribute_map = {
@@ -153,10 +155,12 @@ class AggregationLogicTableVO:
         'prod_version': 'prod_version',
         'dev_version_name': 'dev_version_name',
         'prod_version_name': 'prod_version_name',
-        'env_type': 'env_type'
+        'env_type': 'env_type',
+        'model_id': 'model_id',
+        'model': 'model'
     }
 
-    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, owner=None, secret_type=None, apply_bg=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, schema=None, dw_name=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimension_group=None, group_name=None, group_code=None, time_period=None, table_attributes=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, publish_to_dlm=None, summary_status=None, distribute=None, distribute_column=None, compression=None, obs_location=None, pre_combine_field=None, table_type=None, dlf_task_id=None, quality_id=None, reversed=None, table_version=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, alias=None, configs=None, self_defined_fields=None, api_id=None, sql=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None):
+    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, owner=None, secret_type=None, apply_bg=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, schema=None, dw_name=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimension_group=None, group_name=None, group_code=None, time_period=None, table_attributes=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, publish_to_dlm=None, summary_status=None, distribute=None, distribute_column=None, compression=None, obs_location=None, pre_combine_field=None, table_type=None, dlf_task_id=None, quality_id=None, reversed=None, table_version=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, alias=None, configs=None, self_defined_fields=None, api_id=None, sql=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, model_id=None, model=None):
         """AggregationLogicTableVO
 
         The model defined in huaweicloud sdk
@@ -295,6 +299,10 @@ class AggregationLogicTableVO:
         :type prod_version_name: str
         :param env_type: 
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param model_id: 所属模型ID，ID字符串。
+        :type model_id: str
+        :param model: 
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
         """
         
         
@@ -366,6 +374,8 @@ class AggregationLogicTableVO:
         self._dev_version_name = None
         self._prod_version_name = None
         self._env_type = None
+        self._model_id = None
+        self._model = None
         self.discriminator = None
 
         if id is not None:
@@ -495,6 +505,10 @@ class AggregationLogicTableVO:
             self.prod_version_name = prod_version_name
         if env_type is not None:
             self.env_type = env_type
+        if model_id is not None:
+            self.model_id = model_id
+        if model is not None:
+            self.model = model
 
     @property
     def id(self):
@@ -1905,6 +1919,46 @@ class AggregationLogicTableVO:
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
+
+    @property
+    def model_id(self):
+        """Gets the model_id of this AggregationLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :return: The model_id of this AggregationLogicTableVO.
+        :rtype: str
+        """
+        return self._model_id
+
+    @model_id.setter
+    def model_id(self, model_id):
+        """Sets the model_id of this AggregationLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :param model_id: The model_id of this AggregationLogicTableVO.
+        :type model_id: str
+        """
+        self._model_id = model_id
+
+    @property
+    def model(self):
+        """Gets the model of this AggregationLogicTableVO.
+
+        :return: The model of this AggregationLogicTableVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        """Sets the model of this AggregationLogicTableVO.
+
+        :param model: The model of this AggregationLogicTableVO.
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        self._model = model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

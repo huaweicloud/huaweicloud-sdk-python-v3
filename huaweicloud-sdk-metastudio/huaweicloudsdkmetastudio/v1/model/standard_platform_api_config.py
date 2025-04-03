@@ -31,7 +31,7 @@ class StandardPlatformApiConfig:
 
         The model defined in huaweicloud sdk
 
-        :param api_type: API类型
+        :param api_type: API类型。 * PRODUCT_QUERY: 查询商品 * LIVE_EVENT_CALLBACK: 直播事件回调
         :type api_type: str
         :param url: URL。仅支持HTTPS形式URL
         :type url: str
@@ -50,7 +50,7 @@ class StandardPlatformApiConfig:
     def api_type(self):
         """Gets the api_type of this StandardPlatformApiConfig.
 
-        API类型
+        API类型。 * PRODUCT_QUERY: 查询商品 * LIVE_EVENT_CALLBACK: 直播事件回调
 
         :return: The api_type of this StandardPlatformApiConfig.
         :rtype: str
@@ -61,7 +61,7 @@ class StandardPlatformApiConfig:
     def api_type(self, api_type):
         """Sets the api_type of this StandardPlatformApiConfig.
 
-        API类型
+        API类型。 * PRODUCT_QUERY: 查询商品 * LIVE_EVENT_CALLBACK: 直播事件回调
 
         :param api_type: The api_type of this StandardPlatformApiConfig.
         :type api_type: str

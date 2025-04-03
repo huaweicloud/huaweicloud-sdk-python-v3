@@ -31,7 +31,7 @@ class ShowValueListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
         :param valuelistid: 引用表id，通过查询引用表列表（ListValueList）接口获取
         :type valuelistid: str
@@ -51,7 +51,7 @@ class ShowValueListRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowValueListRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ShowValueListRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowValueListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowValueListRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowValueListRequest.
         :type enterprise_project_id: str

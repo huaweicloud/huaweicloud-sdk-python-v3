@@ -1,3 +1,604 @@
+# 3.1.142 2025-04-03
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **我们将会在三个月后将SDK版本号从3.1.X升级到3.2.X并移除对Python3.6以下版本的支持，请及时将Python版本升级到3.6+以保证新版本SDK的正常使用。**
+
+### HuaweiCloud SDK AOM
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddOrUpdateMetricOrEventAlarmRule**
+    - 请求参数变更
+      - `* metric_alarm_spec.trigger_conditions.trigger_times: string -> int32`
+  - **ListMetricOrEventAlarmRule**
+    - 响应参数变更
+      - `* alarm_rules.metric_alarm_spec.trigger_conditions.trigger_times: string -> int32`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeCluster**
+    - 请求参数变更
+      - `+ spec.clusterUpgradeAction.isOnlyUpgrade`
+  - **UpgradeAutopilotCluster**
+    - 请求参数变更
+      - `+ spec.clusterUpgradeAction.isOnlyUpgrade`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmRulePolicies**
+    - 响应参数变更
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+  - **UpdateAlarmRulePolicies**
+    - 请求参数变更
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+    - 响应参数变更
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+  - **ListAlarmRules**
+    - 响应参数变更
+      - `+ alarms.product_name`
+      - `+ alarms.resource_level`
+      - `+ alarms.policies.namespace`
+      - `+ alarms.policies.dimension_name`
+  - **CreateAlarmRules**
+    - 请求参数变更
+      - `+ product_name`
+      - `+ resource_level`
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListDataServiceInstanceAccesslogs`、`UpdateDataServiceInstanceObsLog`、`UpdateDataServiceInstanceLtsLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportDataServiceZip**
+    - 请求参数变更
+      - `+ authorization_status_type`
+  - **ListApis**
+    - 响应参数变更
+      - `+ records.authorization_status`
+  - **CreateApi**
+    - 请求参数变更
+      - `+ retention_period`
+      - `+ data_mask_switch`
+      - `+ data_mask_paras`
+      - `+ body`
+      - `+ datasource_config_list`
+      - `+ groovy_content`
+      - `+ api_type: enum value [API_SPECIFIC_TYPE_CONFIGURATION,API_SPECIFIC_TYPE_SCRIPT,API_SPECIFIC_TYPE_MYBATIS,API_SPECIFIC_TYPE_GROOVY,API_SPECIFIC_TYPE_REGISTER,API_SPECIFIC_TYPE_ORCHESTRATE]`
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **ShowApi**
+    - 响应参数变更
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **UpdateApi**
+    - 请求参数变更
+      - `+ retention_period`
+      - `+ data_mask_switch`
+      - `+ data_mask_paras`
+      - `+ body`
+      - `+ datasource_config_list`
+      - `+ groovy_content`
+      - `+ api_type: enum value [API_SPECIFIC_TYPE_CONFIGURATION,API_SPECIFIC_TYPE_SCRIPT,API_SPECIFIC_TYPE_MYBATIS,API_SPECIFIC_TYPE_GROOVY,API_SPECIFIC_TYPE_REGISTER,API_SPECIFIC_TYPE_ORCHESTRATE]`
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **ListApiCatalogList**
+    - 响应参数变更
+      - `+ apis.authorization_status`
+  - **UpdateBizMetric**
+    - 响应参数变更
+      - `+ data.value.id`
+      - `+ data.value.name`
+      - `+ data.value.code`
+      - `+ data.value.name_alias`
+      - `+ data.value.biz_type`
+      - `+ data.value.status`
+      - `+ data.value.biz_catalog_id`
+      - `+ data.value.biz_catalog_path`
+      - `+ data.value.create_by`
+      - `+ data.value.update_by`
+      - `+ data.value.data_origin`
+      - `+ data.value.unit`
+      - `+ data.value.time_filters`
+      - `+ data.value.dimensions`
+      - `+ data.value.general_filters`
+      - `+ data.value.interval_type`
+      - `+ data.value.apply_scenario`
+      - `+ data.value.technical_metric`
+      - `+ data.value.technical_metric_name`
+      - `+ data.value.technical_metric_type`
+      - `+ data.value.measure`
+      - `+ data.value.owner`
+      - `+ data.value.owner_department`
+      - `+ data.value.destination`
+      - `+ data.value.guid`
+      - `+ data.value.definition`
+      - `+ data.value.expression`
+      - `+ data.value.remark`
+      - `+ data.value.approval_info`
+      - `+ data.value.new_biz`
+      - `+ data.value.create_time`
+      - `+ data.value.update_time`
+      - `+ data.value.l1`
+      - `+ data.value.l2`
+      - `+ data.value.l3`
+      - `+ data.value.biz_metric`
+      - `+ data.value.summary_status`
+      - `+ data.value.self_defined_fields`
+      - `* body: object -> object<BizMetricVO>`
+  - **UpdateDesignAggregationLogicTable**
+    - 请求参数变更
+      - `+ model_id`
+      - `+ model`
+  - **ListAggregationLogicTables**
+    - 响应参数变更
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **CreateDesignAggregationLogicTable**
+    - 请求参数变更
+      - `+ model_id`
+      - `+ model`
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ShowAggregationLogicTableById**
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensions**
+    - 响应参数变更
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **UpdateDesignDimension**
+    - 请求参数变更
+      - `+ model_id`
+      - `+ model`
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **CreateDesignDimension**
+    - 请求参数变更
+      - `+ model_id`
+      - `+ model`
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ShowDimensionById**
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensionLogicTables**
+    - 响应参数变更
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **ShowDimensionLogicTableById**
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensionGroups**
+    - 响应参数变更
+      - `+ data.value.dimension_tables.model_id`
+      - `+ data.value.dimension_tables.model`
+      - `+ data.value.main_table.model_id`
+      - `+ data.value.main_table.model`
+      - `+ data.value.main_table.dimensions.dimension_attr_id`
+      - `+ data.value.main_table.dimensions.dimension.model_id`
+      - `+ data.value.main_table.dimensions.dimension.model`
+  - **ListFactLogicTables**
+    - 响应参数变更
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+      - `+ data.value.records.dimensions.dimension_attr_id`
+      - `+ data.value.records.dimensions.dimension.model_id`
+      - `+ data.value.records.dimensions.dimension.model`
+  - **ShowFactLogicTableById**
+    - 响应参数变更
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+      - `+ data.value.dimensions.dimension_attr_id`
+      - `+ data.value.dimensions.dimension.model_id`
+      - `+ data.value.dimensions.dimension.model`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`UpdateTaurusNodeDataIp`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateMetaStudioOrders`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSubtitleFile**
+    - 请求参数变更
+      - `+ callback_config`
+  - **CreateTtsAudition**
+    - 请求参数变更
+      - `+ is_vocabulary_config_enable`
+  - **ListAssetSummary**
+    - 请求参数变更
+      - `+ X-App-UserId`
+  - **ExecuteSmartLiveCommand**
+    - 请求参数变更
+      - `+ command: enum value [RESET_EXIT_CONFIG]`
+    - 响应参数变更
+      - `+ command: enum value [RESET_EXIT_CONFIG]`
+  - **ShowResourceUsage**
+    - 响应参数变更
+      - `* resources.amount: float32 -> float`
+      - `* resources.usage: float32 -> float`
+  - **ListTenantResources**
+    - 请求参数变更
+      - `+ status`
+    - 响应参数变更
+      - `+ resources.bound_asset`
+      - `+ resources.status`
+      - `* resources.amount: float32 -> float`
+      - `* resources.usage: float32 -> float`
+  - **CreateAsyncTtsJob**
+    - 请求参数变更
+      - `+ slice_segments`
+      - `+ is_vocabulary_config_enable`
+  - **StartSmartChatJob**
+    - 响应参数变更
+      - `+ chat_access_rest_address`
+  - **ShowSmartChatJob**
+    - 响应参数变更
+      - `+ chat_access_rest_address`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+    - 响应参数变更
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ used_resource_type`
+      - `+ live_job_log.job_config_records_url`
+      - `+ live_job_log.scripts_records_url`
+      - `+ live_job_log.command_reviced_records_url`
+      - `+ live_job_log.command_exec_records_url`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+    - 响应参数变更
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ job_run_config`
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+    - 响应参数变更
+      - `+ limit_duration`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ used_resource_type`
+      - `+ smart_live_jobs.used_resource_type`
+      - `+ smart_live_jobs.live_job_log.job_config_records_url`
+      - `+ smart_live_jobs.live_job_log.scripts_records_url`
+      - `+ smart_live_jobs.live_job_log.command_reviced_records_url`
+      - `+ smart_live_jobs.live_job_log.command_exec_records_url`
+  - **ListSmartLiveJobs**
+    - 响应参数变更
+      - `+ used_resource_type`
+      - `+ smart_live_jobs.used_resource_type`
+      - `+ smart_live_jobs.live_job_log.job_config_records_url`
+      - `+ smart_live_jobs.live_job_log.scripts_records_url`
+      - `+ smart_live_jobs.live_job_log.command_reviced_records_url`
+      - `+ smart_live_jobs.live_job_log.command_exec_records_url`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ app_user_id`
+    - 响应参数变更
+      - `+ assets.asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+    - 响应参数变更
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ audio_files`
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+    - 响应参数变更
+      - `+ audio_files.audio_file_url.audio_id`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ audio_files.audio_file_url.audio_id`
+      - `+ shoot_scripts.preview_info.action_file_download_url`
+      - `+ shoot_scripts.preview_info.audio_duration`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ audio_files`
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+    - 响应参数变更
+      - `+ audio_files.audio_file_url.audio_id`
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListServiceDetails**
+    - 响应参数变更
+      - `+ supported_editions`
+  - **ListEndpointService**
+    - 响应参数变更
+      - `+ endpoint_services.supported_editions`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ShowVpnGatewayRoutingTable`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVpnUsers**
+    - 响应参数变更
+      - `+ users.static_ip`
+  - **CreateVpnUser**
+    - 请求参数变更
+      - `+ user.static_ip`
+  - **ShowVpnUser**
+    - 响应参数变更
+      - `+ user.static_ip`
+  - **UpdateVpnUser**
+    - 响应参数变更
+      - `+ user.static_ip`
+  - **ListVpnConnections**
+    - 响应参数变更
+      - `- vpn_connections.tunnel_local_address_v6`
+      - `- vpn_connections.tunnel_peer_address_v6`
+      - `- vpn_connections.policy_rules.rule_index`
+  - **CreateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **ShowVpnConnection**
+    - 响应参数变更
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **UpdateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **ListVgws**
+    - 响应参数变更
+      - `+ vpn_gateways.eip1.share_type`
+  - **ShowVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.eip1.share_type`
+  - **UpdateVgw**
+    - 请求参数变更
+      - `+ vpn_gateway.local_subnets_v6`
+    - 响应参数变更
+      - `+ vpn_gateway.eip1.share_type`
+  - **UpdatePostpaidVgwSpecification**
+    - 响应参数变更
+      - `+ vpn_gateway.eip1.share_type`
+
 # 3.1.141 2025-03-27
 
 ### HuaweiCloud SDK Core

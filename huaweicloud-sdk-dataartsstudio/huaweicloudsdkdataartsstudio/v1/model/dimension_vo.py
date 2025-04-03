@@ -53,7 +53,9 @@ class DimensionVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'EnvTypeEnum'
+        'env_type': 'EnvTypeEnum',
+        'model_id': 'str',
+        'model': 'WorkspaceVO'
     }
 
     attribute_map = {
@@ -93,10 +95,12 @@ class DimensionVO:
         'prod_version': 'prod_version',
         'dev_version_name': 'dev_version_name',
         'prod_version_name': 'prod_version_name',
-        'env_type': 'env_type'
+        'env_type': 'env_type',
+        'model_id': 'model_id',
+        'model': 'model'
     }
 
-    def __init__(self, id=None, name_en=None, dimension_type=None, name_ch=None, description=None, create_by=None, update_by=None, code_table_id=None, code_table=None, l1_id=None, l2_id=None, l3_id=None, hierarchies=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, l1=None, l2=None, l3=None, attributes=None, mappings=None, datasource=None, owner=None, obs_location=None, table_type=None, distribute=None, distribute_column=None, alias=None, self_defined_fields=None, configs=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None):
+    def __init__(self, id=None, name_en=None, dimension_type=None, name_ch=None, description=None, create_by=None, update_by=None, code_table_id=None, code_table=None, l1_id=None, l2_id=None, l3_id=None, hierarchies=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, l1=None, l2=None, l3=None, attributes=None, mappings=None, datasource=None, owner=None, obs_location=None, table_type=None, distribute=None, distribute_column=None, alias=None, self_defined_fields=None, configs=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, model_id=None, model=None):
         """DimensionVO
 
         The model defined in huaweicloud sdk
@@ -175,6 +179,10 @@ class DimensionVO:
         :type prod_version_name: str
         :param env_type: 
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param model_id: 所属模型ID，ID字符串。
+        :type model_id: str
+        :param model: 
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
         """
         
         
@@ -216,6 +224,8 @@ class DimensionVO:
         self._dev_version_name = None
         self._prod_version_name = None
         self._env_type = None
+        self._model_id = None
+        self._model = None
         self.discriminator = None
 
         if id is not None:
@@ -284,6 +294,10 @@ class DimensionVO:
             self.prod_version_name = prod_version_name
         if env_type is not None:
             self.env_type = env_type
+        if model_id is not None:
+            self.model_id = model_id
+        if model is not None:
+            self.model = model
 
     @property
     def id(self):
@@ -1074,6 +1088,46 @@ class DimensionVO:
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
+
+    @property
+    def model_id(self):
+        """Gets the model_id of this DimensionVO.
+
+        所属模型ID，ID字符串。
+
+        :return: The model_id of this DimensionVO.
+        :rtype: str
+        """
+        return self._model_id
+
+    @model_id.setter
+    def model_id(self, model_id):
+        """Sets the model_id of this DimensionVO.
+
+        所属模型ID，ID字符串。
+
+        :param model_id: The model_id of this DimensionVO.
+        :type model_id: str
+        """
+        self._model_id = model_id
+
+    @property
+    def model(self):
+        """Gets the model of this DimensionVO.
+
+        :return: The model of this DimensionVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        """Sets the model of this DimensionVO.
+
+        :param model: The model of this DimensionVO.
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        self._model = model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

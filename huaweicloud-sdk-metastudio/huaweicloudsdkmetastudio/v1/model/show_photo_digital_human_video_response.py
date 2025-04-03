@@ -64,7 +64,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
         :type job_id: str
         :param state: 任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
         :type state: str
-        :param job_type: 任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+        :param job_type: 任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
         :type job_type: str
         :param start_time: 数字人视频制作开始时间。
         :type start_time: str
@@ -193,7 +193,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
     def job_type(self):
         """Gets the job_type of this ShowPhotoDigitalHumanVideoResponse.
 
-        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
         :return: The job_type of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
     def job_type(self, job_type):
         """Sets the job_type of this ShowPhotoDigitalHumanVideoResponse.
 
-        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
         :param job_type: The job_type of this ShowPhotoDigitalHumanVideoResponse.
         :type job_type: str

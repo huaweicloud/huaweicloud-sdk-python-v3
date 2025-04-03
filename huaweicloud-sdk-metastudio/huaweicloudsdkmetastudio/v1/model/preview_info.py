@@ -18,15 +18,19 @@ class PreviewInfo:
 
     openapi_types = {
         'text_sha256': 'str',
-        'audio_file_download_url': 'str'
+        'audio_file_download_url': 'str',
+        'action_file_download_url': 'str',
+        'audio_duration': 'float'
     }
 
     attribute_map = {
         'text_sha256': 'text_sha256',
-        'audio_file_download_url': 'audio_file_download_url'
+        'audio_file_download_url': 'audio_file_download_url',
+        'action_file_download_url': 'action_file_download_url',
+        'audio_duration': 'audio_duration'
     }
 
-    def __init__(self, text_sha256=None, audio_file_download_url=None):
+    def __init__(self, text_sha256=None, audio_file_download_url=None, action_file_download_url=None, audio_duration=None):
         """PreviewInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class PreviewInfo:
         :type text_sha256: str
         :param audio_file_download_url: 文本对应音频文件下载链接
         :type audio_file_download_url: str
+        :param action_file_download_url: 动作编排列表文件下载链接
+        :type action_file_download_url: str
+        :param audio_duration: 音频时长，单位秒。
+        :type audio_duration: float
         """
         
         
 
         self._text_sha256 = None
         self._audio_file_download_url = None
+        self._action_file_download_url = None
+        self._audio_duration = None
         self.discriminator = None
 
         if text_sha256 is not None:
             self.text_sha256 = text_sha256
         if audio_file_download_url is not None:
             self.audio_file_download_url = audio_file_download_url
+        if action_file_download_url is not None:
+            self.action_file_download_url = action_file_download_url
+        if audio_duration is not None:
+            self.audio_duration = audio_duration
 
     @property
     def text_sha256(self):
@@ -91,6 +105,50 @@ class PreviewInfo:
         :type audio_file_download_url: str
         """
         self._audio_file_download_url = audio_file_download_url
+
+    @property
+    def action_file_download_url(self):
+        """Gets the action_file_download_url of this PreviewInfo.
+
+        动作编排列表文件下载链接
+
+        :return: The action_file_download_url of this PreviewInfo.
+        :rtype: str
+        """
+        return self._action_file_download_url
+
+    @action_file_download_url.setter
+    def action_file_download_url(self, action_file_download_url):
+        """Sets the action_file_download_url of this PreviewInfo.
+
+        动作编排列表文件下载链接
+
+        :param action_file_download_url: The action_file_download_url of this PreviewInfo.
+        :type action_file_download_url: str
+        """
+        self._action_file_download_url = action_file_download_url
+
+    @property
+    def audio_duration(self):
+        """Gets the audio_duration of this PreviewInfo.
+
+        音频时长，单位秒。
+
+        :return: The audio_duration of this PreviewInfo.
+        :rtype: float
+        """
+        return self._audio_duration
+
+    @audio_duration.setter
+    def audio_duration(self, audio_duration):
+        """Sets the audio_duration of this PreviewInfo.
+
+        音频时长，单位秒。
+
+        :param audio_duration: The audio_duration of this PreviewInfo.
+        :type audio_duration: float
+        """
+        self._audio_duration = audio_duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

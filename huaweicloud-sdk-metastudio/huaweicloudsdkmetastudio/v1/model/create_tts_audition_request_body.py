@@ -25,7 +25,8 @@ class CreateTtsAuditionRequestBody:
         'volume': 'int',
         'business_type': 'str',
         'style': 'str',
-        'channels': 'int'
+        'channels': 'int',
+        'is_vocabulary_config_enable': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateTtsAuditionRequestBody:
         'volume': 'volume',
         'business_type': 'business_type',
         'style': 'style',
-        'channels': 'channels'
+        'channels': 'channels',
+        'is_vocabulary_config_enable': 'is_vocabulary_config_enable'
     }
 
-    def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None, channels=None):
+    def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None, channels=None, is_vocabulary_config_enable=None):
         """CreateTtsAuditionRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateTtsAuditionRequestBody:
         :type style: str
         :param channels: 声道。（单声道|双声道） 默认值1，最小值1，最大值2。
         :type channels: int
+        :param is_vocabulary_config_enable: 是否应用当前租户的读法配置
+        :type is_vocabulary_config_enable: bool
         """
         
         
@@ -76,6 +80,7 @@ class CreateTtsAuditionRequestBody:
         self._business_type = None
         self._style = None
         self._channels = None
+        self._is_vocabulary_config_enable = None
         self.discriminator = None
 
         self.text = text
@@ -94,6 +99,8 @@ class CreateTtsAuditionRequestBody:
             self.style = style
         if channels is not None:
             self.channels = channels
+        if is_vocabulary_config_enable is not None:
+            self.is_vocabulary_config_enable = is_vocabulary_config_enable
 
     @property
     def text(self):
@@ -292,6 +299,28 @@ class CreateTtsAuditionRequestBody:
         :type channels: int
         """
         self._channels = channels
+
+    @property
+    def is_vocabulary_config_enable(self):
+        """Gets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+
+        是否应用当前租户的读法配置
+
+        :return: The is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+        :rtype: bool
+        """
+        return self._is_vocabulary_config_enable
+
+    @is_vocabulary_config_enable.setter
+    def is_vocabulary_config_enable(self, is_vocabulary_config_enable):
+        """Sets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+
+        是否应用当前租户的读法配置
+
+        :param is_vocabulary_config_enable: The is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+        :type is_vocabulary_config_enable: bool
+        """
+        self._is_vocabulary_config_enable = is_vocabulary_config_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

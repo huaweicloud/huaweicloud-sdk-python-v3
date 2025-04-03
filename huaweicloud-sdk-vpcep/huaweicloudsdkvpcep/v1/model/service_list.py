@@ -36,6 +36,7 @@ class ServiceList:
         'tcp_proxy': 'str',
         'error': 'list[Error]',
         'description': 'str',
+        'supported_editions': 'list[str]',
         'public_border_group': 'str',
         'enable_policy': 'bool'
     }
@@ -60,11 +61,12 @@ class ServiceList:
         'tcp_proxy': 'tcp_proxy',
         'error': 'error',
         'description': 'description',
+        'supported_editions': 'supported_editions',
         'public_border_group': 'public_border_group',
         'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, ip=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, ip=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, supported_editions=None, public_border_group=None, enable_policy=None):
         """ServiceList
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class ServiceList:
         :type error: list[:class:`huaweicloudsdkvpcep.v1.Error`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
+        :param supported_editions: 终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+        :type supported_editions: list[str]
         :param public_border_group: 终端节点服务对应Pool的Public Border Group信息
         :type public_border_group: str
         :param enable_policy: 是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
@@ -134,6 +138,7 @@ class ServiceList:
         self._tcp_proxy = None
         self._error = None
         self._description = None
+        self._supported_editions = None
         self._public_border_group = None
         self._enable_policy = None
         self.discriminator = None
@@ -176,6 +181,8 @@ class ServiceList:
             self.error = error
         if description is not None:
             self.description = description
+        if supported_editions is not None:
+            self.supported_editions = supported_editions
         if public_border_group is not None:
             self.public_border_group = public_border_group
         if enable_policy is not None:
@@ -598,6 +605,28 @@ class ServiceList:
         :type description: str
         """
         self._description = description
+
+    @property
+    def supported_editions(self):
+        """Gets the supported_editions of this ServiceList.
+
+        终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+
+        :return: The supported_editions of this ServiceList.
+        :rtype: list[str]
+        """
+        return self._supported_editions
+
+    @supported_editions.setter
+    def supported_editions(self, supported_editions):
+        """Sets the supported_editions of this ServiceList.
+
+        终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+
+        :param supported_editions: The supported_editions of this ServiceList.
+        :type supported_editions: list[str]
+        """
+        self._supported_editions = supported_editions
 
     @property
     def public_border_group(self):

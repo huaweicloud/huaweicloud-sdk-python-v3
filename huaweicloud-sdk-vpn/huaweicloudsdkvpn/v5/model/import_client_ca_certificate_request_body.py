@@ -38,8 +38,7 @@ class ImportClientCaCertificateRequestBody:
         self._client_ca_certificate = None
         self.discriminator = None
 
-        if client_ca_certificate is not None:
-            self.client_ca_certificate = client_ca_certificate
+        self.client_ca_certificate = client_ca_certificate
 
     @property
     def client_ca_certificate(self):

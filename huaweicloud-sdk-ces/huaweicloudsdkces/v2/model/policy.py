@@ -25,7 +25,9 @@ class Policy:
         'unit': 'str',
         'count': 'int',
         'suppress_duration': 'int',
-        'level': 'int'
+        'level': 'int',
+        'namespace': 'str',
+        'dimension_name': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class Policy:
         'unit': 'unit',
         'count': 'count',
         'suppress_duration': 'suppress_duration',
-        'level': 'level'
+        'level': 'level',
+        'namespace': 'namespace',
+        'dimension_name': 'dimension_name'
     }
 
-    def __init__(self, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None, level=None):
+    def __init__(self, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None, level=None, namespace=None, dimension_name=None):
         """Policy
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class Policy:
         :type suppress_duration: int
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示
         :type level: int
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :type namespace: str
+        :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        :type dimension_name: str
         """
         
         
@@ -76,6 +84,8 @@ class Policy:
         self._count = None
         self._suppress_duration = None
         self._level = None
+        self._namespace = None
+        self._dimension_name = None
         self.discriminator = None
 
         self.metric_name = metric_name
@@ -91,6 +101,10 @@ class Policy:
             self.suppress_duration = suppress_duration
         if level is not None:
             self.level = level
+        if namespace is not None:
+            self.namespace = namespace
+        if dimension_name is not None:
+            self.dimension_name = dimension_name
 
     @property
     def metric_name(self):
@@ -289,6 +303,50 @@ class Policy:
         :type level: int
         """
         self._level = level
+
+    @property
+    def namespace(self):
+        """Gets the namespace of this Policy.
+
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+
+        :return: The namespace of this Policy.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        """Sets the namespace of this Policy.
+
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+
+        :param namespace: The namespace of this Policy.
+        :type namespace: str
+        """
+        self._namespace = namespace
+
+    @property
+    def dimension_name(self):
+        """Gets the dimension_name of this Policy.
+
+        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+
+        :return: The dimension_name of this Policy.
+        :rtype: str
+        """
+        return self._dimension_name
+
+    @dimension_name.setter
+    def dimension_name(self, dimension_name):
+        """Sets the dimension_name of this Policy.
+
+        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+
+        :param dimension_name: The dimension_name of this Policy.
+        :type dimension_name: str
+        """
+        self._dimension_name = dimension_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

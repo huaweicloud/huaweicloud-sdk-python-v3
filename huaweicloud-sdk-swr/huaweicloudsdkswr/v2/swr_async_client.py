@@ -33,6 +33,69 @@ class SwrAsyncClient(Client):
 
         return client_builder
 
+    def create_authorization_token_async(self, request):
+        """生成增强型登录指令(新)
+
+        调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成增强型登录指令,注：此接口只支持IAM新平面的调用方式。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAuthorizationToken
+        :type request: :class:`huaweicloudsdkswr.v2.CreateAuthorizationTokenRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateAuthorizationTokenResponse`
+        """
+        http_info = self._create_authorization_token_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_authorization_token_async_invoker(self, request):
+        http_info = self._create_authorization_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_authorization_token_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/utils/authorizationtoken",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorizationTokenResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Swr-Dockerlogin", "x-swr-expireat", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_image_sync_repo_async(self, request):
         """创建镜像自动同步任务
 

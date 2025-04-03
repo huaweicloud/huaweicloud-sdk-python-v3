@@ -1,3 +1,604 @@
+# 3.1.142 2025-04-03
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **We will upgrade the SDK version from 3.1.X to 3.2.X and remove support for Python versions below 3.6 in three months. Please upgrade your Python version to 3.6+ to ensure the new version of the SDK can be used normally.**
+
+### HuaweiCloud SDK AOM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddOrUpdateMetricOrEventAlarmRule**
+    - changes of request param
+      - `* metric_alarm_spec.trigger_conditions.trigger_times: string -> int32`
+  - **ListMetricOrEventAlarmRule**
+    - changes of response param
+      - `* alarm_rules.metric_alarm_spec.trigger_conditions.trigger_times: string -> int32`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeCluster**
+    - changes of request param
+      - `+ spec.clusterUpgradeAction.isOnlyUpgrade`
+  - **UpgradeAutopilotCluster**
+    - changes of request param
+      - `+ spec.clusterUpgradeAction.isOnlyUpgrade`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmRulePolicies**
+    - changes of response param
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+  - **UpdateAlarmRulePolicies**
+    - changes of request param
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+    - changes of response param
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+  - **ListAlarmRules**
+    - changes of response param
+      - `+ alarms.product_name`
+      - `+ alarms.resource_level`
+      - `+ alarms.policies.namespace`
+      - `+ alarms.policies.dimension_name`
+  - **CreateAlarmRules**
+    - changes of request param
+      - `+ product_name`
+      - `+ resource_level`
+      - `+ policies.namespace`
+      - `+ policies.dimension_name`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListDataServiceInstanceAccesslogs`, `UpdateDataServiceInstanceObsLog`, `UpdateDataServiceInstanceLtsLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportDataServiceZip**
+    - changes of request param
+      - `+ authorization_status_type`
+  - **ListApis**
+    - changes of response param
+      - `+ records.authorization_status`
+  - **CreateApi**
+    - changes of request param
+      - `+ retention_period`
+      - `+ data_mask_switch`
+      - `+ data_mask_paras`
+      - `+ body`
+      - `+ datasource_config_list`
+      - `+ groovy_content`
+      - `+ api_type: enum value [API_SPECIFIC_TYPE_CONFIGURATION,API_SPECIFIC_TYPE_SCRIPT,API_SPECIFIC_TYPE_MYBATIS,API_SPECIFIC_TYPE_GROOVY,API_SPECIFIC_TYPE_REGISTER,API_SPECIFIC_TYPE_ORCHESTRATE]`
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **ShowApi**
+    - changes of response param
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **UpdateApi**
+    - changes of request param
+      - `+ retention_period`
+      - `+ data_mask_switch`
+      - `+ data_mask_paras`
+      - `+ body`
+      - `+ datasource_config_list`
+      - `+ groovy_content`
+      - `+ api_type: enum value [API_SPECIFIC_TYPE_CONFIGURATION,API_SPECIFIC_TYPE_SCRIPT,API_SPECIFIC_TYPE_MYBATIS,API_SPECIFIC_TYPE_GROOVY,API_SPECIFIC_TYPE_REGISTER,API_SPECIFIC_TYPE_ORCHESTRATE]`
+      - `+ request_paras.support_null`
+      - `+ datasource_config.total_size_sql`
+      - `+ datasource_config.order_paras.description`
+  - **ListApiCatalogList**
+    - changes of response param
+      - `+ apis.authorization_status`
+  - **UpdateBizMetric**
+    - changes of response param
+      - `+ data.value.id`
+      - `+ data.value.name`
+      - `+ data.value.code`
+      - `+ data.value.name_alias`
+      - `+ data.value.biz_type`
+      - `+ data.value.status`
+      - `+ data.value.biz_catalog_id`
+      - `+ data.value.biz_catalog_path`
+      - `+ data.value.create_by`
+      - `+ data.value.update_by`
+      - `+ data.value.data_origin`
+      - `+ data.value.unit`
+      - `+ data.value.time_filters`
+      - `+ data.value.dimensions`
+      - `+ data.value.general_filters`
+      - `+ data.value.interval_type`
+      - `+ data.value.apply_scenario`
+      - `+ data.value.technical_metric`
+      - `+ data.value.technical_metric_name`
+      - `+ data.value.technical_metric_type`
+      - `+ data.value.measure`
+      - `+ data.value.owner`
+      - `+ data.value.owner_department`
+      - `+ data.value.destination`
+      - `+ data.value.guid`
+      - `+ data.value.definition`
+      - `+ data.value.expression`
+      - `+ data.value.remark`
+      - `+ data.value.approval_info`
+      - `+ data.value.new_biz`
+      - `+ data.value.create_time`
+      - `+ data.value.update_time`
+      - `+ data.value.l1`
+      - `+ data.value.l2`
+      - `+ data.value.l3`
+      - `+ data.value.biz_metric`
+      - `+ data.value.summary_status`
+      - `+ data.value.self_defined_fields`
+      - `* body: object -> object<BizMetricVO>`
+  - **UpdateDesignAggregationLogicTable**
+    - changes of request param
+      - `+ model_id`
+      - `+ model`
+  - **ListAggregationLogicTables**
+    - changes of response param
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **CreateDesignAggregationLogicTable**
+    - changes of request param
+      - `+ model_id`
+      - `+ model`
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ShowAggregationLogicTableById**
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensions**
+    - changes of response param
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **UpdateDesignDimension**
+    - changes of request param
+      - `+ model_id`
+      - `+ model`
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **CreateDesignDimension**
+    - changes of request param
+      - `+ model_id`
+      - `+ model`
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ShowDimensionById**
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensionLogicTables**
+    - changes of response param
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+  - **ShowDimensionLogicTableById**
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+  - **ListDimensionGroups**
+    - changes of response param
+      - `+ data.value.dimension_tables.model_id`
+      - `+ data.value.dimension_tables.model`
+      - `+ data.value.main_table.model_id`
+      - `+ data.value.main_table.model`
+      - `+ data.value.main_table.dimensions.dimension_attr_id`
+      - `+ data.value.main_table.dimensions.dimension.model_id`
+      - `+ data.value.main_table.dimensions.dimension.model`
+  - **ListFactLogicTables**
+    - changes of response param
+      - `+ data.value.records.model_id`
+      - `+ data.value.records.model`
+      - `+ data.value.records.dimensions.dimension_attr_id`
+      - `+ data.value.records.dimensions.dimension.model_id`
+      - `+ data.value.records.dimensions.dimension.model`
+  - **ShowFactLogicTableById**
+    - changes of response param
+      - `+ data.value.model_id`
+      - `+ data.value.model`
+      - `+ data.value.dimensions.dimension_attr_id`
+      - `+ data.value.dimensions.dimension.model_id`
+      - `+ data.value.dimensions.dimension.model`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `UpdateTaurusNodeDataIp`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CreateMetaStudioOrders`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSubtitleFile**
+    - changes of request param
+      - `+ callback_config`
+  - **CreateTtsAudition**
+    - changes of request param
+      - `+ is_vocabulary_config_enable`
+  - **ListAssetSummary**
+    - changes of request param
+      - `+ X-App-UserId`
+  - **ExecuteSmartLiveCommand**
+    - changes of request param
+      - `+ command: enum value [RESET_EXIT_CONFIG]`
+    - changes of response param
+      - `+ command: enum value [RESET_EXIT_CONFIG]`
+  - **ShowResourceUsage**
+    - changes of response param
+      - `* resources.amount: float32 -> float`
+      - `* resources.usage: float32 -> float`
+  - **ListTenantResources**
+    - changes of request param
+      - `+ status`
+    - changes of response param
+      - `+ resources.bound_asset`
+      - `+ resources.status`
+      - `* resources.amount: float32 -> float`
+      - `* resources.usage: float32 -> float`
+  - **CreateAsyncTtsJob**
+    - changes of request param
+      - `+ slice_segments`
+      - `+ is_vocabulary_config_enable`
+  - **StartSmartChatJob**
+    - changes of response param
+      - `+ chat_access_rest_address`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ chat_access_rest_address`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+    - changes of response param
+      - `+ background_config.background_image_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ layer_config.rotation`
+      - `+ layer_config.video_config.video_sound`
+      - `+ layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ used_resource_type`
+      - `+ live_job_log.job_config_records_url`
+      - `+ live_job_log.scripts_records_url`
+      - `+ live_job_log.command_reviced_records_url`
+      - `+ live_job_log.command_exec_records_url`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+    - changes of response param
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ job_run_config`
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+    - changes of response param
+      - `+ limit_duration`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ used_resource_type`
+      - `+ smart_live_jobs.used_resource_type`
+      - `+ smart_live_jobs.live_job_log.job_config_records_url`
+      - `+ smart_live_jobs.live_job_log.scripts_records_url`
+      - `+ smart_live_jobs.live_job_log.command_reviced_records_url`
+      - `+ smart_live_jobs.live_job_log.command_exec_records_url`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ used_resource_type`
+      - `+ smart_live_jobs.used_resource_type`
+      - `+ smart_live_jobs.live_job_log.job_config_records_url`
+      - `+ smart_live_jobs.live_job_log.scripts_records_url`
+      - `+ smart_live_jobs.live_job_log.command_reviced_records_url`
+      - `+ smart_live_jobs.live_job_log.command_exec_records_url`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **ListAssets**
+    - changes of request param
+      - `+ app_user_id`
+    - changes of response param
+      - `+ assets.asset_extra_meta.human_model_2d_meta.action_tag_map.action_duration`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+    - changes of response param
+      - `+ play_policy.live_exit_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ scene_scripts.background_config.background_image_config`
+      - `+ scene_scripts.layer_config.rotation`
+      - `+ scene_scripts.layer_config.video_config.video_sound`
+      - `+ scene_scripts.layer_config.video_config.is_play_the_entire_video`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ audio_files`
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+    - changes of response param
+      - `+ audio_files.audio_file_url.audio_id`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ audio_files.audio_file_url.audio_id`
+      - `+ shoot_scripts.preview_info.action_file_download_url`
+      - `+ shoot_scripts.preview_info.audio_duration`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ audio_files`
+      - `+ action_config`
+      - `+ video_config.codec: enum value [QTRLE]`
+      - `+ video_config.subtitle_config.font_color`
+      - `+ video_config.subtitle_config.stroke_color`
+      - `+ video_config.subtitle_config.stroke_thickness`
+      - `+ video_config.subtitle_config.opacity`
+      - `+ shoot_scripts.shoot_script.audio_duration`
+      - `+ shoot_scripts.shoot_script.background_config.background_image_config`
+      - `+ shoot_scripts.shoot_script.layer_config.rotation`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.video_sound`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.is_play_the_entire_video`
+    - changes of response param
+      - `+ audio_files.audio_file_url.audio_id`
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceDetails**
+    - changes of response param
+      - `+ supported_editions`
+  - **ListEndpointService**
+    - changes of response param
+      - `+ endpoint_services.supported_editions`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ShowVpnGatewayRoutingTable`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpnUsers**
+    - changes of response param
+      - `+ users.static_ip`
+  - **CreateVpnUser**
+    - changes of request param
+      - `+ user.static_ip`
+  - **ShowVpnUser**
+    - changes of response param
+      - `+ user.static_ip`
+  - **UpdateVpnUser**
+    - changes of response param
+      - `+ user.static_ip`
+  - **ListVpnConnections**
+    - changes of response param
+      - `- vpn_connections.tunnel_local_address_v6`
+      - `- vpn_connections.tunnel_peer_address_v6`
+      - `- vpn_connections.policy_rules.rule_index`
+  - **CreateVpnConnection**
+    - changes of request param
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+    - changes of response param
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **ShowVpnConnection**
+    - changes of response param
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **UpdateVpnConnection**
+    - changes of request param
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+    - changes of response param
+      - `- vpn_connection.tunnel_local_address_v6`
+      - `- vpn_connection.tunnel_peer_address_v6`
+      - `- vpn_connection.policy_rules.rule_index`
+  - **ListVgws**
+    - changes of response param
+      - `+ vpn_gateways.eip1.share_type`
+  - **ShowVgw**
+    - changes of response param
+      - `+ vpn_gateway.eip1.share_type`
+  - **UpdateVgw**
+    - changes of request param
+      - `+ vpn_gateway.local_subnets_v6`
+    - changes of response param
+      - `+ vpn_gateway.eip1.share_type`
+  - **UpdatePostpaidVgwSpecification**
+    - changes of response param
+      - `+ vpn_gateway.eip1.share_type`
+
 # 3.1.141 2025-03-27
 
 ### HuaweiCloud SDK Core

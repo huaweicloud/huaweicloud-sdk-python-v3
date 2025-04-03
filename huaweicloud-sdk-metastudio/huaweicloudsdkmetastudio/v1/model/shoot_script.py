@@ -19,6 +19,7 @@ class ShootScript:
     openapi_types = {
         'script_type': 'str',
         'text_config': 'TextConfig',
+        'audio_duration': 'float',
         'audio_drive_action_config': 'list[AudioDriveActionConfig]',
         'audio_drive_file_external_url': 'str',
         'background_config': 'list[BackgroundConfigInfo]',
@@ -29,6 +30,7 @@ class ShootScript:
     attribute_map = {
         'script_type': 'script_type',
         'text_config': 'text_config',
+        'audio_duration': 'audio_duration',
         'audio_drive_action_config': 'audio_drive_action_config',
         'audio_drive_file_external_url': 'audio_drive_file_external_url',
         'background_config': 'background_config',
@@ -36,7 +38,7 @@ class ShootScript:
         'audio_config': 'audio_config'
     }
 
-    def __init__(self, script_type=None, text_config=None, audio_drive_action_config=None, audio_drive_file_external_url=None, background_config=None, layer_config=None, audio_config=None):
+    def __init__(self, script_type=None, text_config=None, audio_duration=None, audio_drive_action_config=None, audio_drive_file_external_url=None, background_config=None, layer_config=None, audio_config=None):
         """ShootScript
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ShootScript:
         :type script_type: str
         :param text_config: 
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
+        :param audio_duration: 语音驱动时，音频时长，单位秒。 &gt; * 创建剧本时此参数可以不设置，音频文件上传成功后，通过更新剧本接口设置 &gt; * 查询剧本详情时，返回音频时长，用于预估视频时长
+        :type audio_duration: float
         :param audio_drive_action_config: 语音驱动时的动作配置。
         :type audio_drive_action_config: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
         :param audio_drive_file_external_url: 语音驱动音频文件外部下载URL。  &gt; * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
@@ -61,6 +65,7 @@ class ShootScript:
 
         self._script_type = None
         self._text_config = None
+        self._audio_duration = None
         self._audio_drive_action_config = None
         self._audio_drive_file_external_url = None
         self._background_config = None
@@ -72,6 +77,8 @@ class ShootScript:
             self.script_type = script_type
         if text_config is not None:
             self.text_config = text_config
+        if audio_duration is not None:
+            self.audio_duration = audio_duration
         if audio_drive_action_config is not None:
             self.audio_drive_action_config = audio_drive_action_config
         if audio_drive_file_external_url is not None:
@@ -122,6 +129,28 @@ class ShootScript:
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
         """
         self._text_config = text_config
+
+    @property
+    def audio_duration(self):
+        """Gets the audio_duration of this ShootScript.
+
+        语音驱动时，音频时长，单位秒。 > * 创建剧本时此参数可以不设置，音频文件上传成功后，通过更新剧本接口设置 > * 查询剧本详情时，返回音频时长，用于预估视频时长
+
+        :return: The audio_duration of this ShootScript.
+        :rtype: float
+        """
+        return self._audio_duration
+
+    @audio_duration.setter
+    def audio_duration(self, audio_duration):
+        """Sets the audio_duration of this ShootScript.
+
+        语音驱动时，音频时长，单位秒。 > * 创建剧本时此参数可以不设置，音频文件上传成功后，通过更新剧本接口设置 > * 查询剧本详情时，返回音频时长，用于预估视频时长
+
+        :param audio_duration: The audio_duration of this ShootScript.
+        :type audio_duration: float
+        """
+        self._audio_duration = audio_duration
 
     @property
     def audio_drive_action_config(self):

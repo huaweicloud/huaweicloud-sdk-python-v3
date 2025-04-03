@@ -21,7 +21,8 @@ class PlayPolicy:
         'auto_play_script': 'bool',
         'play_mode': 'str',
         'random_play_mode': 'str',
-        'need_independent_capture_client': 'bool'
+        'need_independent_capture_client': 'bool',
+        'live_exit_config': 'LiveExitConfig'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PlayPolicy:
         'auto_play_script': 'auto_play_script',
         'play_mode': 'play_mode',
         'random_play_mode': 'random_play_mode',
-        'need_independent_capture_client': 'need_independent_capture_client'
+        'need_independent_capture_client': 'need_independent_capture_client',
+        'live_exit_config': 'live_exit_config'
     }
 
-    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None):
+    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None, live_exit_config=None):
         """PlayPolicy
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PlayPolicy:
         :type random_play_mode: str
         :param need_independent_capture_client: **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
         :type need_independent_capture_client: bool
+        :param live_exit_config: 
+        :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
         """
         
         
@@ -56,6 +60,7 @@ class PlayPolicy:
         self._play_mode = None
         self._random_play_mode = None
         self._need_independent_capture_client = None
+        self._live_exit_config = None
         self.discriminator = None
 
         if repeat_count is not None:
@@ -68,6 +73,8 @@ class PlayPolicy:
             self.random_play_mode = random_play_mode
         if need_independent_capture_client is not None:
             self.need_independent_capture_client = need_independent_capture_client
+        if live_exit_config is not None:
+            self.live_exit_config = live_exit_config
 
     @property
     def repeat_count(self):
@@ -178,6 +185,24 @@ class PlayPolicy:
         :type need_independent_capture_client: bool
         """
         self._need_independent_capture_client = need_independent_capture_client
+
+    @property
+    def live_exit_config(self):
+        """Gets the live_exit_config of this PlayPolicy.
+
+        :return: The live_exit_config of this PlayPolicy.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
+        """
+        return self._live_exit_config
+
+    @live_exit_config.setter
+    def live_exit_config(self, live_exit_config):
+        """Sets the live_exit_config of this PlayPolicy.
+
+        :param live_exit_config: The live_exit_config of this PlayPolicy.
+        :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
+        """
+        self._live_exit_config = live_exit_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

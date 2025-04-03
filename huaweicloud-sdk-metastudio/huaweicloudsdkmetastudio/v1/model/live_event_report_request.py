@@ -41,7 +41,7 @@ class LiveEventReportRequest:
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 剧本ID。
+        :param room_id: 直播间ID。
         :type room_id: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -85,7 +85,7 @@ class LiveEventReportRequest:
     def room_id(self):
         """Gets the room_id of this LiveEventReportRequest.
 
-        剧本ID。
+        直播间ID。
 
         :return: The room_id of this LiveEventReportRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class LiveEventReportRequest:
     def room_id(self, room_id):
         """Sets the room_id of this LiveEventReportRequest.
 
-        剧本ID。
+        直播间ID。
 
         :param room_id: The room_id of this LiveEventReportRequest.
         :type room_id: str

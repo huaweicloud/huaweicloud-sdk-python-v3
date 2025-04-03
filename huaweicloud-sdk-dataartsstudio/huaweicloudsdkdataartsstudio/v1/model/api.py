@@ -23,13 +23,19 @@ class Api:
         'log_flag': 'bool',
         'api_type': 'str',
         'auth_type': 'str',
-        'publish_type': 'str',
+        'retention_period': 'int',
         'manager': 'str',
         'path': 'str',
         'protocol': 'str',
         'request_type': 'str',
         'tags': 'list[str]',
         'visibility': 'str',
+        'publish_type': 'str',
+        'data_mask_switch': 'bool',
+        'data_mask_paras': 'list[DataMaskParas]',
+        'body': 'str',
+        'datasource_config_list': 'list[DatasourceConfig]',
+        'groovy_content': 'str',
         'request_paras': 'list[RequestPara]',
         'datasource_config': 'DatasourceConfig',
         'backend_config': 'BackendConfig'
@@ -42,19 +48,25 @@ class Api:
         'log_flag': 'log_flag',
         'api_type': 'api_type',
         'auth_type': 'auth_type',
-        'publish_type': 'publish_type',
+        'retention_period': 'retention_period',
         'manager': 'manager',
         'path': 'path',
         'protocol': 'protocol',
         'request_type': 'request_type',
         'tags': 'tags',
         'visibility': 'visibility',
+        'publish_type': 'publish_type',
+        'data_mask_switch': 'data_mask_switch',
+        'data_mask_paras': 'data_mask_paras',
+        'body': 'body',
+        'datasource_config_list': 'datasource_config_list',
+        'groovy_content': 'groovy_content',
         'request_paras': 'request_paras',
         'datasource_config': 'datasource_config',
         'backend_config': 'backend_config'
     }
 
-    def __init__(self, catalog_id=None, name=None, description=None, log_flag=None, api_type=None, auth_type=None, publish_type=None, manager=None, path=None, protocol=None, request_type=None, tags=None, visibility=None, request_paras=None, datasource_config=None, backend_config=None):
+    def __init__(self, catalog_id=None, name=None, description=None, log_flag=None, api_type=None, auth_type=None, retention_period=None, manager=None, path=None, protocol=None, request_type=None, tags=None, visibility=None, publish_type=None, data_mask_switch=None, data_mask_paras=None, body=None, datasource_config_list=None, groovy_content=None, request_paras=None, datasource_config=None, backend_config=None):
         """Api
 
         The model defined in huaweicloud sdk
@@ -67,25 +79,37 @@ class Api:
         :type description: str
         :param log_flag: 是否启用访问日志
         :type log_flag: bool
-        :param api_type: Api类型
+        :param api_type: 
         :type api_type: str
         :param auth_type: 
         :type auth_type: str
-        :param publish_type: 发布类型
-        :type publish_type: str
-        :param manager: api 审核人
+        :param retention_period: 最低保留期限，单位小时。
+        :type retention_period: int
+        :param manager: API审核人。
         :type manager: str
-        :param path: api路径
+        :param path: API路径。
         :type path: str
-        :param protocol: api 协议
+        :param protocol: 
         :type protocol: str
-        :param request_type: 请求类型
+        :param request_type: 
         :type request_type: str
-        :param tags: 标签
+        :param tags: 标签。
         :type tags: list[str]
-        :param visibility: 可见性
+        :param visibility: 
         :type visibility: str
-        :param request_paras: API请求参数列表
+        :param publish_type: 
+        :type publish_type: str
+        :param data_mask_switch: 数据脱敏开关。
+        :type data_mask_switch: bool
+        :param data_mask_paras: 数据脱敏配置。
+        :type data_mask_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.DataMaskParas`]
+        :param body: 请求体内容描述，仅注册类API使用。
+        :type body: str
+        :param datasource_config_list: 多数据源配置信息，仅Groovy类API使用。
+        :type datasource_config_list: list[:class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`]
+        :param groovy_content: Groovy文本，仅Groovy类API使用。
+        :type groovy_content: str
+        :param request_paras: API请求参数列表。
         :type request_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.RequestPara`]
         :param datasource_config: 
         :type datasource_config: :class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`
@@ -101,13 +125,19 @@ class Api:
         self._log_flag = None
         self._api_type = None
         self._auth_type = None
-        self._publish_type = None
+        self._retention_period = None
         self._manager = None
         self._path = None
         self._protocol = None
         self._request_type = None
         self._tags = None
         self._visibility = None
+        self._publish_type = None
+        self._data_mask_switch = None
+        self._data_mask_paras = None
+        self._body = None
+        self._datasource_config_list = None
+        self._groovy_content = None
         self._request_paras = None
         self._datasource_config = None
         self._backend_config = None
@@ -125,8 +155,8 @@ class Api:
             self.api_type = api_type
         if auth_type is not None:
             self.auth_type = auth_type
-        if publish_type is not None:
-            self.publish_type = publish_type
+        if retention_period is not None:
+            self.retention_period = retention_period
         if manager is not None:
             self.manager = manager
         if path is not None:
@@ -139,6 +169,18 @@ class Api:
             self.tags = tags
         if visibility is not None:
             self.visibility = visibility
+        if publish_type is not None:
+            self.publish_type = publish_type
+        if data_mask_switch is not None:
+            self.data_mask_switch = data_mask_switch
+        if data_mask_paras is not None:
+            self.data_mask_paras = data_mask_paras
+        if body is not None:
+            self.body = body
+        if datasource_config_list is not None:
+            self.datasource_config_list = datasource_config_list
+        if groovy_content is not None:
+            self.groovy_content = groovy_content
         if request_paras is not None:
             self.request_paras = request_paras
         if datasource_config is not None:
@@ -238,8 +280,6 @@ class Api:
     def api_type(self):
         """Gets the api_type of this Api.
 
-        Api类型
-
         :return: The api_type of this Api.
         :rtype: str
         """
@@ -248,8 +288,6 @@ class Api:
     @api_type.setter
     def api_type(self, api_type):
         """Sets the api_type of this Api.
-
-        Api类型
 
         :param api_type: The api_type of this Api.
         :type api_type: str
@@ -275,32 +313,32 @@ class Api:
         self._auth_type = auth_type
 
     @property
-    def publish_type(self):
-        """Gets the publish_type of this Api.
+    def retention_period(self):
+        """Gets the retention_period of this Api.
 
-        发布类型
+        最低保留期限，单位小时。
 
-        :return: The publish_type of this Api.
-        :rtype: str
+        :return: The retention_period of this Api.
+        :rtype: int
         """
-        return self._publish_type
+        return self._retention_period
 
-    @publish_type.setter
-    def publish_type(self, publish_type):
-        """Sets the publish_type of this Api.
+    @retention_period.setter
+    def retention_period(self, retention_period):
+        """Sets the retention_period of this Api.
 
-        发布类型
+        最低保留期限，单位小时。
 
-        :param publish_type: The publish_type of this Api.
-        :type publish_type: str
+        :param retention_period: The retention_period of this Api.
+        :type retention_period: int
         """
-        self._publish_type = publish_type
+        self._retention_period = retention_period
 
     @property
     def manager(self):
         """Gets the manager of this Api.
 
-        api 审核人
+        API审核人。
 
         :return: The manager of this Api.
         :rtype: str
@@ -311,7 +349,7 @@ class Api:
     def manager(self, manager):
         """Sets the manager of this Api.
 
-        api 审核人
+        API审核人。
 
         :param manager: The manager of this Api.
         :type manager: str
@@ -322,7 +360,7 @@ class Api:
     def path(self):
         """Gets the path of this Api.
 
-        api路径
+        API路径。
 
         :return: The path of this Api.
         :rtype: str
@@ -333,7 +371,7 @@ class Api:
     def path(self, path):
         """Sets the path of this Api.
 
-        api路径
+        API路径。
 
         :param path: The path of this Api.
         :type path: str
@@ -344,8 +382,6 @@ class Api:
     def protocol(self):
         """Gets the protocol of this Api.
 
-        api 协议
-
         :return: The protocol of this Api.
         :rtype: str
         """
@@ -354,8 +390,6 @@ class Api:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this Api.
-
-        api 协议
 
         :param protocol: The protocol of this Api.
         :type protocol: str
@@ -366,8 +400,6 @@ class Api:
     def request_type(self):
         """Gets the request_type of this Api.
 
-        请求类型
-
         :return: The request_type of this Api.
         :rtype: str
         """
@@ -376,8 +408,6 @@ class Api:
     @request_type.setter
     def request_type(self, request_type):
         """Sets the request_type of this Api.
-
-        请求类型
 
         :param request_type: The request_type of this Api.
         :type request_type: str
@@ -388,7 +418,7 @@ class Api:
     def tags(self):
         """Gets the tags of this Api.
 
-        标签
+        标签。
 
         :return: The tags of this Api.
         :rtype: list[str]
@@ -399,7 +429,7 @@ class Api:
     def tags(self, tags):
         """Sets the tags of this Api.
 
-        标签
+        标签。
 
         :param tags: The tags of this Api.
         :type tags: list[str]
@@ -410,8 +440,6 @@ class Api:
     def visibility(self):
         """Gets the visibility of this Api.
 
-        可见性
-
         :return: The visibility of this Api.
         :rtype: str
         """
@@ -421,18 +449,144 @@ class Api:
     def visibility(self, visibility):
         """Sets the visibility of this Api.
 
-        可见性
-
         :param visibility: The visibility of this Api.
         :type visibility: str
         """
         self._visibility = visibility
 
     @property
+    def publish_type(self):
+        """Gets the publish_type of this Api.
+
+        :return: The publish_type of this Api.
+        :rtype: str
+        """
+        return self._publish_type
+
+    @publish_type.setter
+    def publish_type(self, publish_type):
+        """Sets the publish_type of this Api.
+
+        :param publish_type: The publish_type of this Api.
+        :type publish_type: str
+        """
+        self._publish_type = publish_type
+
+    @property
+    def data_mask_switch(self):
+        """Gets the data_mask_switch of this Api.
+
+        数据脱敏开关。
+
+        :return: The data_mask_switch of this Api.
+        :rtype: bool
+        """
+        return self._data_mask_switch
+
+    @data_mask_switch.setter
+    def data_mask_switch(self, data_mask_switch):
+        """Sets the data_mask_switch of this Api.
+
+        数据脱敏开关。
+
+        :param data_mask_switch: The data_mask_switch of this Api.
+        :type data_mask_switch: bool
+        """
+        self._data_mask_switch = data_mask_switch
+
+    @property
+    def data_mask_paras(self):
+        """Gets the data_mask_paras of this Api.
+
+        数据脱敏配置。
+
+        :return: The data_mask_paras of this Api.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DataMaskParas`]
+        """
+        return self._data_mask_paras
+
+    @data_mask_paras.setter
+    def data_mask_paras(self, data_mask_paras):
+        """Sets the data_mask_paras of this Api.
+
+        数据脱敏配置。
+
+        :param data_mask_paras: The data_mask_paras of this Api.
+        :type data_mask_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.DataMaskParas`]
+        """
+        self._data_mask_paras = data_mask_paras
+
+    @property
+    def body(self):
+        """Gets the body of this Api.
+
+        请求体内容描述，仅注册类API使用。
+
+        :return: The body of this Api.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this Api.
+
+        请求体内容描述，仅注册类API使用。
+
+        :param body: The body of this Api.
+        :type body: str
+        """
+        self._body = body
+
+    @property
+    def datasource_config_list(self):
+        """Gets the datasource_config_list of this Api.
+
+        多数据源配置信息，仅Groovy类API使用。
+
+        :return: The datasource_config_list of this Api.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`]
+        """
+        return self._datasource_config_list
+
+    @datasource_config_list.setter
+    def datasource_config_list(self, datasource_config_list):
+        """Sets the datasource_config_list of this Api.
+
+        多数据源配置信息，仅Groovy类API使用。
+
+        :param datasource_config_list: The datasource_config_list of this Api.
+        :type datasource_config_list: list[:class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`]
+        """
+        self._datasource_config_list = datasource_config_list
+
+    @property
+    def groovy_content(self):
+        """Gets the groovy_content of this Api.
+
+        Groovy文本，仅Groovy类API使用。
+
+        :return: The groovy_content of this Api.
+        :rtype: str
+        """
+        return self._groovy_content
+
+    @groovy_content.setter
+    def groovy_content(self, groovy_content):
+        """Sets the groovy_content of this Api.
+
+        Groovy文本，仅Groovy类API使用。
+
+        :param groovy_content: The groovy_content of this Api.
+        :type groovy_content: str
+        """
+        self._groovy_content = groovy_content
+
+    @property
     def request_paras(self):
         """Gets the request_paras of this Api.
 
-        API请求参数列表
+        API请求参数列表。
 
         :return: The request_paras of this Api.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.RequestPara`]
@@ -443,7 +597,7 @@ class Api:
     def request_paras(self, request_paras):
         """Sets the request_paras of this Api.
 
-        API请求参数列表
+        API请求参数列表。
 
         :param request_paras: The request_paras of this Api.
         :type request_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.RequestPara`]

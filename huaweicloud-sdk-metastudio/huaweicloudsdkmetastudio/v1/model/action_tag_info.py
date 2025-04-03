@@ -19,6 +19,7 @@ class ActionTagInfo:
     openapi_types = {
         'action_name_zh': 'str',
         'action_name_en': 'str',
+        'action_duration': 'float',
         'catalog': 'str',
         'file_name': 'str',
         'tag': 'str'
@@ -27,12 +28,13 @@ class ActionTagInfo:
     attribute_map = {
         'action_name_zh': 'action_name_zh',
         'action_name_en': 'action_name_en',
+        'action_duration': 'action_duration',
         'catalog': 'catalog',
         'file_name': 'file_name',
         'tag': 'tag'
     }
 
-    def __init__(self, action_name_zh=None, action_name_en=None, catalog=None, file_name=None, tag=None):
+    def __init__(self, action_name_zh=None, action_name_en=None, action_duration=None, catalog=None, file_name=None, tag=None):
         """ActionTagInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ActionTagInfo:
         :type action_name_zh: str
         :param action_name_en: 原子动作英文名称。
         :type action_name_en: str
+        :param action_duration: 动作时长
+        :type action_duration: float
         :param catalog: 动作分类名称。
         :type catalog: str
         :param file_name: 样例视频文件名，最大长度256，最小长度1。
@@ -53,6 +57,7 @@ class ActionTagInfo:
 
         self._action_name_zh = None
         self._action_name_en = None
+        self._action_duration = None
         self._catalog = None
         self._file_name = None
         self._tag = None
@@ -60,6 +65,8 @@ class ActionTagInfo:
 
         self.action_name_zh = action_name_zh
         self.action_name_en = action_name_en
+        if action_duration is not None:
+            self.action_duration = action_duration
         if catalog is not None:
             self.catalog = catalog
         if file_name is not None:
@@ -110,6 +117,28 @@ class ActionTagInfo:
         :type action_name_en: str
         """
         self._action_name_en = action_name_en
+
+    @property
+    def action_duration(self):
+        """Gets the action_duration of this ActionTagInfo.
+
+        动作时长
+
+        :return: The action_duration of this ActionTagInfo.
+        :rtype: float
+        """
+        return self._action_duration
+
+    @action_duration.setter
+    def action_duration(self, action_duration):
+        """Sets the action_duration of this ActionTagInfo.
+
+        动作时长
+
+        :param action_duration: The action_duration of this ActionTagInfo.
+        :type action_duration: float
+        """
+        self._action_duration = action_duration
 
     @property
     def catalog(self):

@@ -23,6 +23,7 @@ class FactTableAttributeVO:
         'dimension_id': 'str',
         'role': 'str',
         'dimension': 'DimensionVO',
+        'dimension_attr_id': 'str',
         'is_primary_key': 'bool',
         'is_partition_key': 'bool',
         'is_foreign_key': 'bool',
@@ -49,6 +50,7 @@ class FactTableAttributeVO:
         'dimension_id': 'dimension_id',
         'role': 'role',
         'dimension': 'dimension',
+        'dimension_attr_id': 'dimension_attr_id',
         'is_primary_key': 'is_primary_key',
         'is_partition_key': 'is_partition_key',
         'is_foreign_key': 'is_foreign_key',
@@ -68,7 +70,7 @@ class FactTableAttributeVO:
         'self_defined_fields': 'self_defined_fields'
     }
 
-    def __init__(self, id=None, fact_logic_table_id=None, ordinal=None, dimension_id=None, role=None, dimension=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, secrecy_levels=None, description=None, data_type=None, domain_type=None, data_type_extend=None, name_en=None, name_ch=None, not_null=None, attribute_type=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None):
+    def __init__(self, id=None, fact_logic_table_id=None, ordinal=None, dimension_id=None, role=None, dimension=None, dimension_attr_id=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, secrecy_levels=None, description=None, data_type=None, domain_type=None, data_type_extend=None, name_en=None, name_ch=None, not_null=None, attribute_type=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None):
         """FactTableAttributeVO
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class FactTableAttributeVO:
         :type role: str
         :param dimension: 
         :type dimension: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`
+        :param dimension_attr_id: 维度属性ID，ID字符串。
+        :type dimension_attr_id: str
         :param is_primary_key: 是否主键。
         :type is_primary_key: bool
         :param is_partition_key: 是否分区键。
@@ -129,6 +133,7 @@ class FactTableAttributeVO:
         self._dimension_id = None
         self._role = None
         self._dimension = None
+        self._dimension_attr_id = None
         self._is_primary_key = None
         self._is_partition_key = None
         self._is_foreign_key = None
@@ -159,6 +164,8 @@ class FactTableAttributeVO:
             self.role = role
         if dimension is not None:
             self.dimension = dimension
+        if dimension_attr_id is not None:
+            self.dimension_attr_id = dimension_attr_id
         self.is_primary_key = is_primary_key
         self.is_partition_key = is_partition_key
         if is_foreign_key is not None:
@@ -316,6 +323,28 @@ class FactTableAttributeVO:
         :type dimension: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`
         """
         self._dimension = dimension
+
+    @property
+    def dimension_attr_id(self):
+        """Gets the dimension_attr_id of this FactTableAttributeVO.
+
+        维度属性ID，ID字符串。
+
+        :return: The dimension_attr_id of this FactTableAttributeVO.
+        :rtype: str
+        """
+        return self._dimension_attr_id
+
+    @dimension_attr_id.setter
+    def dimension_attr_id(self, dimension_attr_id):
+        """Sets the dimension_attr_id of this FactTableAttributeVO.
+
+        维度属性ID，ID字符串。
+
+        :param dimension_attr_id: The dimension_attr_id of this FactTableAttributeVO.
+        :type dimension_attr_id: str
+        """
+        self._dimension_attr_id = dimension_attr_id
 
     @property
     def is_primary_key(self):

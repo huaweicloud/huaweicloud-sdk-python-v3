@@ -1052,9 +1052,10 @@ class MetaStudioClient(Client):
         """创建资产
 
         该接口用于在资产库中添加上传新的媒体资产。可上传的资产类型包括：分身数字人模型、背景图片、素材图片、素材视频、PPT等。
+        &gt; 上传的图片、视频和背景图片，如果需要在视频制作素材中可见，需要设置system_properties。
         &gt; - 资产类型是IMAGE时，通过system_properties来区分背景图片（BACKGROUND_IMG）、素材图片（MATERIAL_IMG）。
         &gt; - 资产类型是VIDEO时，通过system_properties来区分素材视频（MATERIAL_VIDEO）、名片视频（BUSSINESS_CARD_VIDEO）。
-        &gt; - MetaStudio平台生成的视频，system_properties带CREATED_BY_PLATFORM。
+        &gt; MetaStudio平台生成的视频，system_properties带CREATED_BY_PLATFORM。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1227,6 +1228,8 @@ class MetaStudioClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
         form_params = {}
 
@@ -1350,6 +1353,8 @@ class MetaStudioClient(Client):
             query_params.append(('exclude_device_name', local_var_params['exclude_device_name']))
         if 'supported_service' in local_var_params:
             query_params.append(('supported_service', local_var_params['supported_service']))
+        if 'app_user_id' in local_var_params:
+            query_params.append(('app_user_id', local_var_params['app_user_id']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -3728,7 +3733,7 @@ class MetaStudioClient(Client):
     def create_intent_and_question(self, request):
         """创建知识库意图和问法
 
-        该接口用于创建知识库意图和问法。一个意图包含一个主题，一个答案，若干个问法等。
+        该接口用于创建知识库意图和问法。一个意图包含一个主题，一个答案，若干个问法等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3795,7 +3800,7 @@ class MetaStudioClient(Client):
     def create_knowledge_intent(self, request):
         """创建知识库意图
 
-        该接口用于创建知识库意图。一个意图包含一个主题，一个答案，若干个问法等。
+        该接口用于创建知识库意图。一个意图包含一个主题，一个答案，若干个问法等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3862,7 +3867,7 @@ class MetaStudioClient(Client):
     def delete_knowledge_intent(self, request):
         """删除知识库意图
 
-        该接口用于删除知识库意图。
+        该接口用于删除知识库意图。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3929,7 +3934,7 @@ class MetaStudioClient(Client):
     def list_knowledge_intent(self, request):
         """查询知识库意图列表
 
-        该接口用于查询知识库意图列表。
+        该接口用于查询知识库意图列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4000,7 +4005,7 @@ class MetaStudioClient(Client):
     def show_knowledge_intent(self, request):
         """查询知识库意图详情
 
-        该接口用于查询知识库意图详情。
+        该接口用于查询知识库意图详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4067,7 +4072,7 @@ class MetaStudioClient(Client):
     def update_knowledge_intent(self, request):
         """修改知识库意图
 
-        该接口用于修改知识库意图。
+        该接口用于修改知识库意图。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4136,7 +4141,7 @@ class MetaStudioClient(Client):
     def create_batch_knowledge_question(self, request):
         """批量创建知识库问法
 
-        该接口用于批量创建知识库问法。
+        该接口用于批量创建知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4203,7 +4208,7 @@ class MetaStudioClient(Client):
     def create_knowledge_question(self, request):
         """创建知识库问法
 
-        该接口用于创建知识库问法。
+        该接口用于创建知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4270,7 +4275,7 @@ class MetaStudioClient(Client):
     def delete_knowledge_question(self, request):
         """删除知识库问法
 
-        该接口用于删除知识库问法。
+        该接口用于删除知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4337,7 +4342,7 @@ class MetaStudioClient(Client):
     def list_knowledge_question(self, request):
         """查询知识库问法列表
 
-        该接口用于查询知识库问法列表。
+        该接口用于查询知识库问法列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4408,7 +4413,7 @@ class MetaStudioClient(Client):
     def show_knowledge_question(self, request):
         """查询知识库问法详情
 
-        该接口用于查询知识库问法详情。
+        该接口用于查询知识库问法详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4475,7 +4480,7 @@ class MetaStudioClient(Client):
     def update_batch_knowledge_question(self, request):
         """批量修改知识库问法
 
-        该接口用于批量修改知识库问法。
+        该接口用于批量修改知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4542,7 +4547,7 @@ class MetaStudioClient(Client):
     def update_knowledge_question(self, request):
         """修改知识库问法
 
-        该接口用于修改知识库问法。
+        该接口用于修改知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4611,7 +4616,7 @@ class MetaStudioClient(Client):
     def create_knowledge_skill(self, request):
         """创建知识库技能
 
-        该接口用于创建知识库技能。一个技能用于特定场景的交互问答，包含若干个意图等。
+        该接口用于创建知识库技能。一个技能用于特定场景的交互问答，包含若干个意图等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4678,7 +4683,7 @@ class MetaStudioClient(Client):
     def delete_knowledge_skill(self, request):
         """删除知识库技能
 
-        该接口用于删除知识库技能。
+        该接口用于删除知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4745,7 +4750,7 @@ class MetaStudioClient(Client):
     def export_knowledge_skill(self, request):
         """导出知识库技能
 
-        该接口用于导出知识库技能。
+        该接口用于导出知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4814,7 +4819,7 @@ class MetaStudioClient(Client):
     def list_knowledge_skill(self, request):
         """查询知识库技能列表
 
-        该接口用于查询知识库技能列表。
+        该接口用于查询知识库技能列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4883,7 +4888,7 @@ class MetaStudioClient(Client):
     def show_knowledge_skill(self, request):
         """查询知识库技能详情
 
-        该接口用于查询知识库技能详情。
+        该接口用于查询知识库技能详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4950,7 +4955,7 @@ class MetaStudioClient(Client):
     def update_knowledge_skill(self, request):
         """修改知识库技能
 
-        该接口用于修改知识库技能。
+        该接口用于修改知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5471,6 +5476,71 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_meta_studio_orders(self, request):
+        """订购metastudio云服务产品
+
+        该接口用于订购MetaStudio服务的包周期,一次性,按需套餐包产品
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateMetaStudioOrders
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateMetaStudioOrdersRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateMetaStudioOrdersResponse`
+        """
+        http_info = self._create_meta_studio_orders_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_meta_studio_orders_invoker(self, request):
+        http_info = self._create_meta_studio_orders_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_meta_studio_orders_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/mss/public/orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMetaStudioOrdersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -8442,31 +8512,31 @@ class MetaStudioClient(Client):
 
         return http_info
 
-    def confirm_smart_live_room(self, request):
+    def confirm_smar_live_room(self, request):
         """直播间确认
 
         该接口用直播间二次确认
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ConfirmSmartLiveRoom
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomResponse`
+        :param request: Request instance for ConfirmSmarLiveRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmarLiveRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmarLiveRoomResponse`
         """
-        http_info = self._confirm_smart_live_room_http_info(request)
+        http_info = self._confirm_smar_live_room_http_info(request)
         return self._call_api(**http_info)
 
-    def confirm_smart_live_room_invoker(self, request):
-        http_info = self._confirm_smart_live_room_http_info(request)
+    def confirm_smar_live_room_invoker(self, request):
+        http_info = self._confirm_smar_live_room_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _confirm_smart_live_room_http_info(cls, request):
+    def _confirm_smar_live_room_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/confirm",
             "request_type": request.__class__.__name__,
-            "response_type": "ConfirmSmartLiveRoomResponse"
+            "response_type": "ConfirmSmarLiveRoomResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -9765,7 +9835,7 @@ class MetaStudioClient(Client):
         """查看租户资源列表
 
         查看租户资源列表。
-        &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询。[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
+         &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询，详见[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
         &gt; 各种资源的计费方式请参考[计费说明](https://support.huaweicloud.com/productdesc-metastudio/metastudio_01_0006.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -9821,6 +9891,8 @@ class MetaStudioClient(Client):
             query_params.append(('resource_expire_end_time', local_var_params['resource_expire_end_time']))
         if 'sub_resource' in local_var_params:
             query_params.append(('sub_resource', local_var_params['sub_resource']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -9852,7 +9924,7 @@ class MetaStudioClient(Client):
         """查看租户资源用量信息
 
         查询租户一次性和包周期（包年/包月）资源用量信息。
-        &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询。[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
+        &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询，详见[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
         &gt; 各种资源的计费方式请参考[计费说明](https://support.huaweicloud.com/productdesc-metastudio/metastudio_01_0006.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.

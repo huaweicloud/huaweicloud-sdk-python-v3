@@ -26,7 +26,6 @@ class AutopilotClusterSpec:
         'custom_san': 'list[str]',
         'enable_snat': 'bool',
         'enable_swr_image_access': 'bool',
-        'enable_autopilot': 'bool',
         'ipv6enable': 'bool',
         'host_network': 'AutopilotHostNetwork',
         'container_network': 'AutopilotContainerNetwork',
@@ -52,7 +51,6 @@ class AutopilotClusterSpec:
         'custom_san': 'customSan',
         'enable_snat': 'enableSnat',
         'enable_swr_image_access': 'enableSWRImageAccess',
-        'enable_autopilot': 'enableAutopilot',
         'ipv6enable': 'ipv6enable',
         'host_network': 'hostNetwork',
         'container_network': 'containerNetwork',
@@ -68,7 +66,7 @@ class AutopilotClusterSpec:
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, enable_autopilot=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, configurations_override=None):
         """AutopilotClusterSpec
 
         The model defined in huaweicloud sdk
@@ -91,8 +89,6 @@ class AutopilotClusterSpec:
         :type enable_snat: bool
         :param enable_swr_image_access: 集群是否配置镜像访问。为确保您的集群节点可以从容器镜像服务中拉取镜像，默认使用所选VPC中已有的SWR和OBS终端节点，否则将会为您自动新建SWR和OBS终端节点。
         :type enable_swr_image_access: bool
-        :param enable_autopilot: 是否为Autopilot集群。
-        :type enable_autopilot: bool
         :param ipv6enable: 集群是否使用IPv6模式。
         :type ipv6enable: bool
         :param host_network: 
@@ -132,7 +128,6 @@ class AutopilotClusterSpec:
         self._custom_san = None
         self._enable_snat = None
         self._enable_swr_image_access = None
-        self._enable_autopilot = None
         self._ipv6enable = None
         self._host_network = None
         self._container_network = None
@@ -165,8 +160,6 @@ class AutopilotClusterSpec:
             self.enable_snat = enable_snat
         if enable_swr_image_access is not None:
             self.enable_swr_image_access = enable_swr_image_access
-        if enable_autopilot is not None:
-            self.enable_autopilot = enable_autopilot
         if ipv6enable is not None:
             self.ipv6enable = ipv6enable
         self.host_network = host_network
@@ -389,28 +382,6 @@ class AutopilotClusterSpec:
         :type enable_swr_image_access: bool
         """
         self._enable_swr_image_access = enable_swr_image_access
-
-    @property
-    def enable_autopilot(self):
-        """Gets the enable_autopilot of this AutopilotClusterSpec.
-
-        是否为Autopilot集群。
-
-        :return: The enable_autopilot of this AutopilotClusterSpec.
-        :rtype: bool
-        """
-        return self._enable_autopilot
-
-    @enable_autopilot.setter
-    def enable_autopilot(self, enable_autopilot):
-        """Sets the enable_autopilot of this AutopilotClusterSpec.
-
-        是否为Autopilot集群。
-
-        :param enable_autopilot: The enable_autopilot of this AutopilotClusterSpec.
-        :type enable_autopilot: bool
-        """
-        self._enable_autopilot = enable_autopilot
 
     @property
     def ipv6enable(self):

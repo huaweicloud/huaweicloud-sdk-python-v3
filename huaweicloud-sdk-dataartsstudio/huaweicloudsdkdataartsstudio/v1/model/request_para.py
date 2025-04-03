@@ -23,7 +23,8 @@ class RequestPara:
         'description': 'str',
         'necessary': 'bool',
         'example_value': 'str',
-        'default_value': 'str'
+        'default_value': 'str',
+        'support_null': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class RequestPara:
         'description': 'description',
         'necessary': 'necessary',
         'example_value': 'example_value',
-        'default_value': 'default_value'
+        'default_value': 'default_value',
+        'support_null': 'support_null'
     }
 
-    def __init__(self, name=None, position=None, type=None, description=None, necessary=None, example_value=None, default_value=None):
+    def __init__(self, name=None, position=None, type=None, description=None, necessary=None, example_value=None, default_value=None, support_null=None):
         """RequestPara
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class RequestPara:
         :type example_value: str
         :param default_value: 默认值
         :type default_value: str
+        :param support_null: 支持NULL值。
+        :type support_null: bool
         """
         
         
@@ -66,6 +70,7 @@ class RequestPara:
         self._necessary = None
         self._example_value = None
         self._default_value = None
+        self._support_null = None
         self.discriminator = None
 
         if name is not None:
@@ -82,6 +87,8 @@ class RequestPara:
             self.example_value = example_value
         if default_value is not None:
             self.default_value = default_value
+        if support_null is not None:
+            self.support_null = support_null
 
     @property
     def name(self):
@@ -236,6 +243,28 @@ class RequestPara:
         :type default_value: str
         """
         self._default_value = default_value
+
+    @property
+    def support_null(self):
+        """Gets the support_null of this RequestPara.
+
+        支持NULL值。
+
+        :return: The support_null of this RequestPara.
+        :rtype: bool
+        """
+        return self._support_null
+
+    @support_null.setter
+    def support_null(self, support_null):
+        """Sets the support_null of this RequestPara.
+
+        支持NULL值。
+
+        :param support_null: The support_null of this RequestPara.
+        :type support_null: bool
+        """
+        self._support_null = support_null
 
     def to_dict(self):
         """Returns the model properties as a dict"""

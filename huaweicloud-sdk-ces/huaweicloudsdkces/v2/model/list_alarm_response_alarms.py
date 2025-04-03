@@ -31,7 +31,9 @@ class ListAlarmResponseAlarms:
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
         'enterprise_project_id': 'str',
-        'alarm_template_id': 'str'
+        'alarm_template_id': 'str',
+        'product_name': 'str',
+        'resource_level': 'ResourceLevel'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class ListAlarmResponseAlarms:
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
         'enterprise_project_id': 'enterprise_project_id',
-        'alarm_template_id': 'alarm_template_id'
+        'alarm_template_id': 'alarm_template_id',
+        'product_name': 'product_name',
+        'resource_level': 'resource_level'
     }
 
-    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, alarm_template_id=None):
+    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None):
         """ListAlarmResponseAlarms
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class ListAlarmResponseAlarms:
         :type enterprise_project_id: str
         :param alarm_template_id: 告警规则关联告警模板ID
         :type alarm_template_id: str
+        :param product_name: 产品层级跨纬规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
+        :param resource_level: 
+        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
         """
         
         
@@ -106,6 +114,8 @@ class ListAlarmResponseAlarms:
         self._notification_end_time = None
         self._enterprise_project_id = None
         self._alarm_template_id = None
+        self._product_name = None
+        self._resource_level = None
         self.discriminator = None
 
         if alarm_id is not None:
@@ -138,6 +148,10 @@ class ListAlarmResponseAlarms:
             self.enterprise_project_id = enterprise_project_id
         if alarm_template_id is not None:
             self.alarm_template_id = alarm_template_id
+        if product_name is not None:
+            self.product_name = product_name
+        if resource_level is not None:
+            self.resource_level = resource_level
 
     @property
     def alarm_id(self):
@@ -464,6 +478,46 @@ class ListAlarmResponseAlarms:
         :type alarm_template_id: str
         """
         self._alarm_template_id = alarm_template_id
+
+    @property
+    def product_name(self):
+        """Gets the product_name of this ListAlarmResponseAlarms.
+
+        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this ListAlarmResponseAlarms.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        """Sets the product_name of this ListAlarmResponseAlarms.
+
+        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this ListAlarmResponseAlarms.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def resource_level(self):
+        """Gets the resource_level of this ListAlarmResponseAlarms.
+
+        :return: The resource_level of this ListAlarmResponseAlarms.
+        :rtype: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        """Sets the resource_level of this ListAlarmResponseAlarms.
+
+        :param resource_level: The resource_level of this ListAlarmResponseAlarms.
+        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        """
+        self._resource_level = resource_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

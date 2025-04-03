@@ -37,7 +37,7 @@ class ListStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
         :param _from: 起始时间(13位时间戳)，需要和to同时使用
         :type _from: int
@@ -71,7 +71,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListStatisticsRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListStatisticsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListStatisticsRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListStatisticsRequest.
         :type enterprise_project_id: str

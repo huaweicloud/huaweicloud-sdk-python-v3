@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ConfirmSmartLiveRoomRequest:
+class CreateUserRequest:
 
     """
     Attributes:
@@ -17,102 +17,101 @@ class ConfirmSmartLiveRoomRequest:
     sensitive_list = []
 
     openapi_types = {
-        'room_id': 'str',
-        'x_app_user_id': 'str',
-        'body': 'ConfirmSmartLiveRoomReq'
+        'authorization': 'str',
+        'tenant_id': 'str',
+        'body': 'CreateUserReqBody'
     }
 
     attribute_map = {
-        'room_id': 'room_id',
-        'x_app_user_id': 'X-App-UserId',
+        'authorization': 'Authorization',
+        'tenant_id': 'tenant_id',
         'body': 'body'
     }
 
-    def __init__(self, room_id=None, x_app_user_id=None, body=None):
-        """ConfirmSmartLiveRoomRequest
+    def __init__(self, authorization=None, tenant_id=None, body=None):
+        """CreateUserRequest
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 剧本ID。
-        :type room_id: str
-        :param x_app_user_id: 第三方用户ID。不允许输入中文。
-        :type x_app_user_id: str
-        :param body: Body of the ConfirmSmartLiveRoomRequest
-        :type body: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomReq`
+        :param authorization: 承载令牌
+        :type authorization: str
+        :param tenant_id: 租户的全局唯一标识符（ID）
+        :type tenant_id: str
+        :param body: Body of the CreateUserRequest
+        :type body: :class:`huaweicloudsdkidentitycenterscim.v1.CreateUserReqBody`
         """
         
         
 
-        self._room_id = None
-        self._x_app_user_id = None
+        self._authorization = None
+        self._tenant_id = None
         self._body = None
         self.discriminator = None
 
-        self.room_id = room_id
-        if x_app_user_id is not None:
-            self.x_app_user_id = x_app_user_id
+        self.authorization = authorization
+        self.tenant_id = tenant_id
         if body is not None:
             self.body = body
 
     @property
-    def room_id(self):
-        """Gets the room_id of this ConfirmSmartLiveRoomRequest.
+    def authorization(self):
+        """Gets the authorization of this CreateUserRequest.
 
-        剧本ID。
+        承载令牌
 
-        :return: The room_id of this ConfirmSmartLiveRoomRequest.
+        :return: The authorization of this CreateUserRequest.
         :rtype: str
         """
-        return self._room_id
+        return self._authorization
 
-    @room_id.setter
-    def room_id(self, room_id):
-        """Sets the room_id of this ConfirmSmartLiveRoomRequest.
+    @authorization.setter
+    def authorization(self, authorization):
+        """Sets the authorization of this CreateUserRequest.
 
-        剧本ID。
+        承载令牌
 
-        :param room_id: The room_id of this ConfirmSmartLiveRoomRequest.
-        :type room_id: str
+        :param authorization: The authorization of this CreateUserRequest.
+        :type authorization: str
         """
-        self._room_id = room_id
+        self._authorization = authorization
 
     @property
-    def x_app_user_id(self):
-        """Gets the x_app_user_id of this ConfirmSmartLiveRoomRequest.
+    def tenant_id(self):
+        """Gets the tenant_id of this CreateUserRequest.
 
-        第三方用户ID。不允许输入中文。
+        租户的全局唯一标识符（ID）
 
-        :return: The x_app_user_id of this ConfirmSmartLiveRoomRequest.
+        :return: The tenant_id of this CreateUserRequest.
         :rtype: str
         """
-        return self._x_app_user_id
+        return self._tenant_id
 
-    @x_app_user_id.setter
-    def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ConfirmSmartLiveRoomRequest.
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this CreateUserRequest.
 
-        第三方用户ID。不允许输入中文。
+        租户的全局唯一标识符（ID）
 
-        :param x_app_user_id: The x_app_user_id of this ConfirmSmartLiveRoomRequest.
-        :type x_app_user_id: str
+        :param tenant_id: The tenant_id of this CreateUserRequest.
+        :type tenant_id: str
         """
-        self._x_app_user_id = x_app_user_id
+        self._tenant_id = tenant_id
 
     @property
     def body(self):
-        """Gets the body of this ConfirmSmartLiveRoomRequest.
+        """Gets the body of this CreateUserRequest.
 
-        :return: The body of this ConfirmSmartLiveRoomRequest.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomReq`
+        :return: The body of this CreateUserRequest.
+        :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.CreateUserReqBody`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmSmartLiveRoomRequest.
+        """Sets the body of this CreateUserRequest.
 
-        :param body: The body of this ConfirmSmartLiveRoomRequest.
-        :type body: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmartLiveRoomReq`
+        :param body: The body of this CreateUserRequest.
+        :type body: :class:`huaweicloudsdkidentitycenterscim.v1.CreateUserReqBody`
         """
         self._body = body
 
@@ -158,7 +157,7 @@ class ConfirmSmartLiveRoomRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfirmSmartLiveRoomRequest):
+        if not isinstance(other, CreateUserRequest):
             return False
 
         return self.__dict__ == other.__dict__

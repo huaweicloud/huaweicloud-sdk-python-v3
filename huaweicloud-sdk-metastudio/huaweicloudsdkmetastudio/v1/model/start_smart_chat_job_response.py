@@ -27,6 +27,7 @@ class StartSmartChatJobResponse(SdkResponse):
         'chat_video_type': 'str',
         'region': 'str',
         'chat_access_address': 'str',
+        'chat_access_rest_address': 'str',
         'is_transparent': 'bool',
         'default_language': 'str',
         'x_request_id': 'str'
@@ -42,12 +43,13 @@ class StartSmartChatJobResponse(SdkResponse):
         'chat_video_type': 'chat_video_type',
         'region': 'region',
         'chat_access_address': 'chat_access_address',
+        'chat_access_rest_address': 'chat_access_rest_address',
         'is_transparent': 'is_transparent',
         'default_language': 'default_language',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, language=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_video_type=None, region=None, chat_access_address=None, is_transparent=None, default_language=None, x_request_id=None):
+    def __init__(self, job_id=None, language=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_video_type=None, region=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, x_request_id=None):
         """StartSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class StartSmartChatJobResponse(SdkResponse):
         :type region: str
         :param chat_access_address: 智能交互接入地址。
         :type chat_access_address: str
+        :param chat_access_rest_address: 智能交互Rest接口接入地址。
+        :type chat_access_rest_address: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
         :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
@@ -89,6 +93,7 @@ class StartSmartChatJobResponse(SdkResponse):
         self._chat_video_type = None
         self._region = None
         self._chat_access_address = None
+        self._chat_access_rest_address = None
         self._is_transparent = None
         self._default_language = None
         self._x_request_id = None
@@ -112,6 +117,8 @@ class StartSmartChatJobResponse(SdkResponse):
             self.region = region
         if chat_access_address is not None:
             self.chat_access_address = chat_access_address
+        if chat_access_rest_address is not None:
+            self.chat_access_rest_address = chat_access_rest_address
         if is_transparent is not None:
             self.is_transparent = is_transparent
         if default_language is not None:
@@ -300,6 +307,28 @@ class StartSmartChatJobResponse(SdkResponse):
         :type chat_access_address: str
         """
         self._chat_access_address = chat_access_address
+
+    @property
+    def chat_access_rest_address(self):
+        """Gets the chat_access_rest_address of this StartSmartChatJobResponse.
+
+        智能交互Rest接口接入地址。
+
+        :return: The chat_access_rest_address of this StartSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._chat_access_rest_address
+
+    @chat_access_rest_address.setter
+    def chat_access_rest_address(self, chat_access_rest_address):
+        """Sets the chat_access_rest_address of this StartSmartChatJobResponse.
+
+        智能交互Rest接口接入地址。
+
+        :param chat_access_rest_address: The chat_access_rest_address of this StartSmartChatJobResponse.
+        :type chat_access_rest_address: str
+        """
+        self._chat_access_rest_address = chat_access_rest_address
 
     @property
     def is_transparent(self):

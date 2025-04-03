@@ -22,6 +22,7 @@ class LayerConfig:
         'group_id': 'str',
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
+        'rotation': 'LayerRotationConfig',
         'image_config': 'ImageLayerConfig',
         'video_config': 'VideoLayerConfig',
         'text_config': 'TextLayerConfig'
@@ -33,12 +34,13 @@ class LayerConfig:
         'group_id': 'group_id',
         'position': 'position',
         'size': 'size',
+        'rotation': 'rotation',
         'image_config': 'image_config',
         'video_config': 'video_config',
         'text_config': 'text_config'
     }
 
-    def __init__(self, layer_type=None, asset_id=None, group_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
+    def __init__(self, layer_type=None, asset_id=None, group_id=None, position=None, size=None, rotation=None, image_config=None, video_config=None, text_config=None):
         """LayerConfig
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class LayerConfig:
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
         :param size: 
         :type size: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
+        :param rotation: 
+        :type rotation: :class:`huaweicloudsdkmetastudio.v1.LayerRotationConfig`
         :param image_config: 
         :type image_config: :class:`huaweicloudsdkmetastudio.v1.ImageLayerConfig`
         :param video_config: 
@@ -68,6 +72,7 @@ class LayerConfig:
         self._group_id = None
         self._position = None
         self._size = None
+        self._rotation = None
         self._image_config = None
         self._video_config = None
         self._text_config = None
@@ -82,6 +87,8 @@ class LayerConfig:
             self.position = position
         if size is not None:
             self.size = size
+        if rotation is not None:
+            self.rotation = rotation
         if image_config is not None:
             self.image_config = image_config
         if video_config is not None:
@@ -190,6 +197,24 @@ class LayerConfig:
         :type size: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
         """
         self._size = size
+
+    @property
+    def rotation(self):
+        """Gets the rotation of this LayerConfig.
+
+        :return: The rotation of this LayerConfig.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerRotationConfig`
+        """
+        return self._rotation
+
+    @rotation.setter
+    def rotation(self, rotation):
+        """Sets the rotation of this LayerConfig.
+
+        :param rotation: The rotation of this LayerConfig.
+        :type rotation: :class:`huaweicloudsdkmetastudio.v1.LayerRotationConfig`
+        """
+        self._rotation = rotation
 
     @property
     def image_config(self):

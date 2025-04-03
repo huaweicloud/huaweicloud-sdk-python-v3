@@ -18,15 +18,17 @@ class CreateSubtitleFileReq:
 
     openapi_types = {
         'script_id': 'str',
-        'sequence_no': 'int'
+        'sequence_no': 'int',
+        'callback_config': 'CallBackConfig'
     }
 
     attribute_map = {
         'script_id': 'script_id',
-        'sequence_no': 'sequence_no'
+        'sequence_no': 'sequence_no',
+        'callback_config': 'callback_config'
     }
 
-    def __init__(self, script_id=None, sequence_no=None):
+    def __init__(self, script_id=None, sequence_no=None, callback_config=None):
         """CreateSubtitleFileReq
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class CreateSubtitleFileReq:
         :type script_id: str
         :param sequence_no: 剧本序号。  &gt; * 剧本序号不填生成所有场景的字幕；如果需要生成单场景的字幕，需要填剧本序号。
         :type sequence_no: int
+        :param callback_config: 
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         
         
 
         self._script_id = None
         self._sequence_no = None
+        self._callback_config = None
         self.discriminator = None
 
         if script_id is not None:
             self.script_id = script_id
         if sequence_no is not None:
             self.sequence_no = sequence_no
+        if callback_config is not None:
+            self.callback_config = callback_config
 
     @property
     def script_id(self):
@@ -91,6 +98,24 @@ class CreateSubtitleFileReq:
         :type sequence_no: int
         """
         self._sequence_no = sequence_no
+
+    @property
+    def callback_config(self):
+        """Gets the callback_config of this CreateSubtitleFileReq.
+
+        :return: The callback_config of this CreateSubtitleFileReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        return self._callback_config
+
+    @callback_config.setter
+    def callback_config(self, callback_config):
+        """Sets the callback_config of this CreateSubtitleFileReq.
+
+        :param callback_config: The callback_config of this CreateSubtitleFileReq.
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        self._callback_config = callback_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

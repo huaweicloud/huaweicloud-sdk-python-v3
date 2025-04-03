@@ -29,7 +29,7 @@ class AudioInfo:
 
         The model defined in huaweicloud sdk
 
-        :param audio_id: **参数解释**： 音频id。 &gt; * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id **约束限制**： 不涉及 **取值范围**： 0-10000 **默认取值**： 不涉及
+        :param audio_id: **参数解释**： 音频id。 &gt; * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id  **约束限制**： 不涉及 **默认取值**： 不涉及
         :type audio_id: int
         """
         
@@ -45,7 +45,7 @@ class AudioInfo:
     def audio_id(self):
         """Gets the audio_id of this AudioInfo.
 
-        **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id **约束限制**： 不涉及 **取值范围**： 0-10000 **默认取值**： 不涉及
+        **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id  **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :return: The audio_id of this AudioInfo.
         :rtype: int
@@ -56,7 +56,7 @@ class AudioInfo:
     def audio_id(self, audio_id):
         """Sets the audio_id of this AudioInfo.
 
-        **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id **约束限制**： 不涉及 **取值范围**： 0-10000 **默认取值**： 不涉及
+        **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id  **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :param audio_id: The audio_id of this AudioInfo.
         :type audio_id: int

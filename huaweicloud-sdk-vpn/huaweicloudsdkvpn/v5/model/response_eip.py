@@ -26,7 +26,8 @@ class ResponseEip:
         'bandwidth_id': 'str',
         'bandwidth_size': 'int',
         'bandwidth_name': 'str',
-        'bandwidth_billing_info': 'str'
+        'bandwidth_billing_info': 'str',
+        'share_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ResponseEip:
         'bandwidth_id': 'bandwidth_id',
         'bandwidth_size': 'bandwidth_size',
         'bandwidth_name': 'bandwidth_name',
-        'bandwidth_billing_info': 'bandwidth_billing_info'
+        'bandwidth_billing_info': 'bandwidth_billing_info',
+        'share_type': 'share_type'
     }
 
-    def __init__(self, id=None, ip_version=None, ip_billing_info=None, type=None, ip_address=None, charge_mode=None, bandwidth_id=None, bandwidth_size=None, bandwidth_name=None, bandwidth_billing_info=None):
+    def __init__(self, id=None, ip_version=None, ip_billing_info=None, type=None, ip_address=None, charge_mode=None, bandwidth_id=None, bandwidth_size=None, bandwidth_name=None, bandwidth_billing_info=None, share_type=None):
         """ResponseEip
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ResponseEip:
         :type bandwidth_name: str
         :param bandwidth_billing_info: 带宽订单信息
         :type bandwidth_billing_info: str
+        :param share_type: 功能说明：类型  \&quot;WHOLE\&quot;为共享带宽，\&quot;PER\&quot;为独占带宽
+        :type share_type: str
         """
         
         
@@ -81,6 +85,7 @@ class ResponseEip:
         self._bandwidth_size = None
         self._bandwidth_name = None
         self._bandwidth_billing_info = None
+        self._share_type = None
         self.discriminator = None
 
         if id is not None:
@@ -103,6 +108,8 @@ class ResponseEip:
             self.bandwidth_name = bandwidth_name
         if bandwidth_billing_info is not None:
             self.bandwidth_billing_info = bandwidth_billing_info
+        if share_type is not None:
+            self.share_type = share_type
 
     @property
     def id(self):
@@ -323,6 +330,28 @@ class ResponseEip:
         :type bandwidth_billing_info: str
         """
         self._bandwidth_billing_info = bandwidth_billing_info
+
+    @property
+    def share_type(self):
+        """Gets the share_type of this ResponseEip.
+
+        功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
+
+        :return: The share_type of this ResponseEip.
+        :rtype: str
+        """
+        return self._share_type
+
+    @share_type.setter
+    def share_type(self, share_type):
+        """Sets the share_type of this ResponseEip.
+
+        功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
+
+        :param share_type: The share_type of this ResponseEip.
+        :type share_type: str
+        """
+        self._share_type = share_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

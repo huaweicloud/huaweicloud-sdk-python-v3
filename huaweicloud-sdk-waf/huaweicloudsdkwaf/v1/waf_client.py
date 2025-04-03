@@ -5956,7 +5956,7 @@ class WafClient(Client):
     def show_privacy_rule(self, request):
         """查询隐私屏蔽防护规则
 
-        删除隐私屏蔽防护规则
+        查询隐私屏蔽防护规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 

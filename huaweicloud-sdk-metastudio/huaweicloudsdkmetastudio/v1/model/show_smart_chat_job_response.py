@@ -34,6 +34,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         'language': 'LanguageEnum',
         'chat_video_type': 'str',
         'chat_access_address': 'str',
+        'chat_access_rest_address': 'str',
         'is_transparent': 'bool',
         'default_language': 'str',
         'x_request_id': 'str'
@@ -56,12 +57,13 @@ class ShowSmartChatJobResponse(SdkResponse):
         'language': 'language',
         'chat_video_type': 'chat_video_type',
         'chat_access_address': 'chat_access_address',
+        'chat_access_rest_address': 'chat_access_rest_address',
         'is_transparent': 'is_transparent',
         'default_language': 'default_language',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, is_transparent=None, default_language=None, x_request_id=None):
+    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, x_request_id=None):
         """ShowSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +100,8 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type chat_video_type: str
         :param chat_access_address: 智能交互接入地址。
         :type chat_access_address: str
+        :param chat_access_rest_address: 智能交互Rest接口接入地址。
+        :type chat_access_rest_address: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
         :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
@@ -124,6 +128,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         self._language = None
         self._chat_video_type = None
         self._chat_access_address = None
+        self._chat_access_rest_address = None
         self._is_transparent = None
         self._default_language = None
         self._x_request_id = None
@@ -161,6 +166,8 @@ class ShowSmartChatJobResponse(SdkResponse):
             self.chat_video_type = chat_video_type
         if chat_access_address is not None:
             self.chat_access_address = chat_access_address
+        if chat_access_rest_address is not None:
+            self.chat_access_rest_address = chat_access_rest_address
         if is_transparent is not None:
             self.is_transparent = is_transparent
         if default_language is not None:
@@ -499,6 +506,28 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type chat_access_address: str
         """
         self._chat_access_address = chat_access_address
+
+    @property
+    def chat_access_rest_address(self):
+        """Gets the chat_access_rest_address of this ShowSmartChatJobResponse.
+
+        智能交互Rest接口接入地址。
+
+        :return: The chat_access_rest_address of this ShowSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._chat_access_rest_address
+
+    @chat_access_rest_address.setter
+    def chat_access_rest_address(self, chat_access_rest_address):
+        """Sets the chat_access_rest_address of this ShowSmartChatJobResponse.
+
+        智能交互Rest接口接入地址。
+
+        :param chat_access_rest_address: The chat_access_rest_address of this ShowSmartChatJobResponse.
+        :type chat_access_rest_address: str
+        """
+        self._chat_access_rest_address = chat_access_rest_address
 
     @property
     def is_transparent(self):

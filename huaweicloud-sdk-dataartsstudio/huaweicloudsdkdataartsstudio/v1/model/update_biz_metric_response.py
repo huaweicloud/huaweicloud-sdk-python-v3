@@ -18,7 +18,7 @@ class UpdateBizMetricResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'UpdateBizMetricResultData'
+        'data': 'CreateBizMetricResultData'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class UpdateBizMetricResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkdataartsstudio.v1.UpdateBizMetricResultData`
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateBizMetricResultData`
         """
         
         super(UpdateBizMetricResponse, self).__init__()
@@ -47,7 +47,7 @@ class UpdateBizMetricResponse(SdkResponse):
         """Gets the data of this UpdateBizMetricResponse.
 
         :return: The data of this UpdateBizMetricResponse.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateBizMetricResultData`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateBizMetricResultData`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class UpdateBizMetricResponse(SdkResponse):
         """Sets the data of this UpdateBizMetricResponse.
 
         :param data: The data of this UpdateBizMetricResponse.
-        :type data: :class:`huaweicloudsdkdataartsstudio.v1.UpdateBizMetricResultData`
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateBizMetricResultData`
         """
         self._data = data
 

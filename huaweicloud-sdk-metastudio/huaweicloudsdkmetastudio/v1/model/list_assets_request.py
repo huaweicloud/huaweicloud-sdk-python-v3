@@ -46,7 +46,8 @@ class ListAssetsRequest:
         'human_model_2d_version': 'str',
         'include_device_name': 'str',
         'exclude_device_name': 'str',
-        'supported_service': 'str'
+        'supported_service': 'str',
+        'app_user_id': 'str'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class ListAssetsRequest:
         'human_model_2d_version': 'human_model_2d_version',
         'include_device_name': 'include_device_name',
         'exclude_device_name': 'exclude_device_name',
-        'supported_service': 'supported_service'
+        'supported_service': 'supported_service',
+        'app_user_id': 'app_user_id'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class ListAssetsRequest:
         :type exclude_device_name: str
         :param supported_service: 资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
         :type supported_service: str
+        :param app_user_id: 第三方用户ID。不允许输入中文。
+        :type app_user_id: str
         """
         
         
@@ -181,6 +185,7 @@ class ListAssetsRequest:
         self._include_device_name = None
         self._exclude_device_name = None
         self._supported_service = None
+        self._app_user_id = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -243,6 +248,8 @@ class ListAssetsRequest:
             self.exclude_device_name = exclude_device_name
         if supported_service is not None:
             self.supported_service = supported_service
+        if app_user_id is not None:
+            self.app_user_id = app_user_id
 
     @property
     def x_app_user_id(self):
@@ -903,6 +910,28 @@ class ListAssetsRequest:
         :type supported_service: str
         """
         self._supported_service = supported_service
+
+    @property
+    def app_user_id(self):
+        """Gets the app_user_id of this ListAssetsRequest.
+
+        第三方用户ID。不允许输入中文。
+
+        :return: The app_user_id of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._app_user_id
+
+    @app_user_id.setter
+    def app_user_id(self, app_user_id):
+        """Sets the app_user_id of this ListAssetsRequest.
+
+        第三方用户ID。不允许输入中文。
+
+        :param app_user_id: The app_user_id of this ListAssetsRequest.
+        :type app_user_id: str
+        """
+        self._app_user_id = app_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

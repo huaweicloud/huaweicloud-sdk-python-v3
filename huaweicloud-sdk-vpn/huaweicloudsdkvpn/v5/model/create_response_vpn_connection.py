@@ -37,8 +37,6 @@ class CreateResponseVpnConnection:
         'ha_role': 'str',
         'tags': 'list[VpnResourceTag]',
         'peer_subnets_v6': 'list[str]',
-        'tunnel_local_address_v6': 'str',
-        'tunnel_peer_address_v6': 'str',
         'policy_rules_v6': 'list[PolicyRule]'
     }
 
@@ -63,12 +61,10 @@ class CreateResponseVpnConnection:
         'ha_role': 'ha_role',
         'tags': 'tags',
         'peer_subnets_v6': 'peer_subnets_v6',
-        'tunnel_local_address_v6': 'tunnel_local_address_v6',
-        'tunnel_peer_address_v6': 'tunnel_peer_address_v6',
         'policy_rules_v6': 'policy_rules_v6'
     }
 
-    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, ha_role=None, tags=None, peer_subnets_v6=None, tunnel_local_address_v6=None, tunnel_peer_address_v6=None, policy_rules_v6=None):
+    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
         """CreateResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -113,10 +109,6 @@ class CreateResponseVpnConnection:
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         :param peer_subnets_v6: 使能ipv6的对端子网
         :type peer_subnets_v6: list[str]
-        :param tunnel_local_address_v6: 本端ipv6隧道口地址
-        :type tunnel_local_address_v6: str
-        :param tunnel_peer_address_v6: 对端ipv6隧道口地址
-        :type tunnel_peer_address_v6: str
         :param policy_rules_v6: 策略模式的ipv6策略规则组
         :type policy_rules_v6: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
         """
@@ -143,8 +135,6 @@ class CreateResponseVpnConnection:
         self._ha_role = None
         self._tags = None
         self._peer_subnets_v6 = None
-        self._tunnel_local_address_v6 = None
-        self._tunnel_peer_address_v6 = None
         self._policy_rules_v6 = None
         self.discriminator = None
 
@@ -188,10 +178,6 @@ class CreateResponseVpnConnection:
             self.tags = tags
         if peer_subnets_v6 is not None:
             self.peer_subnets_v6 = peer_subnets_v6
-        if tunnel_local_address_v6 is not None:
-            self.tunnel_local_address_v6 = tunnel_local_address_v6
-        if tunnel_peer_address_v6 is not None:
-            self.tunnel_peer_address_v6 = tunnel_peer_address_v6
         if policy_rules_v6 is not None:
             self.policy_rules_v6 = policy_rules_v6
 
@@ -626,50 +612,6 @@ class CreateResponseVpnConnection:
         :type peer_subnets_v6: list[str]
         """
         self._peer_subnets_v6 = peer_subnets_v6
-
-    @property
-    def tunnel_local_address_v6(self):
-        """Gets the tunnel_local_address_v6 of this CreateResponseVpnConnection.
-
-        本端ipv6隧道口地址
-
-        :return: The tunnel_local_address_v6 of this CreateResponseVpnConnection.
-        :rtype: str
-        """
-        return self._tunnel_local_address_v6
-
-    @tunnel_local_address_v6.setter
-    def tunnel_local_address_v6(self, tunnel_local_address_v6):
-        """Sets the tunnel_local_address_v6 of this CreateResponseVpnConnection.
-
-        本端ipv6隧道口地址
-
-        :param tunnel_local_address_v6: The tunnel_local_address_v6 of this CreateResponseVpnConnection.
-        :type tunnel_local_address_v6: str
-        """
-        self._tunnel_local_address_v6 = tunnel_local_address_v6
-
-    @property
-    def tunnel_peer_address_v6(self):
-        """Gets the tunnel_peer_address_v6 of this CreateResponseVpnConnection.
-
-        对端ipv6隧道口地址
-
-        :return: The tunnel_peer_address_v6 of this CreateResponseVpnConnection.
-        :rtype: str
-        """
-        return self._tunnel_peer_address_v6
-
-    @tunnel_peer_address_v6.setter
-    def tunnel_peer_address_v6(self, tunnel_peer_address_v6):
-        """Sets the tunnel_peer_address_v6 of this CreateResponseVpnConnection.
-
-        对端ipv6隧道口地址
-
-        :param tunnel_peer_address_v6: The tunnel_peer_address_v6 of this CreateResponseVpnConnection.
-        :type tunnel_peer_address_v6: str
-        """
-        self._tunnel_peer_address_v6 = tunnel_peer_address_v6
 
     @property
     def policy_rules_v6(self):

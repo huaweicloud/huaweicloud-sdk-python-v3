@@ -23,7 +23,8 @@ class VpnUser:
         'user_group_id': 'str',
         'user_group_name': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'static_ip': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class VpnUser:
         'user_group_id': 'user_group_id',
         'user_group_name': 'user_group_name',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'static_ip': 'static_ip'
     }
 
-    def __init__(self, id=None, name=None, description=None, user_group_id=None, user_group_name=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, user_group_id=None, user_group_name=None, created_at=None, updated_at=None, static_ip=None):
         """VpnUser
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class VpnUser:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param static_ip: 静态客户端IP地址，disable表示随机分配客户端IP
+        :type static_ip: str
         """
         
         
@@ -66,6 +70,7 @@ class VpnUser:
         self._user_group_name = None
         self._created_at = None
         self._updated_at = None
+        self._static_ip = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +87,8 @@ class VpnUser:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if static_ip is not None:
+            self.static_ip = static_ip
 
     @property
     def id(self):
@@ -236,6 +243,28 @@ class VpnUser:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def static_ip(self):
+        """Gets the static_ip of this VpnUser.
+
+        静态客户端IP地址，disable表示随机分配客户端IP
+
+        :return: The static_ip of this VpnUser.
+        :rtype: str
+        """
+        return self._static_ip
+
+    @static_ip.setter
+    def static_ip(self, static_ip):
+        """Sets the static_ip of this VpnUser.
+
+        静态客户端IP地址，disable表示随机分配客户端IP
+
+        :param static_ip: The static_ip of this VpnUser.
+        :type static_ip: str
+        """
+        self._static_ip = static_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

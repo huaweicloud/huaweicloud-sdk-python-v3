@@ -26,6 +26,7 @@ class ListServiceDetailsResponse(SdkResponse):
         'approval_enabled': 'bool',
         'status': 'str',
         'service_type': 'str',
+        'supported_editions': 'list[str]',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'project_id': 'str',
@@ -48,6 +49,7 @@ class ListServiceDetailsResponse(SdkResponse):
         'approval_enabled': 'approval_enabled',
         'status': 'status',
         'service_type': 'service_type',
+        'supported_editions': 'supported_editions',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
@@ -61,7 +63,7 @@ class ListServiceDetailsResponse(SdkResponse):
         'description': 'description'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, error=None, enable_policy=None, description=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, supported_editions=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, error=None, enable_policy=None, description=None):
         """ListServiceDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class ListServiceDetailsResponse(SdkResponse):
         :type status: str
         :param service_type: 终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
         :type service_type: str
+        :param supported_editions: 终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+        :type supported_editions: list[str]
         :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: datetime
         :param updated_at: 终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
@@ -116,6 +120,7 @@ class ListServiceDetailsResponse(SdkResponse):
         self._approval_enabled = None
         self._status = None
         self._service_type = None
+        self._supported_editions = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
@@ -145,6 +150,8 @@ class ListServiceDetailsResponse(SdkResponse):
             self.status = status
         if service_type is not None:
             self.service_type = service_type
+        if supported_editions is not None:
+            self.supported_editions = supported_editions
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -343,6 +350,28 @@ class ListServiceDetailsResponse(SdkResponse):
         :type service_type: str
         """
         self._service_type = service_type
+
+    @property
+    def supported_editions(self):
+        """Gets the supported_editions of this ListServiceDetailsResponse.
+
+        终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+
+        :return: The supported_editions of this ListServiceDetailsResponse.
+        :rtype: list[str]
+        """
+        return self._supported_editions
+
+    @supported_editions.setter
+    def supported_editions(self, supported_editions):
+        """Sets the supported_editions of this ListServiceDetailsResponse.
+
+        终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
+
+        :param supported_editions: The supported_editions of this ListServiceDetailsResponse.
+        :type supported_editions: list[str]
+        """
+        self._supported_editions = supported_editions
 
     @property
     def created_at(self):

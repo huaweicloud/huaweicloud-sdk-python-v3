@@ -19,16 +19,18 @@ class ShootScriptAudioFileItem:
     openapi_types = {
         'sequence_no': 'int',
         'audio_file_upload_url': 'str',
-        'audio_file_download_url': 'str'
+        'audio_file_download_url': 'str',
+        'audio_id': 'int'
     }
 
     attribute_map = {
         'sequence_no': 'sequence_no',
         'audio_file_upload_url': 'audio_file_upload_url',
-        'audio_file_download_url': 'audio_file_download_url'
+        'audio_file_download_url': 'audio_file_download_url',
+        'audio_id': 'audio_id'
     }
 
-    def __init__(self, sequence_no=None, audio_file_upload_url=None, audio_file_download_url=None):
+    def __init__(self, sequence_no=None, audio_file_upload_url=None, audio_file_download_url=None, audio_id=None):
         """ShootScriptAudioFileItem
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ShootScriptAudioFileItem:
         :type audio_file_upload_url: str
         :param audio_file_download_url: 语音驱动音频文件下载URL。查询脚本详情时返回。
         :type audio_file_download_url: str
+        :param audio_id: audio id
+        :type audio_id: int
         """
         
         
@@ -46,6 +50,7 @@ class ShootScriptAudioFileItem:
         self._sequence_no = None
         self._audio_file_upload_url = None
         self._audio_file_download_url = None
+        self._audio_id = None
         self.discriminator = None
 
         self.sequence_no = sequence_no
@@ -53,6 +58,8 @@ class ShootScriptAudioFileItem:
             self.audio_file_upload_url = audio_file_upload_url
         if audio_file_download_url is not None:
             self.audio_file_download_url = audio_file_download_url
+        if audio_id is not None:
+            self.audio_id = audio_id
 
     @property
     def sequence_no(self):
@@ -119,6 +126,28 @@ class ShootScriptAudioFileItem:
         :type audio_file_download_url: str
         """
         self._audio_file_download_url = audio_file_download_url
+
+    @property
+    def audio_id(self):
+        """Gets the audio_id of this ShootScriptAudioFileItem.
+
+        audio id
+
+        :return: The audio_id of this ShootScriptAudioFileItem.
+        :rtype: int
+        """
+        return self._audio_id
+
+    @audio_id.setter
+    def audio_id(self, audio_id):
+        """Sets the audio_id of this ShootScriptAudioFileItem.
+
+        audio id
+
+        :param audio_id: The audio_id of this ShootScriptAudioFileItem.
+        :type audio_id: int
+        """
+        self._audio_id = audio_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

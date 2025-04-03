@@ -27,7 +27,8 @@ class ListTenantResourcesRequest:
         'charging_mode': 'str',
         'resource_expire_start_time': 'str',
         'resource_expire_end_time': 'str',
-        'sub_resource': 'str'
+        'sub_resource': 'str',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListTenantResourcesRequest:
         'charging_mode': 'charging_mode',
         'resource_expire_start_time': 'resource_expire_start_time',
         'resource_expire_end_time': 'resource_expire_end_time',
-        'sub_resource': 'sub_resource'
+        'sub_resource': 'sub_resource',
+        'status': 'status'
     }
 
-    def __init__(self, limit=None, offset=None, resource=None, business=None, resource_source=None, resource_id=None, order_id=None, charging_mode=None, resource_expire_start_time=None, resource_expire_end_time=None, sub_resource=None):
+    def __init__(self, limit=None, offset=None, resource=None, business=None, resource_source=None, resource_id=None, order_id=None, charging_mode=None, resource_expire_start_time=None, resource_expire_end_time=None, sub_resource=None, status=None):
         """ListTenantResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListTenantResourcesRequest:
         :type resource_expire_end_time: str
         :param sub_resource: 子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
         :type sub_resource: str
+        :param status: 资源状态。
+        :type status: int
         """
         
         
@@ -86,6 +90,7 @@ class ListTenantResourcesRequest:
         self._resource_expire_start_time = None
         self._resource_expire_end_time = None
         self._sub_resource = None
+        self._status = None
         self.discriminator = None
 
         if limit is not None:
@@ -109,6 +114,8 @@ class ListTenantResourcesRequest:
             self.resource_expire_end_time = resource_expire_end_time
         if sub_resource is not None:
             self.sub_resource = sub_resource
+        if status is not None:
+            self.status = status
 
     @property
     def limit(self):
@@ -351,6 +358,28 @@ class ListTenantResourcesRequest:
         :type sub_resource: str
         """
         self._sub_resource = sub_resource
+
+    @property
+    def status(self):
+        """Gets the status of this ListTenantResourcesRequest.
+
+        资源状态。
+
+        :return: The status of this ListTenantResourcesRequest.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListTenantResourcesRequest.
+
+        资源状态。
+
+        :param status: The status of this ListTenantResourcesRequest.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

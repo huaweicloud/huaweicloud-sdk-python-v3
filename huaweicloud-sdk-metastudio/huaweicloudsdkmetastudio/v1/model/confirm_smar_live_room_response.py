@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateBizMetricResultData:
+class ConfirmSmarLiveRoomResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,51 +18,47 @@ class UpdateBizMetricResultData:
     sensitive_list = []
 
     openapi_types = {
-        'value': 'object'
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'value': 'value'
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, value=None):
-        """UpdateBizMetricResultData
+    def __init__(self, x_request_id=None):
+        """ConfirmSmarLiveRoomResponse
 
         The model defined in huaweicloud sdk
 
-        :param value: value，统一的返回结果的外层数据结构。
-        :type value: object
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
-        
+        super(ConfirmSmarLiveRoomResponse, self).__init__()
 
-        self._value = None
+        self._x_request_id = None
         self.discriminator = None
 
-        if value is not None:
-            self.value = value
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
-    def value(self):
-        """Gets the value of this UpdateBizMetricResultData.
+    def x_request_id(self):
+        """Gets the x_request_id of this ConfirmSmarLiveRoomResponse.
 
-        value，统一的返回结果的外层数据结构。
-
-        :return: The value of this UpdateBizMetricResultData.
-        :rtype: object
+        :return: The x_request_id of this ConfirmSmarLiveRoomResponse.
+        :rtype: str
         """
-        return self._value
+        return self._x_request_id
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this UpdateBizMetricResultData.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ConfirmSmarLiveRoomResponse.
 
-        value，统一的返回结果的外层数据结构。
-
-        :param value: The value of this UpdateBizMetricResultData.
-        :type value: object
+        :param x_request_id: The x_request_id of this ConfirmSmarLiveRoomResponse.
+        :type x_request_id: str
         """
-        self._value = value
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -105,7 +102,7 @@ class UpdateBizMetricResultData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateBizMetricResultData):
+        if not isinstance(other, ConfirmSmarLiveRoomResponse):
             return False
 
         return self.__dict__ == other.__dict__

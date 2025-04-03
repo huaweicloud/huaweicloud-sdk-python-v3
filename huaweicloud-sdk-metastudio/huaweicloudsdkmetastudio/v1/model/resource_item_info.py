@@ -19,6 +19,7 @@ class ResourceItemInfo:
     openapi_types = {
         'resource_id': 'str',
         'order_id': 'str',
+        'bound_asset': 'BoundAssetInfo',
         'resource_expire_time': 'str',
         'resource_type': 'str',
         'business_type': 'str',
@@ -28,12 +29,14 @@ class ResourceItemInfo:
         'resource_source': 'str',
         'amount': 'float',
         'usage': 'float',
+        'status': 'int',
         'unit': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'order_id': 'order_id',
+        'bound_asset': 'bound_asset',
         'resource_expire_time': 'resource_expire_time',
         'resource_type': 'resource_type',
         'business_type': 'business_type',
@@ -43,10 +46,11 @@ class ResourceItemInfo:
         'resource_source': 'resource_source',
         'amount': 'amount',
         'usage': 'usage',
+        'status': 'status',
         'unit': 'unit'
     }
 
-    def __init__(self, resource_id=None, order_id=None, resource_expire_time=None, resource_type=None, business_type=None, sub_resource_type=None, is_sub_resource=None, charging_mode=None, resource_source=None, amount=None, usage=None, unit=None):
+    def __init__(self, resource_id=None, order_id=None, bound_asset=None, resource_expire_time=None, resource_type=None, business_type=None, sub_resource_type=None, is_sub_resource=None, charging_mode=None, resource_source=None, amount=None, usage=None, status=None, unit=None):
         """ResourceItemInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,8 @@ class ResourceItemInfo:
         :type resource_id: str
         :param order_id: cloudServiceId的订单id。 云服务购买清单等场景必填（purchaseMode取值为3、4），每个CloudService生成一个订单；此场景如果为空，则报错。 其他场景，为空。
         :type order_id: str
+        :param bound_asset: 
+        :type bound_asset: :class:`huaweicloudsdkmetastudio.v1.BoundAssetInfo`
         :param resource_expire_time: 资源截止时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;
         :type resource_expire_time: str
         :param resource_type: 资源类型。详见[资源类型](metastudio_02_0042.xml)。
@@ -73,6 +79,8 @@ class ResourceItemInfo:
         :type amount: float
         :param usage: 使用量
         :type usage: float
+        :param status: 资源状态 0:正常 1:冻结
+        :type status: int
         :param unit: 单位。 * NUM：个数(形象/声音) * MIN：分钟（视频制作） * HOUR：小时 （直播） * CHANNEL：路（直播/交互） * GB：GB(资产管理) * MILLION_WORDS：百万字 * TEN_THOUSAND_WORDS：万字 * TIME：次
         :type unit: str
         """
@@ -81,6 +89,7 @@ class ResourceItemInfo:
 
         self._resource_id = None
         self._order_id = None
+        self._bound_asset = None
         self._resource_expire_time = None
         self._resource_type = None
         self._business_type = None
@@ -90,6 +99,7 @@ class ResourceItemInfo:
         self._resource_source = None
         self._amount = None
         self._usage = None
+        self._status = None
         self._unit = None
         self.discriminator = None
 
@@ -97,6 +107,8 @@ class ResourceItemInfo:
             self.resource_id = resource_id
         if order_id is not None:
             self.order_id = order_id
+        if bound_asset is not None:
+            self.bound_asset = bound_asset
         if resource_expire_time is not None:
             self.resource_expire_time = resource_expire_time
         if resource_type is not None:
@@ -115,6 +127,8 @@ class ResourceItemInfo:
             self.amount = amount
         if usage is not None:
             self.usage = usage
+        if status is not None:
+            self.status = status
         if unit is not None:
             self.unit = unit
 
@@ -161,6 +175,24 @@ class ResourceItemInfo:
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def bound_asset(self):
+        """Gets the bound_asset of this ResourceItemInfo.
+
+        :return: The bound_asset of this ResourceItemInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.BoundAssetInfo`
+        """
+        return self._bound_asset
+
+    @bound_asset.setter
+    def bound_asset(self, bound_asset):
+        """Sets the bound_asset of this ResourceItemInfo.
+
+        :param bound_asset: The bound_asset of this ResourceItemInfo.
+        :type bound_asset: :class:`huaweicloudsdkmetastudio.v1.BoundAssetInfo`
+        """
+        self._bound_asset = bound_asset
 
     @property
     def resource_expire_time(self):
@@ -359,6 +391,28 @@ class ResourceItemInfo:
         :type usage: float
         """
         self._usage = usage
+
+    @property
+    def status(self):
+        """Gets the status of this ResourceItemInfo.
+
+        资源状态 0:正常 1:冻结
+
+        :return: The status of this ResourceItemInfo.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ResourceItemInfo.
+
+        资源状态 0:正常 1:冻结
+
+        :param status: The status of this ResourceItemInfo.
+        :type status: int
+        """
+        self._status = status
 
     @property
     def unit(self):

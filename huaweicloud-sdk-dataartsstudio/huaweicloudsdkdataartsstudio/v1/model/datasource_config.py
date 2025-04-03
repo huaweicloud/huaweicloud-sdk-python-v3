@@ -30,7 +30,8 @@ class DatasourceConfig:
         'sql': 'str',
         'backend_paras': 'list[ApiRequestPara]',
         'response_paras': 'list[ApiResponsePara]',
-        'order_paras': 'list[DatasourceOrderPara]'
+        'order_paras': 'list[DatasourceOrderPara]',
+        'total_size_sql': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class DatasourceConfig:
         'sql': 'sql',
         'backend_paras': 'backend_paras',
         'response_paras': 'response_paras',
-        'order_paras': 'order_paras'
+        'order_paras': 'order_paras',
+        'total_size_sql': 'total_size_sql'
     }
 
-    def __init__(self, type=None, connection_name=None, connection_id=None, database=None, datatable=None, table_id=None, queue=None, access_type=None, access_mode=None, pagination=None, sql=None, backend_paras=None, response_paras=None, order_paras=None):
+    def __init__(self, type=None, connection_name=None, connection_id=None, database=None, datatable=None, table_id=None, queue=None, access_type=None, access_mode=None, pagination=None, sql=None, backend_paras=None, response_paras=None, order_paras=None, total_size_sql=None):
         """DatasourceConfig
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class DatasourceConfig:
         :type response_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiResponsePara`]
         :param order_paras: 排序参数
         :type order_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.DatasourceOrderPara`]
+        :param total_size_sql: 总条数计算脚本SQL。
+        :type total_size_sql: str
         """
         
         
@@ -101,6 +105,7 @@ class DatasourceConfig:
         self._backend_paras = None
         self._response_paras = None
         self._order_paras = None
+        self._total_size_sql = None
         self.discriminator = None
 
         if type is not None:
@@ -131,6 +136,8 @@ class DatasourceConfig:
             self.response_paras = response_paras
         if order_paras is not None:
             self.order_paras = order_paras
+        if total_size_sql is not None:
+            self.total_size_sql = total_size_sql
 
     @property
     def type(self):
@@ -435,6 +442,28 @@ class DatasourceConfig:
         :type order_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.DatasourceOrderPara`]
         """
         self._order_paras = order_paras
+
+    @property
+    def total_size_sql(self):
+        """Gets the total_size_sql of this DatasourceConfig.
+
+        总条数计算脚本SQL。
+
+        :return: The total_size_sql of this DatasourceConfig.
+        :rtype: str
+        """
+        return self._total_size_sql
+
+    @total_size_sql.setter
+    def total_size_sql(self, total_size_sql):
+        """Sets the total_size_sql of this DatasourceConfig.
+
+        总条数计算脚本SQL。
+
+        :param total_size_sql: The total_size_sql of this DatasourceConfig.
+        :type total_size_sql: str
+        """
+        self._total_size_sql = total_size_sql
 
     def to_dict(self):
         """Returns the model properties as a dict"""

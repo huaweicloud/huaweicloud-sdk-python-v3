@@ -21,17 +21,19 @@ class CreateVpnUserRequestBodyContent:
         'name': 'str',
         'password': 'str',
         'description': 'str',
-        'user_group_id': 'str'
+        'user_group_id': 'str',
+        'static_ip': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'password': 'password',
         'description': 'description',
-        'user_group_id': 'user_group_id'
+        'user_group_id': 'user_group_id',
+        'static_ip': 'static_ip'
     }
 
-    def __init__(self, name=None, password=None, description=None, user_group_id=None):
+    def __init__(self, name=None, password=None, description=None, user_group_id=None, static_ip=None):
         """CreateVpnUserRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class CreateVpnUserRequestBodyContent:
         :type description: str
         :param user_group_id: 所属用户组ID
         :type user_group_id: str
+        :param static_ip: 静态客户端IP地址，默认值disable，表示随机分配客户端IP
+        :type static_ip: str
         """
         
         
@@ -52,6 +56,7 @@ class CreateVpnUserRequestBodyContent:
         self._password = None
         self._description = None
         self._user_group_id = None
+        self._static_ip = None
         self.discriminator = None
 
         self.name = name
@@ -60,6 +65,8 @@ class CreateVpnUserRequestBodyContent:
             self.description = description
         if user_group_id is not None:
             self.user_group_id = user_group_id
+        if static_ip is not None:
+            self.static_ip = static_ip
 
     @property
     def name(self):
@@ -148,6 +155,28 @@ class CreateVpnUserRequestBodyContent:
         :type user_group_id: str
         """
         self._user_group_id = user_group_id
+
+    @property
+    def static_ip(self):
+        """Gets the static_ip of this CreateVpnUserRequestBodyContent.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :return: The static_ip of this CreateVpnUserRequestBodyContent.
+        :rtype: str
+        """
+        return self._static_ip
+
+    @static_ip.setter
+    def static_ip(self, static_ip):
+        """Sets the static_ip of this CreateVpnUserRequestBodyContent.
+
+        静态客户端IP地址，默认值disable，表示随机分配客户端IP
+
+        :param static_ip: The static_ip of this CreateVpnUserRequestBodyContent.
+        :type static_ip: str
+        """
+        self._static_ip = static_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

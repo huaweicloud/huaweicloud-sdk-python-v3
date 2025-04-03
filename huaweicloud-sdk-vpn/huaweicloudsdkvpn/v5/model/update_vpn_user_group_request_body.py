@@ -38,8 +38,7 @@ class UpdateVpnUserGroupRequestBody:
         self._user_group = None
         self.discriminator = None
 
-        if user_group is not None:
-            self.user_group = user_group
+        self.user_group = user_group
 
     @property
     def user_group(self):

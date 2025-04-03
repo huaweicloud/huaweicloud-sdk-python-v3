@@ -35,7 +35,7 @@ class ShowEventRequest:
 
         :param x_language: 语言，默认值为en-us。zh-cn（中文）/en-us（英文）
         :type x_language: str
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
         :param eventid: 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
         :type eventid: str
@@ -80,7 +80,7 @@ class ShowEventRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowEventRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ShowEventRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowEventRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowEventRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowEventRequest.
         :type enterprise_project_id: str

@@ -75,7 +75,9 @@ class DimensionLogicTableVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'EnvTypeEnum'
+        'env_type': 'EnvTypeEnum',
+        'model_id': 'str',
+        'model': 'WorkspaceVO'
     }
 
     attribute_map = {
@@ -137,10 +139,12 @@ class DimensionLogicTableVO:
         'prod_version': 'prod_version',
         'dev_version_name': 'dev_version_name',
         'prod_version_name': 'prod_version_name',
-        'env_type': 'env_type'
+        'env_type': 'env_type',
+        'model_id': 'model_id',
+        'model': 'model'
     }
 
-    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, create_by=None, description=None, dimension_id=None, owner=None, dimension_type=None, code_table_id=None, code_table=None, queue_name=None, dw_id=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, db_name=None, tb_id=None, schema=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dimension_name=None, attributes=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, materialization=None, summary_status=None, distribute=None, distribute_column=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, configs=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None):
+    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, create_by=None, description=None, dimension_id=None, owner=None, dimension_type=None, code_table_id=None, code_table=None, queue_name=None, dw_id=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, db_name=None, tb_id=None, schema=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dimension_name=None, attributes=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, materialization=None, summary_status=None, distribute=None, distribute_column=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, configs=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, model_id=None, model=None):
         """DimensionLogicTableVO
 
         The model defined in huaweicloud sdk
@@ -263,6 +267,10 @@ class DimensionLogicTableVO:
         :type prod_version_name: str
         :param env_type: 
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param model_id: 所属模型ID，ID字符串。
+        :type model_id: str
+        :param model: 
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
         """
         
         
@@ -326,6 +334,8 @@ class DimensionLogicTableVO:
         self._dev_version_name = None
         self._prod_version_name = None
         self._env_type = None
+        self._model_id = None
+        self._model = None
         self.discriminator = None
 
         if id is not None:
@@ -446,6 +456,10 @@ class DimensionLogicTableVO:
             self.prod_version_name = prod_version_name
         if env_type is not None:
             self.env_type = env_type
+        if model_id is not None:
+            self.model_id = model_id
+        if model is not None:
+            self.model = model
 
     @property
     def id(self):
@@ -1692,6 +1706,46 @@ class DimensionLogicTableVO:
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
+
+    @property
+    def model_id(self):
+        """Gets the model_id of this DimensionLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :return: The model_id of this DimensionLogicTableVO.
+        :rtype: str
+        """
+        return self._model_id
+
+    @model_id.setter
+    def model_id(self, model_id):
+        """Sets the model_id of this DimensionLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :param model_id: The model_id of this DimensionLogicTableVO.
+        :type model_id: str
+        """
+        self._model_id = model_id
+
+    @property
+    def model(self):
+        """Gets the model of this DimensionLogicTableVO.
+
+        :return: The model of this DimensionLogicTableVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        """Sets the model of this DimensionLogicTableVO.
+
+        :param model: The model of this DimensionLogicTableVO.
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        self._model = model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,7 +25,8 @@ class Create2DDigitalHumanVideoReq:
         'output_asset_config': 'OutputAssetConfig',
         'background_music_config': 'BackgroundMusicConfig',
         'review_config': 'ReviewConfig',
-        'callback_config': 'CallBackConfig'
+        'callback_config': 'CallBackConfig',
+        'action_config': 'ActionConfig'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class Create2DDigitalHumanVideoReq:
         'output_asset_config': 'output_asset_config',
         'background_music_config': 'background_music_config',
         'review_config': 'review_config',
-        'callback_config': 'callback_config'
+        'callback_config': 'callback_config',
+        'action_config': 'action_config'
     }
 
-    def __init__(self, script_id=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
+    def __init__(self, script_id=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None, action_config=None):
         """Create2DDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class Create2DDigitalHumanVideoReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param callback_config: 
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        :param action_config: 
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
         """
         
         
@@ -76,6 +80,7 @@ class Create2DDigitalHumanVideoReq:
         self._background_music_config = None
         self._review_config = None
         self._callback_config = None
+        self._action_config = None
         self.discriminator = None
 
         if script_id is not None:
@@ -96,6 +101,8 @@ class Create2DDigitalHumanVideoReq:
             self.review_config = review_config
         if callback_config is not None:
             self.callback_config = callback_config
+        if action_config is not None:
+            self.action_config = action_config
 
     @property
     def script_id(self):
@@ -270,6 +277,24 @@ class Create2DDigitalHumanVideoReq:
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         self._callback_config = callback_config
+
+    @property
+    def action_config(self):
+        """Gets the action_config of this Create2DDigitalHumanVideoReq.
+
+        :return: The action_config of this Create2DDigitalHumanVideoReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        return self._action_config
+
+    @action_config.setter
+    def action_config(self, action_config):
+        """Sets the action_config of this Create2DDigitalHumanVideoReq.
+
+        :param action_config: The action_config of this Create2DDigitalHumanVideoReq.
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        self._action_config = action_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

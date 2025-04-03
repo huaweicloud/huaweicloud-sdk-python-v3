@@ -168,6 +168,7 @@ from huaweicloudsdkces.v2.model.policies_in_list_resp import PoliciesInListResp
 from huaweicloudsdkces.v2.model.policies_req_v2 import PoliciesReqV2
 from huaweicloudsdkces.v2.model.policy import Policy
 from huaweicloudsdkces.v2.model.post_alarms_req_v2 import PostAlarmsReqV2
+from huaweicloudsdkces.v2.model.product_name import ProductName
 from huaweicloudsdkces.v2.model.put_alarm_notification_req import PutAlarmNotificationReq
 from huaweicloudsdkces.v2.model.put_resource_group_req import PutResourceGroupReq
 from huaweicloudsdkces.v2.model.relation_id import RelationID
@@ -176,6 +177,7 @@ from huaweicloudsdkces.v2.model.resource import Resource
 from huaweicloudsdkces.v2.model.resource_category import ResourceCategory
 from huaweicloudsdkces.v2.model.resource_group_id import ResourceGroupID
 from huaweicloudsdkces.v2.model.resource_group_tag_relation import ResourceGroupTagRelation
+from huaweicloudsdkces.v2.model.resource_level import ResourceLevel
 from huaweicloudsdkces.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkces.v2.model.resources_in_list_resp import ResourcesInListResp
 from huaweicloudsdkces.v2.model.resources_req import ResourcesReq

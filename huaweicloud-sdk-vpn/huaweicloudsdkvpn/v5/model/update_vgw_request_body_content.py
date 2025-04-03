@@ -19,6 +19,7 @@ class UpdateVgwRequestBodyContent:
     openapi_types = {
         'name': 'str',
         'local_subnets': 'list[str]',
+        'local_subnets_v6': 'list[str]',
         'eip_id_1': 'str',
         'eip_id_2': 'str',
         'policy_template': 'UpdateRequestPolicyTemplate'
@@ -27,12 +28,13 @@ class UpdateVgwRequestBodyContent:
     attribute_map = {
         'name': 'name',
         'local_subnets': 'local_subnets',
+        'local_subnets_v6': 'local_subnets_v6',
         'eip_id_1': 'eip_id_1',
         'eip_id_2': 'eip_id_2',
         'policy_template': 'policy_template'
     }
 
-    def __init__(self, name=None, local_subnets=None, eip_id_1=None, eip_id_2=None, policy_template=None):
+    def __init__(self, name=None, local_subnets=None, local_subnets_v6=None, eip_id_1=None, eip_id_2=None, policy_template=None):
         """UpdateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class UpdateVgwRequestBodyContent:
         :type name: str
         :param local_subnets: 本端子网
         :type local_subnets: list[str]
+        :param local_subnets_v6: 使能ipv6的本端子网
+        :type local_subnets_v6: list[str]
         :param eip_id_1: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
         :type eip_id_1: str
         :param eip_id_2: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
@@ -53,6 +57,7 @@ class UpdateVgwRequestBodyContent:
 
         self._name = None
         self._local_subnets = None
+        self._local_subnets_v6 = None
         self._eip_id_1 = None
         self._eip_id_2 = None
         self._policy_template = None
@@ -62,6 +67,8 @@ class UpdateVgwRequestBodyContent:
             self.name = name
         if local_subnets is not None:
             self.local_subnets = local_subnets
+        if local_subnets_v6 is not None:
+            self.local_subnets_v6 = local_subnets_v6
         if eip_id_1 is not None:
             self.eip_id_1 = eip_id_1
         if eip_id_2 is not None:
@@ -112,6 +119,28 @@ class UpdateVgwRequestBodyContent:
         :type local_subnets: list[str]
         """
         self._local_subnets = local_subnets
+
+    @property
+    def local_subnets_v6(self):
+        """Gets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
+
+        使能ipv6的本端子网
+
+        :return: The local_subnets_v6 of this UpdateVgwRequestBodyContent.
+        :rtype: list[str]
+        """
+        return self._local_subnets_v6
+
+    @local_subnets_v6.setter
+    def local_subnets_v6(self, local_subnets_v6):
+        """Sets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
+
+        使能ipv6的本端子网
+
+        :param local_subnets_v6: The local_subnets_v6 of this UpdateVgwRequestBodyContent.
+        :type local_subnets_v6: list[str]
+        """
+        self._local_subnets_v6 = local_subnets_v6
 
     @property
     def eip_id_1(self):

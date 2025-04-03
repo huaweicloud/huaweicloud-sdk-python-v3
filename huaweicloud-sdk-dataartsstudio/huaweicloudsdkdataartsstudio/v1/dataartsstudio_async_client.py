@@ -10525,6 +10525,75 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_data_service_instance_accesslogs_async(self, request):
+        """查询数据服务集群访问日志列表
+
+        查询数据服务集群访问日志列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDataServiceInstanceAccesslogs
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDataServiceInstanceAccesslogsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDataServiceInstanceAccesslogsResponse`
+        """
+        http_info = self._list_data_service_instance_accesslogs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_data_service_instance_accesslogs_async_invoker(self, request):
+        http_info = self._list_data_service_instance_accesslogs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_data_service_instance_accesslogs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/instances/{instance_id}/accesslog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataServiceInstanceAccesslogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'is_api' in local_var_params:
+            query_params.append(('is_api', local_var_params['is_api']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_data_service_instances_detail_async(self, request):
         """查询集群详情信息列表
 
@@ -22723,6 +22792,148 @@ class DataArtsStudioAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_data_service_instance_lts_log_async(self, request):
+        """开启数据服务集群LTS日志转储
+
+        开启数据服务集群LTS日志转储。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDataServiceInstanceLtsLog
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataServiceInstanceLtsLogRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataServiceInstanceLtsLogResponse`
+        """
+        http_info = self._update_data_service_instance_lts_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_data_service_instance_lts_log_async_invoker(self, request):
+        http_info = self._update_data_service_instance_lts_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_data_service_instance_lts_log_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service/instances/{instance_id}/lts-log-dump",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataServiceInstanceLtsLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_data_service_instance_obs_log_async(self, request):
+        """开启数据服务集群OBS日志转储
+
+        开启数据服务集群OBS日志转储。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDataServiceInstanceObsLog
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataServiceInstanceObsLogRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataServiceInstanceObsLogResponse`
+        """
+        http_info = self._update_data_service_instance_obs_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_data_service_instance_obs_log_async_invoker(self, request):
+        http_info = self._update_data_service_instance_obs_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_data_service_instance_obs_log_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service/instances/{instance_id}/obs-log-dump",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataServiceInstanceObsLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

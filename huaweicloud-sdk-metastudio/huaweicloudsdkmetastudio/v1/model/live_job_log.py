@@ -17,29 +17,57 @@ class LiveJobLog:
     sensitive_list = []
 
     openapi_types = {
-        'interaction_records_url': 'str'
+        'interaction_records_url': 'str',
+        'job_config_records_url': 'str',
+        'scripts_records_url': 'str',
+        'command_reviced_records_url': 'str',
+        'command_exec_records_url': 'str'
     }
 
     attribute_map = {
-        'interaction_records_url': 'interaction_records_url'
+        'interaction_records_url': 'interaction_records_url',
+        'job_config_records_url': 'job_config_records_url',
+        'scripts_records_url': 'scripts_records_url',
+        'command_reviced_records_url': 'command_reviced_records_url',
+        'command_exec_records_url': 'command_exec_records_url'
     }
 
-    def __init__(self, interaction_records_url=None):
+    def __init__(self, interaction_records_url=None, job_config_records_url=None, scripts_records_url=None, command_reviced_records_url=None, command_exec_records_url=None):
         """LiveJobLog
 
         The model defined in huaweicloud sdk
 
         :param interaction_records_url: 直播互动记录文件地址
         :type interaction_records_url: str
+        :param job_config_records_url: 任务配置记录文件地址
+        :type job_config_records_url: str
+        :param scripts_records_url: 剧本播放记录文件地址
+        :type scripts_records_url: str
+        :param command_reviced_records_url: 命令接受记录文件地址
+        :type command_reviced_records_url: str
+        :param command_exec_records_url: 命令执行记录文件地址
+        :type command_exec_records_url: str
         """
         
         
 
         self._interaction_records_url = None
+        self._job_config_records_url = None
+        self._scripts_records_url = None
+        self._command_reviced_records_url = None
+        self._command_exec_records_url = None
         self.discriminator = None
 
         if interaction_records_url is not None:
             self.interaction_records_url = interaction_records_url
+        if job_config_records_url is not None:
+            self.job_config_records_url = job_config_records_url
+        if scripts_records_url is not None:
+            self.scripts_records_url = scripts_records_url
+        if command_reviced_records_url is not None:
+            self.command_reviced_records_url = command_reviced_records_url
+        if command_exec_records_url is not None:
+            self.command_exec_records_url = command_exec_records_url
 
     @property
     def interaction_records_url(self):
@@ -62,6 +90,94 @@ class LiveJobLog:
         :type interaction_records_url: str
         """
         self._interaction_records_url = interaction_records_url
+
+    @property
+    def job_config_records_url(self):
+        """Gets the job_config_records_url of this LiveJobLog.
+
+        任务配置记录文件地址
+
+        :return: The job_config_records_url of this LiveJobLog.
+        :rtype: str
+        """
+        return self._job_config_records_url
+
+    @job_config_records_url.setter
+    def job_config_records_url(self, job_config_records_url):
+        """Sets the job_config_records_url of this LiveJobLog.
+
+        任务配置记录文件地址
+
+        :param job_config_records_url: The job_config_records_url of this LiveJobLog.
+        :type job_config_records_url: str
+        """
+        self._job_config_records_url = job_config_records_url
+
+    @property
+    def scripts_records_url(self):
+        """Gets the scripts_records_url of this LiveJobLog.
+
+        剧本播放记录文件地址
+
+        :return: The scripts_records_url of this LiveJobLog.
+        :rtype: str
+        """
+        return self._scripts_records_url
+
+    @scripts_records_url.setter
+    def scripts_records_url(self, scripts_records_url):
+        """Sets the scripts_records_url of this LiveJobLog.
+
+        剧本播放记录文件地址
+
+        :param scripts_records_url: The scripts_records_url of this LiveJobLog.
+        :type scripts_records_url: str
+        """
+        self._scripts_records_url = scripts_records_url
+
+    @property
+    def command_reviced_records_url(self):
+        """Gets the command_reviced_records_url of this LiveJobLog.
+
+        命令接受记录文件地址
+
+        :return: The command_reviced_records_url of this LiveJobLog.
+        :rtype: str
+        """
+        return self._command_reviced_records_url
+
+    @command_reviced_records_url.setter
+    def command_reviced_records_url(self, command_reviced_records_url):
+        """Sets the command_reviced_records_url of this LiveJobLog.
+
+        命令接受记录文件地址
+
+        :param command_reviced_records_url: The command_reviced_records_url of this LiveJobLog.
+        :type command_reviced_records_url: str
+        """
+        self._command_reviced_records_url = command_reviced_records_url
+
+    @property
+    def command_exec_records_url(self):
+        """Gets the command_exec_records_url of this LiveJobLog.
+
+        命令执行记录文件地址
+
+        :return: The command_exec_records_url of this LiveJobLog.
+        :rtype: str
+        """
+        return self._command_exec_records_url
+
+    @command_exec_records_url.setter
+    def command_exec_records_url(self, command_exec_records_url):
+        """Sets the command_exec_records_url of this LiveJobLog.
+
+        命令执行记录文件地址
+
+        :param command_exec_records_url: The command_exec_records_url of this LiveJobLog.
+        :type command_exec_records_url: str
+        """
+        self._command_exec_records_url = command_exec_records_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

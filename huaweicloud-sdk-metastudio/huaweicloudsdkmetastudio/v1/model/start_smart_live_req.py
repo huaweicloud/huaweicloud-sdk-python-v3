@@ -25,7 +25,8 @@ class StartSmartLiveReq:
         'live_event_callback_config': 'LiveEventCallBackConfig',
         'rtc_callback_config': 'RTCLiveEventCallBackConfig',
         'view_mode': 'str',
-        'co_streamer_config': 'CoStreamerConfig'
+        'co_streamer_config': 'CoStreamerConfig',
+        'job_run_config': 'LiveJobRunConfig'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class StartSmartLiveReq:
         'live_event_callback_config': 'live_event_callback_config',
         'rtc_callback_config': 'rtc_callback_config',
         'view_mode': 'view_mode',
-        'co_streamer_config': 'co_streamer_config'
+        'co_streamer_config': 'co_streamer_config',
+        'job_run_config': 'job_run_config'
     }
 
-    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, rtc_callback_config=None, view_mode=None, co_streamer_config=None):
+    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, rtc_callback_config=None, view_mode=None, co_streamer_config=None, job_run_config=None):
         """StartSmartLiveReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class StartSmartLiveReq:
         :type view_mode: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        :param job_run_config: 
+        :type job_run_config: :class:`huaweicloudsdkmetastudio.v1.LiveJobRunConfig`
         """
         
         
@@ -76,6 +80,7 @@ class StartSmartLiveReq:
         self._rtc_callback_config = None
         self._view_mode = None
         self._co_streamer_config = None
+        self._job_run_config = None
         self.discriminator = None
 
         if video_config is not None:
@@ -96,6 +101,8 @@ class StartSmartLiveReq:
             self.view_mode = view_mode
         if co_streamer_config is not None:
             self.co_streamer_config = co_streamer_config
+        if job_run_config is not None:
+            self.job_run_config = job_run_config
 
     @property
     def video_config(self):
@@ -274,6 +281,24 @@ class StartSmartLiveReq:
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         """
         self._co_streamer_config = co_streamer_config
+
+    @property
+    def job_run_config(self):
+        """Gets the job_run_config of this StartSmartLiveReq.
+
+        :return: The job_run_config of this StartSmartLiveReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveJobRunConfig`
+        """
+        return self._job_run_config
+
+    @job_run_config.setter
+    def job_run_config(self, job_run_config):
+        """Sets the job_run_config of this StartSmartLiveReq.
+
+        :param job_run_config: The job_run_config of this StartSmartLiveReq.
+        :type job_run_config: :class:`huaweicloudsdkmetastudio.v1.LiveJobRunConfig`
+        """
+        self._job_run_config = job_run_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

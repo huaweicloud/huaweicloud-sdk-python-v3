@@ -27,7 +27,9 @@ class VideoScriptsSimpleInfo:
         'scene_asset_id': 'str',
         'priv_data': 'str',
         'background_music_config': 'BackgroundMusicConfig',
-        'review_config': 'ReviewConfig'
+        'review_config': 'ReviewConfig',
+        'audio_files': 'ShootScriptAudioFiles',
+        'action_config': 'ActionConfig'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class VideoScriptsSimpleInfo:
         'scene_asset_id': 'scene_asset_id',
         'priv_data': 'priv_data',
         'background_music_config': 'background_music_config',
-        'review_config': 'review_config'
+        'review_config': 'review_config',
+        'audio_files': 'audio_files',
+        'action_config': 'action_config'
     }
 
-    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None):
+    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None):
         """VideoScriptsSimpleInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class VideoScriptsSimpleInfo:
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param audio_files: 
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        :param action_config: 
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
         """
         
         
@@ -86,6 +94,8 @@ class VideoScriptsSimpleInfo:
         self._priv_data = None
         self._background_music_config = None
         self._review_config = None
+        self._audio_files = None
+        self._action_config = None
         self.discriminator = None
 
         if script_name is not None:
@@ -110,6 +120,10 @@ class VideoScriptsSimpleInfo:
             self.background_music_config = background_music_config
         if review_config is not None:
             self.review_config = review_config
+        if audio_files is not None:
+            self.audio_files = audio_files
+        if action_config is not None:
+            self.action_config = action_config
 
     @property
     def script_name(self):
@@ -336,6 +350,42 @@ class VideoScriptsSimpleInfo:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         self._review_config = review_config
+
+    @property
+    def audio_files(self):
+        """Gets the audio_files of this VideoScriptsSimpleInfo.
+
+        :return: The audio_files of this VideoScriptsSimpleInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        return self._audio_files
+
+    @audio_files.setter
+    def audio_files(self, audio_files):
+        """Sets the audio_files of this VideoScriptsSimpleInfo.
+
+        :param audio_files: The audio_files of this VideoScriptsSimpleInfo.
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        self._audio_files = audio_files
+
+    @property
+    def action_config(self):
+        """Gets the action_config of this VideoScriptsSimpleInfo.
+
+        :return: The action_config of this VideoScriptsSimpleInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        return self._action_config
+
+    @action_config.setter
+    def action_config(self, action_config):
+        """Sets the action_config of this VideoScriptsSimpleInfo.
+
+        :param action_config: The action_config of this VideoScriptsSimpleInfo.
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        self._action_config = action_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,8 +31,6 @@ class NodeExtendParam:
         'alpha_cce_pre_install': 'str',
         'alpha_cce_post_install': 'str',
         'alpha_cce_node_image_id': 'str',
-        'nic_multiqueue': 'str',
-        'nic_threshold': 'str',
         'charging_mode': 'int',
         'agency_name': 'str',
         'kube_reserved_mem': 'int',
@@ -56,8 +54,6 @@ class NodeExtendParam:
         'alpha_cce_pre_install': 'alpha.cce/preInstall',
         'alpha_cce_post_install': 'alpha.cce/postInstall',
         'alpha_cce_node_image_id': 'alpha.cce/NodeImageID',
-        'nic_multiqueue': 'nicMultiqueue',
-        'nic_threshold': 'nicThreshold',
         'charging_mode': 'chargingMode',
         'agency_name': 'agency_name',
         'kube_reserved_mem': 'kubeReservedMem',
@@ -66,7 +62,7 @@ class NodeExtendParam:
         'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
         """NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -99,10 +95,6 @@ class NodeExtendParam:
         :type alpha_cce_post_install: str
         :param alpha_cce_node_image_id: 如果创建裸金属节点，需要使用自定义镜像时用此参数。 
         :type alpha_cce_node_image_id: str
-        :param nic_multiqueue: - 弹性网卡队列数配置，默认配置示例如下：  &#x60;&#x60;&#x60; \&quot;[{\\\&quot;queue\\\&quot;:4}]\&quot; &#x60;&#x60;&#x60;  包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\&quot;1\&quot;:128, \&quot;2\&quot;:92, \&quot;4\&quot;:92, \&quot;8\&quot;:32, \&quot;16\&quot;:16,\&quot;28\&quot;:9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
-        :type nic_multiqueue: str
-        :param nic_threshold: - 弹性网卡预绑定比例配置，默认配置示例如下： &#x60;&#x60;&#x60; \&quot;0.3:0.6\&quot; &#x60;&#x60;&#x60;   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 &#x3D; ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 &#x3D; ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 &lt; BMS节点上绑定的弹性网卡数 &lt; Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 &lt; 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 &#x3D; 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 &gt; 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 &#x3D; 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 &lt;&#x3D; 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
-        :type nic_threshold: str
         :param charging_mode: 节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
         :type charging_mode: int
         :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 作为响应参数仅在创建节点传入时返回该字段。 
@@ -133,8 +125,6 @@ class NodeExtendParam:
         self._alpha_cce_pre_install = None
         self._alpha_cce_post_install = None
         self._alpha_cce_node_image_id = None
-        self._nic_multiqueue = None
-        self._nic_threshold = None
         self._charging_mode = None
         self._agency_name = None
         self._kube_reserved_mem = None
@@ -171,10 +161,6 @@ class NodeExtendParam:
             self.alpha_cce_post_install = alpha_cce_post_install
         if alpha_cce_node_image_id is not None:
             self.alpha_cce_node_image_id = alpha_cce_node_image_id
-        if nic_multiqueue is not None:
-            self.nic_multiqueue = nic_multiqueue
-        if nic_threshold is not None:
-            self.nic_threshold = nic_threshold
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if agency_name is not None:
@@ -495,50 +481,6 @@ class NodeExtendParam:
         :type alpha_cce_node_image_id: str
         """
         self._alpha_cce_node_image_id = alpha_cce_node_image_id
-
-    @property
-    def nic_multiqueue(self):
-        """Gets the nic_multiqueue of this NodeExtendParam.
-
-        - 弹性网卡队列数配置，默认配置示例如下：  ``` \"[{\\\"queue\\\":4}]\" ```  包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\"1\":128, \"2\":92, \"4\":92, \"8\":32, \"16\":16,\"28\":9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
-
-        :return: The nic_multiqueue of this NodeExtendParam.
-        :rtype: str
-        """
-        return self._nic_multiqueue
-
-    @nic_multiqueue.setter
-    def nic_multiqueue(self, nic_multiqueue):
-        """Sets the nic_multiqueue of this NodeExtendParam.
-
-        - 弹性网卡队列数配置，默认配置示例如下：  ``` \"[{\\\"queue\\\":4}]\" ```  包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\"1\":128, \"2\":92, \"4\":92, \"8\":32, \"16\":16,\"28\":9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
-
-        :param nic_multiqueue: The nic_multiqueue of this NodeExtendParam.
-        :type nic_multiqueue: str
-        """
-        self._nic_multiqueue = nic_multiqueue
-
-    @property
-    def nic_threshold(self):
-        """Gets the nic_threshold of this NodeExtendParam.
-
-        - 弹性网卡预绑定比例配置，默认配置示例如下： ``` \"0.3:0.6\" ```   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 < BMS节点上绑定的弹性网卡数 < Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 < 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 = 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 > 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 = 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 <= 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
-
-        :return: The nic_threshold of this NodeExtendParam.
-        :rtype: str
-        """
-        return self._nic_threshold
-
-    @nic_threshold.setter
-    def nic_threshold(self, nic_threshold):
-        """Sets the nic_threshold of this NodeExtendParam.
-
-        - 弹性网卡预绑定比例配置，默认配置示例如下： ``` \"0.3:0.6\" ```   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 < BMS节点上绑定的弹性网卡数 < Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 < 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 = 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 > 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 = 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 <= 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
-
-        :param nic_threshold: The nic_threshold of this NodeExtendParam.
-        :type nic_threshold: str
-        """
-        self._nic_threshold = nic_threshold
 
     @property
     def charging_mode(self):

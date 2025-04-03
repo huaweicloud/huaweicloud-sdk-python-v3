@@ -59,10 +59,8 @@ class CreateVpnUser:
         self._static_ip = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if password is not None:
-            self.password = password
+        self.name = name
+        self.password = password
         if description is not None:
             self.description = description
         if user_group_name is not None:

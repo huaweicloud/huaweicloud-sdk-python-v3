@@ -17,24 +17,20 @@ class PolicyRule:
     sensitive_list = []
 
     openapi_types = {
-        'rule_index': 'int',
         'source': 'str',
         'destination': 'list[str]'
     }
 
     attribute_map = {
-        'rule_index': 'rule_index',
         'source': 'source',
         'destination': 'destination'
     }
 
-    def __init__(self, rule_index=None, source=None, destination=None):
+    def __init__(self, source=None, destination=None):
         """PolicyRule
 
         The model defined in huaweicloud sdk
 
-        :param rule_index: 规则ID
-        :type rule_index: int
         :param source: 源地址网段
         :type source: str
         :param destination: 目的地址网段
@@ -43,39 +39,14 @@ class PolicyRule:
         
         
 
-        self._rule_index = None
         self._source = None
         self._destination = None
         self.discriminator = None
 
-        if rule_index is not None:
-            self.rule_index = rule_index
         if source is not None:
             self.source = source
         if destination is not None:
             self.destination = destination
-
-    @property
-    def rule_index(self):
-        """Gets the rule_index of this PolicyRule.
-
-        规则ID
-
-        :return: The rule_index of this PolicyRule.
-        :rtype: int
-        """
-        return self._rule_index
-
-    @rule_index.setter
-    def rule_index(self, rule_index):
-        """Sets the rule_index of this PolicyRule.
-
-        规则ID
-
-        :param rule_index: The rule_index of this PolicyRule.
-        :type rule_index: int
-        """
-        self._rule_index = rule_index
 
     @property
     def source(self):

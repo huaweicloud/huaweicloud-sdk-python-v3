@@ -32,7 +32,9 @@ class PostAlarmsReqV2:
         'notification_end_time': 'str',
         'enterprise_project_id': 'str',
         'enabled': 'bool',
-        'notification_enabled': 'bool'
+        'notification_enabled': 'bool',
+        'product_name': 'str',
+        'resource_level': 'ResourceLevel'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class PostAlarmsReqV2:
         'notification_end_time': 'notification_end_time',
         'enterprise_project_id': 'enterprise_project_id',
         'enabled': 'enabled',
-        'notification_enabled': 'notification_enabled'
+        'notification_enabled': 'notification_enabled',
+        'product_name': 'product_name',
+        'resource_level': 'resource_level'
     }
 
-    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, tags=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None):
+    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, tags=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None, product_name=None, resource_level=None):
         """PostAlarmsReqV2
 
         The model defined in huaweicloud sdk
@@ -91,6 +95,10 @@ class PostAlarmsReqV2:
         :type enabled: bool
         :param notification_enabled: 是否开启告警通知
         :type notification_enabled: bool
+        :param product_name: 产品层级跨纬规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
+        :param resource_level: 
+        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
         """
         
         
@@ -111,6 +119,8 @@ class PostAlarmsReqV2:
         self._enterprise_project_id = None
         self._enabled = None
         self._notification_enabled = None
+        self._product_name = None
+        self._resource_level = None
         self.discriminator = None
 
         self.name = name
@@ -139,6 +149,10 @@ class PostAlarmsReqV2:
             self.enterprise_project_id = enterprise_project_id
         self.enabled = enabled
         self.notification_enabled = notification_enabled
+        if product_name is not None:
+            self.product_name = product_name
+        if resource_level is not None:
+            self.resource_level = resource_level
 
     @property
     def name(self):
@@ -487,6 +501,46 @@ class PostAlarmsReqV2:
         :type notification_enabled: bool
         """
         self._notification_enabled = notification_enabled
+
+    @property
+    def product_name(self):
+        """Gets the product_name of this PostAlarmsReqV2.
+
+        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this PostAlarmsReqV2.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        """Sets the product_name of this PostAlarmsReqV2.
+
+        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this PostAlarmsReqV2.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def resource_level(self):
+        """Gets the resource_level of this PostAlarmsReqV2.
+
+        :return: The resource_level of this PostAlarmsReqV2.
+        :rtype: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        """Sets the resource_level of this PostAlarmsReqV2.
+
+        :param resource_level: The resource_level of this PostAlarmsReqV2.
+        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        """
+        self._resource_level = resource_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,6 +28,8 @@ class UpdateVideoScriptsReq:
         'priv_data': 'str',
         'background_music_config': 'BackgroundMusicConfig',
         'review_config': 'ReviewConfig',
+        'audio_files': 'ShootScriptAudioFiles',
+        'action_config': 'ActionConfig',
         'shoot_scripts': 'list[ShootScriptItem]'
     }
 
@@ -43,10 +45,12 @@ class UpdateVideoScriptsReq:
         'priv_data': 'priv_data',
         'background_music_config': 'background_music_config',
         'review_config': 'review_config',
+        'audio_files': 'audio_files',
+        'action_config': 'action_config',
         'shoot_scripts': 'shoot_scripts'
     }
 
-    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, shoot_scripts=None):
+    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None):
         """UpdateVideoScriptsReq
 
         The model defined in huaweicloud sdk
@@ -73,6 +77,10 @@ class UpdateVideoScriptsReq:
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param audio_files: 
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        :param action_config: 
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
         :param shoot_scripts: 拍摄脚本列表。
         :type shoot_scripts: list[:class:`huaweicloudsdkmetastudio.v1.ShootScriptItem`]
         """
@@ -90,6 +98,8 @@ class UpdateVideoScriptsReq:
         self._priv_data = None
         self._background_music_config = None
         self._review_config = None
+        self._audio_files = None
+        self._action_config = None
         self._shoot_scripts = None
         self.discriminator = None
 
@@ -115,6 +125,10 @@ class UpdateVideoScriptsReq:
             self.background_music_config = background_music_config
         if review_config is not None:
             self.review_config = review_config
+        if audio_files is not None:
+            self.audio_files = audio_files
+        if action_config is not None:
+            self.action_config = action_config
         if shoot_scripts is not None:
             self.shoot_scripts = shoot_scripts
 
@@ -343,6 +357,42 @@ class UpdateVideoScriptsReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         self._review_config = review_config
+
+    @property
+    def audio_files(self):
+        """Gets the audio_files of this UpdateVideoScriptsReq.
+
+        :return: The audio_files of this UpdateVideoScriptsReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        return self._audio_files
+
+    @audio_files.setter
+    def audio_files(self, audio_files):
+        """Sets the audio_files of this UpdateVideoScriptsReq.
+
+        :param audio_files: The audio_files of this UpdateVideoScriptsReq.
+        :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
+        """
+        self._audio_files = audio_files
+
+    @property
+    def action_config(self):
+        """Gets the action_config of this UpdateVideoScriptsReq.
+
+        :return: The action_config of this UpdateVideoScriptsReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        return self._action_config
+
+    @action_config.setter
+    def action_config(self, action_config):
+        """Sets the action_config of this UpdateVideoScriptsReq.
+
+        :param action_config: The action_config of this UpdateVideoScriptsReq.
+        :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
+        """
+        self._action_config = action_config
 
     @property
     def shoot_scripts(self):

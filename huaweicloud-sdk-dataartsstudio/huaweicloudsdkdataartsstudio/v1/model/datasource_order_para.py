@@ -21,7 +21,8 @@ class DatasourceOrderPara:
         'field': 'str',
         'optional': 'bool',
         'sort': 'str',
-        'order': 'int'
+        'order': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class DatasourceOrderPara:
         'field': 'field',
         'optional': 'optional',
         'sort': 'sort',
-        'order': 'order'
+        'order': 'order',
+        'description': 'description'
     }
 
-    def __init__(self, name=None, field=None, optional=None, sort=None, order=None):
+    def __init__(self, name=None, field=None, optional=None, sort=None, order=None, description=None):
         """DatasourceOrderPara
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class DatasourceOrderPara:
         :type sort: str
         :param order: 排序参数顺序
         :type order: int
+        :param description: 排序参数描述信息。
+        :type description: str
         """
         
         
@@ -56,6 +60,7 @@ class DatasourceOrderPara:
         self._optional = None
         self._sort = None
         self._order = None
+        self._description = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +73,8 @@ class DatasourceOrderPara:
             self.sort = sort
         if order is not None:
             self.order = order
+        if description is not None:
+            self.description = description
 
     @property
     def name(self):
@@ -178,6 +185,28 @@ class DatasourceOrderPara:
         :type order: int
         """
         self._order = order
+
+    @property
+    def description(self):
+        """Gets the description of this DatasourceOrderPara.
+
+        排序参数描述信息。
+
+        :return: The description of this DatasourceOrderPara.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this DatasourceOrderPara.
+
+        排序参数描述信息。
+
+        :param description: The description of this DatasourceOrderPara.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

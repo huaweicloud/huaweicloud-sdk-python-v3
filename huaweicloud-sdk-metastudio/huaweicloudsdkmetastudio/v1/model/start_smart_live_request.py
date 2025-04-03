@@ -33,7 +33,7 @@ class StartSmartLiveRequest:
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 剧本ID。
+        :param room_id: 直播间ID。
         :type room_id: str
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
@@ -58,7 +58,7 @@ class StartSmartLiveRequest:
     def room_id(self):
         """Gets the room_id of this StartSmartLiveRequest.
 
-        剧本ID。
+        直播间ID。
 
         :return: The room_id of this StartSmartLiveRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class StartSmartLiveRequest:
     def room_id(self, room_id):
         """Sets the room_id of this StartSmartLiveRequest.
 
-        剧本ID。
+        直播间ID。
 
         :param room_id: The room_id of this StartSmartLiveRequest.
         :type room_id: str

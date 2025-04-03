@@ -27,7 +27,8 @@ class ApiOverview:
         'type': 'str',
         'manager': 'str',
         'create_user': 'str',
-        'create_time': 'int'
+        'create_time': 'int',
+        'authorization_status': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ApiOverview:
         'type': 'type',
         'manager': 'manager',
         'create_user': 'create_user',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'authorization_status': 'authorization_status'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, description=None, status=None, debug_status=None, publish_messages=None, type=None, manager=None, create_user=None, create_time=None):
+    def __init__(self, id=None, name=None, group_id=None, description=None, status=None, debug_status=None, publish_messages=None, type=None, manager=None, create_user=None, create_time=None, authorization_status=None):
         """ApiOverview
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ApiOverview:
         :type create_user: str
         :param create_time: API 创建时间
         :type create_time: int
+        :param authorization_status: 
+        :type authorization_status: str
         """
         
         
@@ -86,6 +90,7 @@ class ApiOverview:
         self._manager = None
         self._create_user = None
         self._create_time = None
+        self._authorization_status = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +115,8 @@ class ApiOverview:
             self.create_user = create_user
         if create_time is not None:
             self.create_time = create_time
+        if authorization_status is not None:
+            self.authorization_status = authorization_status
 
     @property
     def id(self):
@@ -352,6 +359,24 @@ class ApiOverview:
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def authorization_status(self):
+        """Gets the authorization_status of this ApiOverview.
+
+        :return: The authorization_status of this ApiOverview.
+        :rtype: str
+        """
+        return self._authorization_status
+
+    @authorization_status.setter
+    def authorization_status(self, authorization_status):
+        """Sets the authorization_status of this ApiOverview.
+
+        :param authorization_status: The authorization_status of this ApiOverview.
+        :type authorization_status: str
+        """
+        self._authorization_status = authorization_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

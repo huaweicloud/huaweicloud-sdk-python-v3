@@ -75,7 +75,9 @@ class FactLogicTableVO:
         'dev_version_name': 'str',
         'prod_version_name': 'str',
         'env_type': 'EnvTypeEnum',
-        'secrecy_levels': 'list[SecrecyLevelVO]'
+        'secrecy_levels': 'list[SecrecyLevelVO]',
+        'model_id': 'str',
+        'model': 'WorkspaceVO'
     }
 
     attribute_map = {
@@ -137,10 +139,12 @@ class FactLogicTableVO:
         'dev_version_name': 'dev_version_name',
         'prod_version_name': 'prod_version_name',
         'env_type': 'env_type',
-        'secrecy_levels': 'secrecy_levels'
+        'secrecy_levels': 'secrecy_levels',
+        'model_id': 'model_id',
+        'model': 'model'
     }
 
-    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, dw_name=None, owner=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, dim_table_ids=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, schema=None, distribute=None, distribute_column=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimensions=None, attributes=None, mappings=None, measures=None, table_attributes=None, configs=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, secrecy_levels=None):
+    def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, dw_name=None, owner=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, dim_table_ids=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, schema=None, distribute=None, distribute_column=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimensions=None, attributes=None, mappings=None, measures=None, table_attributes=None, configs=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, secrecy_levels=None, model_id=None, model=None):
         """FactLogicTableVO
 
         The model defined in huaweicloud sdk
@@ -263,6 +267,10 @@ class FactLogicTableVO:
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         :param secrecy_levels: 密级
         :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
+        :param model_id: 所属模型ID，ID字符串。
+        :type model_id: str
+        :param model: 
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
         """
         
         
@@ -326,6 +334,8 @@ class FactLogicTableVO:
         self._prod_version_name = None
         self._env_type = None
         self._secrecy_levels = None
+        self._model_id = None
+        self._model = None
         self.discriminator = None
 
         if id is not None:
@@ -439,6 +449,10 @@ class FactLogicTableVO:
             self.env_type = env_type
         if secrecy_levels is not None:
             self.secrecy_levels = secrecy_levels
+        if model_id is not None:
+            self.model_id = model_id
+        if model is not None:
+            self.model = model
 
     @property
     def id(self):
@@ -1693,6 +1707,46 @@ class FactLogicTableVO:
         :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
         """
         self._secrecy_levels = secrecy_levels
+
+    @property
+    def model_id(self):
+        """Gets the model_id of this FactLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :return: The model_id of this FactLogicTableVO.
+        :rtype: str
+        """
+        return self._model_id
+
+    @model_id.setter
+    def model_id(self, model_id):
+        """Sets the model_id of this FactLogicTableVO.
+
+        所属模型ID，ID字符串。
+
+        :param model_id: The model_id of this FactLogicTableVO.
+        :type model_id: str
+        """
+        self._model_id = model_id
+
+    @property
+    def model(self):
+        """Gets the model of this FactLogicTableVO.
+
+        :return: The model of this FactLogicTableVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        """Sets the model of this FactLogicTableVO.
+
+        :param model: The model of this FactLogicTableVO.
+        :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
+        """
+        self._model = model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

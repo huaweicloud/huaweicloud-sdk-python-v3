@@ -146,6 +146,7 @@ from huaweicloudsdkvpn.v5.model.list_vpn_users_request import ListVpnUsersReques
 from huaweicloudsdkvpn.v5.model.list_vpn_users_response import ListVpnUsersResponse
 from huaweicloudsdkvpn.v5.model.log import Log
 from huaweicloudsdkvpn.v5.model.match import Match
+from huaweicloudsdkvpn.v5.model.nexthop_resource_vo import NexthopResourceVo
 from huaweicloudsdkvpn.v5.model.op_vpn_user import OpVpnUser
 from huaweicloudsdkvpn.v5.model.page_info import PageInfo
 from huaweicloudsdkvpn.v5.model.policy_rule import PolicyRule
@@ -196,6 +197,8 @@ from huaweicloudsdkvpn.v5.model.show_vpn_connections_log_config_request import S
 from huaweicloudsdkvpn.v5.model.show_vpn_connections_log_config_response import ShowVpnConnectionsLogConfigResponse
 from huaweicloudsdkvpn.v5.model.show_vpn_gateway_certificate_request import ShowVpnGatewayCertificateRequest
 from huaweicloudsdkvpn.v5.model.show_vpn_gateway_certificate_response import ShowVpnGatewayCertificateResponse
+from huaweicloudsdkvpn.v5.model.show_vpn_gateway_routing_table_request import ShowVpnGatewayRoutingTableRequest
+from huaweicloudsdkvpn.v5.model.show_vpn_gateway_routing_table_response import ShowVpnGatewayRoutingTableResponse
 from huaweicloudsdkvpn.v5.model.show_vpn_user_group_request import ShowVpnUserGroupRequest
 from huaweicloudsdkvpn.v5.model.show_vpn_user_group_response import ShowVpnUserGroupResponse
 from huaweicloudsdkvpn.v5.model.show_vpn_user_request import ShowVpnUserRequest
@@ -268,6 +271,7 @@ from huaweicloudsdkvpn.v5.model.vpn_access_policy import VpnAccessPolicy
 from huaweicloudsdkvpn.v5.model.vpn_gateway_availability_zones import VpnGatewayAvailabilityZones
 from huaweicloudsdkvpn.v5.model.vpn_gateway_certificate import VpnGatewayCertificate
 from huaweicloudsdkvpn.v5.model.vpn_gateway_certificate_config import VpnGatewayCertificateConfig
+from huaweicloudsdkvpn.v5.model.vpn_gateway_routing_table_entry_vo import VpnGatewayRoutingTableEntryVo
 from huaweicloudsdkvpn.v5.model.vpn_resource_tag import VpnResourceTag
 from huaweicloudsdkvpn.v5.model.vpn_user import VpnUser
 from huaweicloudsdkvpn.v5.model.vpn_user_group import VpnUserGroup

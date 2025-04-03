@@ -55,7 +55,7 @@ class VideoConfig:
 
         :param clip_mode: **参数解释**： 输出视频的剪辑方式。 **约束限制**： 不涉及。 **取值范围**： * RESIZE：视频缩放。 * CROP：视频裁剪。
         :type clip_mode: str
-        :param codec: **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8编码。  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。  **默认取值**： 不涉及
+        :param codec: **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
         :type codec: str
         :param bitrate: **参数解释**： 输出平均码率。单位：kbps。 **约束限制**： * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 * 分身数字人直播码率范围[1000, 8000]。  **默认取值**： 不涉及
         :type bitrate: int
@@ -100,7 +100,8 @@ class VideoConfig:
 
         if clip_mode is not None:
             self.clip_mode = clip_mode
-        self.codec = codec
+        if codec is not None:
+            self.codec = codec
         self.bitrate = bitrate
         self.width = width
         self.height = height
@@ -147,7 +148,7 @@ class VideoConfig:
     def codec(self):
         """Gets the codec of this VideoConfig.
 
-        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8编码。  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。  **默认取值**： 不涉及
+        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
 
         :return: The codec of this VideoConfig.
         :rtype: str
@@ -158,7 +159,7 @@ class VideoConfig:
     def codec(self, codec):
         """Sets the codec of this VideoConfig.
 
-        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8编码。  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。  **默认取值**： 不涉及
+        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
 
         :param codec: The codec of this VideoConfig.
         :type codec: str

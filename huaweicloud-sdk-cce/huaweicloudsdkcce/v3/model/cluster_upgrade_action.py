@@ -21,7 +21,8 @@ class ClusterUpgradeAction:
         'node_order': 'dict(str, list[NodePriority])',
         'node_pool_order': 'dict(str, int)',
         'strategy': 'UpgradeStrategy',
-        'target_version': 'str'
+        'target_version': 'str',
+        'is_only_upgrade': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ClusterUpgradeAction:
         'node_order': 'nodeOrder',
         'node_pool_order': 'nodePoolOrder',
         'strategy': 'strategy',
-        'target_version': 'targetVersion'
+        'target_version': 'targetVersion',
+        'is_only_upgrade': 'isOnlyUpgrade'
     }
 
-    def __init__(self, addons=None, node_order=None, node_pool_order=None, strategy=None, target_version=None):
+    def __init__(self, addons=None, node_order=None, node_pool_order=None, strategy=None, target_version=None, is_only_upgrade=None):
         """ClusterUpgradeAction
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ClusterUpgradeAction:
         :type strategy: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
         :param target_version: 目标集群版本，例如\&quot;v1.23\&quot;
         :type target_version: str
+        :param is_only_upgrade: 是否在集群升级流程中执行升级前检查。默认为false，表示会执行升级前检查，如果您在集群升级编排中调用了升级前检查的API，则升级时可用将该字段置为false，不再额外执行一次检查
+        :type is_only_upgrade: bool
         """
         
         
@@ -56,6 +60,7 @@ class ClusterUpgradeAction:
         self._node_pool_order = None
         self._strategy = None
         self._target_version = None
+        self._is_only_upgrade = None
         self.discriminator = None
 
         if addons is not None:
@@ -66,6 +71,8 @@ class ClusterUpgradeAction:
             self.node_pool_order = node_pool_order
         self.strategy = strategy
         self.target_version = target_version
+        if is_only_upgrade is not None:
+            self.is_only_upgrade = is_only_upgrade
 
     @property
     def addons(self):
@@ -172,6 +179,28 @@ class ClusterUpgradeAction:
         :type target_version: str
         """
         self._target_version = target_version
+
+    @property
+    def is_only_upgrade(self):
+        """Gets the is_only_upgrade of this ClusterUpgradeAction.
+
+        是否在集群升级流程中执行升级前检查。默认为false，表示会执行升级前检查，如果您在集群升级编排中调用了升级前检查的API，则升级时可用将该字段置为false，不再额外执行一次检查
+
+        :return: The is_only_upgrade of this ClusterUpgradeAction.
+        :rtype: bool
+        """
+        return self._is_only_upgrade
+
+    @is_only_upgrade.setter
+    def is_only_upgrade(self, is_only_upgrade):
+        """Sets the is_only_upgrade of this ClusterUpgradeAction.
+
+        是否在集群升级流程中执行升级前检查。默认为false，表示会执行升级前检查，如果您在集群升级编排中调用了升级前检查的API，则升级时可用将该字段置为false，不再额外执行一次检查
+
+        :param is_only_upgrade: The is_only_upgrade of this ClusterUpgradeAction.
+        :type is_only_upgrade: bool
+        """
+        self._is_only_upgrade = is_only_upgrade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -36,7 +36,8 @@ class SmartLiveJob:
         'cover_url': 'str',
         'co_streamer_config': 'CoStreamerConfig',
         'live_job_log': 'LiveJobLog',
-        'relation_live_platform_info': 'PlatformLiveDetailInfo'
+        'relation_live_platform_info': 'PlatformLiveDetailInfo',
+        'used_resource_type': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class SmartLiveJob:
         'cover_url': 'cover_url',
         'co_streamer_config': 'co_streamer_config',
         'live_job_log': 'live_job_log',
-        'relation_live_platform_info': 'relation_live_platform_info'
+        'relation_live_platform_info': 'relation_live_platform_info',
+        'used_resource_type': 'used_resource_type'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None):
         """SmartLiveJob
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class SmartLiveJob:
         :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
         :param relation_live_platform_info: 
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
+        :param used_resource_type: 使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+        :type used_resource_type: str
         """
         
         
@@ -131,6 +135,7 @@ class SmartLiveJob:
         self._co_streamer_config = None
         self._live_job_log = None
         self._relation_live_platform_info = None
+        self._used_resource_type = None
         self.discriminator = None
 
         if job_id is not None:
@@ -173,6 +178,8 @@ class SmartLiveJob:
             self.live_job_log = live_job_log
         if relation_live_platform_info is not None:
             self.relation_live_platform_info = relation_live_platform_info
+        if used_resource_type is not None:
+            self.used_resource_type = used_resource_type
 
     @property
     def job_id(self):
@@ -585,6 +592,28 @@ class SmartLiveJob:
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
         """
         self._relation_live_platform_info = relation_live_platform_info
+
+    @property
+    def used_resource_type(self):
+        """Gets the used_resource_type of this SmartLiveJob.
+
+        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+
+        :return: The used_resource_type of this SmartLiveJob.
+        :rtype: str
+        """
+        return self._used_resource_type
+
+    @used_resource_type.setter
+    def used_resource_type(self, used_resource_type):
+        """Sets the used_resource_type of this SmartLiveJob.
+
+        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+
+        :param used_resource_type: The used_resource_type of this SmartLiveJob.
+        :type used_resource_type: str
+        """
+        self._used_resource_type = used_resource_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -9505,6 +9505,77 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def update_taurus_node_data_ip_async(self, request):
+        """修改只读节点的读内网地址
+
+        修改只读节点的读内网地址。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTaurusNodeDataIp
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateTaurusNodeDataIpRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateTaurusNodeDataIpResponse`
+        """
+        http_info = self._update_taurus_node_data_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_taurus_node_data_ip_async_invoker(self, request):
+        http_info = self._update_taurus_node_data_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_taurus_node_data_ip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/{node_id}/internal-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaurusNodeDataIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_transaction_split_status_async(self, request):
         """设置proxy事务拆分
 
